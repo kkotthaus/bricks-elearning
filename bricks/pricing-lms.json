@@ -1,0 +1,1364 @@
+{
+ "content": [
+  {
+   "id": "sec001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "con002"
+   ],
+   "settings": {},
+   "label": "Preise – WEKA LMS Basic & Pro"
+  },
+  {
+   "id": "con002",
+   "name": "container",
+   "parent": "sec001",
+   "children": [
+    "blk003",
+    "blk031"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "ki2wly"
+    ]
+   },
+   "label": "Preis-Raster"
+  },
+  {
+   "id": "blk003",
+   "name": "block",
+   "parent": "con002",
+   "children": [
+    "blk004",
+    "hdg009",
+    "txt010",
+    "blk011",
+    "blk027"
+   ],
+   "settings": {
+    "tag": "article",
+    "_cssGlobalClasses": [
+     "vdrhmz"
+    ]
+   },
+   "label": "Preiskarte Basic"
+  },
+  {
+   "id": "blk004",
+   "name": "block",
+   "parent": "blk003",
+   "children": [
+    "img005",
+    "blk006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "ynkoa5"
+    ]
+   },
+   "label": "Kartenkopf"
+  },
+  {
+   "id": "img005",
+   "name": "image",
+   "parent": "blk004",
+   "children": [],
+   "settings": {
+    "altText": "WEKA LMS Basic",
+    "_cssGlobalClasses": [
+     "e2ooyt"
+    ]
+   },
+   "label": "Produktlogo"
+  },
+  {
+   "id": "blk006",
+   "name": "block",
+   "parent": "blk004",
+   "children": [
+    "ico007",
+    "txt008"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "oge90g"
+    ]
+   },
+   "label": "Badge"
+  },
+  {
+   "id": "ico007",
+   "name": "svg",
+   "parent": "blk006",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 2.5c3.3 1.9 5.5 5.6 5.5 9.8L15 16.5H9l-2.5-4.2C6.5 8.1 8.7 4.4 12 2.5z\"/><circle cx=\"12\" cy=\"10\" r=\"2\"/><path d=\"M9 16.5l-3 2 .5-4.3M15 16.5l3 2-.5-4.3M10.5 19.5L12 22l1.5-2.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "684eil"
+    ]
+   },
+   "label": "Badge-Icon"
+  },
+  {
+   "id": "txt008",
+   "name": "text-basic",
+   "parent": "blk006",
+   "children": [],
+   "settings": {
+    "text": "Nicht mehr LMS als nötig.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7nc2y0"
+    ]
+   },
+   "label": "Badge-Text"
+  },
+  {
+   "id": "hdg009",
+   "name": "heading",
+   "parent": "blk003",
+   "children": [],
+   "settings": {
+    "text": "Lernen. Einfach organisiert.",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "ij6opd"
+    ]
+   },
+   "label": "Kartenüberschrift"
+  },
+  {
+   "id": "txt010",
+   "name": "text-basic",
+   "parent": "blk003",
+   "children": [],
+   "settings": {
+    "text": "Das moderne Lernmanagementsystem für Unternehmen, die schnell und unkompliziert starten möchten.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "pjmzmx"
+    ]
+   },
+   "label": "Kartenbeschreibung"
+  },
+  {
+   "id": "blk011",
+   "name": "block",
+   "parent": "blk003",
+   "children": [
+    "blk012",
+    "blk015",
+    "blk018",
+    "blk021",
+    "blk024"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "qfqijw"
+    ]
+   },
+   "label": "Leistungsliste"
+  },
+  {
+   "id": "blk012",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico013",
+    "txt014"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: Bis zu 500 Teilnehmende"
+  },
+  {
+   "id": "ico013",
+   "name": "svg",
+   "parent": "blk012",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt014",
+   "name": "text-basic",
+   "parent": "blk012",
+   "children": [],
+   "settings": {
+    "text": "Bis zu 500 Teilnehmende",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk015",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico016",
+    "txt017"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: 20 GB Speicherplatz"
+  },
+  {
+   "id": "ico016",
+   "name": "svg",
+   "parent": "blk015",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt017",
+   "name": "text-basic",
+   "parent": "blk015",
+   "children": [],
+   "settings": {
+    "text": "20 GB Speicherplatz",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk018",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico019",
+    "txt020"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: Eigene URL und Corporate Design"
+  },
+  {
+   "id": "ico019",
+   "name": "svg",
+   "parent": "blk018",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt020",
+   "name": "text-basic",
+   "parent": "blk018",
+   "children": [],
+   "settings": {
+    "text": "Eigene URL und Corporate Design",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk021",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico022",
+    "txt023"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: Einfaches Lernmanagement"
+  },
+  {
+   "id": "ico022",
+   "name": "svg",
+   "parent": "blk021",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt023",
+   "name": "text-basic",
+   "parent": "blk021",
+   "children": [],
+   "settings": {
+    "text": "Einfaches Lernmanagement",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk024",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico025",
+    "txt026"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: Lernstände transparent auswerten …"
+  },
+  {
+   "id": "ico025",
+   "name": "svg",
+   "parent": "blk024",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt026",
+   "name": "text-basic",
+   "parent": "blk024",
+   "children": [],
+   "settings": {
+    "text": "Lernstände transparent auswerten (Excel-Export)",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk027",
+   "name": "block",
+   "parent": "blk003",
+   "children": [
+    "txt028",
+    "txt029",
+    "btn030"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1goox5"
+    ]
+   },
+   "label": "Preisbox"
+  },
+  {
+   "id": "txt028",
+   "name": "text-basic",
+   "parent": "blk027",
+   "children": [],
+   "settings": {
+    "text": "ab <span class=\"pricing-card__amount\">6.900 €</span> / Jahr",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "v9f5n8"
+    ]
+   },
+   "label": "Preis"
+  },
+  {
+   "id": "txt029",
+   "name": "text-basic",
+   "parent": "blk027",
+   "children": [],
+   "settings": {
+    "text": "zzgl. MwSt. und einmaliger Einrichtung im 1. Jahr: 2.950 €",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "p49l0x"
+    ]
+   },
+   "label": "Preishinweis"
+  },
+  {
+   "id": "btn030",
+   "name": "button",
+   "parent": "blk027",
+   "children": [],
+   "settings": {
+    "text": "WEKA LMS Basic kennenlernen",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "y8fpbe"
+    ]
+   },
+   "label": "Button: WEKA LMS Basic kennenlernen"
+  },
+  {
+   "id": "blk031",
+   "name": "block",
+   "parent": "con002",
+   "children": [
+    "blk032",
+    "hdg037",
+    "txt038",
+    "blk039",
+    "blk055"
+   ],
+   "settings": {
+    "tag": "article",
+    "_cssGlobalClasses": [
+     "vdrhmz"
+    ]
+   },
+   "label": "Preiskarte Pro"
+  },
+  {
+   "id": "blk032",
+   "name": "block",
+   "parent": "blk031",
+   "children": [
+    "img033",
+    "blk034"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "ynkoa5"
+    ]
+   },
+   "label": "Kartenkopf"
+  },
+  {
+   "id": "img033",
+   "name": "image",
+   "parent": "blk032",
+   "children": [],
+   "settings": {
+    "altText": "WEKA LMS Pro",
+    "_cssGlobalClasses": [
+     "e2ooyt"
+    ]
+   },
+   "label": "Produktlogo"
+  },
+  {
+   "id": "blk034",
+   "name": "block",
+   "parent": "blk032",
+   "children": [
+    "ico035",
+    "txt036"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "oge90g"
+    ]
+   },
+   "label": "Badge"
+  },
+  {
+   "id": "ico035",
+   "name": "svg",
+   "parent": "blk034",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3.5\" y=\"13\" width=\"4\" height=\"8\" fill=\"currentColor\" stroke=\"none\"/><rect x=\"10\" y=\"8\" width=\"4\" height=\"13\" fill=\"currentColor\" stroke=\"none\"/><rect x=\"16.5\" y=\"3\" width=\"4\" height=\"18\" fill=\"currentColor\" stroke=\"none\"/></svg>",
+    "_cssGlobalClasses": [
+     "684eil"
+    ]
+   },
+   "label": "Badge-Icon"
+  },
+  {
+   "id": "txt036",
+   "name": "text-basic",
+   "parent": "blk034",
+   "children": [],
+   "settings": {
+    "text": "Ein LMS, das mit Ihren Anforderungen wächst.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7nc2y0"
+    ]
+   },
+   "label": "Badge-Text"
+  },
+  {
+   "id": "hdg037",
+   "name": "heading",
+   "parent": "blk031",
+   "children": [],
+   "settings": {
+    "text": "Lernen. So individuell wie Ihre Organisation.",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "ij6opd"
+    ]
+   },
+   "label": "Kartenüberschrift"
+  },
+  {
+   "id": "txt038",
+   "name": "text-basic",
+   "parent": "blk031",
+   "children": [],
+   "settings": {
+    "text": "Alles, was Sie für modernes Lernen brauchen, zentral in einer Plattform.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "pjmzmx"
+    ]
+   },
+   "label": "Kartenbeschreibung"
+  },
+  {
+   "id": "blk039",
+   "name": "block",
+   "parent": "blk031",
+   "children": [
+    "blk040",
+    "blk043",
+    "blk046",
+    "blk049",
+    "blk052"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "qfqijw"
+    ]
+   },
+   "label": "Leistungsliste"
+  },
+  {
+   "id": "blk040",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico041",
+    "txt042"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: Bis zu 1.000 Teilnehmende"
+  },
+  {
+   "id": "ico041",
+   "name": "svg",
+   "parent": "blk040",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt042",
+   "name": "text-basic",
+   "parent": "blk040",
+   "children": [],
+   "settings": {
+    "text": "Bis zu 1.000 Teilnehmende",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk043",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico044",
+    "txt045"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: 50 GB Speicherplatz"
+  },
+  {
+   "id": "ico044",
+   "name": "svg",
+   "parent": "blk043",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt045",
+   "name": "text-basic",
+   "parent": "blk043",
+   "children": [],
+   "settings": {
+    "text": "50 GB Speicherplatz",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk046",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico047",
+    "txt048"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: HR-Integration und Single Sign-On …"
+  },
+  {
+   "id": "ico047",
+   "name": "svg",
+   "parent": "blk046",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt048",
+   "name": "text-basic",
+   "parent": "blk046",
+   "children": [],
+   "settings": {
+    "text": "HR-Integration und Single Sign-On (SSO)",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk049",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico050",
+    "txt051"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: Erweiterte Lernorganisation und …"
+  },
+  {
+   "id": "ico050",
+   "name": "svg",
+   "parent": "blk049",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt051",
+   "name": "text-basic",
+   "parent": "blk049",
+   "children": [],
+   "settings": {
+    "text": "Erweiterte Lernorganisation und Automatisierungen",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk052",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico053",
+    "txt054"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "9ofiyj"
+    ]
+   },
+   "label": "Leistung: Lernstände transparent auswerten …"
+  },
+  {
+   "id": "ico053",
+   "name": "svg",
+   "parent": "blk052",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "4i2ozt"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt054",
+   "name": "text-basic",
+   "parent": "blk052",
+   "children": [],
+   "settings": {
+    "text": "Lernstände transparent auswerten (Excel-Export)",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "ql4l2e"
+    ]
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk055",
+   "name": "block",
+   "parent": "blk031",
+   "children": [
+    "txt056",
+    "txt057",
+    "btn058"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1goox5"
+    ]
+   },
+   "label": "Preisbox"
+  },
+  {
+   "id": "txt056",
+   "name": "text-basic",
+   "parent": "blk055",
+   "children": [],
+   "settings": {
+    "text": "ab <span class=\"pricing-card__amount\">9.900 €</span> / Jahr",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "v9f5n8"
+    ]
+   },
+   "label": "Preis"
+  },
+  {
+   "id": "txt057",
+   "name": "text-basic",
+   "parent": "blk055",
+   "children": [],
+   "settings": {
+    "text": "zzgl. MwSt. und einmaliger Einrichtung im 1. Jahr: 4.950 €",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "p49l0x"
+    ]
+   },
+   "label": "Preishinweis"
+  },
+  {
+   "id": "btn058",
+   "name": "button",
+   "parent": "blk055",
+   "children": [],
+   "settings": {
+    "text": "WEKA LMS Pro kennenlernen",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "y8fpbe"
+    ]
+   },
+   "label": "Button: WEKA LMS Pro kennenlernen"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "",
+ "version": "2.4.1",
+ "globalClasses": [
+  {
+   "id": "ki2wly",
+   "name": "pricing__grid",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+    "_rowGap": "var(--grid-gap)",
+    "_columnGap": "var(--grid-gap)",
+    "_width": "100%",
+    "_alignItems": "stretch",
+    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
+    "_widthMax:tablet_portrait": "72rem",
+    "_margin:tablet_portrait": {
+     "left": "auto",
+     "right": "auto"
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "vdrhmz",
+   "name": "pricing-card",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_padding": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "var(--border-size)",
+      "right": "var(--border-size)",
+      "bottom": "var(--border-size)",
+      "left": "var(--border-size)"
+     },
+     "style": "var(--border-style)",
+     "color": {
+      "raw": "var(--primary-ultra-light)"
+     },
+     "radius": {
+      "top": "var(--radius-s)",
+      "right": "var(--radius-s)",
+      "bottom": "var(--radius-s)",
+      "left": "var(--radius-s)"
+     }
+    },
+    "_padding:mobile_landscape": {
+     "top": "var(--space-s)",
+     "right": "var(--space-s)",
+     "bottom": "var(--space-s)",
+     "left": "var(--space-s)"
+    },
+    "_cssCustom": ".pricing-card {\n  box-shadow: 0 0.4rem 2.4rem var(--primary-trans-10);\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "ynkoa5",
+   "name": "pricing-card__header",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_justifyContent": "space-between",
+    "_alignItems": "center",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_width": "100%",
+    "_margin": {
+     "bottom": "var(--space-xs)"
+    },
+    "_direction:mobile_landscape": "column",
+    "_alignItems:mobile_landscape": "flex-start"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "e2ooyt",
+   "name": "pricing-card__logo",
+   "settings": {
+    "_height": "6rem",
+    "_width": "auto",
+    "_objectFit": "contain",
+    "_height:mobile_portrait": "4.8rem"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "oge90g",
+   "name": "pricing-card__badge",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_alignItems": "center",
+    "_rowGap": "var(--space-xs)",
+    "_columnGap": "var(--space-xs)",
+    "_widthMax": "26rem",
+    "_padding": {
+     "top": "var(--space-xs)",
+     "right": "var(--space-s)",
+     "bottom": "var(--space-xs)",
+     "left": "var(--space-s)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-ultra-light)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "999px",
+      "right": "999px",
+      "bottom": "999px",
+      "left": "999px"
+     }
+    },
+    "_widthMax:mobile_landscape": "none"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "684eil",
+   "name": "pricing-card__badge-icon",
+   "settings": {
+    "_display": "block",
+    "_flexShrink": "0",
+    "_width": "1em",
+    "_height": "1em",
+    "_typography": {
+     "font-size": "var(--text-xl)",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "7nc2y0",
+   "name": "pricing-card__badge-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-xs)",
+     "line-height": "1.3",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "ij6opd",
+   "name": "pricing-card__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_widthMax": "100%",
+    "_typography": {
+     "font-size": "var(--h3)"
+    },
+    "_cssCustom": ".pricing-card__title {\n  overflow-wrap: break-word;\n  hyphens: auto;\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "pjmzmx",
+   "name": "pricing-card__intro",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "qfqijw",
+   "name": "pricing-card__features",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_columnGap": "var(--space-xs)",
+    "_margin": {
+     "top": "var(--space-xs)",
+     "right": "0",
+     "bottom": "var(--space-xs)",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".pricing-card__features {\n  list-style: none;\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "9ofiyj",
+   "name": "pricing-card__feature",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_alignItems": "center",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_rowGap:mobile_portrait": "var(--space-xs)",
+    "_columnGap:mobile_portrait": "var(--space-xs)"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "4i2ozt",
+   "name": "pricing-card__check",
+   "settings": {
+    "_display": "block",
+    "_flexShrink": "0",
+    "_width": "1.8em",
+    "_height": "1.8em",
+    "_padding": {
+     "top": "0.4em",
+     "right": "0.4em",
+     "bottom": "0.4em",
+     "left": "0.4em"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "50%",
+      "right": "50%",
+      "bottom": "50%",
+      "left": "50%"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "ql4l2e",
+   "name": "pricing-card__feature-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "1goox5",
+   "name": "pricing-card__price-box",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_alignItems": "center",
+    "_rowGap": "var(--space-xs)",
+    "_columnGap": "var(--space-xs)",
+    "_width": "100%",
+    "_margin": {
+     "top": "auto"
+    },
+    "_padding": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_typography": {
+     "text-align": "center"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-ultra-light)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius-s)",
+      "right": "var(--radius-s)",
+      "bottom": "var(--radius-s)",
+      "left": "var(--radius-s)"
+     }
+    },
+    "_padding:mobile_landscape": {
+     "top": "var(--space-s)",
+     "right": "var(--space-s)",
+     "bottom": "var(--space-s)",
+     "left": "var(--space-s)"
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "v9f5n8",
+   "name": "pricing-card__price",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "font-weight": "600",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_cssCustom": ".pricing-card__price .pricing-card__amount {\n  font-size: var(--h2);\n  font-weight: 700;\n}\n\n@media (max-width: 479px) {\n  .pricing-card__price .pricing-card__amount {\n    display: block;\n  }\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "p49l0x",
+   "name": "pricing-card__note",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-xs)",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "y8fpbe",
+   "name": "pricing-card__button",
+   "settings": {
+    "_display": "inline-flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
+    "_rowGap": "var(--space-xs)",
+    "_columnGap": "var(--space-xs)",
+    "_widthMax": "100%",
+    "_margin": {
+     "top": "var(--space-xs)"
+    },
+    "_padding": {
+     "top": "var(--space-xs)",
+     "right": "var(--space-l)",
+     "bottom": "var(--space-xs)",
+     "left": "var(--space-l)"
+    },
+    "_typography": {
+     "text-align": "center",
+     "font-weight": "600",
+     "color": {
+      "raw": "var(--white)"
+     },
+     "text-decoration": "none"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "var(--btn-border-width)",
+      "right": "var(--btn-border-width)",
+      "bottom": "var(--btn-border-width)",
+      "left": "var(--btn-border-width)"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--primary-dark)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    },
+    "_typography:hover": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_background:hover": {
+     "color": {
+      "raw": "var(--primary-ultra-dark)"
+     }
+    },
+    "_border:hover": {
+     "color": {
+      "raw": "var(--primary-ultra-dark)"
+     }
+    },
+    "_width:mobile_landscape": "100%",
+    "_padding:mobile_landscape": {
+     "left": "var(--space-s)",
+     "right": "var(--space-s)"
+    },
+    "_cssCustom": ".pricing-card__button {\n  transition: background var(--transition-duration) var(--transition-timing), border-color var(--transition-duration) var(--transition-timing);\n}\n\n.pricing-card__button:focus-visible {\n  outline: var(--focus-width) solid var(--action);\n  outline-offset: var(--focus-offset);\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  }
+ ],
+ "globalElements": []
+}

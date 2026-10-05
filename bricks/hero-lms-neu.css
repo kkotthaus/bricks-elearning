@@ -1,0 +1,116 @@
+/* hero-lms-neu – WPCodeBox CSS-Snippet (Frontend + Bricks-Builder). Nutzt zusätzlich .eyebrow, .check-list, .cta-button aus evaluation-section.css */
+
+/* ---------- Hero: hero-lms-neu ---------- */
+.hero-lms-neu {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--primary-ultra-light);
+}
+.hero-lms-neu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, var(--white-trans-90) 0%, var(--white-trans-90) 42%, var(--white-trans-60) 62%, var(--white-trans-10) 100%);
+}
+.hero-lms-neu__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+  transform: scale(1.04);
+}
+.hero-lms-neu__container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: 0;
+}
+.hero-lms-neu__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-s);
+}
+.hero-lms-neu__title {
+  margin: 0;
+  max-width: 100%;
+  font-size: var(--h1);
+  font-weight: 800;
+  line-height: 1.05;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.hero-lms-neu__lead {
+  margin: 0;
+  font-size: var(--text-l);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--primary-ultra-dark);
+}
+.hero-lms-neu__content .check-list {
+  margin-block: var(--space-xs);
+}
+.hero-lms-neu__actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+  gap: var(--space-s);
+  width: 100%;
+  max-width: 60rem;
+}
+.hero-lms-neu__actions .cta-button {
+  width: 100%;
+  padding-inline: var(--space-s);
+}
+.hero-lms-neu__visual {
+  width: 118%;
+  max-width: none;
+  height: auto;
+  margin-inline-end: -18%;
+  object-fit: contain;
+}
+
+/* ---------- Button-Variante Outline (wiederverwendbar, ergänzt .cta-button) ---------- */
+.cta-button--outline {
+  color: var(--primary-dark);
+  background: var(--white);
+  border-color: var(--primary-dark);
+}
+.cta-button--outline:hover {
+  color: var(--white);
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* ---------- Responsive (ACSS-Breakpoints: l 992 / m 768 / s 480) ---------- */
+@media (max-width: 991px) {
+  .hero-lms-neu::before {
+    background: var(--white-trans-90);
+  }
+  .hero-lms-neu__container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-l);
+  }
+  .hero-lms-neu__visual {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline-end: 0;
+    justify-self: center;
+  }
+}
+@media (max-width: 767px) {
+  .hero-lms-neu__lead {
+    font-size: var(--text-m);
+  }
+}
+@media (max-width: 479px) {
+  .hero-lms-neu__actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

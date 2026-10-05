@@ -1,0 +1,717 @@
+{
+ "content": [
+  {
+   "id": "sec001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "img002",
+    "con003"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "bsj2px"
+    ]
+   },
+   "label": "Hero – WEKA LMS Einstieg"
+  },
+  {
+   "id": "img002",
+   "name": "image",
+   "parent": "sec001",
+   "children": [],
+   "settings": {
+    "altText": "",
+    "_cssGlobalClasses": [
+     "2om4lp"
+    ]
+   },
+   "label": "Hintergrundbild"
+  },
+  {
+   "id": "con003",
+   "name": "container",
+   "parent": "sec001",
+   "children": [
+    "blk004",
+    "img021"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "8sdlb8"
+    ]
+   },
+   "label": "Hero-Raster"
+  },
+  {
+   "id": "blk004",
+   "name": "block",
+   "parent": "con003",
+   "children": [
+    "txt005",
+    "hdg006",
+    "txt007",
+    "blk008",
+    "blk018"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "g039h7"
+    ]
+   },
+   "label": "Hero-Inhalt"
+  },
+  {
+   "id": "txt005",
+   "name": "text-basic",
+   "parent": "blk004",
+   "children": [],
+   "settings": {
+    "text": "WEKA LMS – Zwei Lösungen. Ein starker Partner.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "v18zee"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "hdg006",
+   "name": "heading",
+   "parent": "blk004",
+   "children": [],
+   "settings": {
+    "text": "Lernen. Einfach.<br>Wirksam.",
+    "tag": "h1",
+    "_cssGlobalClasses": [
+     "cj8tly"
+    ]
+   },
+   "label": "Hauptüberschrift (H1)"
+  },
+  {
+   "id": "txt007",
+   "name": "text-basic",
+   "parent": "blk004",
+   "children": [],
+   "settings": {
+    "text": "Vom unkomplizierten Einstieg bis zur individuellen Lernplattform: Wählen Sie das WEKA LMS, das zu Ihren Anforderungen passt.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "a3k0ks"
+    ]
+   },
+   "label": "Einleitungstext"
+  },
+  {
+   "id": "blk008",
+   "name": "block",
+   "parent": "blk004",
+   "children": [
+    "blk009",
+    "blk012",
+    "blk015"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "ory023"
+    ]
+   },
+   "label": "Häkchen-Liste"
+  },
+  {
+   "id": "blk009",
+   "name": "block",
+   "parent": "blk008",
+   "children": [
+    "ico010",
+    "txt011"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "fb1ga9"
+    ]
+   },
+   "label": "Listenpunkt: Auf Basis von ILIAS – bewährt und …"
+  },
+  {
+   "id": "ico010",
+   "name": "svg",
+   "parent": "blk009",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "6sq0w1"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt011",
+   "name": "text-basic",
+   "parent": "blk009",
+   "children": [],
+   "settings": {
+    "text": "Auf Basis von ILIAS – bewährt und zukunftssicher",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "6ko2av"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "blk012",
+   "name": "block",
+   "parent": "blk008",
+   "children": [
+    "ico013",
+    "txt014"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "fb1ga9"
+    ]
+   },
+   "label": "Listenpunkt: Sicher gehostet in Deutschland (ISO …"
+  },
+  {
+   "id": "ico013",
+   "name": "svg",
+   "parent": "blk012",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "6sq0w1"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt014",
+   "name": "text-basic",
+   "parent": "blk012",
+   "children": [],
+   "settings": {
+    "text": "Sicher gehostet in Deutschland (ISO 27001)",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "6ko2av"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "blk015",
+   "name": "block",
+   "parent": "blk008",
+   "children": [
+    "ico016",
+    "txt017"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "fb1ga9"
+    ]
+   },
+   "label": "Listenpunkt: Persönlich betreut – von der Einführung …"
+  },
+  {
+   "id": "ico016",
+   "name": "svg",
+   "parent": "blk015",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "_cssGlobalClasses": [
+     "6sq0w1"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt017",
+   "name": "text-basic",
+   "parent": "blk015",
+   "children": [],
+   "settings": {
+    "text": "Persönlich betreut – von der Einführung bis zum Betrieb",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "6ko2av"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "blk018",
+   "name": "block",
+   "parent": "blk004",
+   "children": [
+    "btn019",
+    "btn020"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "d6ph7m"
+    ]
+   },
+   "label": "Button-Gruppe"
+  },
+  {
+   "id": "btn019",
+   "name": "button",
+   "parent": "blk018",
+   "children": [],
+   "settings": {
+    "text": "Passende Lösung finden",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "98chp3"
+    ]
+   },
+   "label": "Button: Passende Lösung finden"
+  },
+  {
+   "id": "btn020",
+   "name": "button",
+   "parent": "blk018",
+   "children": [],
+   "settings": {
+    "text": "System-Demo vereinbaren",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "_cssGlobalClasses": [
+     "98chp3",
+     "0htes2"
+    ]
+   },
+   "label": "Button: System-Demo vereinbaren"
+  },
+  {
+   "id": "img021",
+   "name": "image",
+   "parent": "con003",
+   "children": [],
+   "settings": {
+    "altText": "WEKA LMS auf einem Laptop – Beispielansicht der Lernplattform",
+    "_cssGlobalClasses": [
+     "z21e7g"
+    ]
+   },
+   "label": "Laptop-Bild"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "",
+ "version": "2.4.1",
+ "globalClasses": [
+  {
+   "id": "bsj2px",
+   "name": "hero-lms-neu",
+   "settings": {
+    "_position": "relative",
+    "_overflow": "hidden",
+    "_background": {
+     "color": {
+      "raw": "var(--primary-ultra-light)"
+     }
+    },
+    "_cssCustom": ".hero-lms-neu {\n  isolation: isolate;\n}\n\n.hero-lms-neu::before {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  z-index: -1;\n  background: linear-gradient(90deg, var(--white-trans-90) 0%, var(--white-trans-90) 42%, var(--white-trans-60) 62%, var(--white-trans-10) 100%);\n}\n\n@media (max-width: 991px) {\n  .hero-lms-neu::before {\n    background: var(--white-trans-90);\n  }\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "2om4lp",
+   "name": "hero-lms-neu__bg",
+   "settings": {
+    "_position": "absolute",
+    "_top": "0",
+    "_right": "0",
+    "_bottom": "0",
+    "_left": "0",
+    "_zIndex": "-2",
+    "_width": "100%",
+    "_height": "100%",
+    "_objectFit": "cover",
+    "_cssCustom": ".hero-lms-neu__bg {\n  filter: blur(3px);\n  transform: scale(1.04);\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "8sdlb8",
+   "name": "hero-lms-neu__container",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "minmax(0, 0.9fr) minmax(0, 1.3fr)",
+    "_alignItems": "center",
+    "_rowGap": "0",
+    "_columnGap": "0",
+    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
+    "_rowGap:tablet_portrait": "var(--space-l)",
+    "_columnGap:tablet_portrait": "var(--space-l)"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "g039h7",
+   "name": "hero-lms-neu__content",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_alignItems": "flex-start",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_cssCustom": ".hero-lms-neu__content .check-list {\n  margin-block: var(--space-xs);\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "v18zee",
+   "name": "eyebrow",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "500",
+     "letter-spacing": "0.12em",
+     "text-transform": "uppercase",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "cj8tly",
+   "name": "hero-lms-neu__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_widthMax": "100%",
+    "_typography": {
+     "font-size": "var(--h1)",
+     "font-weight": "800",
+     "line-height": "1.05"
+    },
+    "_cssCustom": ".hero-lms-neu__title {\n  overflow-wrap: break-word;\n  hyphens: auto;\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "a3k0ks",
+   "name": "hero-lms-neu__lead",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "font-weight": "500",
+     "line-height": "1.4",
+     "color": {
+      "raw": "var(--primary-ultra-dark)"
+     }
+    },
+    "_typography:mobile_landscape": {
+     "font-size": "var(--text-m)"
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "ory023",
+   "name": "check-list",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".check-list {\n  list-style: none;\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "fb1ga9",
+   "name": "check-list__item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_alignItems": "flex-start",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "6sq0w1",
+   "name": "check-list__icon",
+   "settings": {
+    "_display": "block",
+    "_flexShrink": "0",
+    "_width": "1.8em",
+    "_height": "1.8em",
+    "_padding": {
+     "top": "0.4em",
+     "right": "0.4em",
+     "bottom": "0.4em",
+     "left": "0.4em"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "50%",
+      "right": "50%",
+      "bottom": "50%",
+      "left": "50%"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "6ko2av",
+   "name": "check-list__text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0.15em"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "d6ph7m",
+   "name": "hero-lms-neu__actions",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+    "_alignItems": "stretch",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_width": "100%",
+    "_widthMax": "60rem",
+    "_gridTemplateColumns:mobile_portrait": "minmax(0, 1fr)",
+    "_cssCustom": ".hero-lms-neu__actions {\n  grid-auto-rows: 1fr;\n}\n\n.hero-lms-neu__actions .cta-button {\n  width: 100%;\n  padding-inline: var(--space-s);\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "98chp3",
+   "name": "cta-button",
+   "settings": {
+    "_display": "inline-flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_padding": {
+     "top": "var(--space-xs)",
+     "right": "var(--space-l)",
+     "bottom": "var(--space-xs)",
+     "left": "var(--space-l)"
+    },
+    "_typography": {
+     "font-weight": "600",
+     "text-decoration": "none",
+     "text-align": "center",
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_widthMax": "100%",
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "var(--btn-border-width)",
+      "right": "var(--btn-border-width)",
+      "bottom": "var(--btn-border-width)",
+      "left": "var(--btn-border-width)"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--primary-dark)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    },
+    "_typography:hover": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_background:hover": {
+     "color": {
+      "raw": "var(--primary-ultra-dark)"
+     }
+    },
+    "_border:hover": {
+     "color": {
+      "raw": "var(--primary-ultra-dark)"
+     }
+    },
+    "_width:mobile_portrait": "100%",
+    "_padding:mobile_portrait": {
+     "left": "var(--space-s)",
+     "right": "var(--space-s)"
+    },
+    "_typography:mobile_portrait": {
+     "text-align": "center"
+    },
+    "_cssCustom": ".cta-button {\n  transition: background var(--transition-duration) var(--transition-timing), color var(--transition-duration) var(--transition-timing), border-color var(--transition-duration) var(--transition-timing);\n}\n\n.cta-button:focus-visible {\n  outline: var(--focus-width) solid var(--action);\n  outline-offset: var(--focus-offset);\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "0htes2",
+   "name": "cta-button--outline",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_typography:hover": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_background:hover": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_border:hover": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  },
+  {
+   "id": "z21e7g",
+   "name": "hero-lms-neu__visual",
+   "settings": {
+    "_width": "118%",
+    "_widthMax": "none",
+    "_height": "auto",
+    "_margin": {
+     "right": "-18%"
+    },
+    "_objectFit": "contain",
+    "_width:tablet_portrait": "100%",
+    "_widthMax:tablet_portrait": "72rem",
+    "_margin:tablet_portrait": {
+     "right": "0"
+    },
+    "_cssCustom": "@media (max-width: 991px) {\n  .hero-lms-neu__visual {\n    justify-self: center;\n  }\n}"
+   },
+   "modified": 1790592465,
+   "user_id": 1
+  }
+ ],
+ "globalElements": []
+}

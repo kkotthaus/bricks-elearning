@@ -1,0 +1,78 @@
+/* Vorteile auf einen Blick – WPCodeBox CSS-Snippet (Frontend + Bricks-Builder) */
+
+/* ---------- Vorteile ---------- */
+.benefits {
+  background: var(--primary-ultra-light);
+}
+.benefits__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+.benefits__title {
+  margin: 0;
+  max-width: 100%;
+  font-size: var(--h2);
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-l) var(--grid-gap);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.benefits__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-s);
+  margin: 0;
+}
+.benefits__icon {
+  display: block;
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  font-size: var(--h1);
+  color: var(--primary-dark);
+}
+.benefits__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+.benefits__item-title {
+  margin: 0;
+  font-size: var(--text-m);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.benefits__text {
+  margin: 0;
+  font-size: var(--text-m);
+  line-height: 1.5;
+  color: var(--primary-dark);
+}
+
+/* ---------- Responsive (ACSS-Breakpoints: l 992 / m 768 / s 480) ---------- */
+@media (max-width: 991px) {
+  .benefits__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .benefits__icon {
+    font-size: var(--h2);
+  }
+}
+@media (max-width: 479px) {
+  .benefits__list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-m);
+  }
+}

@@ -1,0 +1,768 @@
+{
+ "content": [
+  {
+   "id": "sec001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "con002"
+   ],
+   "settings": {},
+   "label": "Preise – WEKA LMS Basic & Pro"
+  },
+  {
+   "id": "con002",
+   "name": "container",
+   "parent": "sec001",
+   "children": [
+    "blk003",
+    "blk031"
+   ],
+   "settings": {
+    "_cssClasses": "pricing__grid"
+   },
+   "label": "Preis-Raster"
+  },
+  {
+   "id": "blk003",
+   "name": "block",
+   "parent": "con002",
+   "children": [
+    "blk004",
+    "hdg009",
+    "txt010",
+    "blk011",
+    "blk027"
+   ],
+   "settings": {
+    "tag": "article",
+    "_cssClasses": "pricing-card"
+   },
+   "label": "Preiskarte Basic"
+  },
+  {
+   "id": "blk004",
+   "name": "block",
+   "parent": "blk003",
+   "children": [
+    "img005",
+    "blk006"
+   ],
+   "settings": {
+    "_cssClasses": "pricing-card__header"
+   },
+   "label": "Kartenkopf"
+  },
+  {
+   "id": "img005",
+   "name": "image",
+   "parent": "blk004",
+   "children": [],
+   "settings": {
+    "altText": "WEKA LMS Basic",
+    "_cssClasses": "pricing-card__logo"
+   },
+   "label": "Produktlogo"
+  },
+  {
+   "id": "blk006",
+   "name": "block",
+   "parent": "blk004",
+   "children": [
+    "ico007",
+    "txt008"
+   ],
+   "settings": {
+    "_cssClasses": "pricing-card__badge"
+   },
+   "label": "Badge"
+  },
+  {
+   "id": "ico007",
+   "name": "svg",
+   "parent": "blk006",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__badge-icon",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 2.5c3.3 1.9 5.5 5.6 5.5 9.8L15 16.5H9l-2.5-4.2C6.5 8.1 8.7 4.4 12 2.5z\"/><circle cx=\"12\" cy=\"10\" r=\"2\"/><path d=\"M9 16.5l-3 2 .5-4.3M15 16.5l3 2-.5-4.3M10.5 19.5L12 22l1.5-2.5\"/></svg>"
+   },
+   "label": "Badge-Icon"
+  },
+  {
+   "id": "txt008",
+   "name": "text-basic",
+   "parent": "blk006",
+   "children": [],
+   "settings": {
+    "text": "Nicht mehr LMS als nötig.",
+    "tag": "p",
+    "_cssClasses": "pricing-card__badge-text"
+   },
+   "label": "Badge-Text"
+  },
+  {
+   "id": "hdg009",
+   "name": "heading",
+   "parent": "blk003",
+   "children": [],
+   "settings": {
+    "text": "Lernen. Einfach organisiert.",
+    "tag": "h3",
+    "_cssClasses": "pricing-card__title"
+   },
+   "label": "Kartenüberschrift"
+  },
+  {
+   "id": "txt010",
+   "name": "text-basic",
+   "parent": "blk003",
+   "children": [],
+   "settings": {
+    "text": "Das moderne Lernmanagementsystem für Unternehmen, die schnell und unkompliziert starten möchten.",
+    "tag": "p",
+    "_cssClasses": "pricing-card__intro"
+   },
+   "label": "Kartenbeschreibung"
+  },
+  {
+   "id": "blk011",
+   "name": "block",
+   "parent": "blk003",
+   "children": [
+    "blk012",
+    "blk015",
+    "blk018",
+    "blk021",
+    "blk024"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssClasses": "pricing-card__features"
+   },
+   "label": "Leistungsliste"
+  },
+  {
+   "id": "blk012",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico013",
+    "txt014"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: Bis zu 500 Teilnehmende"
+  },
+  {
+   "id": "ico013",
+   "name": "svg",
+   "parent": "blk012",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt014",
+   "name": "text-basic",
+   "parent": "blk012",
+   "children": [],
+   "settings": {
+    "text": "Bis zu 500 Teilnehmende",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk015",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico016",
+    "txt017"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: 20 GB Speicherplatz"
+  },
+  {
+   "id": "ico016",
+   "name": "svg",
+   "parent": "blk015",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt017",
+   "name": "text-basic",
+   "parent": "blk015",
+   "children": [],
+   "settings": {
+    "text": "20 GB Speicherplatz",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk018",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico019",
+    "txt020"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: Eigene URL und Corporate Design"
+  },
+  {
+   "id": "ico019",
+   "name": "svg",
+   "parent": "blk018",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt020",
+   "name": "text-basic",
+   "parent": "blk018",
+   "children": [],
+   "settings": {
+    "text": "Eigene URL und Corporate Design",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk021",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico022",
+    "txt023"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: Einfaches Lernmanagement"
+  },
+  {
+   "id": "ico022",
+   "name": "svg",
+   "parent": "blk021",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt023",
+   "name": "text-basic",
+   "parent": "blk021",
+   "children": [],
+   "settings": {
+    "text": "Einfaches Lernmanagement",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk024",
+   "name": "block",
+   "parent": "blk011",
+   "children": [
+    "ico025",
+    "txt026"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: Lernstände transparent auswerten …"
+  },
+  {
+   "id": "ico025",
+   "name": "svg",
+   "parent": "blk024",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt026",
+   "name": "text-basic",
+   "parent": "blk024",
+   "children": [],
+   "settings": {
+    "text": "Lernstände transparent auswerten (Excel-Export)",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk027",
+   "name": "block",
+   "parent": "blk003",
+   "children": [
+    "txt028",
+    "txt029",
+    "btn030"
+   ],
+   "settings": {
+    "_cssClasses": "pricing-card__price-box"
+   },
+   "label": "Preisbox"
+  },
+  {
+   "id": "txt028",
+   "name": "text-basic",
+   "parent": "blk027",
+   "children": [],
+   "settings": {
+    "text": "ab <span class=\"pricing-card__amount\">6.900 €</span> / Jahr",
+    "tag": "p",
+    "_cssClasses": "pricing-card__price"
+   },
+   "label": "Preis"
+  },
+  {
+   "id": "txt029",
+   "name": "text-basic",
+   "parent": "blk027",
+   "children": [],
+   "settings": {
+    "text": "zzgl. MwSt. und einmaliger Einrichtung im 1. Jahr: 2.950 €",
+    "tag": "p",
+    "_cssClasses": "pricing-card__note"
+   },
+   "label": "Preishinweis"
+  },
+  {
+   "id": "btn030",
+   "name": "button",
+   "parent": "blk027",
+   "children": [],
+   "settings": {
+    "text": "WEKA LMS Basic kennenlernen",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssClasses": "pricing-card__button"
+   },
+   "label": "Button: WEKA LMS Basic kennenlernen"
+  },
+  {
+   "id": "blk031",
+   "name": "block",
+   "parent": "con002",
+   "children": [
+    "blk032",
+    "hdg037",
+    "txt038",
+    "blk039",
+    "blk055"
+   ],
+   "settings": {
+    "tag": "article",
+    "_cssClasses": "pricing-card"
+   },
+   "label": "Preiskarte Pro"
+  },
+  {
+   "id": "blk032",
+   "name": "block",
+   "parent": "blk031",
+   "children": [
+    "img033",
+    "blk034"
+   ],
+   "settings": {
+    "_cssClasses": "pricing-card__header"
+   },
+   "label": "Kartenkopf"
+  },
+  {
+   "id": "img033",
+   "name": "image",
+   "parent": "blk032",
+   "children": [],
+   "settings": {
+    "altText": "WEKA LMS Pro",
+    "_cssClasses": "pricing-card__logo"
+   },
+   "label": "Produktlogo"
+  },
+  {
+   "id": "blk034",
+   "name": "block",
+   "parent": "blk032",
+   "children": [
+    "ico035",
+    "txt036"
+   ],
+   "settings": {
+    "_cssClasses": "pricing-card__badge"
+   },
+   "label": "Badge"
+  },
+  {
+   "id": "ico035",
+   "name": "svg",
+   "parent": "blk034",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__badge-icon",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3.5\" y=\"13\" width=\"4\" height=\"8\" fill=\"currentColor\" stroke=\"none\"/><rect x=\"10\" y=\"8\" width=\"4\" height=\"13\" fill=\"currentColor\" stroke=\"none\"/><rect x=\"16.5\" y=\"3\" width=\"4\" height=\"18\" fill=\"currentColor\" stroke=\"none\"/></svg>"
+   },
+   "label": "Badge-Icon"
+  },
+  {
+   "id": "txt036",
+   "name": "text-basic",
+   "parent": "blk034",
+   "children": [],
+   "settings": {
+    "text": "Ein LMS, das mit Ihren Anforderungen wächst.",
+    "tag": "p",
+    "_cssClasses": "pricing-card__badge-text"
+   },
+   "label": "Badge-Text"
+  },
+  {
+   "id": "hdg037",
+   "name": "heading",
+   "parent": "blk031",
+   "children": [],
+   "settings": {
+    "text": "Lernen. So individuell wie Ihre Organisation.",
+    "tag": "h3",
+    "_cssClasses": "pricing-card__title"
+   },
+   "label": "Kartenüberschrift"
+  },
+  {
+   "id": "txt038",
+   "name": "text-basic",
+   "parent": "blk031",
+   "children": [],
+   "settings": {
+    "text": "Alles, was Sie für modernes Lernen brauchen, zentral in einer Plattform.",
+    "tag": "p",
+    "_cssClasses": "pricing-card__intro"
+   },
+   "label": "Kartenbeschreibung"
+  },
+  {
+   "id": "blk039",
+   "name": "block",
+   "parent": "blk031",
+   "children": [
+    "blk040",
+    "blk043",
+    "blk046",
+    "blk049",
+    "blk052"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssClasses": "pricing-card__features"
+   },
+   "label": "Leistungsliste"
+  },
+  {
+   "id": "blk040",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico041",
+    "txt042"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: Bis zu 1.000 Teilnehmende"
+  },
+  {
+   "id": "ico041",
+   "name": "svg",
+   "parent": "blk040",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt042",
+   "name": "text-basic",
+   "parent": "blk040",
+   "children": [],
+   "settings": {
+    "text": "Bis zu 1.000 Teilnehmende",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk043",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico044",
+    "txt045"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: 50 GB Speicherplatz"
+  },
+  {
+   "id": "ico044",
+   "name": "svg",
+   "parent": "blk043",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt045",
+   "name": "text-basic",
+   "parent": "blk043",
+   "children": [],
+   "settings": {
+    "text": "50 GB Speicherplatz",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk046",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico047",
+    "txt048"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: HR-Integration und Single Sign-On …"
+  },
+  {
+   "id": "ico047",
+   "name": "svg",
+   "parent": "blk046",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt048",
+   "name": "text-basic",
+   "parent": "blk046",
+   "children": [],
+   "settings": {
+    "text": "HR-Integration und Single Sign-On (SSO)",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk049",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico050",
+    "txt051"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: Erweiterte Lernorganisation und …"
+  },
+  {
+   "id": "ico050",
+   "name": "svg",
+   "parent": "blk049",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt051",
+   "name": "text-basic",
+   "parent": "blk049",
+   "children": [],
+   "settings": {
+    "text": "Erweiterte Lernorganisation und Automatisierungen",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk052",
+   "name": "block",
+   "parent": "blk039",
+   "children": [
+    "ico053",
+    "txt054"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssClasses": "pricing-card__feature"
+   },
+   "label": "Leistung: Lernstände transparent auswerten …"
+  },
+  {
+   "id": "ico053",
+   "name": "svg",
+   "parent": "blk052",
+   "children": [],
+   "settings": {
+    "_cssClasses": "pricing-card__check",
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>"
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "txt054",
+   "name": "text-basic",
+   "parent": "blk052",
+   "children": [],
+   "settings": {
+    "text": "Lernstände transparent auswerten (Excel-Export)",
+    "tag": "span",
+    "_cssClasses": "pricing-card__feature-text"
+   },
+   "label": "Leistungstext"
+  },
+  {
+   "id": "blk055",
+   "name": "block",
+   "parent": "blk031",
+   "children": [
+    "txt056",
+    "txt057",
+    "btn058"
+   ],
+   "settings": {
+    "_cssClasses": "pricing-card__price-box"
+   },
+   "label": "Preisbox"
+  },
+  {
+   "id": "txt056",
+   "name": "text-basic",
+   "parent": "blk055",
+   "children": [],
+   "settings": {
+    "text": "ab <span class=\"pricing-card__amount\">9.900 €</span> / Jahr",
+    "tag": "p",
+    "_cssClasses": "pricing-card__price"
+   },
+   "label": "Preis"
+  },
+  {
+   "id": "txt057",
+   "name": "text-basic",
+   "parent": "blk055",
+   "children": [],
+   "settings": {
+    "text": "zzgl. MwSt. und einmaliger Einrichtung im 1. Jahr: 4.950 €",
+    "tag": "p",
+    "_cssClasses": "pricing-card__note"
+   },
+   "label": "Preishinweis"
+  },
+  {
+   "id": "btn058",
+   "name": "button",
+   "parent": "blk055",
+   "children": [],
+   "settings": {
+    "text": "WEKA LMS Pro kennenlernen",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssClasses": "pricing-card__button"
+   },
+   "label": "Button: WEKA LMS Pro kennenlernen"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "",
+ "version": "2.4.1",
+ "globalClasses": [],
+ "globalElements": []
+}
