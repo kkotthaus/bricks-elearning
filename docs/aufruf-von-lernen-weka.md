@@ -4,7 +4,7 @@ Stand: 05.10.2026 – Konzept, noch nicht umgesetzt.
 
 **Frage:** Kann der Angebotskonfigurator (PDF-Preisauskunft) von der Website lernen.weka.de aus aufgerufen werden?
 
-**Antwort:** Ja. lernen.weka.de („WEKA eCampus“) ist eine eigene WordPress-Installation, auf die wir keinen Zugriff haben. Der Konfigurator bleibt deshalb auf der WEKA-E-Learning-Seite (Staging: Seite 10801) und wird von lernen.weka.de nur aufgerufen. Formular, PDF, Preise und Mails bleiben an einer Stelle.
+**Antwort:** Ja. lernen.weka.de („WEKA eCampus“) ist **kein WordPress**, sondern die Lernplattform selbst: eine Nuxt-Anwendung (Vue.js), Dateien vom CDN `cdnlernen.weka.de/f/<build>-prdwekal-…/` mit eigenem Plattform-Stylesheet (geprüft am 05.10.2026; keine `wp-content`-Spuren, `/wp-json/` leitet nur auf `/de/…` um). Wir haben dort keinen Zugriff; was sich einfügen lässt, bestimmt die Plattform bzw. ihr Anbieter. Der Konfigurator bleibt deshalb auf der WEKA-E-Learning-Seite (Staging: Seite 10801) und wird von lernen.weka.de nur aufgerufen. Formular, PDF, Preise und Mails bleiben an einer Stelle.
 
 ## Möglichkeiten
 
@@ -30,7 +30,7 @@ https://<live-domain>/<konfigurator-seite>/?kurse=alkohol-drogen-und-medikamente
 
 **Aufwand:**
 - Konfigurator-Skript (`snippets/weka-angebot-konfigurator.js`): beim Start `kurse`/`tn` aus der Adresse lesen, Kurse auswählen, zu Schritt 2 springen.
-- lernen.weka.de: nur Links/Buttons setzen.
+- lernen.weka.de: nur Links/Buttons setzen – in der Regel ohne Programmierung über die Inhaltspflege der Plattform möglich (mit dem Betreiber klären).
 
 ### 2. Einbetten per iframe
 
@@ -40,11 +40,11 @@ Der Konfigurator erscheint innerhalb einer Seite von lernen.weka.de.
 - Nachteile:
   - Die Höhe des iframes passt sich nicht von selbst an; nötig ist ein kleines Skript auf beiden Seiten (`postMessage`).
   - Cookie-Banner und Datenschutzhinweise müssen auf beiden Seiten zusammenpassen; Cookies im iframe gelten als Drittanbieter-Cookies.
-  - Auf lernen.weka.de muss jemand Code einfügen.
+  - Auf lernen.weka.de muss eigenes HTML (iframe + Skript) eingefügt werden können. Ob die Plattform das erlaubt, muss der Betreiber bzw. Anbieter klären – eher unwahrscheinlich.
 
-### 3. Nachbau auf lernen.weka.de – nicht empfohlen
+### 3. Nachbau auf lernen.weka.de – entfällt
 
-Zweite Installation mit Formular, PDF-Add-on und Preisen. Preise, Rabatte und Vorlage müssten doppelt gepflegt werden.
+lernen.weka.de ist kein WordPress; WS Form, PDF-Add-on und WPCodeBox lassen sich dort nicht installieren. Ein Nachbau hieße Entwicklung in der Plattform und doppelte Pflege von Preisen und Vorlage.
 
 ## Empfehlung
 
@@ -52,7 +52,7 @@ Möglichkeit 1 mit Vorauswahl per Link: wenig Aufwand, eine Stelle für Preise, 
 
 ## Offen
 
-- [ ] Wer pflegt lernen.weka.de und setzt die Links?
+- [ ] Wer betreibt lernen.weka.de (Anbieter der Plattform) und setzt die Links? Lassen sich Links/Buttons je Kurs pflegen, eigenes HTML (iframe) einfügen?
 - [ ] Ziel-Adresse: die spätere **Live**-Adresse der Konfigurator-Seite (nicht das Staging).
 - [ ] Vorauswahl per Link (`?kurse=…&tn=…`) im Konfigurator umsetzen – erst auf dem Staging, dann mit der Übernahme nach [live-angebot-pdf.md](live-angebot-pdf.md).
 - [ ] Liste der Kurs-Slugs für die Redaktion von lernen.weka.de (aus den Kurskarten der Konfigurator-Seite).
