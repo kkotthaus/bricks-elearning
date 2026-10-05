@@ -7,12 +7,20 @@ Eine bestehende Seite wird importiert und anschließend überarbeitet. Allgemein
 - Prefix: `weka_` (Meta-Box-Feld-IDs, PHP-Funktionen in WPCodeBox)
 - Bricks: immer aktuelle Version (Stand 28.09.2026: 2.4.1; im Duplicator-Archiv vom 28.09.2026: 2.3.10). `version` in Clipboard-JSON = installierte Version.
 - Section-Dateien: `bricks/<name>.json`
+- Staging: https://weka-e.kotthaus-bs.de (nur HTTPS/Backend, kein Mailversand – Mails fängt das WPCodeBox-Snippet „WEKA Staging – Mails abfangen“ ab, Ansicht unter Werkzeuge › Abgefangene Mails). Live ebenfalls nur über HTTPS erreichbar.
+- Angebotskonfigurator mit PDF-Versand: Snippets in `snippets/`, Übernahme auf live siehe [docs/live-angebot-pdf.md](docs/live-angebot-pdf.md).
 
-### Plugins (aus dem Duplicator-Archiv vom 28.09.2026, Aktiv-Status noch offen)
+### Plugins (Duplicator-Archiv vom 28.09.2026)
 
-Automatic.css 3.3.7, BricksExtras 1.7.6, Frames 1.5.13, Meta Box AIO 3.12.0 (+ Meta Box 5.15.1), WPCodeBox 2 1.4.1, WP Grid Builder 2.3.6 (+ Bricks, Meta Box, Caching), HappyFiles Pro 1.9.1, Motion.page 3.2.10, BricksLabs Bricks Navigator 1.2.1, WS Form Pro 1.10.79 (+ HubSpot), Funnelforms Pro 3.8.10, Admin Columns Pro 7.1.6, User Role Editor Pro 4.65 (+ kostenlose Version 4.66.2), Rank Math 1.0.279, Schema Pro 2.12.2, Slim SEO Schema 2.12.2, WP Rocket 3.21.0.1, Imagify 2.3.4, Cookiebot 4.7.3, Duplicator Pro 5.0.4, Enable Media Replace, Disable Embeds, Remove CPT base, Temporary Login Without Password. Kein Bricks Forge.
+Lokale Arbeitskopie: Local-Seite **weka-e** (http://weka-e.local). Bricks 2.3.10 + Child-Theme aktiv, WordPress 7.1.2.
 
-**Offen (nach Import klären):** Überschneidungen SEO/Schema (Rank Math, Schema Pro, Slim SEO Schema), Formulare (WS Form, Funnelforms), Meta Box einzeln neben AIO, User Role Editor kostenlos neben Pro. Siehe [bricks-nodes/docs/plugins.md](bricks-nodes/docs/plugins.md).
+**Aktiv:** Automatic.css 3.3.7, BricksExtras 1.7.6, Frames 1.5.13, BricksLabs Bricks Navigator 1.2.1, Meta Box AIO 3.12.0, Meta Box 5.15.1, WPCodeBox 2 1.4.1, WP Grid Builder 2.3.6 (+ Bricks 1.3.6, Meta Box 1.2.0, Caching 1.2.1), HappyFiles Pro 1.9.1, Motion.page 3.2.10, Funnelforms Pro 3.8.10, Admin Columns Pro 7.1.6, Rank Math 1.0.279, Schema Pro 2.12.2, Imagify 2.3.4, Duplicator Pro 5.0.4, Enable Media Replace 4.2.2, Disable Embeds 1.5.0, Remove CPT base 6.7, Temporary Login Without Password 1.9.9.
+
+**Inaktiv:** WS Form Pro 1.10.79 (+ HubSpot), WP Rocket 3.21.0.1, Cookiebot 4.7.3, Slim SEO Schema 2.12.2, User Role Editor Pro 4.65, User Role Editor 4.66.2.
+
+Kein Bricks Forge.
+
+**Offen:** Rank Math und Schema Pro sind beide aktiv (doppelte Schema-Ausgabe prüfen); Meta Box einzeln neben AIO; inaktive Plugins behalten oder entfernen; Formulare laufen über Funnelforms – WS Form ist inaktiv. Kein Cookie-Banner aktiv. Siehe [bricks-nodes/docs/plugins.md](bricks-nodes/docs/plugins.md).
 
 ## ACSS-Einstellungen dieses Projekts (Export vom 28.09.2026)
 
