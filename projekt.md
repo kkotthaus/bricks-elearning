@@ -1,43 +1,18 @@
 # Projekt: weka-elearning – Arbeitsumgebung
 
-Eine bestehende Seite wird importiert und anschließend überarbeitet.
+Eine bestehende Seite wird importiert und anschließend überarbeitet. Allgemeine Regeln (ACSS 3.x zuerst, BEM, CSS in der Klasse, Responsive, Icons, Benennung, Meta Box, WPCodeBox, Clipboard-JSON) stehen in [bricks-nodes](bricks-nodes/CLAUDE.md) und gelten führend. Hier steht nur Projektspezifisches und das Design.
 
-## Tech-Stack
+## Projektdaten
 
-| Bereich | Werkzeug | Zweck |
-|---|---|---|
-| CMS | WordPress | Basis-System |
-| Page Builder | Bricks Builder (immer aktuelle Version, Stand 28.09.2026: 2.4.1) | Layout, Templates, Query Loops, Dynamic Data |
-| CSS-Framework | Automatic.css (ACSS) 3.x | Design-Tokens (Variablen) & Utility-Klassen |
-| Custom Fields / CPT | Meta Box (metabox.io) | Custom Post Types, Taxonomien, Felder, Relationships |
-| Code-Snippets | WPCodeBox | PHP- und JS-Snippets (statt functions.php); CSS von Sections gehört in die Bricks-Klassen |
-| Klassen-Konvention | BEM | Block__Element--Modifier |
+- Prefix: `weka_` (Meta-Box-Feld-IDs, PHP-Funktionen in WPCodeBox)
+- Bricks: immer aktuelle Version (Stand 28.09.2026: 2.4.1; im Duplicator-Archiv vom 28.09.2026: 2.3.10). `version` in Clipboard-JSON = installierte Version.
+- Section-Dateien: `bricks/<name>.json`
 
-## Konventionen
+### Plugins (aus dem Duplicator-Archiv vom 28.09.2026, Aktiv-Status noch offen)
 
-### CSS / Klassen (BEM)
-- Schema: `.block`, `.block__element`, `.block--modifier`, `.block__element--modifier`
-- Klassennamen klein, mit Bindestrich: z. B. `.course-card__title`
-- In Bricks als **globale Klassen** anlegen, keine ID-basierten Styles
-- Keine Inline-Styles im Element, wenn eine Klasse sinnvoll ist
-- Modifier nur ergänzend zur Block-/Element-Klasse verwenden
+Automatic.css 3.3.7, BricksExtras 1.7.6, Frames 1.5.13, Meta Box AIO 3.12.0 (+ Meta Box 5.15.1), WPCodeBox 2 1.4.1, WP Grid Builder 2.3.6 (+ Bricks, Meta Box, Caching), HappyFiles Pro 1.9.1, Motion.page 3.2.10, BricksLabs Bricks Navigator 1.2.1, WS Form Pro 1.10.79 (+ HubSpot), Funnelforms Pro 3.8.10, Admin Columns Pro 7.1.6, User Role Editor Pro 4.65 (+ kostenlose Version 4.66.2), Rank Math 1.0.279, Schema Pro 2.12.2, Slim SEO Schema 2.12.2, WP Rocket 3.21.0.1, Imagify 2.3.4, Cookiebot 4.7.3, Duplicator Pro 5.0.4, Enable Media Replace, Disable Embeds, Remove CPT base, Temporary Login Without Password. Kein Bricks Forge.
 
-### ACSS 3.x
-- Werte immer über ACSS-Variablen statt fester Pixel-Werte, z. B.
-  - Abstände: `var(--space-m)`, `var(--section-space-m)`, `var(--content-gap)`
-  - Typografie: `var(--text-m)`, `var(--h2)`
-  - Farben: `var(--primary)`, `var(--primary-hover)`, `var(--base)`, `var(--neutral)`
-  - Radius: `var(--radius)`
-- Utility-Klassen von ACSS nur sparsam; eigene Komponenten in BEM
-- Globale Abstände zentral im ACSS-Dashboard pflegen
-
-### Farbsystem (von ACSS vorgegeben)
-- **Keine eigenen Farbwerte** (kein Hex/RGB/HSL im Code) – ausschließlich ACSS-Farbvariablen
-- Abstufungen/Varianten: `-ultra-light`, `-light`, `-semi-light`, `-medium`, `-semi-dark`, `-dark`, `-ultra-dark`, `-hover`
-  - z. B. `var(--primary)`, `var(--primary-dark)`, `var(--base-ultra-light)`, `var(--primary-hover)`
-- Transparenzen über ACSS-Varianten (z. B. `var(--primary-trans-20)`, `var(--black-trans-20)`), nicht selbst berechnen
-- Hintergrund-/Textfarben bevorzugt über ACSS-Klassen bzw. Variablen, damit Kontraste vom Framework gesteuert werden
-- Neue Farben werden nur im ACSS-Dashboard angelegt, nie im Element
+**Offen (nach Import klären):** Überschneidungen SEO/Schema (Rank Math, Schema Pro, Slim SEO Schema), Formulare (WS Form, Funnelforms), Meta Box einzeln neben AIO, User Role Editor kostenlos neben Pro. Siehe [bricks-nodes/docs/plugins.md](bricks-nodes/docs/plugins.md).
 
 ## ACSS-Einstellungen dieses Projekts (Export vom 28.09.2026)
 
@@ -101,108 +76,17 @@ Eine bestehende Seite wird importiert und anschließend überarbeitet.
 - **Aus:** ACSS-Cards (eigene Karten in BEM bauen), Forms-Styling, Icons, Auto-Radius, Owl-Spacing, Pro-Mode, Textures, externe-Link-Kennzeichnung
 - Frames-Karten-Werte (falls genutzt): Padding `var(--space-m)`, Radius `var(--radius-xs)`, Rahmen 0.15rem `var(--shade-light)`
 
-## Standard für neue Sections (verbindlich)
-
-Diese Einstellungen gelten für **jede** neue Section/Komponente – ohne dass sie erneut genannt werden müssen.
-
-### 0. Arbeitsweise (ab 28.09.2026)
-- **Alle weiteren Änderungen werden direkt im Bricks Builder vorgenommen** (Claude bedient den Builder im Browser: Elemente, Klassen, Stil-Felder, Breakpoints).
-- Keine JSON-/CSS-Dateien mehr für Änderungen an bestehenden Sections; Einfüge-JSON nur noch, wenn eine komplett neue Section angelegt wird und der direkte Weg nicht möglich ist.
-- Vor dem Speichern in Bricks: Ergebnis per Screenshot/Breakpoint-Vorschau prüfen; gespeichert wird nur nach Rückmeldung bzw. wenn der Nutzer es freigegeben hat.
-
-### 1. Lieferung
-- **Genau eine Datei pro Section:** `bricks/<name>.json` (Bricks-Clipboard-JSON), Einfügen in Bricks mit Strg+V.
-- **Kein zusätzliches CSS-File, kein WPCodeBox-Snippet** – das gesamte CSS steckt in den globalen Klassen.
-- Datei wird in den Projektordner `bricks/` gelegt.
-- `version` = installierte Bricks-Version (aktuell 2.4.1).
-
-### 2. Klassen & CSS
-- Jedes gestaltete Element bekommt eine **BEM-Klasse als globale Klasse** (`settings._cssGlobalClasses`), keine ID-Styles, keine Element-Styles.
-- Styles stehen in den **Bricks-Stil-Feldern der Klasse**:
-  - Layout: `_display`, `_direction`, `_flexWrap`, `_alignItems`, `_justifyContent`, `_gridTemplateColumns`, `_rowGap`, `_columnGap`, `_flexGrow/_flexShrink/_flexBasis`
-  - Größe: `_width`, `_widthMax`, `_widthMin`, `_height`
-  - Abstände: `_margin`, `_padding` (`top/right/bottom/left`)
-  - Typografie: `_typography` (`font-size`, `font-weight`, `line-height`, `letter-spacing`, `text-transform`, `text-align`, `text-decoration`, `color: {raw}`)
-  - Hintergrund: `_background: { color: { raw: "var(--…)" } }`
-  - Rahmen: `_border` (`width`, `style`, `color`, `radius`)
-  - Position: `_position`, `_top/_right/_bottom/_left`, `_zIndex`, `_overflow`, `_objectFit`
-- **Hover** als Zustand der Klasse (`_background:hover`, `_typography:hover`, `_border:hover`).
-- **Nur was Bricks nicht als Feld hat**, kommt ins Custom-CSS-Feld **derselben Klasse** – mit echtem Klassen-Selektor (`.klasse { … }`), nicht `%root%`. Beispiele: `::before`, `list-style`, `hyphens`, `overflow-wrap`, `transition`, `box-shadow`, `filter`, `:focus-visible`, verschachtelte Selektoren.
-- Werte ausschließlich über **ACSS-Variablen**; keine Hex-/RGB-Farben.
-- **Klassen-IDs** werden aus dem Klassennamen abgeleitet (gleicher Name = gleiche ID in allen Dateien) → gemeinsame Bausteine werden beim Einfügen wiedererkannt.
-
-### 3. Responsive (immer)
-- Werte für kleinere Bildschirme in den **Bricks-Breakpoints der Klasse**:
-
-| Bricks-Breakpoint | Suffix | Bereich | Typisches Verhalten |
-|---|---|---|---|
-| Desktop | – | Basis | volles Layout, mehrspaltig |
-| Tablet hoch | `:tablet_portrait` | ≤ 991px | Spalten reduzieren (4 → 2, 3 → 2, 2 → 1), Trennlinien entfernen |
-| Mobil quer | `:mobile_landscape` | ≤ 767px | einspaltig, Innenabstände kleiner, Flex-Reihen stapeln, CTA-Buttons 100 % |
-| Mobil hoch | `:mobile_portrait` | ≤ 478px | Logos/Icons kleiner, Feinschliff |
-
-- Grids mit `minmax(0, 1fr)` statt `1fr`.
-- Überschriften: `max-width: 100%; overflow-wrap: break-word; hyphens: auto;`
-- Kein horizontaler Überlauf bei 375px; Prüfung bei 1300 / 900 / 600 / 375px vor Auslieferung.
-- Bilder `width: 100%; height: auto` bzw. Logos feste Höhe + `width: auto`.
-- Button-Gruppen: Buttons gleich groß (Grid mit gleich breiten Spalten, `grid-auto-rows: 1fr`).
-
-### 4. Icons
-- Immer **SVG-Element** (`name: "svg"`, `source: "code"`, Inline-SVG mit `stroke="currentColor"` bzw. `fill="currentColor"`), **kein Icon-Element**.
-- Farbe über die Textfarbe der Klasse, Größe über `width`/`height` der Klasse (z. B. `1em` + `font-size`).
-- Häkchen im Kreis: Klasse mit `width/height 1.8em`, `padding .4em`, Hintergrund `--primary-dark`, `border-radius 50%`, Farbe `--white`.
-- Ausnahme: Pfeil-Icons in Buttons sind Button-Einstellungen (Font Awesome).
-
-### 5. Benennung
-- Jedes Element erhält ein sprechendes deutsches **`label`** nach Bedeutung (z. B. „Hero – WEKA LMS Einstieg“, „Preiskarte Basic“, „Listenpunkt: …“, „Button: …“).
-- BEM-Blockname = vom Nutzer genannter Name (z. B. `hero-lms-neu`), sonst sprechend englisch.
-
-### 6. Wiederverwendbare Bausteine
+## Wiederverwendbare Bausteine
 - `.eyebrow` – Dachzeile (Großbuchstaben, `--text-s`, Laufweite .12em)
 - `.check-list` (`__item`, `__icon`, `__text`) – Häkchen-Liste
 - `.cta-button` (`--light` weiß, `--outline` Rahmen) – Button mit Pfeil
 - Hintergrundbilder als eigenes Bild-Element (`__bg`, absolut, `object-fit: cover`) + Overlay per `::before`
 
-### 7. Grundgerüst (Beispiel)
-```json
-{
-  "content": [
-    { "id": "sec001", "name": "section", "parent": 0, "children": ["con002"], "label": "Teaser – Kurse",
-      "settings": { "_cssGlobalClasses": ["ab12cd"] } },
-    { "id": "con002", "name": "container", "parent": "sec001", "children": ["hdg003"], "label": "Inhaltsbereich",
-      "settings": {} },
-    { "id": "hdg003", "name": "heading", "parent": "con002", "children": [], "label": "Überschrift",
-      "settings": { "text": "Titel", "tag": "h2", "_cssGlobalClasses": ["ef34gh"] } }
-  ],
-  "source": "bricksCopiedElements",
-  "sourceUrl": "",
-  "version": "2.4.1",
-  "globalClasses": [
-    { "id": "ab12cd", "name": "course-teaser", "settings": {
-        "_background": { "color": { "raw": "var(--primary-ultra-light)" } },
-        "_padding": { "top": "var(--section-space-m)", "bottom": "var(--section-space-m)" } } },
-    { "id": "ef34gh", "name": "course-teaser__title", "settings": {
-        "_typography": { "font-size": "var(--h2)" },
-        "_typography:mobile_landscape": { "font-size": "var(--h3)" },
-        "_cssCustom": ".course-teaser__title {\n  hyphens: auto;\n}" } }
-  ],
-  "globalElements": []
-}
-```
-Hinweis: Existiert eine globale Klasse mit gleichem Namen bereits, übernimmt Bricks die vorhandene → vor erneutem Einfügen alte Klassen löschen.
-
-### Meta Box
-- CPTs, Taxonomien und Feldgruppen über Meta Box (Builder bzw. Code) definieren
-- Feld-IDs mit Präfix, z. B. `weka_`
-- Ausgabe in Bricks über Dynamic Data (`{mb_...}`) bzw. Query Loops
-
-### WPCodeBox
-- Eigener PHP/JS-Code ausschließlich als Snippet in WPCodeBox (Styles von Sections/Komponenten nicht hier, sondern in den globalen Bricks-Klassen)
-- Snippets in Ordnern gruppieren, sprechend benennen, kurz kommentieren
-- PHP-Funktionen mit Präfix `weka_` (Namenskollisionen vermeiden)
+- Häkchen im Kreis: Klasse mit `width/height 1.8em`, `padding .4em`, Hintergrund `--primary-dark`, `border-radius 50%`, Farbe `--white`.
+- Pfeil-Icons in Buttons sind Button-Einstellungen (Font Awesome).
 
 ## Ablauf
 1. Bestehende Seite importieren
-2. Struktur prüfen (Seiten, Templates, CPTs, Felder)
-3. Styles auf ACSS-Variablen und globale BEM-Klassen (Bricks-Stil-Felder) umstellen
+2. Struktur prüfen (Seiten, Templates, CPTs, Felder), Plugin-Bestand mit Aktiv-Status festhalten
+3. Styles auf ACSS-Klassen/-Variablen und globale BEM-Klassen (Bricks-Stil-Felder) umstellen
 4. Custom PHP/JS nach WPCodeBox verlagern
