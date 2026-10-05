@@ -11,6 +11,26 @@
   var STORE_KEY = 'ecampusKonfigurator';
   var MAX_QTY = 99999;
 
+  /* ---------- Preise ----------
+     Werte kommen aus dem Snippet „WEKA Angebot – Preise“ (window.wekaPreise, Cent/Prozent).
+     Die Rückfallwerte hier nur, falls das Snippet fehlt. Verbindlich für das PDF rechnet der Server. */
+  var PREISE = Object.assign({ listenpreis: 5900, mwst: 19, laufzeit: 90, flatrate: 19900,
+    rabatte: [[50, 40], [30, 35], [20, 20], [10, 10], [5, 5]] }, window.wekaPreise || {});
+  var euro = function (cent) { return (cent / 100).toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €'; };
+  function rabattFor(n) { for (var i = 0; i < PREISE.rabatte.length; i++) { if (n >= PREISE.rabatte[i][0]) return PREISE.rabatte[i][1]; } return 0; }
+  function priceFor(n) {
+    var r = rabattFor(n), tn = Math.round(PREISE.listenpreis * (100 - r) / 100);
+    return { rabatt: r, preis_tn: tn, summe: tn * n };
+  }
+  function totals() {
+    var netto = state.selected.reduce(function (s, c) { return s + priceFor(qtyFor(c.id)).summe; }, 0);
+    var mwst = Math.round(netto * PREISE.mwst / 100);
+    return { netto: netto, mwst: mwst, brutto: netto + mwst };
+  }
+  function tiersText() {
+    return PREISE.rabatte.slice().reverse().map(function (s) { return 'ab ' + s[0] + ' TN ' + s[1] + ' %'; }).join(', ');
+  }
+
   var $ = function (sel, ctx) { return (ctx || root).querySelector(sel); };
   var $$ = function (sel, ctx) { return Array.prototype.slice.call((ctx || root).querySelectorAll(sel)); };
   var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
@@ -94,10 +114,11 @@
     var countSpan = $('.selection__count'); if (countSpan) countSpan.textContent = n;
     var empty = $('.selection__empty'); if (empty) empty.hidden = n > 0;
     if (list) list.innerHTML = state.selected.map(function (c) {
-      var qty = state.step >= 2 ? '<span class="selection__qty">' + qtyFor(c.id) + ' Teilnehmende</span>' : '';
+      var n = qtyFor(c.id), p = priceFor(n);
+      var qty = state.step >= 2 ? '<span class="selection__qty">' + n + ' Teilnehmende · ' + euro(p.summe) + (p.rabatt ? ' (−' + p.rabatt + ' %)' : '') + '</span>' : '';
       var rm = state.step < 4 ? '<button type="button" class="selection__remove" data-remove="' + esc(c.id) + '" aria-label="' + esc(c.title) + ' entfernen">×</button>' : '';
       return '<li class="selection__item"><span class="selection__name">' + esc(c.title) + '</span>' + qty + rm + '</li>';
-    }).join('');
+    }).join('') + (state.step >= 2 && n ? '<li class="selection__item selection__item--total"><span class="selection__name">Summe netto</span><span class="selection__qty">' + euro(totals().netto) + '</span></li>' : '');
     var next = $('.selection__next'), note = $('.selection__note');
     if (next) { next.disabled = n === 0; next.hidden = state.step !== 1; }
     if (note) note.hidden = state.step !== 1;
@@ -123,6 +144,7 @@
       '<div class="qty__rows"' + (per ? '' : ' hidden') + '>' + state.selected.map(function (c) {
         return '<div class="qty__row"><span class="qty__course">' + esc(c.title) + '</span>' + stepperHtml(c.id, state.perCourse[c.id] || state.total, 'Teilnehmerzahl für ' + c.title) + '</div>';
       }).join('') + '</div></div>' +
+      '<p class="qty__info">Einzelkurs ' + euro(PREISE.listenpreis) + ' netto je Teilnehmendem, Laufzeit ' + PREISE.laufzeit + ' Tage. Mengenrabatt je Kurs: ' + tiersText() + '.</p>' +
       '<p class="qty__info">Die Anzahl der Kursplätze ist nicht automatisch die Anzahl unterschiedlicher Personen.</p>' +
       '<p class="qty__error" role="alert" hidden></p>';
     $$('[data-key="all"]', qtyBox).forEach(function (el) { el.disabled = per; });
@@ -153,9 +175,16 @@
   /* ---------- Schritt 3: Zusammenfassung + WS Form ---------- */
   function renderSummary() {
     var box = $('.summary'); if (!box) return;
+    var t = totals();
     box.innerHTML = '<p class="summary__title">Ihre Auswahl</p><ul class="summary__list">' + state.selected.map(function (c) {
-      return '<li class="summary__item"><span>' + esc(c.title) + '</span><span>' + qtyFor(c.id) + ' Teilnehmende</span></li>';
-    }).join('') + '</ul><button type="button" class="summary__edit" data-goto="2">Auswahl oder Mengen ändern</button>';
+      var n = qtyFor(c.id), p = priceFor(n);
+      return '<li class="summary__item"><span>' + esc(c.title) + '</span><span>' + n + ' × ' + euro(p.preis_tn) + (p.rabatt ? ' (−' + p.rabatt + ' %)' : '') + ' = ' + euro(p.summe) + '</span></li>';
+    }).join('') +
+      '<li class="summary__item summary__item--total"><span>Summe netto</span><span>' + euro(t.netto) + '</span></li>' +
+      '<li class="summary__item"><span>zzgl. ' + PREISE.mwst + ' % MwSt.</span><span>' + euro(t.mwst) + '</span></li>' +
+      '<li class="summary__item summary__item--total"><span>Gesamt brutto</span><span>' + euro(t.brutto) + '</span></li>' +
+      '</ul><p class="qty__info">Nach dem Absenden erhalten Sie diese Übersicht als PDF-Preisauskunft per E-Mail – zum Weitergeben und zur Freigabe.</p>' +
+      '<button type="button" class="summary__edit" data-goto="2">Auswahl oder Mengen ändern</button>';
   }
 
   function newRequestId() {
@@ -178,7 +207,11 @@
       anfrage_id: state.requestId,
       teilnehmer_modus: state.mode,
       teilnehmer_gesamt: state.mode === 'gleich' ? state.total : null,
-      kurse: state.selected.map(function (c) { return { id: +c.id, slug: c.slug, titel: c.title, teilnehmer: qtyFor(c.id) }; })
+      kurse: state.selected.map(function (c) {
+        var n = qtyFor(c.id), p = priceFor(n);
+        return { id: +c.id, slug: c.slug, titel: c.title, teilnehmer: n, rabatt: p.rabatt, preis_tn: p.preis_tn, summe: p.summe };
+      }),
+      preise: totals()
     };
     setField(FIELD.json, JSON.stringify(payload));
     setField(FIELD.ids, state.selected.map(function (c) { return c.id; }).join(','));

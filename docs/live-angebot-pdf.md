@@ -1,6 +1,6 @@
-# Angebotskonfigurator mit PDF-Versand – Übernahme auf die Live-Seite
+# Angebotskonfigurator mit PDF-Preisauskunft – Übernahme auf die Live-Seite
 
-Stand: 05.10.2026, gebaut und getestet auf dem Staging (weka-e.kotthaus-bs.de).
+Stand: 05.10.2026, gebaut und getestet auf dem Staging (weka-e.kotthaus-bs.de). Seit 05.10.2026 mit Preisen: Das PDF ist eine unverbindliche **Preisauskunft**, die Interessenten ihrem Vorgesetzten zur Freigabe vorlegen können (siehe [Preise](#preise)).
 
 Auf der Live-Seite gibt es nur Zugriff über HTTPS (WordPress-Backend und Bricks-Builder), kein SSH/FTP. Deshalb läuft alles über Export/Import im Backend; die PDF-Vorlage schreibt ein WPCodeBox-Snippet selbst auf den Server.
 
@@ -8,10 +8,11 @@ Auf der Live-Seite gibt es nur Zugriff über HTTPS (WordPress-Backend und Bricks
 
 | Baustein | Staging | Aufgabe |
 | --- | --- | --- |
-| Seite „Angebotskonfigurator (Prototyp)“ | Seite 10801 (Bricks) | 4 Schritte: Kurse → Teilnehmer → Kontaktdaten → Bestätigung. Das Skript des Konfigurators steckt in der Seite (Bricks-Seiteneinstellungen › Eigener Code, Footer-Skripte) und füllt die versteckten Formularfelder. |
+| Seite „Angebotskonfigurator (Prototyp)“ | Seite 10801 (Bricks) | 4 Schritte: Kurse → Teilnehmer → Kontaktdaten → Bestätigung. Das Skript des Konfigurators steckt in der Seite (Bricks-Seiteneinstellungen › Eigener Code, Footer-Skripte), zeigt die Preise ab Schritt 2 und füllt die versteckten Formularfelder. Kopie: `snippets/weka-angebot-konfigurator.js` (in den Seiteneinstellungen mit `<script>…</script>` umschlossen). |
 | WS-Form-Formular „eCampus Angebotsanfrage“ | Formular 31 | Kontaktdaten + versteckte Felder, 4 Aktionen (siehe unten) |
-| Snippet „WEKA Angebot – Kursübersicht“ (JS) | WPCodeBox 81 | schreibt die gewählten Kurse lesbar in das Feld `kurs_uebersicht` → `snippets/weka-angebot-kursuebersicht.js` |
-| Snippet „WEKA Angebot – PDF-Vorlage“ (PHP) | WPCodeBox 80 | legt die PDF-Vorlage mit Logo an (`uploads/ws-form/pdf/templates/<form_id>.html`) → `snippets/weka-angebot-pdf.php` |
+| Snippet „WEKA Angebot – Kursübersicht“ (JS) | WPCodeBox 81 | schreibt die gewählten Kurse mit Preisen lesbar in das Feld `kurs_uebersicht` (für die Mails) → `snippets/weka-angebot-kursuebersicht.js` |
+| Snippet „WEKA Angebot – PDF-Vorlage“ (PHP) | WPCodeBox 80 | legt die PDF-Vorlage „Preisauskunft eCampus“ mit Logo, Preistabelle und Freigabefeld an (`uploads/ws-form/pdf/templates/<form_id>.html`) → `snippets/weka-angebot-pdf.php` |
+| Snippet „WEKA Angebot – Preise“ (PHP) | WPCodeBox 82 | Preise und Rabatte an einer Stelle; rechnet die Preisauskunft serverseitig für das PDF (Variablen `#weka_preisauskunft`, `#weka_preisauskunft_gueltig_bis`) und gibt die Werte als `window.wekaPreise` an den Konfigurator → `snippets/weka-angebot-preise.php` |
 | Snippet „WEKA Staging – Mails abfangen“ (PHP) | WPCodeBox 79 | **nur Staging**, verschickt nichts → `snippets/weka-staging-mail-abfangen.php` – **nicht live übernehmen** |
 | Logo | Mediathek 2362 (`WEKA-Logo4c.png`) | Logo im PDF |
 | Sicherung alter Stand | Formular 32 | Kopie von Formular 31 vor den Änderungen, kann nach der Übernahme gelöscht werden |
@@ -82,17 +83,24 @@ Auf der Live-Seite gibt es nur Zugriff über HTTPS (WordPress-Backend und Bricks
 
 Jeweils WPCodeBox › Neues Snippet, Code aus dem Repo einfügen, Werte anpassen, speichern, aktivieren.
 
-**a) „WEKA Angebot – PDF-Vorlage“** – PHP, Ausführung „Always“, Einfügepunkt **Root**, Code `snippets/weka-angebot-pdf.php`:
+**a) „WEKA Angebot – Preise“** – PHP, Ausführung „Always“, Einfügepunkt **Root**, Priorität **5** (vor der PDF-Vorlage), Code `snippets/weka-angebot-preise.php`:
 
 ```php
-define( 'WEKA_ANGEBOT_FORM_ID', 31 );           // → neue Formular-ID
+defined( 'WEKA_ANGEBOT_FORM_ID' ) || define( 'WEKA_ANGEBOT_FORM_ID', 31 ); // → neue Formular-ID
+define( 'WEKA_ANGEBOT_SEITE_ID', 10801 );   // → Seiten-ID des Konfigurators live
+define( 'WEKA_ANGEBOT_FELD_JSON', 926 );    // → neue ID von auswahl_json
+```
+
+**b) „WEKA Angebot – PDF-Vorlage“** – PHP, Ausführung „Always“, Einfügepunkt **Root**, Code `snippets/weka-angebot-pdf.php`:
+
+```php
+defined( 'WEKA_ANGEBOT_FORM_ID' ) || define( 'WEKA_ANGEBOT_FORM_ID', 31 ); // → neue Formular-ID
 define( 'WEKA_ANGEBOT_LOGO_ID', 2362 );         // → Anhang-ID des Logos live
-define( 'WEKA_ANGEBOT_FELD_UEBERSICHT', 943 );  // → neue ID von kurs_uebersicht
 ```
 
 Außerdem in der Vorlage die Feld-IDs in `#field(930)`, `#field(925)`, `#field(918)`, `#field(919)`, `#field(920)`, `#field(921)` durch die neuen ersetzen. Die Vorlagendatei wird beim nächsten Aufruf des Backends geschrieben.
 
-**b) „WEKA Angebot – Kursübersicht“** – JavaScript, Einfügepunkt **Frontend Footer**, Bedingung „Aktueller Beitrag ist <neue Seiten-ID>“, Code `snippets/weka-angebot-kursuebersicht.js`:
+**c) „WEKA Angebot – Kursübersicht“** – JavaScript, Einfügepunkt **Frontend Footer**, Bedingung „Aktueller Beitrag ist <neue Seiten-ID>“, Code `snippets/weka-angebot-kursuebersicht.js`:
 
 ```js
 var JSON_FELD = 926;             // → neue ID von auswahl_json
@@ -105,13 +113,33 @@ var KURS_UEBERSICHT_FELD = 943;  // → neue ID von kurs_uebersicht
 
 1. Backend einmal aufrufen, dann `https://<live-domain>/wp-content/uploads/ws-form/pdf/templates/<form_id>.html` öffnen – die Vorlage muss erscheinen (mit Logo).
 2. Konfigurator durchklicken: Kurse wählen, Teilnehmerzahl, Kontaktdaten mit **eigener** E-Mail-Adresse, absenden.
-3. Prüfen: Kundenmail und interne Mail kommen an, beide mit PDF `eCampus-Anfrage-<Nr>.pdf`; im PDF Logo, Datum, Kontaktdaten und Kursliste.
+3. Prüfen: In Schritt 2 und 3 stehen Preise und Summen. Kundenmail und interne Mail kommen an, beide mit PDF `eCampus-Anfrage-<Nr>.pdf`; im PDF Logo, Datum, Kontaktdaten, Preistabelle, Summen, Flatrate-Vergleich, Gültigkeit und Freigabefeld. Beispiel zum Vergleich: [beispiel-preisauskunft.pdf](beispiel-preisauskunft.pdf).
 4. WS Form › Einsendungen: Testeinsendung löschen.
 5. Seite erst danach im Menü verlinken bzw. veröffentlichen; „(Prototyp)“ aus dem Titel nehmen.
+
+## Preise
+
+Alle Werte stehen nur in `weka_preise_config()` im Snippet „WEKA Angebot – Preise“ (Preise in Cent). Seite und PDF lesen dieselben Werte; nach einer Änderung nichts weiter anpassen.
+
+| Wert | Stand 05.10.2026 |
+| --- | --- |
+| Einzelkurs | 59,00 € netto je Teilnehmendem, alle Kurse gleich |
+| Laufzeit Einzelkurs | 90 Tage |
+| MwSt. | 19 % |
+| Mengenrabatt **je Kurs** nach Teilnehmenden in diesem Kurs | ab 5: 5 % · ab 10: 10 % · ab 20: 20 % · ab 30: 35 % · ab 50: 40 % |
+| Flatrate | 199,00 € netto je Mitarbeitendem und Jahr |
+| Gültigkeit der Preisauskunft | 30 Tage ab Erstellung |
+
+- Rechnung in ganzen Cent: Preis je TN = Listenpreis × (100 − Rabatt) / 100, gerundet; Kurssumme = Preis je TN × Teilnehmende; MwSt. auf die Nettosumme, gerundet.
+- **Verbindlich rechnet der Server.** Das PDF nimmt aus `auswahl_json` nur Kurs-IDs und Teilnehmerzahlen und rechnet neu; Kurstitel kommen aus WordPress. Die Preise, die das Skript mitschickt, landen nur in der Mail-Übersicht.
+- Flatrate-Vergleich: Als Zahl der Mitarbeitenden gilt die größte Teilnehmerzahl eines Kurses (die tatsächliche Personenzahl kann abweichen; das steht auch im PDF). Der Vergleich steht immer im PDF, mit Hinweis, welche Variante günstiger ist.
+- An den Stufengrenzen kann mehr Teilnehmende billiger sein (19 TN = 1.008,90 €, 20 TN = 944,00 €). Das ergibt sich aus den Stufen und ist so gewollt bzw. mit dem Vertrieb zu klären.
 
 ## Hinweise
 
 - **Datenschutz:** Die Anfrage wird 90 Tage in WS Form gespeichert und per Mail versendet. Datenschutzhinweise der Seite entsprechend prüfen.
 - Die Vorlagendatei unter `uploads/ws-form/pdf/templates/` ist öffentlich abrufbar, enthält aber nur Platzhalter und das Logo, keine Kundendaten.
 - Ändert sich die PDF-Gestaltung, nur das Snippet „PDF-Vorlage“ ändern; die Datei wird beim nächsten Backend-Aufruf neu geschrieben.
+- Die neuen Zeilen in Seitenleiste und Zusammenfassung nutzen die vorhandenen Klassen (`selection__item`, `selection__qty`, `summary__item`, `qty__info`); die Summenzeilen haben zusätzlich den Modifier `--total` (`selection__item--total`, `summary__item--total`). Soll die Summe hervorgehoben werden: Stil in diesen Bricks-Klassen anlegen.
+- Abweichung vom Standard: Das Konfigurator-Skript steckt noch in den Bricks-Seiteneinstellungen statt in WPCodeBox (bricks-nodes: Snippets nur in WPCodeBox). Beim Übertragen auf live kann es als WPCodeBox-JS-Snippet (Frontend Footer, Bedingung Seite) angelegt werden.
 - In der PDF-Vorlage stehen feste Farbwerte, weil der PDF-Erzeuger (dompdf) keine ACSS-Variablen kennt.

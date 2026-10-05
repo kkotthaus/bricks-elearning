@@ -8,7 +8,8 @@ Eine bestehende Seite wird importiert und anschließend überarbeitet. Allgemein
 - Bricks: immer aktuelle Version (Stand 28.09.2026: 2.4.1; im Duplicator-Archiv vom 28.09.2026: 2.3.10). `version` in Clipboard-JSON = installierte Version.
 - Section-Dateien: `bricks/<name>.json`
 - Staging: https://weka-e.kotthaus-bs.de (nur HTTPS/Backend, kein Mailversand – Mails fängt das WPCodeBox-Snippet „WEKA Staging – Mails abfangen“ ab, Ansicht unter Werkzeuge › Abgefangene Mails). Live ebenfalls nur über HTTPS erreichbar.
-- Angebotskonfigurator mit PDF-Versand: Snippets in `snippets/`, Übernahme auf live siehe [docs/live-angebot-pdf.md](docs/live-angebot-pdf.md).
+- Staging per SSH (seit 05.10.2026): Alias `weka-e` (CyberPanel-Server 89.58.38.62, Benutzer `wekae7789`, Schlüssel `~/.ssh/weka_e`), WordPress in `~/public_html`, WP-CLI als `wp`. Sicherungen vor Änderungen unter `~/backup/`. Auf netcup2 liegt unter `/srv/www/weka-e` nur eine alte Kopie (WordPress 6.4) – nicht verwenden.
+- Angebotskonfigurator mit PDF-Preisauskunft (Preise, Mengenrabatt je Kurs, Flatrate-Vergleich, Freigabefeld): Snippets in `snippets/`, Preise und Übernahme auf live siehe [docs/live-angebot-pdf.md](docs/live-angebot-pdf.md).
 
 ### Plugins (Duplicator-Archiv vom 28.09.2026)
 
