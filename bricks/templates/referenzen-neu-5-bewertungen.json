@@ -248,7 +248,7 @@
     "iconPosition": "right",
     "_cssGlobalClasses": [
      "acss_import_btn--primary",
-     "acss_import_btn--outline"
+     "b6r3fp"
     ]
    },
    "label": "Button: Bewertungen ansehen"
@@ -506,6 +506,59 @@
       "raw": "var(--text-dark-muted)"
      }
     }
+   }
+  },
+  {
+   "id": "b6r3fp",
+   "name": "rating-bar__button",
+   "settings": {
+    "_background": {
+     "color": {
+      "raw": "var(--primary-ultra-light)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "1px",
+      "right": "1px",
+      "bottom": "1px",
+      "left": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--primary-semi-light)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    },
+    "_typography": {
+     "font-weight": "700",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_padding": {
+     "top": "0.7em",
+     "right": "2em",
+     "bottom": "0.7em",
+     "left": "2em"
+    },
+    "_widthMin": "30rem",
+    "_background:hover": {
+     "color": {
+      "raw": "var(--primary-light)"
+     }
+    },
+    "_typography:hover": {
+     "color": {
+      "raw": "var(--primary-ultra-dark)"
+     }
+    },
+    "_widthMin:mobile_landscape": "0"
    }
   },
   {

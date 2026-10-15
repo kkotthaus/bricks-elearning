@@ -275,6 +275,15 @@ for (const V of ['svg', 'fa']) {
   cls('rating-bar__grade', { _typography: { 'font-size': 'var(--text-s)', 'font-weight': '700', 'text-transform': 'uppercase', 'letter-spacing': '0.06em', color: { raw: 'var(--primary-dark)' } } });
   cls('rating-bar__value', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-m)', color: { raw: 'var(--primary-dark)' } }, _cssCustom: '.rating-bar__value strong {\n  font-size: var(--text-xl);\n}' });
   cls('rating-bar__count', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-s)', color: { raw: 'var(--text-dark-muted)' } } });
+  // Button wie Vorlage: hellblau, dünner mittelblauer Rahmen, leicht gerundet, fett (überschreibt btn--primary)
+  cls('rating-bar__button', {
+    _background: { color: { raw: 'var(--primary-ultra-light)' } },
+    _border: { width: { top: '1px', right: '1px', bottom: '1px', left: '1px' }, style: 'solid', color: { raw: 'var(--primary-semi-light)' }, radius: { top: 'var(--radius-xs)', right: 'var(--radius-xs)', bottom: 'var(--radius-xs)', left: 'var(--radius-xs)' } },
+    _typography: { 'font-weight': '700', color: { raw: 'var(--primary-dark)' } },
+    _padding: { top: '0.7em', right: '2em', bottom: '0.7em', left: '2em' }, _widthMin: '30rem',
+    '_background:hover': { color: { raw: 'var(--primary-light)' } }, '_typography:hover': { color: { raw: 'var(--primary-ultra-dark)' } },
+    '_widthMin:mobile_landscape': '0',
+  });
   cls('rating-bar__seals', {
     _width: 'auto', _display: 'flex', _direction: 'row', _alignItems: 'center', _columnGap: 'var(--space-m)',
     _padding: { left: 'var(--space-l)' },
@@ -305,7 +314,7 @@ for (const V of ['svg', 'fa']) {
   const val = b.add(score, 'div', 'Note', {});
   b.add(val, 'text-basic', 'Note', { text: "<strong>{echo:weka_pe_rating('note')}</strong> von 5", tag: 'p', ...C('rating-bar__value') });
   b.add(val, 'text-basic', 'Anzahl', { text: "{echo:weka_pe_rating('anzahl')} Bewertungen", tag: 'p', ...C('rating-bar__count') });
-  b.add(inner, 'button', 'Button: Bewertungen ansehen', { text: 'Bewertungen ansehen', link: btnLink('https://www.provenexpert.com/de-de/weka-e-learning/', true), ...arrow, ...C('acss:btn--primary', 'acss:btn--outline') });
+  b.add(inner, 'button', 'Button: Bewertungen ansehen', { text: 'Bewertungen ansehen', link: btnLink('https://www.provenexpert.com/de-de/weka-e-learning/', true), ...arrow, ...C('acss:btn--primary', 'rating-bar__button') });
   const seals = b.add(inner, 'block', 'Siegel', C('rating-bar__seals'));
   b.add(seals, 'image', 'Siegel: Comenius EduMedia 2025', { image: img(8663, '2026/01/Logo-Comenius-Siegel-2025-CMYK-002.png'), ...C('rating-bar__seal') });
   b.add(seals, 'image', 'Siegel: Proven Expert', { image: img(8667, '2026/01/ProvenExpert-Bewertungssiegel.png'), ...C('rating-bar__seal') });
