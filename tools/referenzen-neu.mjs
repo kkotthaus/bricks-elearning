@@ -188,7 +188,7 @@ const usedClasses = (content) => {
   cls('industry-card__title', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-l)', 'font-weight': '700' } });
   cls('industry-card__button', { _width: '100%', _margin: { top: 'auto' } });
   cls('check-list__icon--plain', { _display: 'flex', _alignItems: 'center', _justifyContent: 'center', _background: { color: { raw: 'transparent' } }, _typography: { color: { raw: 'var(--primary-dark)' } }, _padding: { top: '0', right: '0', bottom: '0', left: '0' } });
-  cls('industry-card__list', { _flexGrow: '1', _cssCustom: '/* Listentext in den Karten dunkel wie in der Vorlage */\n.industry-card__list .check-list__text {\n  color: var(--text-dark);\n}' });
+  cls('industry-card__list', { _flexGrow: '1', _cssCustom: '/* Aufzählung in den Karten enger und dunkler als die gemeinsame .check-list (Vorlage) */\n.industry-card__body .industry-card__list.check-list {\n  row-gap: 0.15em;\n}\n\n.industry-card__list .check-list__item.brxe-block {\n  align-items: center;\n  column-gap: 0.8em;\n}\n\n.industry-card__list .check-list__item .check-list__icon {\n  width: 1.1em;\n  height: 1.1em;\n  font-size: var(--text-m);\n  color: var(--primary-ultra-dark);\n}\n\n.industry-card__list .check-list__item .check-list__text {\n  padding-top: 0;\n  font-size: var(--text-l);\n  line-height: 1.3;\n  color: var(--base);\n}' });
 
   const sec = b.add(null, 'section', 'Branchenlösungen', C('industry-section', 'acss:bg--primary-ultra-light'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});
