@@ -99,8 +99,12 @@
    "children": [],
    "settings": {
     "icon": {
-     "library": "fontawesomeSolid",
-     "icon": "fas fa-award"
+     "library": "svg",
+     "svg": {
+      "id": 10856,
+      "filename": "weka-medaille.svg",
+      "url": "http://weka-e.local/wp-content/uploads/2026/10/weka-medaille.svg"
+     }
     }
    },
    "label": "Symbol"
@@ -182,8 +186,12 @@
    "children": [],
    "settings": {
     "icon": {
-     "library": "fontawesomeSolid",
-     "icon": "fas fa-gear"
+     "library": "svg",
+     "svg": {
+      "id": 10859,
+      "filename": "weka-zahnrad.svg",
+      "url": "http://weka-e.local/wp-content/uploads/2026/10/weka-zahnrad.svg"
+     }
     }
    },
    "label": "Symbol"
@@ -265,8 +273,12 @@
    "children": [],
    "settings": {
     "icon": {
-     "library": "fontawesomeSolid",
-     "icon": "fas fa-desktop"
+     "library": "svg",
+     "svg": {
+      "id": 10852,
+      "filename": "weka-bildschirm.svg",
+      "url": "http://weka-e.local/wp-content/uploads/2026/10/weka-bildschirm.svg"
+     }
     }
    },
    "label": "Symbol"
@@ -348,8 +360,12 @@
    "children": [],
    "settings": {
     "icon": {
-     "library": "fontawesomeSolid",
-     "icon": "fas fa-chart-column"
+     "library": "svg",
+     "svg": {
+      "id": 10853,
+      "filename": "weka-diagramm.svg",
+      "url": "http://weka-e.local/wp-content/uploads/2026/10/weka-diagramm.svg"
+     }
     }
    },
    "label": "Symbol"
@@ -424,7 +440,7 @@
       "left": "50%"
      }
     },
-    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}"
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}\n\n/* Linien-Icon (SVG aus der Mediathek) im Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}"
    }
   },
   {
@@ -499,7 +515,7 @@
      "top": "0",
      "bottom": "0"
     },
-    "_cssCustom": ".trust-benefits__item {\n  --icon-circle-size: 6.4rem;\n}"
+    "_cssCustom": ".trust-benefits__item {\n  --icon-circle-size: 8.8rem;\n}\n\n@media (max-width: 767px) {\n  .trust-benefits__item {\n    --icon-circle-size: 6.4rem;\n  }\n}\n\n/* Linien-Icons der Vorteile kräftiger (Vorlage) */\n.trust-benefits__item svg {\n  stroke-width: 2;\n}"
    }
   },
   {
@@ -528,7 +544,7 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-s)",
+     "font-size": "var(--text-m)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }

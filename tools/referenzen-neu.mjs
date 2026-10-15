@@ -35,6 +35,13 @@ const FA = {
   award: 'fa-award', gear: 'fa-gear', monitor: 'fa-desktop', chart: 'fa-chart-column', check: 'fa-check', badge: 'fa-check',
 };
 const fa = (name, classes = {}) => ({ icon: { library: 'fontawesomeSolid', icon: 'fas ' + FA[name] }, ...classes });
+// Linien-Icons nach der Vorlage (assets/icons/*.svg, lokal in der Mediathek) für Kennzahlen und Vorteile.
+// Variante 'fa' = bisherige Font-Awesome-Icons (Dateien mit Endung -fa), zum Zurückwechseln.
+const SVG_ICON = {
+  building: [10855, 'weka-gebaeude'], cap: [10854, 'weka-doktorhut'], users: [10857, 'weka-personen'], shield: [10858, 'weka-schild'],
+  award: [10856, 'weka-medaille'], gear: [10859, 'weka-zahnrad'], monitor: [10852, 'weka-bildschirm'], chart: [10853, 'weka-diagramm'],
+};
+const ico = (name, V) => (V === 'fa' || !SVG_ICON[name] ? fa(name) : { icon: { library: 'svg', svg: { id: SVG_ICON[name][0], filename: SVG_ICON[name][1] + '.svg', url: `${SITE}/wp-content/uploads/2026/10/${SVG_ICON[name][1]}.svg` } } });
 
 // ---------- Element-Bausteine ----------
 function builder(prefix) {
@@ -61,7 +68,7 @@ cls('icon-circle', {
   _display: 'flex', _alignItems: 'center', _justifyContent: 'center', _flexShrink: '0',
   _background: { color: { raw: 'var(--primary)' } }, _typography: { color: { raw: 'var(--white)' } },
   _border: { radius: { top: '50%', right: '50%', bottom: '50%', left: '50%' } },
-  _cssCustom: '.icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}',
+  _cssCustom: '.icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}\n\n/* Linien-Icon (SVG aus der Mediathek) im Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}',
 });
 cls('icon-circle--white', { _background: { color: { raw: 'var(--white)' } }, _typography: { color: { raw: 'var(--primary-dark)' } }, _cssCustom: '.icon-circle--white {\n  box-shadow: 0 0.4rem 1.6rem var(--black-trans-10);\n}' });
 cls('icon-circle--soft', { _background: { color: { raw: 'var(--primary-trans-10)' } }, _typography: { color: { raw: 'var(--primary-dark)' } } });
@@ -111,8 +118,8 @@ const usedClasses = (content) => {
 };
 
 // ---------- 1. Hero ----------
-{
-  const b = builder('rha');
+for (const V of ['svg', 'fa']) {
+  const b = builder(V === 'fa' ? 'rhf' : 'rha');
   const { content } = imageBanner(b, {
     label: 'Hero – Referenzen', imageId: 10833, imageFile: '2026/10/referenzen-hero.jpg',
     eyebrow: 'REFERENZEN', title: 'In starken Unternehmen im Einsatz', tag: 'h1',
@@ -124,9 +131,9 @@ const usedClasses = (content) => {
     _margin: { top: 'var(--space-s)', right: '0', bottom: '0', left: '0' }, _padding: { top: '0', right: '0', bottom: '0', left: '0' },
     _cssCustom: '.stat-list {\n  list-style: none;\n}',
   });
-  cls('stat-list__item', { _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'center', _columnGap: 'var(--space-xs)', _margin: { top: '0', bottom: '0' } });
+  cls('stat-list__item', { _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'center', _columnGap: 'var(--space-xs)', _margin: { top: '0', bottom: '0' }, _cssCustom: '/* Kreisgröße wie Vorlage */\n.stat-list__item {\n  --icon-circle-size: 6.4rem;\n}' });
   cls('stat-list__value', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-l)', 'font-weight': '700', 'line-height': '1.2', color: { raw: 'var(--white)' } } });
-  cls('stat-list__label', { _cssCustom: '.stat-list__label {\n  hyphens: manual;\n}', _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-xs)', 'line-height': '1.3', color: { raw: 'var(--white-trans-80)' } } });
+  cls('stat-list__label', { _cssCustom: '.stat-list__label {\n  hyphens: manual;\n}', _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-s)', 'line-height': '1.3', color: { raw: 'var(--white-trans-80)' } } });
   const list = b.add(content, 'block', 'Kennzahlen', { tag: 'ul', ...C('stat-list') });
   for (const [icon, value, label] of [
     ['building', '6.000+', 'Unternehmen vertrauen auf uns'], ['cap', '430+', 'E-Learning Inhalte'],
@@ -134,12 +141,12 @@ const usedClasses = (content) => {
   ]) {
     const li = b.add(list, 'block', `Kennzahl: ${value}`, { tag: 'li', ...C('stat-list__item') });
     const ic = b.add(li, 'div', 'Icon', C('icon-circle'));
-    b.add(ic, 'icon', 'Symbol', fa(icon));
+    b.add(ic, 'icon', 'Symbol', ico(icon, V));
     const txt = b.add(li, 'div', 'Text', {});
     b.add(txt, 'text-basic', 'Wert', { text: value, tag: 'p', ...C('stat-list__value') });
     b.add(txt, 'text-basic', 'Beschriftung', { text: label, tag: 'p', ...C('stat-list__label') });
   }
-  files['referenzen-neu-1-hero'] = b.content;
+  files['referenzen-neu-1-hero' + (V === 'fa' ? '-fa' : '')] = b.content;
 }
 
 // ---------- 2. Kundenlogos ----------
@@ -221,15 +228,15 @@ const usedClasses = (content) => {
 }
 
 // ---------- 4. Vorteile ----------
-{
-  const b = builder('rvt');
+for (const V of ['svg', 'fa']) {
+  const b = builder(V === 'fa' ? 'rvf' : 'rvt');
   cls('trust-benefits', { _padding: { top: '0', bottom: 'var(--section-space-xs)' } });
   cls('industry-section', { _padding: { top: 'var(--section-space-xs)', bottom: 'var(--section-space-xs)' } });
   cls('trust-benefits__title', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--h3)' } });
   cls('trust-benefits__list', { _alignItems: 'stretch', _margin: { top: '0', right: '0', bottom: '0', left: '0' }, _padding: { top: '0', right: '0', bottom: '0', left: '0' }, _cssCustom: '.trust-benefits__list {\n  list-style: none;\n}' });
-  cls('trust-benefits__item', { _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'flex-start', _columnGap: 'var(--space-s)', _margin: { top: '0', bottom: '0' }, _cssCustom: '.trust-benefits__item {\n  --icon-circle-size: 6.4rem;\n}' });
+  cls('trust-benefits__item', { _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'flex-start', _columnGap: 'var(--space-s)', _margin: { top: '0', bottom: '0' }, _cssCustom: '.trust-benefits__item {\n  --icon-circle-size: 8.8rem;\n}\n\n@media (max-width: 767px) {\n  .trust-benefits__item {\n    --icon-circle-size: 6.4rem;\n  }\n}\n\n/* Linien-Icons der Vorteile kräftiger (Vorlage) */\n.trust-benefits__item svg {\n  stroke-width: 2;\n}' });
   cls('trust-benefits__item-title', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-m)', 'font-weight': '700', color: { raw: 'var(--primary-dark)' } } });
-  cls('trust-benefits__text', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-s)', color: { raw: 'var(--text-dark-muted)' } } });
+  cls('trust-benefits__text', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-m)', color: { raw: 'var(--text-dark-muted)' } } });
   const sec = b.add(null, 'section', 'Warum WEKA E-Learning', C('trust-benefits', 'acss:bg--primary-ultra-light'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});
   b.add(con, 'heading', 'Überschrift', { text: 'Warum Unternehmen auf WEKA E-Learning setzen', tag: 'h2', ...C('trust-benefits__title') });
@@ -242,12 +249,12 @@ const usedClasses = (content) => {
   ]) {
     const li = b.add(ul, 'block', `Vorteil: ${title}`, { tag: 'li', ...C('trust-benefits__item') });
     const ic = b.add(li, 'div', 'Icon', C('icon-circle', 'icon-circle--soft'));
-    b.add(ic, 'icon', 'Symbol', fa(icon));
+    b.add(ic, 'icon', 'Symbol', ico(icon, V));
     const t = b.add(li, 'div', 'Text', {});
     b.add(t, 'text-basic', 'Titel', { text: title, tag: 'p', ...C('trust-benefits__item-title') });
     b.add(t, 'text-basic', 'Text', { text, tag: 'p', ...C('trust-benefits__text') });
   }
-  files['referenzen-neu-4-vorteile'] = b.content;
+  files['referenzen-neu-4-vorteile' + (V === 'fa' ? '-fa' : '')] = b.content;
 }
 
 // ---------- 5. Bewertungen ----------
@@ -324,6 +331,7 @@ const TITEL = {
   'referenzen-neu-1-hero': 'Referenzen-neu 1 – Hero', 'referenzen-neu-2-kunden': 'Referenzen-neu 2 – Kundenlogos',
   'referenzen-neu-3-branchen': 'Referenzen-neu 3 – Branchenlösungen', 'referenzen-neu-4-vorteile': 'Referenzen-neu 4 – Vorteile',
   'referenzen-neu-5-bewertungen': 'Referenzen-neu 5 – Bewertungen', 'referenzen-neu-6-beratung': 'Referenzen-neu 6 – Beratung',
+  'referenzen-neu-1-hero-fa': 'Referenzen-neu 1 – Hero (Font-Awesome-Icons)', 'referenzen-neu-4-vorteile-fa': 'Referenzen-neu 4 – Vorteile (Font-Awesome-Icons)',
 };
 // Für Templates: eigene Klassen + mitbenutzte vorhandene Klassen (ACSS-Klassen gibt es auf jeder ACSS-Seite)
 const templateClasses = (content) => {
@@ -337,7 +345,7 @@ for (const [name, content] of Object.entries(files)) {
   writeFileSync(join(OUT, name + '.json'), JSON.stringify(out, null, 1) + '\n');
   const tpl = { title: TITEL[name], templateType: 'section', content, pageSettings: [], templateSettings: [], global_classes: templateClasses(content) };
   writeFileSync(join(TPL, name + '.json'), JSON.stringify(tpl, null, 1) + '\n');
-  all.push(...content);
+  if (!name.endsWith('-fa')) all.push(...content); // Gesamtdatei = aktuelle Variante
   console.log(name, content.length, 'Elemente,', tpl.global_classes.length, 'Klassen im Template');
 }
 // Gesamtdatei nur zum Einfügen (nicht im Repo)

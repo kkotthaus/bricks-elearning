@@ -1,0 +1,540 @@
+{
+ "content": [
+  {
+   "id": "rvf001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "rvf002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "n0sf7l",
+     "acss_import_bg--primary-ultra-light"
+    ]
+   },
+   "label": "Warum WEKA E-Learning"
+  },
+  {
+   "id": "rvf002",
+   "name": "container",
+   "parent": "rvf001",
+   "children": [
+    "rvf003",
+    "rvf004"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "rvf003",
+   "name": "heading",
+   "parent": "rvf002",
+   "children": [],
+   "settings": {
+    "text": "Warum Unternehmen auf WEKA E-Learning setzen",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "2hcgvx"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "rvf004",
+   "name": "block",
+   "parent": "rvf002",
+   "children": [
+    "rvf005",
+    "rvf011",
+    "rvf017",
+    "rvf023"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1xyjlm",
+     "acss_import_grid--4",
+     "acss_import_grid--l-2",
+     "acss_import_grid--s-1"
+    ]
+   },
+   "label": "Vorteile"
+  },
+  {
+   "id": "rvf005",
+   "name": "block",
+   "parent": "rvf004",
+   "children": [
+    "rvf006",
+    "rvf008"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "isandc"
+    ]
+   },
+   "label": "Vorteil: Praxisnahe Inhalte"
+  },
+  {
+   "id": "rvf006",
+   "name": "div",
+   "parent": "rvf005",
+   "children": [
+    "rvf007"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "rvsob5"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rvf007",
+   "name": "icon",
+   "parent": "rvf006",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-award"
+    }
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rvf008",
+   "name": "div",
+   "parent": "rvf005",
+   "children": [
+    "rvf009",
+    "rvf010"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "rvf009",
+   "name": "text-basic",
+   "parent": "rvf008",
+   "children": [],
+   "settings": {
+    "text": "Praxisnahe Inhalte",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1eqt9z"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "rvf010",
+   "name": "text-basic",
+   "parent": "rvf008",
+   "children": [],
+   "settings": {
+    "text": "Didaktisch hochwertig und direkt im Arbeitsalltag anwendbar.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pg1kr"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "rvf011",
+   "name": "block",
+   "parent": "rvf004",
+   "children": [
+    "rvf012",
+    "rvf014"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "isandc"
+    ]
+   },
+   "label": "Vorteil: Rechtssicher & aktuell"
+  },
+  {
+   "id": "rvf012",
+   "name": "div",
+   "parent": "rvf011",
+   "children": [
+    "rvf013"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "rvsob5"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rvf013",
+   "name": "icon",
+   "parent": "rvf012",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-gear"
+    }
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rvf014",
+   "name": "div",
+   "parent": "rvf011",
+   "children": [
+    "rvf015",
+    "rvf016"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "rvf015",
+   "name": "text-basic",
+   "parent": "rvf014",
+   "children": [],
+   "settings": {
+    "text": "Rechtssicher & aktuell",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1eqt9z"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "rvf016",
+   "name": "text-basic",
+   "parent": "rvf014",
+   "children": [],
+   "settings": {
+    "text": "Inhalte zu gesetzlichen Anforderungen und aktuellen Themen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pg1kr"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "rvf017",
+   "name": "block",
+   "parent": "rvf004",
+   "children": [
+    "rvf018",
+    "rvf020"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "isandc"
+    ]
+   },
+   "label": "Vorteil: Flexible Nutzung"
+  },
+  {
+   "id": "rvf018",
+   "name": "div",
+   "parent": "rvf017",
+   "children": [
+    "rvf019"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "rvsob5"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rvf019",
+   "name": "icon",
+   "parent": "rvf018",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-desktop"
+    }
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rvf020",
+   "name": "div",
+   "parent": "rvf017",
+   "children": [
+    "rvf021",
+    "rvf022"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "rvf021",
+   "name": "text-basic",
+   "parent": "rvf020",
+   "children": [],
+   "settings": {
+    "text": "Flexible Nutzung",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1eqt9z"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "rvf022",
+   "name": "text-basic",
+   "parent": "rvf020",
+   "children": [],
+   "settings": {
+    "text": "In bestehenden Lernsystemen oder als komplette Lösung.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pg1kr"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "rvf023",
+   "name": "block",
+   "parent": "rvf004",
+   "children": [
+    "rvf024",
+    "rvf026"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "isandc"
+    ]
+   },
+   "label": "Vorteil: Nachweisbare Ergebnisse"
+  },
+  {
+   "id": "rvf024",
+   "name": "div",
+   "parent": "rvf023",
+   "children": [
+    "rvf025"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "rvsob5"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rvf025",
+   "name": "icon",
+   "parent": "rvf024",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-chart-column"
+    }
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rvf026",
+   "name": "div",
+   "parent": "rvf023",
+   "children": [
+    "rvf027",
+    "rvf028"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "rvf027",
+   "name": "text-basic",
+   "parent": "rvf026",
+   "children": [],
+   "settings": {
+    "text": "Nachweisbare Ergebnisse",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1eqt9z"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "rvf028",
+   "name": "text-basic",
+   "parent": "rvf026",
+   "children": [],
+   "settings": {
+    "text": "Transparente Dokumentation und messbare Lernfortschritte.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pg1kr"
+    ]
+   },
+   "label": "Text"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "2niotf",
+   "name": "icon-circle",
+   "settings": {
+    "_display": "flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
+    "_flexShrink": "0",
+    "_background": {
+     "color": {
+      "raw": "var(--primary)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "50%",
+      "right": "50%",
+      "bottom": "50%",
+      "left": "50%"
+     }
+    },
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}\n\n/* Linien-Icon (SVG aus der Mediathek) im Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}"
+   }
+  },
+  {
+   "id": "rvsob5",
+   "name": "icon-circle--soft",
+   "settings": {
+    "_background": {
+     "color": {
+      "raw": "var(--primary-trans-10)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "n0sf7l",
+   "name": "trust-benefits",
+   "settings": {
+    "_padding": {
+     "top": "0",
+     "bottom": "var(--section-space-xs)"
+    }
+   }
+  },
+  {
+   "id": "2hcgvx",
+   "name": "trust-benefits__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "1xyjlm",
+   "name": "trust-benefits__list",
+   "settings": {
+    "_alignItems": "stretch",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".trust-benefits__list {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "isandc",
+   "name": "trust-benefits__item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "nowrap",
+    "_alignItems": "flex-start",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_cssCustom": ".trust-benefits__item {\n  --icon-circle-size: 8.8rem;\n}\n\n@media (max-width: 767px) {\n  .trust-benefits__item {\n    --icon-circle-size: 6.4rem;\n  }\n}\n\n/* Linien-Icons der Vorteile kräftiger (Vorlage) */\n.trust-benefits__item svg {\n  stroke-width: 2;\n}"
+   }
+  },
+  {
+   "id": "1eqt9z",
+   "name": "trust-benefits__item-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-m)",
+     "font-weight": "700",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2pg1kr",
+   "name": "trust-benefits__text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-m)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  }
+ ],
+ "globalElements": []
+}
