@@ -71,9 +71,16 @@
      "post_type": [
       "referenzen"
      ],
-     "posts_per_page": "-1",
-     "orderby": "title",
-     "order": "asc",
+     "posts_per_page": "6",
+     "post__in": [
+      "4120",
+      "9298",
+      "9297",
+      "9283",
+      "2750",
+      "2751"
+     ],
+     "orderby": "post__in",
      "meta_query": [
       {
        "id": "rklmq1",
@@ -86,7 +93,7 @@
      "18a7xc"
     ]
    },
-   "label": "Logo (Loop: aktive Referenzen)"
+   "label": "Logo (Loop: 6 ausgewählte Referenzen)"
   },
   {
    "id": "rkl006",
@@ -146,11 +153,12 @@
    "id": "1a3l21",
    "name": "customer-logos__list",
    "settings": {
-    "_display": "flex",
-    "_direction": "row",
-    "_flexWrap": "wrap",
+    "_display": "grid",
+    "_gridTemplateColumns": "repeat(6, minmax(0, 1fr))",
+    "_gridTemplateColumns:tablet_portrait": "repeat(3, minmax(0, 1fr))",
+    "_gridTemplateColumns:mobile_portrait": "repeat(2, minmax(0, 1fr))",
     "_alignItems": "center",
-    "_justifyContent": "space-between",
+    "_justifyItems": "center",
     "_columnGap": "var(--space-l)",
     "_rowGap": "var(--space-m)",
     "_margin": {
@@ -165,7 +173,6 @@
      "bottom": "0",
      "left": "0"
     },
-    "_justifyContent:mobile_landscape": "center",
     "_cssCustom": ".customer-logos__list {\n  list-style: none;\n}"
    }
   },
@@ -176,6 +183,7 @@
     "_width": "auto",
     "_display": "flex",
     "_alignItems": "center",
+    "_justifyContent": "center",
     "_margin": {
      "top": "0",
      "bottom": "0"
