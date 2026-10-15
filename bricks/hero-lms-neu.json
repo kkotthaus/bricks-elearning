@@ -407,7 +407,8 @@
      "color": {
       "raw": "var(--primary-dark)"
      }
-    }
+    },
+    "_cssCustom": ".eyebrow {\n  text-wrap: balance;\n}"
    },
    "modified": 1790592465,
    "user_id": 1
@@ -489,6 +490,7 @@
    "settings": {
     "_display": "flex",
     "_direction": "row",
+    "_flexWrap": "nowrap",
     "_alignItems": "flex-start",
     "_rowGap": "var(--space-s)",
     "_columnGap": "var(--space-s)",
@@ -552,11 +554,15 @@
     "_padding": {
      "top": "0.15em"
     },
+    "_flexGrow": "1",
+    "_flexShrink": "1",
+    "_flexBasis": "0",
     "_typography": {
      "color": {
       "raw": "var(--primary-dark)"
      }
-    }
+    },
+    "_cssCustom": ".check-list__text {\n  min-width: 0;\n}"
    },
    "modified": 1790592465,
    "user_id": 1
@@ -566,13 +572,12 @@
    "name": "hero-lms-neu__actions",
    "settings": {
     "_display": "grid",
-    "_gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+    "_gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 26rem), 1fr))",
     "_alignItems": "stretch",
     "_rowGap": "var(--space-s)",
     "_columnGap": "var(--space-s)",
     "_width": "100%",
     "_widthMax": "60rem",
-    "_gridTemplateColumns:mobile_portrait": "minmax(0, 1fr)",
     "_cssCustom": ".hero-lms-neu__actions {\n  grid-auto-rows: 1fr;\n}\n\n.hero-lms-neu__actions .cta-button {\n  width: 100%;\n  padding-inline: var(--space-s);\n}"
    },
    "modified": 1790592465,
