@@ -204,13 +204,14 @@
     "_height": "100%",
     "_objectFit": "cover",
     "_zIndex": "0",
-    "_position:mobile_landscape": "relative",
-    "_width:mobile_landscape": "100%",
-    "_height:mobile_landscape": "28rem",
-    "_margin:mobile_landscape": {
+    "_position:tablet_portrait": "relative",
+    "_width:tablet_portrait": "100%",
+    "_height:tablet_portrait": "36rem",
+    "_margin:tablet_portrait": {
      "bottom": "var(--space-m)"
     },
-    "_cssCustom": "/* Weicher Übergang vom Foto in die Fläche (Maske, keine Farbe) */\n.image-banner__image {\n  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n  mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n}\n\n@media (max-width: 767px) {\n  .image-banner__image {\n    -webkit-mask-image: none;\n    mask-image: none;\n    border-radius: var(--radius);\n  }\n}"
+    "_height:mobile_landscape": "28rem",
+    "_cssCustom": "/* Weicher Übergang vom Foto in die Fläche (Maske, keine Farbe) */\n.image-banner__image {\n  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n  mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n}\n\n/* Ab Tablet: Foto über dem Text, damit weiße Schrift nicht auf dem Foto liegt */\n@media (max-width: 991px) {\n  .image-banner__image {\n    -webkit-mask-image: none;\n    mask-image: none;\n    border-radius: var(--radius);\n  }\n}"
    }
   },
   {
@@ -229,8 +230,7 @@
     "_direction": "column",
     "_rowGap": "var(--space-m)",
     "_width": "50%",
-    "_width:tablet_portrait": "62%",
-    "_width:mobile_landscape": "100%"
+    "_width:tablet_portrait": "100%"
    }
   },
   {
@@ -293,7 +293,8 @@
     "_direction": "row",
     "_flexWrap": "wrap",
     "_columnGap": "var(--space-s)",
-    "_rowGap": "var(--space-s)"
+    "_rowGap": "var(--space-s)",
+    "_cssCustom": "/* Mobil: CTA-Buttons volle Breite */\n@media (max-width: 767px) {\n  .image-banner__actions > .brxe-button {\n    width: 100%;\n  }\n}"
    }
   },
   {

@@ -1479,7 +1479,7 @@
      "font-size": "var(--h1)",
      "line-height": "1.15"
     },
-    "_cssCustom": ".industry-section__title {\n  overflow-wrap: break-word;\n  hyphens: auto;\n}"
+    "_cssCustom": ".industry-section__title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n}"
    }
   },
   {
@@ -1639,7 +1639,7 @@
    "name": "industry-card__list",
    "settings": {
     "_flexGrow": "1",
-    "_cssCustom": "/* Aufzählung in den Karten enger und dunkler als die gemeinsame .check-list (Vorlage) */\n.industry-card__body .industry-card__list.check-list {\n  row-gap: 0.15em;\n}\n\n.industry-card__list .check-list__item.brxe-block {\n  align-items: center;\n  column-gap: 0.8em;\n}\n\n.industry-card__list .check-list__item .check-list__icon {\n  width: 1.1em;\n  height: 1.1em;\n  font-size: var(--text-m);\n  color: var(--primary-ultra-dark);\n}\n\n.industry-card__list .check-list__item .check-list__text {\n  padding-top: 0;\n  font-size: var(--text-l);\n  line-height: 1.3;\n  color: var(--base);\n}"
+    "_cssCustom": "/* Aufzählung in den Karten enger und dunkler als die gemeinsame .check-list (Vorlage) */\n.industry-card__body .industry-card__list.check-list {\n  row-gap: 0.15em;\n}\n\n.industry-card__list .check-list__item.brxe-block {\n  flex-wrap: nowrap;\n  align-items: center;\n  column-gap: 0.8em;\n}\n\n.industry-card__list .check-list__item .check-list__icon {\n  width: 1.1em;\n  height: 1.1em;\n  font-size: var(--text-m);\n  color: var(--primary-ultra-dark);\n}\n\n.industry-card__list .check-list__item .check-list__text {\n  padding-top: 0;\n  min-width: 0;\n  font-size: var(--text-l);\n  line-height: 1.3;\n  color: var(--base);\n  overflow-wrap: break-word;\n}\n\n/* Schmale Karten (2 Spalten auf Tablet hoch, Handy): kleinere Schrift */\n@media (max-width: 767px) {\n  .industry-card__list .check-list__item .check-list__text {\n    font-size: var(--text-m);\n  }\n}"
    }
   },
   {

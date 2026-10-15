@@ -70,14 +70,14 @@ cls('icon-circle--rating', { _background: { color: { raw: 'var(--warning-semi-da
 cls('image-banner', { _position: 'relative', _overflow: 'hidden', _padding: { top: 'var(--section-space-xs)', bottom: 'var(--section-space-xs)' }, _cssCustom: '.image-banner {\n  isolation: isolate;\n}' });
 cls('image-banner__image', {
   _position: 'absolute', _top: '0', _right: '0', _bottom: '0', _width: '52%', _height: '100%', _objectFit: 'cover', _zIndex: '0',
-  '_position:mobile_landscape': 'relative', '_width:mobile_landscape': '100%', '_height:mobile_landscape': '28rem',
-  '_margin:mobile_landscape': { bottom: 'var(--space-m)' },
-  _cssCustom: '/* Weicher Übergang vom Foto in die Fläche (Maske, keine Farbe) */\n.image-banner__image {\n  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n  mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n}\n\n@media (max-width: 767px) {\n  .image-banner__image {\n    -webkit-mask-image: none;\n    mask-image: none;\n    border-radius: var(--radius);\n  }\n}',
+  '_position:tablet_portrait': 'relative', '_width:tablet_portrait': '100%', '_height:tablet_portrait': '36rem',
+  '_margin:tablet_portrait': { bottom: 'var(--space-m)' }, '_height:mobile_landscape': '28rem',
+  _cssCustom: '/* Weicher Übergang vom Foto in die Fläche (Maske, keine Farbe) */\n.image-banner__image {\n  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n  mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n}\n\n/* Ab Tablet: Foto über dem Text, damit weiße Schrift nicht auf dem Foto liegt */\n@media (max-width: 991px) {\n  .image-banner__image {\n    -webkit-mask-image: none;\n    mask-image: none;\n    border-radius: var(--radius);\n  }\n}',
 });
 cls('image-banner__inner', { _position: 'relative', _zIndex: '1' });
 cls('image-banner__content', {
   _display: 'flex', _direction: 'column', _rowGap: 'var(--space-m)', _width: '50%',
-  '_width:tablet_portrait': '62%', '_width:mobile_landscape': '100%',
+  '_width:tablet_portrait': '100%',
 });
 cls('image-banner__title', {
   _margin: { top: '0', bottom: '0' }, _widthMax: '100%', _typography: { 'font-size': 'var(--h1)', 'line-height': '1.15' },
@@ -90,7 +90,7 @@ cls('image-banner__quote', {
   '_display:tablet_portrait': 'none',
   _cssCustom: '.image-banner__quote {\n  transform: rotate(-8deg);\n  hyphens: manual;\n}\n\n/* Schwung unter dem Zitat wie in der Vorlage */\n.image-banner__quote::after {\n  content: "";\n  display: block;\n  width: 85%;\n  height: 0.12em;\n  margin-top: 0.35em;\n  margin-left: auto;\n  background: var(--primary);\n  border-radius: 50%;\n  transform: rotate(-4deg);\n}',
 });
-cls('image-banner__actions', { _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _columnGap: 'var(--space-s)', _rowGap: 'var(--space-s)' });
+cls('image-banner__actions', { _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _columnGap: 'var(--space-s)', _rowGap: 'var(--space-s)', _cssCustom: '/* Mobil: CTA-Buttons volle Breite */\n@media (max-width: 767px) {\n  .image-banner__actions > .brxe-button {\n    width: 100%;\n  }\n}' });
 
 function imageBanner(b, { label, imageId, imageFile, eyebrow, title, tag, lede, quote }) {
   const sec = b.add(null, 'section', label, C('image-banner', 'acss:bg--primary-dark'));
@@ -120,7 +120,7 @@ const usedClasses = (content) => {
     quote: '„Wissen wirksam vermitteln. In jeder Branche.“',
   });
   cls('stat-list', {
-    _display: 'grid', _gridTemplateColumns: 'repeat(auto-fit, minmax(15rem, 1fr))', _columnGap: 'var(--space-m)', _rowGap: 'var(--space-m)',
+    _display: 'grid', _gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', '_gridTemplateColumns:tablet_portrait': 'repeat(2, minmax(0, 1fr))', _columnGap: 'var(--space-s)', _rowGap: 'var(--space-m)',
     _margin: { top: 'var(--space-s)', right: '0', bottom: '0', left: '0' }, _padding: { top: '0', right: '0', bottom: '0', left: '0' },
     _cssCustom: '.stat-list {\n  list-style: none;\n}',
   });
@@ -173,7 +173,7 @@ const usedClasses = (content) => {
 {
   const b = builder('rbr');
   cls('industry-section__header', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-s)' });
-  cls('industry-section__title', { _margin: { top: '0', bottom: '0' }, _widthMax: '100%', _typography: { 'font-size': 'var(--h1)', 'line-height': '1.15' }, _cssCustom: '.industry-section__title {\n  overflow-wrap: break-word;\n  hyphens: auto;\n}' });
+  cls('industry-section__title', { _margin: { top: '0', bottom: '0' }, _widthMax: '100%', _typography: { 'font-size': 'var(--h1)', 'line-height': '1.15' }, _cssCustom: '.industry-section__title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n}' });
   cls('industry-section__lede', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-l)' } });
   cls('industry-cards', { _alignItems: 'stretch', _columnGap: 'var(--space-s)', _rowGap: 'var(--space-s)', _margin: { top: '0', right: '0', bottom: '0', left: '0' }, _padding: { top: '0', right: '0', bottom: '0', left: '0' }, _cssCustom: '.industry-cards {\n  list-style: none;\n}' });
   cls('industry-card', {
@@ -188,7 +188,7 @@ const usedClasses = (content) => {
   cls('industry-card__title', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-l)', 'font-weight': '700' } });
   cls('industry-card__button', { _width: '100%', _margin: { top: 'auto' } });
   cls('check-list__icon--plain', { _display: 'flex', _alignItems: 'center', _justifyContent: 'center', _background: { color: { raw: 'transparent' } }, _typography: { color: { raw: 'var(--primary-dark)' } }, _padding: { top: '0', right: '0', bottom: '0', left: '0' } });
-  cls('industry-card__list', { _flexGrow: '1', _cssCustom: '/* Aufzählung in den Karten enger und dunkler als die gemeinsame .check-list (Vorlage) */\n.industry-card__body .industry-card__list.check-list {\n  row-gap: 0.15em;\n}\n\n.industry-card__list .check-list__item.brxe-block {\n  align-items: center;\n  column-gap: 0.8em;\n}\n\n.industry-card__list .check-list__item .check-list__icon {\n  width: 1.1em;\n  height: 1.1em;\n  font-size: var(--text-m);\n  color: var(--primary-ultra-dark);\n}\n\n.industry-card__list .check-list__item .check-list__text {\n  padding-top: 0;\n  font-size: var(--text-l);\n  line-height: 1.3;\n  color: var(--base);\n}' });
+  cls('industry-card__list', { _flexGrow: '1', _cssCustom: '/* Aufzählung in den Karten enger und dunkler als die gemeinsame .check-list (Vorlage) */\n.industry-card__body .industry-card__list.check-list {\n  row-gap: 0.15em;\n}\n\n.industry-card__list .check-list__item.brxe-block {\n  flex-wrap: nowrap;\n  align-items: center;\n  column-gap: 0.8em;\n}\n\n.industry-card__list .check-list__item .check-list__icon {\n  width: 1.1em;\n  height: 1.1em;\n  font-size: var(--text-m);\n  color: var(--primary-ultra-dark);\n}\n\n.industry-card__list .check-list__item .check-list__text {\n  padding-top: 0;\n  min-width: 0;\n  font-size: var(--text-l);\n  line-height: 1.3;\n  color: var(--base);\n  overflow-wrap: break-word;\n}\n\n/* Schmale Karten (2 Spalten auf Tablet hoch, Handy): kleinere Schrift */\n@media (max-width: 767px) {\n  .industry-card__list .check-list__item .check-list__text {\n    font-size: var(--text-m);\n  }\n}' });
 
   const sec = b.add(null, 'section', 'Branchenlösungen', C('industry-section', 'acss:bg--primary-ultra-light'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});
@@ -254,13 +254,13 @@ const usedClasses = (content) => {
 {
   const b = builder('rbw');
   cls('rating-bar', { _padding: { top: 'var(--section-space-xs)', bottom: 'var(--section-space-xs)' } });
-  cls('rating-bar__inner', { _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _alignItems: 'center', _justifyContent: 'space-between', _columnGap: 'var(--space-l)', _rowGap: 'var(--space-m)' });
+  cls('rating-bar__inner', { _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _alignItems: 'center', _justifyContent: 'space-between', _columnGap: 'var(--space-l)', _rowGap: 'var(--space-m)', _cssCustom: '/* Mobil: Button volle Breite */\n@media (max-width: 767px) {\n  .rating-bar__inner > .brxe-button {\n    width: 100%;\n  }\n}' });
   cls('rating-bar__summary', { _width: 'auto', _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'center', _columnGap: 'var(--space-m)', _rowGap: 'var(--space-s)', '_alignItems:mobile_landscape': 'flex-start' });
-  cls('rating-bar__badge', { _cssCustom: '.rating-bar__badge {\n  --icon-circle-size: 8rem;\n}' });
+  cls('rating-bar__badge', { _cssCustom: '.rating-bar__badge {\n  --icon-circle-size: 8rem;\n}\n\n@media (max-width: 767px) {\n  .rating-bar__badge {\n    --icon-circle-size: 5.6rem;\n  }\n}' });
   cls('rating-bar__text', { _width: 'auto', _display: 'flex', _direction: 'column', _rowGap: 'var(--space-xs)' });
   cls('rating-bar__title', { _margin: { top: '0', bottom: '0' }, _widthMax: '18ch', _typography: { 'font-size': 'var(--h3)', 'line-height': '1.2' } });
   cls('rating-bar__score', { _width: 'auto', _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _alignItems: 'center', _columnGap: 'var(--space-m)', _rowGap: 'var(--space-xs)' });
-  cls('rating-bar__stars-wrap', { _display: 'flex', _direction: 'column', _alignItems: 'center' });
+  cls('rating-bar__stars-wrap', { _width: 'auto', _display: 'flex', _direction: 'column', _alignItems: 'center' });
   cls('rating-bar__stars', {
     _typography: { 'font-size': 'var(--h2)', 'line-height': '1', 'letter-spacing': '0.08em' },
     _cssCustom: '/* --rating kommt per Attribut aus {echo:weka_pe_rating(\'prozent\')} */\n.rating-bar__stars {\n  display: inline-block;\n  background: linear-gradient(90deg, var(--warning) var(--rating, 100%), var(--shade-light) var(--rating, 100%));\n  -webkit-background-clip: text;\n  background-clip: text;\n  color: transparent;\n}',

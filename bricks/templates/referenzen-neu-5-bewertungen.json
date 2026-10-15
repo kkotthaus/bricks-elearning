@@ -375,7 +375,8 @@
     "_alignItems": "center",
     "_justifyContent": "space-between",
     "_columnGap": "var(--space-l)",
-    "_rowGap": "var(--space-m)"
+    "_rowGap": "var(--space-m)",
+    "_cssCustom": "/* Mobil: Button volle Breite */\n@media (max-width: 767px) {\n  .rating-bar__inner > .brxe-button {\n    width: 100%;\n  }\n}"
    }
   },
   {
@@ -396,7 +397,7 @@
    "id": "2fp57d",
    "name": "rating-bar__badge",
    "settings": {
-    "_cssCustom": ".rating-bar__badge {\n  --icon-circle-size: 8rem;\n}"
+    "_cssCustom": ".rating-bar__badge {\n  --icon-circle-size: 8rem;\n}\n\n@media (max-width: 767px) {\n  .rating-bar__badge {\n    --icon-circle-size: 5.6rem;\n  }\n}"
    }
   },
   {
@@ -441,6 +442,7 @@
    "id": "1nm7ld",
    "name": "rating-bar__stars-wrap",
    "settings": {
+    "_width": "auto",
     "_display": "flex",
     "_direction": "column",
     "_alignItems": "center"
