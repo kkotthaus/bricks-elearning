@@ -147,6 +147,7 @@
    "children": [],
    "settings": {
     "text": "Jetzt beraten lassen",
+    "style": "primary",
     "link": {
      "type": "external",
      "url": "/kontakt/"

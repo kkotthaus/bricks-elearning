@@ -222,7 +222,7 @@ for (const V of ['svg', 'fa']) {
       b.add(li, 'icon', 'Häkchen', fa('check', C('check-list__icon', 'check-list__icon--plain')));
       b.add(li, 'text-basic', 'Listentext', { text: t, tag: 'span', ...C('check-list__text') });
     }
-    b.add(body, 'button', 'Button: Mehr erfahren', { text: 'Mehr erfahren', link: btnLink('#'), ...arrow, ...C('acss:btn--action', 'industry-card__button') });
+    b.add(body, 'button', 'Button: Mehr erfahren', { text: 'Mehr erfahren', style: 'primary', link: btnLink('#'), ...arrow, ...C('acss:btn--action', 'industry-card__button') });
   }
   files['referenzen-neu-3-branchen'] = b.content;
 }
@@ -331,7 +331,7 @@ for (const V of ['svg', 'fa']) {
     quote: 'Gemeinsam die beste Lösung finden.',
   });
   const act = b.add(content, 'block', 'Button-Gruppe', C('image-banner__actions'));
-  b.add(act, 'button', 'Button: Jetzt beraten lassen', { text: 'Jetzt beraten lassen', link: btnLink('/kontakt/'), ...arrow, ...C('acss:btn--action') });
+  b.add(act, 'button', 'Button: Jetzt beraten lassen', { text: 'Jetzt beraten lassen', style: 'primary', link: btnLink('/kontakt/'), ...arrow, ...C('acss:btn--action') });
   files['referenzen-neu-6-beratung'] = b.content;
 }
 

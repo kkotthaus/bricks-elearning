@@ -414,6 +414,7 @@
    "children": [],
    "settings": {
     "text": "Mehr erfahren",
+    "style": "primary",
     "link": {
      "type": "external",
      "url": "#"
@@ -739,6 +740,7 @@
    "children": [],
    "settings": {
     "text": "Mehr erfahren",
+    "style": "primary",
     "link": {
      "type": "external",
      "url": "#"
@@ -1064,6 +1066,7 @@
    "children": [],
    "settings": {
     "text": "Mehr erfahren",
+    "style": "primary",
     "link": {
      "type": "external",
      "url": "#"
@@ -1389,6 +1392,7 @@
    "children": [],
    "settings": {
     "text": "Mehr erfahren",
+    "style": "primary",
     "link": {
      "type": "external",
      "url": "#"
