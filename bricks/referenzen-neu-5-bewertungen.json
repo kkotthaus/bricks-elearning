@@ -1,0 +1,535 @@
+{
+ "content": [
+  {
+   "id": "rbw001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "rbw002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "acss_import_pad-section--s"
+    ]
+   },
+   "label": "Bewertungen"
+  },
+  {
+   "id": "rbw002",
+   "name": "container",
+   "parent": "rbw001",
+   "children": [
+    "rbw003"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "rbw003",
+   "name": "block",
+   "parent": "rbw002",
+   "children": [
+    "rbw004",
+    "rbw016",
+    "rbw017"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1rnocq"
+    ]
+   },
+   "label": "Bewertungsleiste"
+  },
+  {
+   "id": "rbw004",
+   "name": "block",
+   "parent": "rbw003",
+   "children": [
+    "rbw005",
+    "rbw007"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1k8ftz"
+    ]
+   },
+   "label": "Zusammenfassung"
+  },
+  {
+   "id": "rbw005",
+   "name": "div",
+   "parent": "rbw004",
+   "children": [
+    "rbw006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "25o41p",
+     "2fp57d"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rbw006",
+   "name": "svg",
+   "parent": "rbw005",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/><path d=\"m9 12 2 2 4-4\"/></svg>"
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rbw007",
+   "name": "block",
+   "parent": "rbw004",
+   "children": [
+    "rbw008",
+    "rbw009"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "25wcwd"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "rbw008",
+   "name": "heading",
+   "parent": "rbw007",
+   "children": [],
+   "settings": {
+    "text": "Kundenbewertungen auf Proven Expert",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "m4xb23"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "rbw009",
+   "name": "block",
+   "parent": "rbw007",
+   "children": [
+    "rbw010",
+    "rbw013"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2noerg"
+    ]
+   },
+   "label": "Wertung"
+  },
+  {
+   "id": "rbw010",
+   "name": "div",
+   "parent": "rbw009",
+   "children": [
+    "rbw011",
+    "rbw012"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1nm7ld"
+    ]
+   },
+   "label": "Sterne"
+  },
+  {
+   "id": "rbw011",
+   "name": "text-basic",
+   "parent": "rbw010",
+   "children": [],
+   "settings": {
+    "text": "★★★★★",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "6o6e4p"
+    ],
+    "_attributes": [
+     {
+      "id": "rbwat1",
+      "name": "style",
+      "value": "--rating: {echo:weka_pe_rating('prozent')}%"
+     },
+     {
+      "id": "rbwat2",
+      "name": "role",
+      "value": "img"
+     },
+     {
+      "id": "rbwat3",
+      "name": "aria-label",
+      "value": "{echo:weka_pe_rating('note')} von 5 Sternen"
+     }
+    ]
+   },
+   "label": "Sterne (Breite aus Proven Expert)"
+  },
+  {
+   "id": "rbw012",
+   "name": "text-basic",
+   "parent": "rbw010",
+   "children": [],
+   "settings": {
+    "text": "{echo:weka_pe_rating('text')}",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "vmzrfi"
+    ]
+   },
+   "label": "Urteil"
+  },
+  {
+   "id": "rbw013",
+   "name": "div",
+   "parent": "rbw009",
+   "children": [
+    "rbw014",
+    "rbw015"
+   ],
+   "settings": {},
+   "label": "Note"
+  },
+  {
+   "id": "rbw014",
+   "name": "text-basic",
+   "parent": "rbw013",
+   "children": [],
+   "settings": {
+    "text": "<strong>{echo:weka_pe_rating('note')}</strong> von 5",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "yu73zc"
+    ]
+   },
+   "label": "Note"
+  },
+  {
+   "id": "rbw015",
+   "name": "text-basic",
+   "parent": "rbw013",
+   "children": [],
+   "settings": {
+    "text": "{echo:weka_pe_rating('anzahl')} Bewertungen",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "19hiye"
+    ]
+   },
+   "label": "Anzahl"
+  },
+  {
+   "id": "rbw016",
+   "name": "button",
+   "parent": "rbw003",
+   "children": [],
+   "settings": {
+    "text": "Bewertungen ansehen",
+    "link": {
+     "type": "external",
+     "url": "https://www.provenexpert.com/de-de/weka-e-learning/",
+     "newTab": true
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "acss_import_btn--outline"
+    ]
+   },
+   "label": "Button: Bewertungen ansehen"
+  },
+  {
+   "id": "rbw017",
+   "name": "block",
+   "parent": "rbw003",
+   "children": [
+    "rbw018",
+    "rbw019"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "113tk7"
+    ]
+   },
+   "label": "Siegel"
+  },
+  {
+   "id": "rbw018",
+   "name": "image",
+   "parent": "rbw017",
+   "children": [],
+   "settings": {
+    "image": {
+     "id": 8663,
+     "filename": "2026/01/Logo-Comenius-Siegel-2025-CMYK-002.png",
+     "size": "full",
+     "full": "http://weka-e.local/wp-content/uploads/2026/01/Logo-Comenius-Siegel-2025-CMYK-002.png",
+     "url": "http://weka-e.local/wp-content/uploads/2026/01/Logo-Comenius-Siegel-2025-CMYK-002.png"
+    },
+    "_cssGlobalClasses": [
+     "mkd40b"
+    ]
+   },
+   "label": "Siegel: Comenius EduMedia 2025"
+  },
+  {
+   "id": "rbw019",
+   "name": "image",
+   "parent": "rbw017",
+   "children": [],
+   "settings": {
+    "image": {
+     "id": 8667,
+     "filename": "2026/01/ProvenExpert-Bewertungssiegel.png",
+     "size": "full",
+     "full": "http://weka-e.local/wp-content/uploads/2026/01/ProvenExpert-Bewertungssiegel.png",
+     "url": "http://weka-e.local/wp-content/uploads/2026/01/ProvenExpert-Bewertungssiegel.png"
+    },
+    "_cssGlobalClasses": [
+     "mkd40b"
+    ]
+   },
+   "label": "Siegel: Proven Expert"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "2niotf",
+   "name": "icon-circle",
+   "settings": {
+    "_display": "flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
+    "_flexShrink": "0",
+    "_background": {
+     "color": {
+      "raw": "var(--primary)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "50%",
+      "right": "50%",
+      "bottom": "50%",
+      "left": "50%"
+     }
+    },
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n.icon-circle > svg {\n  width: 50%;\n  height: 50%;\n}"
+   }
+  },
+  {
+   "id": "25o41p",
+   "name": "icon-circle--rating",
+   "settings": {
+    "_background": {
+     "color": {
+      "raw": "var(--warning-semi-dark)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1rnocq",
+   "name": "rating-bar__inner",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_alignItems": "center",
+    "_justifyContent": "space-between",
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-m)"
+   }
+  },
+  {
+   "id": "1k8ftz",
+   "name": "rating-bar__summary",
+   "settings": {
+    "_width": "auto",
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "nowrap",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-m)",
+    "_rowGap": "var(--space-s)",
+    "_alignItems:mobile_landscape": "flex-start"
+   }
+  },
+  {
+   "id": "2fp57d",
+   "name": "rating-bar__badge",
+   "settings": {
+    "_cssCustom": ".rating-bar__badge {\n  --icon-circle-size: 6rem;\n}"
+   }
+  },
+  {
+   "id": "25wcwd",
+   "name": "rating-bar__text",
+   "settings": {
+    "_width": "auto",
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)"
+   }
+  },
+  {
+   "id": "m4xb23",
+   "name": "rating-bar__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2noerg",
+   "name": "rating-bar__score",
+   "settings": {
+    "_width": "auto",
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-m)",
+    "_rowGap": "var(--space-xs)"
+   }
+  },
+  {
+   "id": "1nm7ld",
+   "name": "rating-bar__stars-wrap",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_alignItems": "center"
+   }
+  },
+  {
+   "id": "6o6e4p",
+   "name": "rating-bar__stars",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xl)",
+     "line-height": "1",
+     "letter-spacing": "0.08em"
+    },
+    "_cssCustom": "/* --rating kommt per Attribut aus {echo:weka_pe_rating('prozent')} */\n.rating-bar__stars {\n  display: inline-block;\n  background: linear-gradient(90deg, var(--warning) var(--rating, 100%), var(--shade-light) var(--rating, 100%));\n  -webkit-background-clip: text;\n  background-clip: text;\n  color: transparent;\n}"
+   }
+  },
+  {
+   "id": "vmzrfi",
+   "name": "rating-bar__grade",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "700",
+     "text-transform": "uppercase",
+     "letter-spacing": "0.06em",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "yu73zc",
+   "name": "rating-bar__value",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-m)",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_cssCustom": ".rating-bar__value strong {\n  font-size: var(--text-xl);\n}"
+   }
+  },
+  {
+   "id": "19hiye",
+   "name": "rating-bar__count",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "113tk7",
+   "name": "rating-bar__seals",
+   "settings": {
+    "_width": "auto",
+    "_display": "flex",
+    "_direction": "row",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-m)",
+    "_padding": {
+     "left": "var(--space-l)"
+    },
+    "_border": {
+     "width": {
+      "left": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     }
+    },
+    "_padding:tablet_portrait": {
+     "left": "0"
+    },
+    "_border:tablet_portrait": {
+     "width": {
+      "left": "0"
+     }
+    }
+   }
+  },
+  {
+   "id": "mkd40b",
+   "name": "rating-bar__seal",
+   "settings": {
+    "_height": "11rem",
+    "_width": "auto"
+   }
+  }
+ ],
+ "globalElements": []
+}

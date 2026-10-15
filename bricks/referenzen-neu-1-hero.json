@@ -1,0 +1,705 @@
+{
+ "content": [
+  {
+   "id": "rha001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "rha002",
+    "rha003",
+    "rha004"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "ufylb6",
+     "acss_import_bg--primary-dark"
+    ]
+   },
+   "label": "Hero – Referenzen"
+  },
+  {
+   "id": "rha002",
+   "name": "image",
+   "parent": "rha001",
+   "children": [],
+   "settings": {
+    "image": {
+     "id": 10833,
+     "filename": "2026/10/referenzen-hero.jpg",
+     "size": "full",
+     "full": "http://weka-e.local/wp-content/uploads/2026/10/referenzen-hero.jpg",
+     "url": "http://weka-e.local/wp-content/uploads/2026/10/referenzen-hero.jpg"
+    },
+    "_cssGlobalClasses": [
+     "7en89l"
+    ]
+   },
+   "label": "Foto (Platzhalter)"
+  },
+  {
+   "id": "rha003",
+   "name": "text-basic",
+   "parent": "rha001",
+   "children": [],
+   "settings": {
+    "text": "„Wissen wirksam vermitteln. In jeder Branche.“",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1q4cgx"
+    ]
+   },
+   "label": "Zitat"
+  },
+  {
+   "id": "rha004",
+   "name": "container",
+   "parent": "rha001",
+   "children": [
+    "rha005"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "29wqbq"
+    ]
+   },
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "rha005",
+   "name": "block",
+   "parent": "rha004",
+   "children": [
+    "rha006",
+    "rha007",
+    "rha008",
+    "rha009"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "nyrp5a"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "rha006",
+   "name": "text-basic",
+   "parent": "rha005",
+   "children": [],
+   "settings": {
+    "text": "REFERENZEN",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g",
+     "2agw7k"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "rha007",
+   "name": "heading",
+   "parent": "rha005",
+   "children": [],
+   "settings": {
+    "text": "In starken Unternehmen im Einsatz",
+    "tag": "h1",
+    "_cssGlobalClasses": [
+     "2oqnn8",
+     "acss_import_text--white"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "rha008",
+   "name": "text-basic",
+   "parent": "rha005",
+   "children": [],
+   "settings": {
+    "text": "Unternehmen aus unterschiedlichsten Branchen setzen auf WEKA E-Learning, um Wissen rechtssicher zu vermitteln, Mitarbeitende zu qualifizieren und Compliance sicherzustellen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "32ni7r",
+     "acss_import_text--white"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "rha009",
+   "name": "block",
+   "parent": "rha005",
+   "children": [
+    "rha010",
+    "rha016",
+    "rha022",
+    "rha028"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "n4lbw7"
+    ]
+   },
+   "label": "Kennzahlen"
+  },
+  {
+   "id": "rha010",
+   "name": "block",
+   "parent": "rha009",
+   "children": [
+    "rha011",
+    "rha013"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "ik52pn"
+    ]
+   },
+   "label": "Kennzahl: 6.000+"
+  },
+  {
+   "id": "rha011",
+   "name": "div",
+   "parent": "rha010",
+   "children": [
+    "rha012"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rha012",
+   "name": "svg",
+   "parent": "rha011",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z\"/><path d=\"M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2\"/><path d=\"M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2\"/><path d=\"M10 6h4\"/><path d=\"M10 10h4\"/><path d=\"M10 14h4\"/><path d=\"M10 18h4\"/></svg>"
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rha013",
+   "name": "div",
+   "parent": "rha010",
+   "children": [
+    "rha014",
+    "rha015"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "rha014",
+   "name": "text-basic",
+   "parent": "rha013",
+   "children": [],
+   "settings": {
+    "text": "6.000+",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "m4w9ex"
+    ]
+   },
+   "label": "Wert"
+  },
+  {
+   "id": "rha015",
+   "name": "text-basic",
+   "parent": "rha013",
+   "children": [],
+   "settings": {
+    "text": "Unternehmen vertrauen auf uns",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1urfch"
+    ]
+   },
+   "label": "Beschriftung"
+  },
+  {
+   "id": "rha016",
+   "name": "block",
+   "parent": "rha009",
+   "children": [
+    "rha017",
+    "rha019"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "ik52pn"
+    ]
+   },
+   "label": "Kennzahl: 430+"
+  },
+  {
+   "id": "rha017",
+   "name": "div",
+   "parent": "rha016",
+   "children": [
+    "rha018"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rha018",
+   "name": "svg",
+   "parent": "rha017",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M22 10v6\"/><path d=\"M2 10l10-5 10 5-10 5z\"/><path d=\"M6 12v5c3 3 9 3 12 0v-5\"/></svg>"
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rha019",
+   "name": "div",
+   "parent": "rha016",
+   "children": [
+    "rha020",
+    "rha021"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "rha020",
+   "name": "text-basic",
+   "parent": "rha019",
+   "children": [],
+   "settings": {
+    "text": "430+",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "m4w9ex"
+    ]
+   },
+   "label": "Wert"
+  },
+  {
+   "id": "rha021",
+   "name": "text-basic",
+   "parent": "rha019",
+   "children": [],
+   "settings": {
+    "text": "E-Learning Inhalte",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1urfch"
+    ]
+   },
+   "label": "Beschriftung"
+  },
+  {
+   "id": "rha022",
+   "name": "block",
+   "parent": "rha009",
+   "children": [
+    "rha023",
+    "rha025"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "ik52pn"
+    ]
+   },
+   "label": "Kennzahl: 800+"
+  },
+  {
+   "id": "rha023",
+   "name": "div",
+   "parent": "rha022",
+   "children": [
+    "rha024"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rha024",
+   "name": "svg",
+   "parent": "rha023",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>"
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rha025",
+   "name": "div",
+   "parent": "rha022",
+   "children": [
+    "rha026",
+    "rha027"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "rha026",
+   "name": "text-basic",
+   "parent": "rha025",
+   "children": [],
+   "settings": {
+    "text": "800+",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "m4w9ex"
+    ]
+   },
+   "label": "Wert"
+  },
+  {
+   "id": "rha027",
+   "name": "text-basic",
+   "parent": "rha025",
+   "children": [],
+   "settings": {
+    "text": "E-Learning-Projekte",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1urfch"
+    ]
+   },
+   "label": "Beschriftung"
+  },
+  {
+   "id": "rha028",
+   "name": "block",
+   "parent": "rha009",
+   "children": [
+    "rha029",
+    "rha031"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "ik52pn"
+    ]
+   },
+   "label": "Kennzahl: 25+"
+  },
+  {
+   "id": "rha029",
+   "name": "div",
+   "parent": "rha028",
+   "children": [
+    "rha030"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rha030",
+   "name": "svg",
+   "parent": "rha029",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/><path d=\"m9 12 2 2 4-4\"/></svg>"
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rha031",
+   "name": "div",
+   "parent": "rha028",
+   "children": [
+    "rha032",
+    "rha033"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "rha032",
+   "name": "text-basic",
+   "parent": "rha031",
+   "children": [],
+   "settings": {
+    "text": "25+",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "m4w9ex"
+    ]
+   },
+   "label": "Wert"
+  },
+  {
+   "id": "rha033",
+   "name": "text-basic",
+   "parent": "rha031",
+   "children": [],
+   "settings": {
+    "text": "Jahre Erfahrung",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1urfch"
+    ]
+   },
+   "label": "Beschriftung"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "2agw7k",
+   "name": "eyebrow--light",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2niotf",
+   "name": "icon-circle",
+   "settings": {
+    "_display": "flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
+    "_flexShrink": "0",
+    "_background": {
+     "color": {
+      "raw": "var(--primary)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "50%",
+      "right": "50%",
+      "bottom": "50%",
+      "left": "50%"
+     }
+    },
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n.icon-circle > svg {\n  width: 50%;\n  height: 50%;\n}"
+   }
+  },
+  {
+   "id": "ufylb6",
+   "name": "image-banner",
+   "settings": {
+    "_position": "relative",
+    "_overflow": "hidden",
+    "_cssCustom": ".image-banner {\n  isolation: isolate;\n}"
+   }
+  },
+  {
+   "id": "7en89l",
+   "name": "image-banner__image",
+   "settings": {
+    "_position": "absolute",
+    "_top": "0",
+    "_right": "0",
+    "_bottom": "0",
+    "_width": "46%",
+    "_height": "100%",
+    "_objectFit": "cover",
+    "_zIndex": "0",
+    "_position:mobile_landscape": "relative",
+    "_width:mobile_landscape": "100%",
+    "_height:mobile_landscape": "28rem",
+    "_margin:mobile_landscape": {
+     "bottom": "var(--space-m)"
+    },
+    "_cssCustom": "/* Weicher Übergang vom Foto in die Fläche (Maske, keine Farbe) */\n.image-banner__image {\n  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n  mask-image: linear-gradient(to right, transparent 0%, #000 35%);\n}\n\n@media (max-width: 767px) {\n  .image-banner__image {\n    -webkit-mask-image: none;\n    mask-image: none;\n    border-radius: var(--radius);\n  }\n}"
+   }
+  },
+  {
+   "id": "29wqbq",
+   "name": "image-banner__inner",
+   "settings": {
+    "_position": "relative",
+    "_zIndex": "1"
+   }
+  },
+  {
+   "id": "nyrp5a",
+   "name": "image-banner__content",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-m)",
+    "_width": "58%",
+    "_width:tablet_portrait": "62%",
+    "_width:mobile_landscape": "100%"
+   }
+  },
+  {
+   "id": "2oqnn8",
+   "name": "image-banner__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".image-banner__title {\n  overflow-wrap: break-word;\n  hyphens: auto;\n}"
+   }
+  },
+  {
+   "id": "32ni7r",
+   "name": "image-banner__lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)"
+    },
+    "_widthMax": "60ch"
+   }
+  },
+  {
+   "id": "1q4cgx",
+   "name": "image-banner__quote",
+   "settings": {
+    "_position": "absolute",
+    "_top": "14%",
+    "_right": "4%",
+    "_zIndex": "2",
+    "_widthMax": "16ch",
+    "_padding": {
+     "top": "var(--space-xs)",
+     "right": "var(--space-s)",
+     "bottom": "var(--space-xs)",
+     "left": "var(--space-s)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white-trans-80)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius-s)",
+      "right": "var(--radius-s)",
+      "bottom": "var(--radius-s)",
+      "left": "var(--radius-s)"
+     }
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "font-weight": "600",
+     "font-style": "italic",
+     "line-height": "1.3",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_display:tablet_portrait": "none",
+    "_cssCustom": ".image-banner__quote {\n  transform: rotate(-6deg);\n}"
+   }
+  },
+  {
+   "id": "n4lbw7",
+   "name": "stat-list",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "repeat(auto-fit, minmax(15rem, 1fr))",
+    "_columnGap": "var(--space-m)",
+    "_rowGap": "var(--space-m)",
+    "_margin": {
+     "top": "var(--space-s)",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".stat-list {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "ik52pn",
+   "name": "stat-list__item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "nowrap",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-xs)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    }
+   }
+  },
+  {
+   "id": "m4w9ex",
+   "name": "stat-list__value",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "font-weight": "700",
+     "line-height": "1.2",
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1urfch",
+   "name": "stat-list__label",
+   "settings": {
+    "_cssCustom": ".stat-list__label {\n  hyphens: manual;\n}",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-xs)",
+     "line-height": "1.3",
+     "color": {
+      "raw": "var(--white-trans-80)"
+     }
+    }
+   }
+  }
+ ],
+ "globalElements": []
+}

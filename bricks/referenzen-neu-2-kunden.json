@@ -1,0 +1,216 @@
+{
+ "content": [
+  {
+   "id": "rkl001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "rkl002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2d7opq",
+     "acss_import_pad-section--s"
+    ]
+   },
+   "label": "Kundenlogos"
+  },
+  {
+   "id": "rkl002",
+   "name": "container",
+   "parent": "rkl001",
+   "children": [
+    "rkl003",
+    "rkl004",
+    "rkl007"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "rkl003",
+   "name": "heading",
+   "parent": "rkl002",
+   "children": [],
+   "settings": {
+    "text": "Eine Auswahl unserer Kunden",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1f8apc"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "rkl004",
+   "name": "block",
+   "parent": "rkl002",
+   "children": [
+    "rkl005"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1a3l21"
+    ]
+   },
+   "label": "Logo-Liste"
+  },
+  {
+   "id": "rkl005",
+   "name": "block",
+   "parent": "rkl004",
+   "children": [
+    "rkl006"
+   ],
+   "settings": {
+    "tag": "li",
+    "hasLoop": true,
+    "query": {
+     "objectType": "post",
+     "post_type": [
+      "referenzen"
+     ],
+     "posts_per_page": "-1",
+     "orderby": "title",
+     "order": "asc",
+     "meta_query": [
+      {
+       "id": "rklmq1",
+       "key": "aktiv",
+       "value": "1"
+      }
+     ]
+    },
+    "_cssGlobalClasses": [
+     "18a7xc"
+    ]
+   },
+   "label": "Logo (Loop: aktive Referenzen)"
+  },
+  {
+   "id": "rkl006",
+   "name": "image",
+   "parent": "rkl005",
+   "children": [],
+   "settings": {
+    "image": {
+     "useDynamicData": "{mb_referenzen_logo}",
+     "size": "medium"
+    },
+    "altText": "{post_title}",
+    "_cssGlobalClasses": [
+     "20snxd"
+    ]
+   },
+   "label": "Logo"
+  },
+  {
+   "id": "rkl007",
+   "name": "text-basic",
+   "parent": "rkl002",
+   "children": [],
+   "settings": {
+    "text": "Darüber hinaus vertrauen zahlreiche weitere Unternehmen aus Industrie, Energie, öffentlicher Verwaltung, Gesundheitswesen, Finanzdienstleistungen und vielen weiteren Branchen auf WEKA E-Learning.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2c1z3z"
+    ]
+   },
+   "label": "Hinweis"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "2d7opq",
+   "name": "customer-logos",
+   "settings": {}
+  },
+  {
+   "id": "1f8apc",
+   "name": "customer-logos__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "1a3l21",
+   "name": "customer-logos__list",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_alignItems": "center",
+    "_justifyContent": "space-between",
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-m)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_justifyContent:mobile_landscape": "center",
+    "_cssCustom": ".customer-logos__list {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "18a7xc",
+   "name": "customer-logos__item",
+   "settings": {
+    "_width": "auto",
+    "_display": "flex",
+    "_alignItems": "center",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    }
+   }
+  },
+  {
+   "id": "20snxd",
+   "name": "customer-logos__logo",
+   "settings": {
+    "_height": "4.8rem",
+    "_width": "auto",
+    "_widthMax": "16rem",
+    "_objectFit": "contain"
+   }
+  },
+  {
+   "id": "2c1z3z",
+   "name": "customer-logos__note",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "90ch",
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "text-align": "center",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    },
+    "_cssCustom": ".customer-logos__note {\n  margin-inline: auto;\n}"
+   }
+  }
+ ],
+ "globalElements": []
+}

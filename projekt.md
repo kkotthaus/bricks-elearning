@@ -10,10 +10,16 @@ Eine bestehende Seite wird importiert und anschließend überarbeitet. Allgemein
 - Staging: https://weka-e.kotthaus-bs.de (nur HTTPS/Backend, kein Mailversand – Mails fängt das WPCodeBox-Snippet „WEKA Staging – Mails abfangen“ ab, Ansicht unter Werkzeuge › Abgefangene Mails). Live ebenfalls nur über HTTPS erreichbar.
 - Staging per SSH (seit 05.10.2026): Alias `weka-e` (CyberPanel-Server 89.58.38.62, Benutzer `wekae7789`, Schlüssel `~/.ssh/weka_e`), WordPress in `~/public_html`, WP-CLI als `wp`. Sicherungen vor Änderungen unter `~/backup/`. Auf netcup2 liegt unter `/srv/www/weka-e` nur eine alte Kopie (WordPress 6.4) – nicht verwenden.
 - Angebotskonfigurator mit PDF-Preisauskunft (Preise, Mengenrabatt je Kurs, Flatrate-Vergleich, Freigabefeld): Snippets in `snippets/`, Preise und Übernahme auf live siehe [docs/live-angebot-pdf.md](docs/live-angebot-pdf.md). Aufruf von lernen.weka.de (Link mit Vorauswahl, iframe): [docs/aufruf-von-lernen-weka.md](docs/aufruf-von-lernen-weka.md).
+- Seite „Referenzen-neu“ (lokal ID 10839, Entwurf) nach Vorlage [docs/vorlagen/referenzen-neu.png](docs/vorlagen/referenzen-neu.png): Sections `bricks/referenzen-neu-*.json`. Kennzahlen aus der Vorlage übernommen (nicht belegt), Buttons „Mehr erfahren“ mit `#` als Platzhalter-Link.
+- **Ausnahme KI-Kennzeichnung (entschieden 15.10.2026):** Die Fotos auf „Referenzen-neu“ sind KI-Bilder aus der Vorlage und werden ohne Kennzeichnung eingesetzt; der Kunde tauscht sie später selbst aus. Mediathek-Titel enden auf „(Platzhalter)“.
+- Proven-Expert-Bewertung: Das Code-Element im Footer (Template 24) holt die Werte per API und speichert sie als JSON im Webroot. Das Snippet „WEKA Proven Expert – Bewertung“ (`snippets/weka-proven-expert-bewertung.php`) liest nur diese Datei: `{echo:weka_pe_rating('note'|'prozent'|'anzahl'|'text')}`. Im Builder bleiben Werte in Attributen (Sterne) leer, im Frontend stimmen sie.
+- SVG-Code in Bricks braucht eine Signatur (`wp_hash` der Seite). Die Section-Dateien im Repo sind ohne Signatur; nach dem Einfügen die Symbole im Builder signieren bzw. auf jeder Seite neu signieren.
 
 ### Plugins (Duplicator-Archiv vom 28.09.2026)
 
-Lokale Arbeitskopie: Local-Seite **weka-e** (http://weka-e.local). Bricks 2.3.10 + Child-Theme aktiv, WordPress 7.1.2.
+Lokale Arbeitskopie: Local-Seite **weka-e** (http://weka-e.local), am 15.10.2026 neu aus dem Duplicator-Paket von Staging eingerichtet (Paket in `backup/`, nicht im Repo). Bricks 2.4.2 + Child-Theme aktiv, WordPress 7.1.3. Lokal ist in `wp-config.php` die Zeile `$_SERVER['HTTPS']='on'` auskommentiert (gilt nur für den Reverse Proxy auf Staging).
+
+Die Plugin-Liste unten ist der Stand vom 28.09.2026. Seit Staging zusätzlich aktiv: WS Form Pro (+ HubSpot, PDF) für den Angebotskonfigurator.
 
 **Aktiv:** Automatic.css 3.3.7, BricksExtras 1.7.6, Frames 1.5.13, BricksLabs Bricks Navigator 1.2.1, Meta Box AIO 3.12.0, Meta Box 5.15.1, WPCodeBox 2 1.4.1, WP Grid Builder 2.3.6 (+ Bricks 1.3.6, Meta Box 1.2.0, Caching 1.2.1), HappyFiles Pro 1.9.1, Motion.page 3.2.10, Funnelforms Pro 3.8.10, Admin Columns Pro 7.1.6, Rank Math 1.0.279, Schema Pro 2.12.2, Imagify 2.3.4, Duplicator Pro 5.0.4, Enable Media Replace 4.2.2, Disable Embeds 1.5.0, Remove CPT base 6.7, Temporary Login Without Password 1.9.9.
 
