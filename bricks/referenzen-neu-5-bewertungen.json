@@ -9,7 +9,7 @@
    ],
    "settings": {
     "_cssGlobalClasses": [
-     "acss_import_pad-section--s"
+     "m5azf1"
     ]
    },
    "label": "Bewertungen"
@@ -73,12 +73,14 @@
   },
   {
    "id": "rbw006",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbw005",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/><path d=\"m9 12 2 2 4-4\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    }
    },
    "label": "Symbol"
   },
@@ -333,7 +335,7 @@
       "left": "50%"
      }
     },
-    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n.icon-circle > svg {\n  width: 50%;\n  height: 50%;\n}"
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}"
    }
   },
   {
@@ -349,6 +351,16 @@
      "color": {
       "raw": "var(--white)"
      }
+    }
+   }
+  },
+  {
+   "id": "m5azf1",
+   "name": "rating-bar",
+   "settings": {
+    "_padding": {
+     "top": "var(--section-space-xs)",
+     "bottom": "var(--section-space-xs)"
     }
    }
   },
@@ -383,7 +395,7 @@
    "id": "2fp57d",
    "name": "rating-bar__badge",
    "settings": {
-    "_cssCustom": ".rating-bar__badge {\n  --icon-circle-size: 6rem;\n}"
+    "_cssCustom": ".rating-bar__badge {\n  --icon-circle-size: 8rem;\n}"
    }
   },
   {
@@ -404,8 +416,10 @@
      "top": "0",
      "bottom": "0"
     },
+    "_widthMax": "18ch",
     "_typography": {
-     "font-size": "var(--h4)"
+     "font-size": "var(--h3)",
+     "line-height": "1.2"
     }
    }
   },
@@ -436,7 +450,7 @@
    "name": "rating-bar__stars",
    "settings": {
     "_typography": {
-     "font-size": "var(--text-xl)",
+     "font-size": "var(--h2)",
      "line-height": "1",
      "letter-spacing": "0.08em"
     },

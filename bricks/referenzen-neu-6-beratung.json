@@ -184,6 +184,10 @@
    "settings": {
     "_position": "relative",
     "_overflow": "hidden",
+    "_padding": {
+     "top": "var(--section-space-xs)",
+     "bottom": "var(--section-space-xs)"
+    },
     "_cssCustom": ".image-banner {\n  isolation: isolate;\n}"
    }
   },
@@ -195,7 +199,7 @@
     "_top": "0",
     "_right": "0",
     "_bottom": "0",
-    "_width": "46%",
+    "_width": "52%",
     "_height": "100%",
     "_objectFit": "cover",
     "_zIndex": "0",
@@ -223,7 +227,7 @@
     "_display": "flex",
     "_direction": "column",
     "_rowGap": "var(--space-m)",
-    "_width": "58%",
+    "_width": "50%",
     "_width:tablet_portrait": "62%",
     "_width:mobile_landscape": "100%"
    }
@@ -237,7 +241,11 @@
      "bottom": "0"
     },
     "_widthMax": "100%",
-    "_cssCustom": ".image-banner__title {\n  overflow-wrap: break-word;\n  hyphens: auto;\n}"
+    "_typography": {
+     "font-size": "var(--h1)",
+     "line-height": "1.15"
+    },
+    "_cssCustom": ".image-banner__title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n}\n\n/* Hero-Titel laut Vorlage deutlich größer als h1 */\n.image-banner h1.image-banner__title {\n  font-size: calc(var(--h1) * 1.45);\n}"
    }
   },
   {
@@ -259,31 +267,12 @@
    "name": "image-banner__quote",
    "settings": {
     "_position": "absolute",
-    "_top": "14%",
+    "_top": "12%",
     "_right": "4%",
     "_zIndex": "2",
-    "_widthMax": "16ch",
-    "_padding": {
-     "top": "var(--space-xs)",
-     "right": "var(--space-s)",
-     "bottom": "var(--space-xs)",
-     "left": "var(--space-s)"
-    },
-    "_background": {
-     "color": {
-      "raw": "var(--white-trans-80)"
-     }
-    },
-    "_border": {
-     "radius": {
-      "top": "var(--radius-s)",
-      "right": "var(--radius-s)",
-      "bottom": "var(--radius-s)",
-      "left": "var(--radius-s)"
-     }
-    },
+    "_widthMax": "13ch",
     "_typography": {
-     "font-size": "var(--text-l)",
+     "font-size": "var(--h4)",
      "font-weight": "600",
      "font-style": "italic",
      "line-height": "1.3",
@@ -292,7 +281,7 @@
      }
     },
     "_display:tablet_portrait": "none",
-    "_cssCustom": ".image-banner__quote {\n  transform: rotate(-6deg);\n}"
+    "_cssCustom": ".image-banner__quote {\n  transform: rotate(-8deg);\n  hyphens: manual;\n}\n\n/* Schwung unter dem Zitat wie in der Vorlage */\n.image-banner__quote::after {\n  content: \"\";\n  display: block;\n  width: 85%;\n  height: 0.12em;\n  margin-top: 0.35em;\n  margin-left: auto;\n  background: var(--primary);\n  border-radius: 50%;\n  transform: rotate(-4deg);\n}"
    }
   },
   {

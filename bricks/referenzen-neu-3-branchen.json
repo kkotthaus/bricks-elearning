@@ -9,6 +9,7 @@
    ],
    "settings": {
     "_cssGlobalClasses": [
+     "a951f7",
      "acss_import_bg--primary-ultra-light"
     ]
    },
@@ -158,12 +159,14 @@
   },
   {
    "id": "rbr011",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr010",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z\"/><path d=\"M17 18h1\"/><path d=\"M12 18h1\"/><path d=\"M7 18h1\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-industry"
+    }
    },
    "label": "Symbol"
   },
@@ -234,12 +237,14 @@
   },
   {
    "id": "rbr016",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr015",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -279,12 +284,14 @@
   },
   {
    "id": "rbr019",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr018",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -324,12 +331,14 @@
   },
   {
    "id": "rbr022",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr021",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -369,12 +378,14 @@
   },
   {
    "id": "rbr025",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr024",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -473,12 +484,14 @@
   },
   {
    "id": "rbr031",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr030",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-users"
+    }
    },
    "label": "Symbol"
   },
@@ -549,12 +562,14 @@
   },
   {
    "id": "rbr036",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr035",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -594,12 +609,14 @@
   },
   {
    "id": "rbr039",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr038",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -639,12 +656,14 @@
   },
   {
    "id": "rbr042",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr041",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -684,12 +703,14 @@
   },
   {
    "id": "rbr045",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr044",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -788,12 +809,14 @@
   },
   {
    "id": "rbr051",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr050",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z\"/><path d=\"M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-leaf"
+    }
    },
    "label": "Symbol"
   },
@@ -864,12 +887,14 @@
   },
   {
    "id": "rbr056",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr055",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -909,12 +934,14 @@
   },
   {
    "id": "rbr059",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr058",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -954,12 +981,14 @@
   },
   {
    "id": "rbr062",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr061",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -999,12 +1028,14 @@
   },
   {
    "id": "rbr065",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr064",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -1103,12 +1134,14 @@
   },
   {
    "id": "rbr071",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr070",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 22h18\"/><path d=\"M6 18v-7\"/><path d=\"M10 18v-7\"/><path d=\"M14 18v-7\"/><path d=\"M18 18v-7\"/><path d=\"M12 2l8 5H4z\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-building-columns"
+    }
    },
    "label": "Symbol"
   },
@@ -1179,12 +1212,14 @@
   },
   {
    "id": "rbr076",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr075",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -1224,12 +1259,14 @@
   },
   {
    "id": "rbr079",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr078",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -1269,12 +1306,14 @@
   },
   {
    "id": "rbr082",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr081",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -1314,12 +1353,14 @@
   },
   {
    "id": "rbr085",
-   "name": "svg",
+   "name": "icon",
    "parent": "rbr084",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>",
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
     "_cssGlobalClasses": [
      "x272hp",
      "14xrl4"
@@ -1395,7 +1436,7 @@
       "left": "50%"
      }
     },
-    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n.icon-circle > svg {\n  width: 50%;\n  height: 50%;\n}"
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}"
    }
   },
   {
@@ -1421,8 +1462,7 @@
    "settings": {
     "_display": "flex",
     "_direction": "column",
-    "_rowGap": "var(--space-s)",
-    "_widthMax": "90ch"
+    "_rowGap": "var(--space-s)"
    }
   },
   {
@@ -1434,6 +1474,10 @@
      "bottom": "0"
     },
     "_widthMax": "100%",
+    "_typography": {
+     "font-size": "var(--h1)",
+     "line-height": "1.15"
+    },
     "_cssCustom": ".industry-section__title {\n  overflow-wrap: break-word;\n  hyphens: auto;\n}"
    }
   },
@@ -1455,6 +1499,8 @@
    "name": "industry-cards",
    "settings": {
     "_alignItems": "stretch",
+    "_columnGap": "var(--space-s)",
+    "_rowGap": "var(--space-s)",
     "_margin": {
      "top": "0",
      "right": "0",
@@ -1476,6 +1522,7 @@
    "settings": {
     "_display": "flex",
     "_direction": "column",
+    "_rowGap": "0",
     "_overflow": "hidden",
     "_margin": {
      "top": "0",
@@ -1513,11 +1560,12 @@
    "settings": {
     "_position": "relative",
     "_zIndex": "1",
+    "_alignSelf": "flex-start",
     "_margin": {
-     "top": "-3.6rem",
+     "top": "-5.2rem",
      "left": "var(--space-m)"
     },
-    "_cssCustom": ".industry-card__icon {\n  --icon-circle-size: 7.2rem;\n}"
+    "_cssCustom": "/* Kreis links, mittig auf der Unterkante des Fotos (Vorlage) */\n.industry-card__icon {\n  --icon-circle-size: 10.4rem;\n  border: 0.2rem solid var(--primary-trans-20);\n}"
    }
   },
   {
@@ -1529,7 +1577,7 @@
     "_rowGap": "var(--space-s)",
     "_flexGrow": "1",
     "_padding": {
-     "top": "var(--space-s)",
+     "top": "var(--space-xs)",
      "right": "var(--space-m)",
      "bottom": "var(--space-m)",
      "left": "var(--space-m)"
@@ -1564,6 +1612,9 @@
    "id": "14xrl4",
    "name": "check-list__icon--plain",
    "settings": {
+    "_display": "flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
     "_background": {
      "color": {
       "raw": "transparent"
@@ -1575,10 +1626,10 @@
      }
     },
     "_padding": {
-     "top": "0.2em",
-     "right": "0.2em",
-     "bottom": "0.2em",
-     "left": "0.2em"
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
     }
    }
   },
@@ -1586,7 +1637,18 @@
    "id": "hn83m3",
    "name": "industry-card__list",
    "settings": {
-    "_flexGrow": "1"
+    "_flexGrow": "1",
+    "_cssCustom": "/* Listentext in den Karten dunkel wie in der Vorlage */\n.industry-card__list .check-list__text {\n  color: var(--text-dark);\n}"
+   }
+  },
+  {
+   "id": "a951f7",
+   "name": "industry-section",
+   "settings": {
+    "_padding": {
+     "top": "var(--section-space-xs)",
+     "bottom": "var(--section-space-xs)"
+    }
    }
   }
  ],

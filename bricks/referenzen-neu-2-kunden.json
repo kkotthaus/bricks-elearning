@@ -9,8 +9,7 @@
    ],
    "settings": {
     "_cssGlobalClasses": [
-     "2d7opq",
-     "acss_import_pad-section--s"
+     "2d7opq"
     ]
    },
    "label": "Kundenlogos"
@@ -134,7 +133,12 @@
   {
    "id": "2d7opq",
    "name": "customer-logos",
-   "settings": {}
+   "settings": {
+    "_padding": {
+     "top": "var(--section-space-xs)",
+     "bottom": "var(--section-space-xs)"
+    }
+   }
   },
   {
    "id": "1f8apc",
@@ -145,7 +149,7 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--h4)"
+     "font-size": "var(--h3)"
     }
    }
   },
@@ -194,9 +198,9 @@
    "id": "20snxd",
    "name": "customer-logos__logo",
    "settings": {
-    "_height": "4.8rem",
+    "_height": "6.4rem",
     "_width": "auto",
-    "_widthMax": "16rem",
+    "_widthMax": "100%",
     "_objectFit": "contain"
    }
   },
@@ -208,9 +212,9 @@
      "top": "0",
      "bottom": "0"
     },
-    "_widthMax": "90ch",
+    "_widthMax": "110ch",
     "_typography": {
-     "font-size": "var(--text-s)",
+     "font-size": "var(--text-m)",
      "text-align": "center",
      "color": {
       "raw": "var(--text-dark-muted)"

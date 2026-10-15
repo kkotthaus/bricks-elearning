@@ -1,0 +1,121 @@
+[
+    {
+        "id": "aq6l6g",
+        "name": "eyebrow",
+        "settings": {
+            "_margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+            },
+            "_typography": {
+                "font-size": "var(--text-s)",
+                "font-weight": "500",
+                "letter-spacing": "0.12em",
+                "color": {
+                    "id": "acss_import_primary-dark",
+                    "name": "primary-dark",
+                    "raw": "var(--primary-dark)"
+                }
+            }
+        }
+    },
+    {
+        "id": "i49kq7",
+        "name": "check-list",
+        "settings": {
+            "_display": "flex",
+            "_direction": "column",
+            "_rowGap": "var(--space-s)",
+            "_columnGap": "var(--space-s)",
+            "_margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+            },
+            "_padding": {
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+            },
+            "_cssCustom": ".check-list {\n  list-style: none;\n}"
+        }
+    },
+    {
+        "id": "1n8mtz",
+        "name": "check-list__item",
+        "settings": {
+            "_display": "flex",
+            "_direction": "row",
+            "_alignItems": "flex-start",
+            "_rowGap": "var(--space-s)",
+            "_columnGap": "var(--space-s)",
+            "_margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+            }
+        }
+    },
+    {
+        "id": "x272hp",
+        "name": "check-list__icon",
+        "settings": {
+            "_display": "block",
+            "_flexShrink": "0",
+            "_width": "1.8em",
+            "_height": "1.8em",
+            "_typography": {
+                "font-size": "var(--text-s)",
+                "color": {
+                    "id": "acss_import_white",
+                    "name": "White",
+                    "raw": "var(--white)"
+                }
+            },
+            "_background": {
+                "color": {
+                    "raw": "var(--primary-dark)"
+                }
+            },
+            "_border": {
+                "radius": {
+                    "top": "50%",
+                    "right": "50%",
+                    "bottom": "50%",
+                    "left": "50%"
+                }
+            },
+            "_padding": {
+                "top": "0.4em",
+                "right": "0.4em",
+                "bottom": "0.4em",
+                "left": "0.4em"
+            }
+        }
+    },
+    {
+        "id": "oevb9o",
+        "name": "check-list__text",
+        "settings": {
+            "_margin": {
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+            },
+            "_padding": {
+                "top": "0.15em"
+            },
+            "_typography": {
+                "color": {
+                    "raw": "var(--primary-dark)"
+                }
+            }
+        }
+    }
+]

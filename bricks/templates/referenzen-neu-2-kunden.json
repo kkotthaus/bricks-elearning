@@ -1,0 +1,228 @@
+{
+ "title": "Referenzen-neu 2 – Kundenlogos",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "rkl001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "rkl002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2d7opq"
+    ]
+   },
+   "label": "Kundenlogos"
+  },
+  {
+   "id": "rkl002",
+   "name": "container",
+   "parent": "rkl001",
+   "children": [
+    "rkl003",
+    "rkl004",
+    "rkl007"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "rkl003",
+   "name": "heading",
+   "parent": "rkl002",
+   "children": [],
+   "settings": {
+    "text": "Eine Auswahl unserer Kunden",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1f8apc"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "rkl004",
+   "name": "block",
+   "parent": "rkl002",
+   "children": [
+    "rkl005"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1a3l21"
+    ]
+   },
+   "label": "Logo-Liste"
+  },
+  {
+   "id": "rkl005",
+   "name": "block",
+   "parent": "rkl004",
+   "children": [
+    "rkl006"
+   ],
+   "settings": {
+    "tag": "li",
+    "hasLoop": true,
+    "query": {
+     "objectType": "post",
+     "post_type": [
+      "referenzen"
+     ],
+     "posts_per_page": "6",
+     "post__in": [
+      "4120",
+      "9298",
+      "9297",
+      "9283",
+      "2750",
+      "2751"
+     ],
+     "orderby": "post__in",
+     "meta_query": [
+      {
+       "id": "rklmq1",
+       "key": "aktiv",
+       "value": "1"
+      }
+     ]
+    },
+    "_cssGlobalClasses": [
+     "18a7xc"
+    ]
+   },
+   "label": "Logo (Loop: 6 ausgewählte Referenzen)"
+  },
+  {
+   "id": "rkl006",
+   "name": "image",
+   "parent": "rkl005",
+   "children": [],
+   "settings": {
+    "image": {
+     "useDynamicData": "{mb_referenzen_logo}",
+     "size": "medium"
+    },
+    "altText": "{post_title}",
+    "_cssGlobalClasses": [
+     "20snxd"
+    ]
+   },
+   "label": "Logo"
+  },
+  {
+   "id": "rkl007",
+   "name": "text-basic",
+   "parent": "rkl002",
+   "children": [],
+   "settings": {
+    "text": "Darüber hinaus vertrauen zahlreiche weitere Unternehmen aus Industrie, Energie, öffentlicher Verwaltung, Gesundheitswesen, Finanzdienstleistungen und vielen weiteren Branchen auf WEKA E-Learning.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2c1z3z"
+    ]
+   },
+   "label": "Hinweis"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "2d7opq",
+   "name": "customer-logos",
+   "settings": {
+    "_padding": {
+     "top": "var(--section-space-xs)",
+     "bottom": "var(--section-space-xs)"
+    }
+   }
+  },
+  {
+   "id": "1f8apc",
+   "name": "customer-logos__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "1a3l21",
+   "name": "customer-logos__list",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "repeat(6, minmax(0, 1fr))",
+    "_gridTemplateColumns:tablet_portrait": "repeat(3, minmax(0, 1fr))",
+    "_gridTemplateColumns:mobile_portrait": "repeat(2, minmax(0, 1fr))",
+    "_alignItems": "center",
+    "_justifyItems": "center",
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-m)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".customer-logos__list {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "18a7xc",
+   "name": "customer-logos__item",
+   "settings": {
+    "_width": "auto",
+    "_display": "flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    }
+   }
+  },
+  {
+   "id": "20snxd",
+   "name": "customer-logos__logo",
+   "settings": {
+    "_height": "6.4rem",
+    "_width": "auto",
+    "_widthMax": "100%",
+    "_objectFit": "contain"
+   }
+  },
+  {
+   "id": "2c1z3z",
+   "name": "customer-logos__note",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "110ch",
+    "_typography": {
+     "font-size": "var(--text-m)",
+     "text-align": "center",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    },
+    "_cssCustom": ".customer-logos__note {\n  margin-inline: auto;\n}"
+   }
+  }
+ ]
+}

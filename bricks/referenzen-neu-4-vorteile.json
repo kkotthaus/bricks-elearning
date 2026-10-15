@@ -94,12 +94,14 @@
   },
   {
    "id": "rvt007",
-   "name": "svg",
+   "name": "icon",
    "parent": "rvt006",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"8\" r=\"6\"/><path d=\"M15.477 12.89 17 22l-5-3-5 3 1.523-9.11\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-award"
+    }
    },
    "label": "Symbol"
   },
@@ -175,12 +177,14 @@
   },
   {
    "id": "rvt013",
-   "name": "svg",
+   "name": "icon",
    "parent": "rvt012",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-gear"
+    }
    },
    "label": "Symbol"
   },
@@ -256,12 +260,14 @@
   },
   {
    "id": "rvt019",
-   "name": "svg",
+   "name": "icon",
    "parent": "rvt018",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect width=\"20\" height=\"14\" x=\"2\" y=\"3\" rx=\"2\"/><path d=\"M8 21h8\"/><path d=\"M12 17v4\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-desktop"
+    }
    },
    "label": "Symbol"
   },
@@ -337,12 +343,14 @@
   },
   {
    "id": "rvt025",
-   "name": "svg",
+   "name": "icon",
    "parent": "rvt024",
    "children": [],
    "settings": {
-    "source": "code",
-    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 3v18h18\"/><path d=\"M8 17v-4\"/><path d=\"M13 17V9\"/><path d=\"M18 17V5\"/></svg>"
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-chart-column"
+    }
    },
    "label": "Symbol"
   },
@@ -416,7 +424,7 @@
       "left": "50%"
      }
     },
-    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n.icon-circle > svg {\n  width: 50%;\n  height: 50%;\n}"
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}"
    }
   },
   {
@@ -425,24 +433,12 @@
    "settings": {
     "_background": {
      "color": {
-      "raw": "var(--white)"
+      "raw": "var(--primary-trans-10)"
      }
     },
     "_typography": {
      "color": {
       "raw": "var(--primary-dark)"
-     }
-    },
-    "_border": {
-     "width": {
-      "top": "1px",
-      "right": "1px",
-      "bottom": "1px",
-      "left": "1px"
-     },
-     "style": "solid",
-     "color": {
-      "raw": "var(--primary-trans-20)"
      }
     }
    }
@@ -452,7 +448,8 @@
    "name": "trust-benefits",
    "settings": {
     "_padding": {
-     "top": "0"
+     "top": "0",
+     "bottom": "var(--section-space-xs)"
     }
    }
   },
@@ -465,7 +462,7 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--h4)"
+     "font-size": "var(--h3)"
     }
    }
   },
@@ -501,7 +498,8 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    }
+    },
+    "_cssCustom": ".trust-benefits__item {\n  --icon-circle-size: 6.4rem;\n}"
    }
   },
   {

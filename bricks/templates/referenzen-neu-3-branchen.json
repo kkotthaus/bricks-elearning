@@ -1,0 +1,1775 @@
+{
+ "title": "Referenzen-neu 3 – Branchenlösungen",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "rbr001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "rbr002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "a951f7",
+     "acss_import_bg--primary-ultra-light"
+    ]
+   },
+   "label": "Branchenlösungen"
+  },
+  {
+   "id": "rbr002",
+   "name": "container",
+   "parent": "rbr001",
+   "children": [
+    "rbr003",
+    "rbr007"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "rbr003",
+   "name": "block",
+   "parent": "rbr002",
+   "children": [
+    "rbr004",
+    "rbr005",
+    "rbr006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2l4lfz"
+    ]
+   },
+   "label": "Kopf"
+  },
+  {
+   "id": "rbr004",
+   "name": "text-basic",
+   "parent": "rbr003",
+   "children": [],
+   "settings": {
+    "text": "BRANCHENLÖSUNGEN",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "rbr005",
+   "name": "heading",
+   "parent": "rbr003",
+   "children": [],
+   "settings": {
+    "text": "So unterschiedlich Unternehmen sind, so individuell sind die Anforderungen",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "zlbaok"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "rbr006",
+   "name": "text-basic",
+   "parent": "rbr003",
+   "children": [],
+   "settings": {
+    "text": "Entdecken Sie, wie Unternehmen aus verschiedenen Branchen mit WEKA E-Learning typische Herausforderungen lösen – von Pflichtunterweisungen und Compliance bis zur digitalen Personalentwicklung.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1ka101"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "rbr007",
+   "name": "block",
+   "parent": "rbr002",
+   "children": [
+    "rbr008",
+    "rbr028",
+    "rbr048",
+    "rbr068"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "at3w0i",
+     "acss_import_grid--4",
+     "acss_import_grid--l-2",
+     "acss_import_grid--s-1"
+    ]
+   },
+   "label": "Branchen-Karten"
+  },
+  {
+   "id": "rbr008",
+   "name": "block",
+   "parent": "rbr007",
+   "children": [
+    "rbr009",
+    "rbr010",
+    "rbr012"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1lv30b"
+    ]
+   },
+   "label": "Karte: Produktion & Industrie"
+  },
+  {
+   "id": "rbr009",
+   "name": "image",
+   "parent": "rbr008",
+   "children": [],
+   "settings": {
+    "image": {
+     "id": 10835,
+     "filename": "2026/10/branche-produktion.jpg",
+     "size": "full",
+     "full": "http://weka-e.local/wp-content/uploads/2026/10/branche-produktion.jpg",
+     "url": "http://weka-e.local/wp-content/uploads/2026/10/branche-produktion.jpg"
+    },
+    "_cssGlobalClasses": [
+     "2p5xhu"
+    ]
+   },
+   "label": "Foto (Platzhalter)"
+  },
+  {
+   "id": "rbr010",
+   "name": "div",
+   "parent": "rbr008",
+   "children": [
+    "rbr011"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "2ba0in",
+     "1dj2mr"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rbr011",
+   "name": "icon",
+   "parent": "rbr010",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-industry"
+    }
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rbr012",
+   "name": "block",
+   "parent": "rbr008",
+   "children": [
+    "rbr013",
+    "rbr014",
+    "rbr027"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "13ppp5"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "rbr013",
+   "name": "heading",
+   "parent": "rbr012",
+   "children": [],
+   "settings": {
+    "text": "Produktion & Industrie",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "zztaw9"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "rbr014",
+   "name": "block",
+   "parent": "rbr012",
+   "children": [
+    "rbr015",
+    "rbr018",
+    "rbr021",
+    "rbr024"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "i49kq7",
+     "hn83m3"
+    ]
+   },
+   "label": "Häkchen-Liste"
+  },
+  {
+   "id": "rbr015",
+   "name": "block",
+   "parent": "rbr014",
+   "children": [
+    "rbr016",
+    "rbr017"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Arbeitsschutz"
+  },
+  {
+   "id": "rbr016",
+   "name": "icon",
+   "parent": "rbr015",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr017",
+   "name": "text-basic",
+   "parent": "rbr015",
+   "children": [],
+   "settings": {
+    "text": "Arbeitsschutz",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr018",
+   "name": "block",
+   "parent": "rbr014",
+   "children": [
+    "rbr019",
+    "rbr020"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Elektrosicherheit"
+  },
+  {
+   "id": "rbr019",
+   "name": "icon",
+   "parent": "rbr018",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr020",
+   "name": "text-basic",
+   "parent": "rbr018",
+   "children": [],
+   "settings": {
+    "text": "Elektrosicherheit",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr021",
+   "name": "block",
+   "parent": "rbr014",
+   "children": [
+    "rbr022",
+    "rbr023"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Gefahrstoffe"
+  },
+  {
+   "id": "rbr022",
+   "name": "icon",
+   "parent": "rbr021",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr023",
+   "name": "text-basic",
+   "parent": "rbr021",
+   "children": [],
+   "settings": {
+    "text": "Gefahrstoffe",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr024",
+   "name": "block",
+   "parent": "rbr014",
+   "children": [
+    "rbr025",
+    "rbr026"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Maschinen & Anlagen"
+  },
+  {
+   "id": "rbr025",
+   "name": "icon",
+   "parent": "rbr024",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr026",
+   "name": "text-basic",
+   "parent": "rbr024",
+   "children": [],
+   "settings": {
+    "text": "Maschinen & Anlagen",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr027",
+   "name": "button",
+   "parent": "rbr012",
+   "children": [],
+   "settings": {
+    "text": "Mehr erfahren",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action",
+     "1flqz9"
+    ]
+   },
+   "label": "Button: Mehr erfahren"
+  },
+  {
+   "id": "rbr028",
+   "name": "block",
+   "parent": "rbr007",
+   "children": [
+    "rbr029",
+    "rbr030",
+    "rbr032"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1lv30b"
+    ]
+   },
+   "label": "Karte: Verwaltung & Büro"
+  },
+  {
+   "id": "rbr029",
+   "name": "image",
+   "parent": "rbr028",
+   "children": [],
+   "settings": {
+    "image": {
+     "id": 10836,
+     "filename": "2026/10/branche-verwaltung.jpg",
+     "size": "full",
+     "full": "http://weka-e.local/wp-content/uploads/2026/10/branche-verwaltung.jpg",
+     "url": "http://weka-e.local/wp-content/uploads/2026/10/branche-verwaltung.jpg"
+    },
+    "_cssGlobalClasses": [
+     "2p5xhu"
+    ]
+   },
+   "label": "Foto (Platzhalter)"
+  },
+  {
+   "id": "rbr030",
+   "name": "div",
+   "parent": "rbr028",
+   "children": [
+    "rbr031"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "2ba0in",
+     "1dj2mr"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rbr031",
+   "name": "icon",
+   "parent": "rbr030",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-users"
+    }
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rbr032",
+   "name": "block",
+   "parent": "rbr028",
+   "children": [
+    "rbr033",
+    "rbr034",
+    "rbr047"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "13ppp5"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "rbr033",
+   "name": "heading",
+   "parent": "rbr032",
+   "children": [],
+   "settings": {
+    "text": "Verwaltung & Büro",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "zztaw9"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "rbr034",
+   "name": "block",
+   "parent": "rbr032",
+   "children": [
+    "rbr035",
+    "rbr038",
+    "rbr041",
+    "rbr044"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "i49kq7",
+     "hn83m3"
+    ]
+   },
+   "label": "Häkchen-Liste"
+  },
+  {
+   "id": "rbr035",
+   "name": "block",
+   "parent": "rbr034",
+   "children": [
+    "rbr036",
+    "rbr037"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Datenschutz"
+  },
+  {
+   "id": "rbr036",
+   "name": "icon",
+   "parent": "rbr035",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr037",
+   "name": "text-basic",
+   "parent": "rbr035",
+   "children": [],
+   "settings": {
+    "text": "Datenschutz",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr038",
+   "name": "block",
+   "parent": "rbr034",
+   "children": [
+    "rbr039",
+    "rbr040"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Compliance"
+  },
+  {
+   "id": "rbr039",
+   "name": "icon",
+   "parent": "rbr038",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr040",
+   "name": "text-basic",
+   "parent": "rbr038",
+   "children": [],
+   "settings": {
+    "text": "Compliance",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr041",
+   "name": "block",
+   "parent": "rbr034",
+   "children": [
+    "rbr042",
+    "rbr043"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: KI"
+  },
+  {
+   "id": "rbr042",
+   "name": "icon",
+   "parent": "rbr041",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr043",
+   "name": "text-basic",
+   "parent": "rbr041",
+   "children": [],
+   "settings": {
+    "text": "KI",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr044",
+   "name": "block",
+   "parent": "rbr034",
+   "children": [
+    "rbr045",
+    "rbr046"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: IT-Sicherheit"
+  },
+  {
+   "id": "rbr045",
+   "name": "icon",
+   "parent": "rbr044",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr046",
+   "name": "text-basic",
+   "parent": "rbr044",
+   "children": [],
+   "settings": {
+    "text": "IT-Sicherheit",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr047",
+   "name": "button",
+   "parent": "rbr032",
+   "children": [],
+   "settings": {
+    "text": "Mehr erfahren",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action",
+     "1flqz9"
+    ]
+   },
+   "label": "Button: Mehr erfahren"
+  },
+  {
+   "id": "rbr048",
+   "name": "block",
+   "parent": "rbr007",
+   "children": [
+    "rbr049",
+    "rbr050",
+    "rbr052"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1lv30b"
+    ]
+   },
+   "label": "Karte: Energie & Infrastruktur"
+  },
+  {
+   "id": "rbr049",
+   "name": "image",
+   "parent": "rbr048",
+   "children": [],
+   "settings": {
+    "image": {
+     "id": 10837,
+     "filename": "2026/10/branche-energie.jpg",
+     "size": "full",
+     "full": "http://weka-e.local/wp-content/uploads/2026/10/branche-energie.jpg",
+     "url": "http://weka-e.local/wp-content/uploads/2026/10/branche-energie.jpg"
+    },
+    "_cssGlobalClasses": [
+     "2p5xhu"
+    ]
+   },
+   "label": "Foto (Platzhalter)"
+  },
+  {
+   "id": "rbr050",
+   "name": "div",
+   "parent": "rbr048",
+   "children": [
+    "rbr051"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "2ba0in",
+     "1dj2mr"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rbr051",
+   "name": "icon",
+   "parent": "rbr050",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-leaf"
+    }
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rbr052",
+   "name": "block",
+   "parent": "rbr048",
+   "children": [
+    "rbr053",
+    "rbr054",
+    "rbr067"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "13ppp5"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "rbr053",
+   "name": "heading",
+   "parent": "rbr052",
+   "children": [],
+   "settings": {
+    "text": "Energie & Infrastruktur",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "zztaw9"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "rbr054",
+   "name": "block",
+   "parent": "rbr052",
+   "children": [
+    "rbr055",
+    "rbr058",
+    "rbr061",
+    "rbr064"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "i49kq7",
+     "hn83m3"
+    ]
+   },
+   "label": "Häkchen-Liste"
+  },
+  {
+   "id": "rbr055",
+   "name": "block",
+   "parent": "rbr054",
+   "children": [
+    "rbr056",
+    "rbr057"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Sicherheitskultur"
+  },
+  {
+   "id": "rbr056",
+   "name": "icon",
+   "parent": "rbr055",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr057",
+   "name": "text-basic",
+   "parent": "rbr055",
+   "children": [],
+   "settings": {
+    "text": "Sicherheitskultur",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr058",
+   "name": "block",
+   "parent": "rbr054",
+   "children": [
+    "rbr059",
+    "rbr060"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Regelwerke"
+  },
+  {
+   "id": "rbr059",
+   "name": "icon",
+   "parent": "rbr058",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr060",
+   "name": "text-basic",
+   "parent": "rbr058",
+   "children": [],
+   "settings": {
+    "text": "Regelwerke",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr061",
+   "name": "block",
+   "parent": "rbr054",
+   "children": [
+    "rbr062",
+    "rbr063"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Pflichtunterweisungen"
+  },
+  {
+   "id": "rbr062",
+   "name": "icon",
+   "parent": "rbr061",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr063",
+   "name": "text-basic",
+   "parent": "rbr061",
+   "children": [],
+   "settings": {
+    "text": "Pflichtunterweisungen",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr064",
+   "name": "block",
+   "parent": "rbr054",
+   "children": [
+    "rbr065",
+    "rbr066"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Technische Inhalte"
+  },
+  {
+   "id": "rbr065",
+   "name": "icon",
+   "parent": "rbr064",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr066",
+   "name": "text-basic",
+   "parent": "rbr064",
+   "children": [],
+   "settings": {
+    "text": "Technische Inhalte",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr067",
+   "name": "button",
+   "parent": "rbr052",
+   "children": [],
+   "settings": {
+    "text": "Mehr erfahren",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action",
+     "1flqz9"
+    ]
+   },
+   "label": "Button: Mehr erfahren"
+  },
+  {
+   "id": "rbr068",
+   "name": "block",
+   "parent": "rbr007",
+   "children": [
+    "rbr069",
+    "rbr070",
+    "rbr072"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1lv30b"
+    ]
+   },
+   "label": "Karte: Banken & Versicherungen"
+  },
+  {
+   "id": "rbr069",
+   "name": "image",
+   "parent": "rbr068",
+   "children": [],
+   "settings": {
+    "image": {
+     "id": 10838,
+     "filename": "2026/10/branche-banken.jpg",
+     "size": "full",
+     "full": "http://weka-e.local/wp-content/uploads/2026/10/branche-banken.jpg",
+     "url": "http://weka-e.local/wp-content/uploads/2026/10/branche-banken.jpg"
+    },
+    "_cssGlobalClasses": [
+     "2p5xhu"
+    ]
+   },
+   "label": "Foto (Platzhalter)"
+  },
+  {
+   "id": "rbr070",
+   "name": "div",
+   "parent": "rbr068",
+   "children": [
+    "rbr071"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2niotf",
+     "2ba0in",
+     "1dj2mr"
+    ]
+   },
+   "label": "Icon"
+  },
+  {
+   "id": "rbr071",
+   "name": "icon",
+   "parent": "rbr070",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-building-columns"
+    }
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "rbr072",
+   "name": "block",
+   "parent": "rbr068",
+   "children": [
+    "rbr073",
+    "rbr074",
+    "rbr087"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "13ppp5"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "rbr073",
+   "name": "heading",
+   "parent": "rbr072",
+   "children": [],
+   "settings": {
+    "text": "Banken & Versicherungen",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "zztaw9"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "rbr074",
+   "name": "block",
+   "parent": "rbr072",
+   "children": [
+    "rbr075",
+    "rbr078",
+    "rbr081",
+    "rbr084"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "i49kq7",
+     "hn83m3"
+    ]
+   },
+   "label": "Häkchen-Liste"
+  },
+  {
+   "id": "rbr075",
+   "name": "block",
+   "parent": "rbr074",
+   "children": [
+    "rbr076",
+    "rbr077"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Compliance"
+  },
+  {
+   "id": "rbr076",
+   "name": "icon",
+   "parent": "rbr075",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr077",
+   "name": "text-basic",
+   "parent": "rbr075",
+   "children": [],
+   "settings": {
+    "text": "Compliance",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr078",
+   "name": "block",
+   "parent": "rbr074",
+   "children": [
+    "rbr079",
+    "rbr080"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Datenschutz"
+  },
+  {
+   "id": "rbr079",
+   "name": "icon",
+   "parent": "rbr078",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr080",
+   "name": "text-basic",
+   "parent": "rbr078",
+   "children": [],
+   "settings": {
+    "text": "Datenschutz",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr081",
+   "name": "block",
+   "parent": "rbr074",
+   "children": [
+    "rbr082",
+    "rbr083"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Informationssicherheit"
+  },
+  {
+   "id": "rbr082",
+   "name": "icon",
+   "parent": "rbr081",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr083",
+   "name": "text-basic",
+   "parent": "rbr081",
+   "children": [],
+   "settings": {
+    "text": "Informationssicherheit",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr084",
+   "name": "block",
+   "parent": "rbr074",
+   "children": [
+    "rbr085",
+    "rbr086"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1n8mtz"
+    ]
+   },
+   "label": "Listenpunkt: Führung & Soft Skills"
+  },
+  {
+   "id": "rbr085",
+   "name": "icon",
+   "parent": "rbr084",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-check"
+    },
+    "_cssGlobalClasses": [
+     "x272hp",
+     "14xrl4"
+    ]
+   },
+   "label": "Häkchen"
+  },
+  {
+   "id": "rbr086",
+   "name": "text-basic",
+   "parent": "rbr084",
+   "children": [],
+   "settings": {
+    "text": "Führung & Soft Skills",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "oevb9o"
+    ]
+   },
+   "label": "Listentext"
+  },
+  {
+   "id": "rbr087",
+   "name": "button",
+   "parent": "rbr072",
+   "children": [],
+   "settings": {
+    "text": "Mehr erfahren",
+    "link": {
+     "type": "external",
+     "url": "#"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action",
+     "1flqz9"
+    ]
+   },
+   "label": "Button: Mehr erfahren"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "2niotf",
+   "name": "icon-circle",
+   "settings": {
+    "_display": "flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
+    "_flexShrink": "0",
+    "_background": {
+     "color": {
+      "raw": "var(--primary)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "50%",
+      "right": "50%",
+      "bottom": "50%",
+      "left": "50%"
+     }
+    },
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}"
+   }
+  },
+  {
+   "id": "2ba0in",
+   "name": "icon-circle--white",
+   "settings": {
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_cssCustom": ".icon-circle--white {\n  box-shadow: 0 0.4rem 1.6rem var(--black-trans-10);\n}"
+   }
+  },
+  {
+   "id": "2l4lfz",
+   "name": "industry-section__header",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)"
+   }
+  },
+  {
+   "id": "zlbaok",
+   "name": "industry-section__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_typography": {
+     "font-size": "var(--h1)",
+     "line-height": "1.15"
+    },
+    "_cssCustom": ".industry-section__title {\n  overflow-wrap: break-word;\n  hyphens: auto;\n}"
+   }
+  },
+  {
+   "id": "1ka101",
+   "name": "industry-section__lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "at3w0i",
+   "name": "industry-cards",
+   "settings": {
+    "_alignItems": "stretch",
+    "_columnGap": "var(--space-s)",
+    "_rowGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".industry-cards {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "1lv30b",
+   "name": "industry-card",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "0",
+    "_overflow": "hidden",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius)",
+      "right": "var(--radius)",
+      "bottom": "var(--radius)",
+      "left": "var(--radius)"
+     }
+    },
+    "_cssCustom": ".industry-card {\n  box-shadow: 0 0.4rem 2.4rem var(--black-trans-10);\n}"
+   }
+  },
+  {
+   "id": "2p5xhu",
+   "name": "industry-card__image",
+   "settings": {
+    "_width": "100%",
+    "_height": "auto",
+    "_objectFit": "cover",
+    "_cssCustom": ".industry-card__image {\n  aspect-ratio: 3 / 2;\n}"
+   }
+  },
+  {
+   "id": "1dj2mr",
+   "name": "industry-card__icon",
+   "settings": {
+    "_position": "relative",
+    "_zIndex": "1",
+    "_alignSelf": "flex-start",
+    "_margin": {
+     "top": "-5.2rem",
+     "left": "var(--space-m)"
+    },
+    "_cssCustom": "/* Kreis links, mittig auf der Unterkante des Fotos (Vorlage) */\n.industry-card__icon {\n  --icon-circle-size: 10.4rem;\n  border: 0.2rem solid var(--primary-trans-20);\n}"
+   }
+  },
+  {
+   "id": "13ppp5",
+   "name": "industry-card__body",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_flexGrow": "1",
+    "_padding": {
+     "top": "var(--space-xs)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    }
+   }
+  },
+  {
+   "id": "zztaw9",
+   "name": "industry-card__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "font-weight": "700"
+    }
+   }
+  },
+  {
+   "id": "1flqz9",
+   "name": "industry-card__button",
+   "settings": {
+    "_width": "100%",
+    "_margin": {
+     "top": "auto"
+    }
+   }
+  },
+  {
+   "id": "14xrl4",
+   "name": "check-list__icon--plain",
+   "settings": {
+    "_display": "flex",
+    "_alignItems": "center",
+    "_justifyContent": "center",
+    "_background": {
+     "color": {
+      "raw": "transparent"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    }
+   }
+  },
+  {
+   "id": "hn83m3",
+   "name": "industry-card__list",
+   "settings": {
+    "_flexGrow": "1",
+    "_cssCustom": "/* Listentext in den Karten dunkel wie in der Vorlage */\n.industry-card__list .check-list__text {\n  color: var(--text-dark);\n}"
+   }
+  },
+  {
+   "id": "a951f7",
+   "name": "industry-section",
+   "settings": {
+    "_padding": {
+     "top": "var(--section-space-xs)",
+     "bottom": "var(--section-space-xs)"
+    }
+   }
+  },
+  {
+   "id": "aq6l6g",
+   "name": "eyebrow",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "500",
+     "letter-spacing": "0.12em",
+     "color": {
+      "id": "acss_import_primary-dark",
+      "name": "primary-dark",
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "i49kq7",
+   "name": "check-list",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".check-list {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "1n8mtz",
+   "name": "check-list__item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_alignItems": "flex-start",
+    "_rowGap": "var(--space-s)",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    }
+   }
+  },
+  {
+   "id": "x272hp",
+   "name": "check-list__icon",
+   "settings": {
+    "_display": "block",
+    "_flexShrink": "0",
+    "_width": "1.8em",
+    "_height": "1.8em",
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "id": "acss_import_white",
+      "name": "White",
+      "raw": "var(--white)"
+     }
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "50%",
+      "right": "50%",
+      "bottom": "50%",
+      "left": "50%"
+     }
+    },
+    "_padding": {
+     "top": "0.4em",
+     "right": "0.4em",
+     "bottom": "0.4em",
+     "left": "0.4em"
+    }
+   }
+  },
+  {
+   "id": "oevb9o",
+   "name": "check-list__text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0.15em"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  }
+ ]
+}
