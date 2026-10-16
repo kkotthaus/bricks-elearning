@@ -28,20 +28,24 @@ const classDefs = new Map(); // name -> settings
 const cls = (name, settings) => { classDefs.set(name, settings); return name; };
 const ref = (n) => (EXISTING[n] ? EXISTING[n] : n.startsWith('acss:') ? acss(n.slice(5)) : cid(n));
 
-// ---------- Icons: Bricks-Icon-Element mit Font Awesome 6 (keine Code-Signatur nötig, auf Live übertragbar) ----------
+// ---------- Icons: Bricks-SVG-Element mit SVG-Code (source: code) ----------
+// Der Code braucht auf jeder Seite eine Bricks-Code-Signatur (nach dem Einfügen signieren, siehe docs/referenzen-neu-auf-live.md).
+const svgCode = (file) => readFileSync(join(ROOT, 'assets', 'icons', file), 'utf8').trim();
+// Font Awesome 6.7.2 Free (Solid) als SVG-Dateien: assets/icons/fa/*.svg
 const FA = {
   building: 'fa-building', cap: 'fa-graduation-cap', users: 'fa-users', shield: 'fa-shield-halved',
   factory: 'fa-industry', leaf: 'fa-leaf', landmark: 'fa-building-columns',
   award: 'fa-award', gear: 'fa-gear', monitor: 'fa-desktop', chart: 'fa-chart-column', check: 'fa-check', badge: 'fa-check',
 };
-const fa = (name, classes = {}) => ({ icon: { library: 'fontawesomeSolid', icon: 'fas ' + FA[name] }, ...classes });
-// Linien-Icons nach der Vorlage (assets/icons/*.svg, lokal in der Mediathek) für Kennzahlen und Vorteile.
-// Variante 'fa' = bisherige Font-Awesome-Icons (Dateien mit Endung -fa), zum Zurückwechseln.
+const fa = (name, classes = {}) => ({ source: 'code', code: svgCode(`fa/${FA[name]}.svg`), ...classes });
+// Linien-Icons nach der Vorlage (assets/icons/*.svg) für Kennzahlen und Vorteile.
+// Variante 'fa' = Font-Awesome-Icons (Dateien mit Endung -fa), zum Zurückwechseln.
 const SVG_ICON = {
-  building: [10855, 'weka-gebaeude'], cap: [10854, 'weka-doktorhut'], users: [10857, 'weka-personen'], shield: [10858, 'weka-schild'],
-  award: [10856, 'weka-medaille'], gear: [10859, 'weka-zahnrad'], monitor: [10852, 'weka-bildschirm'], chart: [10853, 'weka-diagramm'],
+  building: 'weka-gebaeude', cap: 'weka-doktorhut', users: 'weka-personen', shield: 'weka-schild',
+  award: 'weka-medaille', gear: 'weka-zahnrad', monitor: 'weka-bildschirm', chart: 'weka-diagramm',
 };
-const ico = (name, V) => (V === 'fa' || !SVG_ICON[name] ? fa(name) : { icon: { library: 'svg', svg: { id: SVG_ICON[name][0], filename: SVG_ICON[name][1] + '.svg', url: `${SITE}/wp-content/uploads/2026/10/${SVG_ICON[name][1]}.svg` } } });
+// Symbol im Kreis: Font Awesome bekommt icon-circle__glyph (kleiner als die Linien-Icons)
+const ico = (name, V) => (V === 'fa' || !SVG_ICON[name] ? fa(name, C('icon-circle__glyph')) : { source: 'code', code: svgCode(SVG_ICON[name] + '.svg') });
 
 // ---------- Element-Bausteine ----------
 function builder(prefix) {
@@ -68,8 +72,9 @@ cls('icon-circle', {
   _display: 'flex', _alignItems: 'center', _justifyContent: 'center', _flexShrink: '0',
   _background: { color: { raw: 'var(--primary)' } }, _typography: { color: { raw: 'var(--white)' } },
   _border: { radius: { top: '50%', right: '50%', bottom: '50%', left: '50%' } },
-  _cssCustom: '.icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}\n\n/* Linien-Icon (SVG aus der Mediathek) im Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}',
+  _cssCustom: '.icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Symbol (SVG-Element) im Kreis, Größe relativ zum Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}',
 });
+cls('icon-circle__glyph', { _cssCustom: '/* Font-Awesome-Symbol (gefüllt) wirkt größer als die Linien-Icons */\n.icon-circle > .icon-circle__glyph {\n  width: 45%;\n  height: 45%;\n}' });
 cls('icon-circle--white', { _background: { color: { raw: 'var(--white)' } }, _typography: { color: { raw: 'var(--primary-dark)' } }, _cssCustom: '.icon-circle--white {\n  box-shadow: 0 0.4rem 1.6rem var(--black-trans-10);\n}' });
 cls('icon-circle--soft', { _background: { color: { raw: 'var(--primary-trans-10)' } }, _typography: { color: { raw: 'var(--primary-dark)' } } });
 cls('icon-circle--rating', { _background: { color: { raw: 'var(--warning-semi-dark)' } }, _typography: { color: { raw: 'var(--white)' } } });
@@ -141,7 +146,7 @@ for (const V of ['svg', 'fa']) {
   ]) {
     const li = b.add(list, 'block', `Kennzahl: ${value}`, { tag: 'li', ...C('stat-list__item') });
     const ic = b.add(li, 'div', 'Icon', C('icon-circle'));
-    b.add(ic, 'icon', 'Symbol', ico(icon, V));
+    b.add(ic, 'svg', 'Symbol', ico(icon, V));
     const txt = b.add(li, 'div', 'Text', {});
     b.add(txt, 'text-basic', 'Wert', { text: value, tag: 'p', ...C('stat-list__value') });
     b.add(txt, 'text-basic', 'Beschriftung', { text: label, tag: 'p', ...C('stat-list__label') });
@@ -213,13 +218,13 @@ for (const V of ['svg', 'fa']) {
     const card = b.add(grid, 'block', `Karte: ${title}`, { tag: 'li', ...C('industry-card') });
     b.add(card, 'image', 'Foto (Platzhalter)', { image: img(imgId, file), ...C('industry-card__image') });
     const ic = b.add(card, 'div', 'Icon', C('icon-circle', 'icon-circle--white', 'industry-card__icon'));
-    b.add(ic, 'icon', 'Symbol', fa(icon));
+    b.add(ic, 'svg', 'Symbol', fa(icon, C('icon-circle__glyph')));
     const body = b.add(card, 'block', 'Inhalt', C('industry-card__body'));
     b.add(body, 'heading', 'Titel', { text: title, tag: 'h3', ...C('industry-card__title') });
     const ul = b.add(body, 'block', 'Häkchen-Liste', { tag: 'ul', ...C('check-list', 'industry-card__list') });
     for (const t of items) {
       const li = b.add(ul, 'block', `Listenpunkt: ${t}`, { tag: 'li', ...C('check-list__item') });
-      b.add(li, 'icon', 'Häkchen', fa('check', C('check-list__icon', 'check-list__icon--plain')));
+      b.add(li, 'svg', 'Häkchen', fa('check', C('check-list__icon', 'check-list__icon--plain')));
       b.add(li, 'text-basic', 'Listentext', { text: t, tag: 'span', ...C('check-list__text') });
     }
     b.add(body, 'button', 'Button: Mehr erfahren', { text: 'Mehr erfahren', style: 'primary', link: btnLink('#'), ...arrow, ...C('acss:btn--action', 'industry-card__button') });
@@ -249,7 +254,7 @@ for (const V of ['svg', 'fa']) {
   ]) {
     const li = b.add(ul, 'block', `Vorteil: ${title}`, { tag: 'li', ...C('trust-benefits__item') });
     const ic = b.add(li, 'div', 'Icon', C('icon-circle', 'icon-circle--soft'));
-    b.add(ic, 'icon', 'Symbol', ico(icon, V));
+    b.add(ic, 'svg', 'Symbol', ico(icon, V));
     const t = b.add(li, 'div', 'Text', {});
     b.add(t, 'text-basic', 'Titel', { text: title, tag: 'p', ...C('trust-benefits__item-title') });
     b.add(t, 'text-basic', 'Text', { text, tag: 'p', ...C('trust-benefits__text') });
@@ -297,7 +302,7 @@ for (const V of ['svg', 'fa']) {
   const inner = b.add(con, 'block', 'Bewertungsleiste', C('rating-bar__inner'));
   const sum = b.add(inner, 'block', 'Zusammenfassung', C('rating-bar__summary'));
   const badge = b.add(sum, 'div', 'Icon', C('icon-circle', 'icon-circle--rating', 'rating-bar__badge'));
-  b.add(badge, 'icon', 'Symbol', fa('badge'));
+  b.add(badge, 'svg', 'Symbol', fa('badge', C('icon-circle__glyph')));
   const txt = b.add(sum, 'block', 'Text', C('rating-bar__text'));
   b.add(txt, 'heading', 'Überschrift', { text: 'Kundenbewertungen auf Proven Expert', tag: 'h2', ...C('rating-bar__title') });
   const score = b.add(txt, 'block', 'Wertung', C('rating-bar__score'));

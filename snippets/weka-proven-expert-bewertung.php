@@ -6,8 +6,8 @@
  * Code-Element im Footer-Template (ID 24) in den Webroot; hier wird nur gelesen, kein
  * zweiter API-Abruf.
  *
- * Ausgabe in Bricks: {echo:weka_pe_rating('note')}     → „4,5“
- *                    {echo:weka_pe_rating('prozent')}  → „90.7“ (für die Sternbreite)
+ * Ausgabe in Bricks: {echo:weka_pe_rating('note')}     → „4,54“ (zwei Stellen wie auf Proven Expert)
+ *                    {echo:weka_pe_rating('prozent')}  → „90.8“ (für die Sternbreite)
  *                    {echo:weka_pe_rating('anzahl')}   → „20“
  *                    {echo:weka_pe_rating('text')}     → „Sehr gut“
  */
@@ -39,7 +39,7 @@ if ( ! function_exists( 'weka_pe_rating' ) ) {
 
 		switch ( $was ) {
 			case 'prozent':
-				return (string) round( $wert / 5 * 100, 1 );
+				return (string) round( round( $wert, 2 ) / 5 * 100, 1 );
 			case 'anzahl':
 				return (string) $anzahl;
 			case 'text':
@@ -52,7 +52,8 @@ if ( ! function_exists( 'weka_pe_rating' ) ) {
 				}
 				return $wert >= 2.5 ? 'Befriedigend' : 'Ausreichend';
 			default:
-				return number_format( round( $wert, 1 ), 1, ',', '' );
+				// Wie Proven Expert: zwei Nachkommastellen (z. B. 4,54)
+				return number_format( round( $wert, 2 ), 2, ',', '' );
 		}
 	}
 }

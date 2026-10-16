@@ -75,14 +75,15 @@
   },
   {
    "id": "rbw006",
-   "name": "icon",
+   "name": "svg",
    "parent": "rbw005",
    "children": [],
    "settings": {
-    "icon": {
-     "library": "fontawesomeSolid",
-     "icon": "fas fa-check"
-    }
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d=\"M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z\"/></svg>",
+    "_cssGlobalClasses": [
+     "20z6t8"
+    ]
    },
    "label": "Symbol"
   },
@@ -336,7 +337,14 @@
       "left": "50%"
      }
     },
-    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}\n\n/* Linien-Icon (SVG aus der Mediathek) im Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}"
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Symbol (SVG-Element) im Kreis, Größe relativ zum Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}"
+   }
+  },
+  {
+   "id": "20z6t8",
+   "name": "icon-circle__glyph",
+   "settings": {
+    "_cssCustom": "/* Font-Awesome-Symbol (gefüllt) wirkt größer als die Linien-Icons */\n.icon-circle > .icon-circle__glyph {\n  width: 45%;\n  height: 45%;\n}"
    }
   },
   {

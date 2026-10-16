@@ -96,18 +96,12 @@
   },
   {
    "id": "rvt007",
-   "name": "icon",
+   "name": "svg",
    "parent": "rvt006",
    "children": [],
    "settings": {
-    "icon": {
-     "library": "svg",
-     "svg": {
-      "id": 10856,
-      "filename": "weka-medaille.svg",
-      "url": "http://weka-e.local/wp-content/uploads/2026/10/weka-medaille.svg"
-     }
-    }
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"9\" r=\"6\"/><path d=\"m12 6.1.95 1.95 2.15.3-1.55 1.5.37 2.13L12 10.98l-1.92 1 .37-2.13-1.55-1.5 2.15-.3Z\"/><path d=\"M8.6 13.9 7 21l3-1.5 1.2 1.9\"/><path d=\"M15.4 13.9 17 21l-3-1.5-1.2 1.9\"/></svg>"
    },
    "label": "Symbol"
   },
@@ -183,18 +177,12 @@
   },
   {
    "id": "rvt013",
-   "name": "icon",
+   "name": "svg",
    "parent": "rvt012",
    "children": [],
    "settings": {
-    "icon": {
-     "library": "svg",
-     "svg": {
-      "id": 10859,
-      "filename": "weka-zahnrad.svg",
-      "url": "http://weka-e.local/wp-content/uploads/2026/10/weka-zahnrad.svg"
-     }
-    }
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M10.3 2.8h3.4l.5 2.4c.6.2 1.2.5 1.7.9l2.3-.8 1.7 2.9-1.8 1.6c.1.6.1 1.2 0 1.8l1.8 1.6-1.7 2.9-2.3-.8c-.5.4-1.1.7-1.7.9l-.5 2.4h-3.4l-.5-2.4c-.6-.2-1.2-.5-1.7-.9l-2.3.8-1.7-2.9 1.8-1.6a5.6 5.6 0 0 1 0-1.8L4.1 8.2l1.7-2.9 2.3.8c.5-.4 1.1-.7 1.7-.9Z\"/><circle cx=\"12\" cy=\"11.8\" r=\"2.8\"/></svg>"
    },
    "label": "Symbol"
   },
@@ -270,18 +258,12 @@
   },
   {
    "id": "rvt019",
-   "name": "icon",
+   "name": "svg",
    "parent": "rvt018",
    "children": [],
    "settings": {
-    "icon": {
-     "library": "svg",
-     "svg": {
-      "id": 10852,
-      "filename": "weka-bildschirm.svg",
-      "url": "http://weka-e.local/wp-content/uploads/2026/10/weka-bildschirm.svg"
-     }
-    }
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"4\" width=\"19\" height=\"13\" rx=\"1.5\"/><path d=\"M8 21h8M12 17v4\"/><path d=\"M18.5 14h.01\"/></svg>"
    },
    "label": "Symbol"
   },
@@ -357,18 +339,12 @@
   },
   {
    "id": "rvt025",
-   "name": "icon",
+   "name": "svg",
    "parent": "rvt024",
    "children": [],
    "settings": {
-    "icon": {
-     "library": "svg",
-     "svg": {
-      "id": 10853,
-      "filename": "weka-diagramm.svg",
-      "url": "http://weka-e.local/wp-content/uploads/2026/10/weka-diagramm.svg"
-     }
-    }
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 21h18\"/><rect x=\"5\" y=\"13\" width=\"3.2\" height=\"8\" rx=\".4\"/><rect x=\"10.4\" y=\"9\" width=\"3.2\" height=\"12\" rx=\".4\"/><rect x=\"15.8\" y=\"5\" width=\"3.2\" height=\"16\" rx=\".4\"/></svg>"
    },
    "label": "Symbol"
   },
@@ -441,7 +417,7 @@
       "left": "50%"
      }
     },
-    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Font-Awesome-Symbol im Kreis, Größe relativ zum Kreis */\n.icon-circle > .brxe-icon {\n  font-size: calc(var(--icon-circle-size, 4.4rem) * 0.45);\n  line-height: 1;\n}\n\n/* Linien-Icon (SVG aus der Mediathek) im Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}"
+    "_cssCustom": ".icon-circle {\n  width: var(--icon-circle-size, 4.4rem);\n  height: var(--icon-circle-size, 4.4rem);\n}\n\n/* Symbol (SVG-Element) im Kreis, Größe relativ zum Kreis */\n.icon-circle > svg {\n  width: 58%;\n  height: 58%;\n}"
    }
   },
   {
