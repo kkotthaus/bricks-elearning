@@ -273,9 +273,10 @@ for (const V of ['svg', 'fa']) {
   cls('rating-bar__title', { _margin: { top: '0', bottom: '0' }, _widthMax: '18ch', _typography: { 'font-size': 'var(--h3)', 'line-height': '1.2' } });
   cls('rating-bar__score', { _width: 'auto', _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _alignItems: 'center', _columnGap: 'var(--space-m)', _rowGap: 'var(--space-xs)' });
   cls('rating-bar__stars-wrap', { _width: 'auto', _display: 'flex', _direction: 'column', _alignItems: 'center' });
+  // Sterne: BricksExtras-Element Star Rating (Typ „Farben“), Farben über seine CSS-Variablen
   cls('rating-bar__stars', {
-    _typography: { 'font-size': 'var(--h2)', 'line-height': '1', 'letter-spacing': '0.08em' },
-    _cssCustom: '/* --rating kommt per Attribut aus {echo:weka_pe_rating(\'prozent\')} */\n.rating-bar__stars {\n  display: inline-block;\n  background: linear-gradient(90deg, var(--warning) var(--rating, 100%), var(--shade-light) var(--rating, 100%));\n  -webkit-background-clip: text;\n  background-clip: text;\n  color: transparent;\n}',
+    _typography: { 'font-size': 'var(--h2)', 'line-height': '1' },
+    _cssCustom: '.rating-bar__stars {\n  --x-star-color: var(--warning);\n  --x-star-empty-color: var(--shade-light);\n  gap: 0.08em;\n}',
   });
   cls('rating-bar__grade', { _typography: { 'font-size': 'var(--text-s)', 'font-weight': '700', 'text-transform': 'uppercase', 'letter-spacing': '0.06em', color: { raw: 'var(--primary-dark)' } } });
   cls('rating-bar__value', { _margin: { top: '0', bottom: '0' }, _typography: { 'font-size': 'var(--text-m)', color: { raw: 'var(--primary-dark)' } }, _cssCustom: '.rating-bar__value strong {\n  font-size: var(--text-xl);\n}' });
@@ -307,13 +308,10 @@ for (const V of ['svg', 'fa']) {
   b.add(txt, 'heading', 'Überschrift', { text: 'Kundenbewertungen auf Proven Expert', tag: 'h2', ...C('rating-bar__title') });
   const score = b.add(txt, 'block', 'Wertung', C('rating-bar__score'));
   const sw = b.add(score, 'div', 'Sterne', C('rating-bar__stars-wrap'));
-  b.add(sw, 'text-basic', 'Sterne (Breite aus Proven Expert)', {
-    text: '★★★★★', tag: 'span', ...C('rating-bar__stars'),
-    _attributes: [
-      { id: 'rbwat1', name: 'style', value: "--rating: {echo:weka_pe_rating('prozent')}%" },
-      { id: 'rbwat2', name: 'role', value: 'img' },
-      { id: 'rbwat3', name: 'aria-label', value: "{echo:weka_pe_rating('note')} von 5 Sternen" },
-    ],
+  b.add(sw, 'xstarrating', 'Sterne (Note aus Proven Expert)', {
+    starRating: "{echo:weka_pe_rating('wert')}", totalStars: '5', iconBehaviour: 'color',
+    markedIcon: { library: 'fontawesomeSolid', icon: 'fas fa-star' },
+    ...C('rating-bar__stars'),
   });
   b.add(sw, 'text-basic', 'Urteil', { text: "{echo:weka_pe_rating('text')}", tag: 'span', ...C('rating-bar__grade') });
   const val = b.add(score, 'div', 'Note', {});

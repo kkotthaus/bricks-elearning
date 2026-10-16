@@ -16,6 +16,7 @@ Die Vorlagen sind so gebaut, dass sie ohne Nacharbeit an Code funktionieren:
 
 - [ ] Sicherung (Duplicator: Backup erstellen)
 - [ ] WPCodeBox: neues PHP-Snippet „WEKA Proven Expert – Bewertung“ anlegen, Inhalt aus `snippets/weka-proven-expert-bewertung.php`, Ausführung „Always“, Einfügepunkt Root, aktivieren. Ohne das Snippet bleiben Note, Anzahl und Sterne leer.
+- [ ] BricksExtras › Elements: **Star Rating** einschalten und speichern (die Sterne sind dieses Element). Vor dem Import, sonst kennt Bricks das Element nicht.
 - [ ] Bricks › Einstellungen › Benutzerdefinierter Code: Code-Ausführung ist aktiviert (sonst zeigen die SVG-Elemente nichts an).
 - [ ] Prüfen, dass die Referenzen mit den IDs 4120 (Deutsche Bahn), 9298 (Samsung SDI), 9297 (RheinEnergie), 9283 (Duravit), 2750 (Thyssengas), 2751 (Sparkasse Leipzig) auf Live existieren und „aktiv“ sind (Referenzen › Liste, ID per Maus über dem Titel). Weichen IDs ab: nach dem Einfügen im Loop „Logo“ unter Abfrage › Einschließen die richtigen Referenzen wählen.
 

@@ -146,34 +146,22 @@
   },
   {
    "id": "rbw011",
-   "name": "text-basic",
+   "name": "xstarrating",
    "parent": "rbw010",
    "children": [],
    "settings": {
-    "text": "★★★★★",
-    "tag": "span",
+    "starRating": "{echo:weka_pe_rating('wert')}",
+    "totalStars": "5",
+    "iconBehaviour": "color",
+    "markedIcon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-star"
+    },
     "_cssGlobalClasses": [
      "6o6e4p"
-    ],
-    "_attributes": [
-     {
-      "id": "rbwat1",
-      "name": "style",
-      "value": "--rating: {echo:weka_pe_rating('prozent')}%"
-     },
-     {
-      "id": "rbwat2",
-      "name": "role",
-      "value": "img"
-     },
-     {
-      "id": "rbwat3",
-      "name": "aria-label",
-      "value": "{echo:weka_pe_rating('note')} von 5 Sternen"
-     }
     ]
    },
-   "label": "Sterne (Breite aus Proven Expert)"
+   "label": "Sterne (Note aus Proven Expert)"
   },
   {
    "id": "rbw012",
@@ -461,10 +449,9 @@
    "settings": {
     "_typography": {
      "font-size": "var(--h2)",
-     "line-height": "1",
-     "letter-spacing": "0.08em"
+     "line-height": "1"
     },
-    "_cssCustom": "/* --rating kommt per Attribut aus {echo:weka_pe_rating('prozent')} */\n.rating-bar__stars {\n  display: inline-block;\n  background: linear-gradient(90deg, var(--warning) var(--rating, 100%), var(--shade-light) var(--rating, 100%));\n  -webkit-background-clip: text;\n  background-clip: text;\n  color: transparent;\n}"
+    "_cssCustom": ".rating-bar__stars {\n  --x-star-color: var(--warning);\n  --x-star-empty-color: var(--shade-light);\n  gap: 0.08em;\n}"
    }
   },
   {

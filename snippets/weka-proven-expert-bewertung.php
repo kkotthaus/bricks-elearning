@@ -7,7 +7,8 @@
  * zweiter API-Abruf.
  *
  * Ausgabe in Bricks: {echo:weka_pe_rating('note')}     → „4,5“ (eine Stelle, kaufmännisch gerundet)
- *                    {echo:weka_pe_rating('prozent')}  → „90“ (Sternbreite, aus der gerundeten Note)
+ *                    {echo:weka_pe_rating('wert')}     → „4.5“ (dieselbe Note mit Punkt, für das
+ *                                                         BricksExtras-Element Star Rating)
  *                    {echo:weka_pe_rating('anzahl')}   → „20“
  *                    {echo:weka_pe_rating('text')}     → „Sehr gut“
  */
@@ -38,8 +39,8 @@ if ( ! function_exists( 'weka_pe_rating' ) ) {
 		$anzahl = isset( $daten['reviewCount'] ) ? (int) $daten['reviewCount'] : 0;
 
 		switch ( $was ) {
-			case 'prozent':
-				return (string) round( round( $wert, 1, PHP_ROUND_HALF_UP ) / 5 * 100, 1 );
+			case 'wert':
+				return number_format( round( $wert, 1, PHP_ROUND_HALF_UP ), 1, '.', '' );
 			case 'anzahl':
 				return (string) $anzahl;
 			case 'text':
@@ -63,3 +64,8 @@ add_filter( 'bricks/code/echo_function_names', function ( $namen ) {
 	$namen[] = 'weka_pe_rating';
 	return $namen;
 }, 20 );
+
+// BricksExtras Star Rating bringt keine deutsche Übersetzung mit: Beschriftung für Screenreader
+add_filter( 'gettext_bricksextras', function ( $uebersetzung, $text ) {
+	return 'Rating: %1$s out of %2$s stars' === $text ? 'Bewertung: %1$s von %2$s Sternen' : $uebersetzung;
+}, 10, 2 );
