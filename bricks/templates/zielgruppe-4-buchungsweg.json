@@ -1,0 +1,428 @@
+{
+ "title": "Zielgruppe 4 – Buchungsweg",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "zgb001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "zgb002"
+   ],
+   "settings": {
+    "_cssId": "buchungsweg"
+   },
+   "label": "Buchungsweg"
+  },
+  {
+   "id": "zgb002",
+   "name": "container",
+   "parent": "zgb001",
+   "children": [
+    "zgb003",
+    "zgb007"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "zgb003",
+   "name": "block",
+   "parent": "zgb002",
+   "children": [
+    "zgb004",
+    "zgb005",
+    "zgb006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1vcbsh"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "zgb004",
+   "name": "text-basic",
+   "parent": "zgb003",
+   "children": [],
+   "settings": {
+    "text": "SO GEHT ES WEITER",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "zgb005",
+   "name": "heading",
+   "parent": "zgb003",
+   "children": [],
+   "settings": {
+    "text": "Der Buchungsweg folgt Ihrem Bedarf.",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "zgb006",
+   "name": "text-basic",
+   "parent": "zgb003",
+   "children": [],
+   "settings": {
+    "text": "Die Zielgruppe hilft Ihnen bei der Themenauswahl. Unternehmensgröße, Lernumgebung und Schulungsumfang bestimmen anschließend die passende Lösung.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "zgb007",
+   "name": "block",
+   "parent": "zgb002",
+   "children": [
+    "zgb008",
+    "zgb012",
+    "zgb016"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "4g0qrt",
+     "acss_import_grid--3",
+     "acss_import_grid--m-1"
+    ]
+   },
+   "label": "Wege"
+  },
+  {
+   "id": "zgb008",
+   "name": "block",
+   "parent": "zgb007",
+   "children": [
+    "zgb009",
+    "zgb010",
+    "zgb011"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1rkoii"
+    ]
+   },
+   "label": "Weg: Unternehmenslösung"
+  },
+  {
+   "id": "zgb009",
+   "name": "heading",
+   "parent": "zgb008",
+   "children": [],
+   "settings": {
+    "text": "Unternehmenslösung",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2fq1mn"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgb010",
+   "name": "text-basic",
+   "parent": "zgb008",
+   "children": [],
+   "settings": {
+    "text": "Für mehr als 50 Mitarbeitende im Unternehmen, ein eigenes LMS oder individuelle Anforderungen: Inhalte und Einsatz persönlich abstimmen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgb011",
+   "name": "text-link",
+   "parent": "zgb008",
+   "children": [],
+   "settings": {
+    "text": "Mit dem Vertrieb sprechen →",
+    "link": {
+     "type": "external",
+     "url": "https://www.weka-elearning.de/kontakt/"
+    },
+    "_cssGlobalClasses": [
+     "2p0hoe"
+    ]
+   },
+   "label": "Link: Mit dem Vertrieb sprechen →"
+  },
+  {
+   "id": "zgb012",
+   "name": "block",
+   "parent": "zgb007",
+   "children": [
+    "zgb013",
+    "zgb014",
+    "zgb015"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1rkoii"
+    ]
+   },
+   "label": "Weg: Flatrate"
+  },
+  {
+   "id": "zgb013",
+   "name": "heading",
+   "parent": "zgb012",
+   "children": [],
+   "settings": {
+    "text": "Flatrate",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2fq1mn"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgb014",
+   "name": "text-basic",
+   "parent": "zgb012",
+   "children": [],
+   "settings": {
+    "text": "Für kleinere Teams mit mehreren Unterweisungsthemen: Prüfen Sie im eCampus den enthaltenen Katalog und die aktuellen Konditionen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgb015",
+   "name": "text-link",
+   "parent": "zgb012",
+   "children": [],
+   "settings": {
+    "text": "Unterweisungs-Flatrate ansehen →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/e/weka-ecampus-flatrate-unterweisungen-140"
+    },
+    "_cssGlobalClasses": [
+     "2p0hoe"
+    ]
+   },
+   "label": "Link: Unterweisungs-Flatrate ansehen →"
+  },
+  {
+   "id": "zgb016",
+   "name": "block",
+   "parent": "zgb007",
+   "children": [
+    "zgb017",
+    "zgb018",
+    "zgb019"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1rkoii"
+    ]
+   },
+   "label": "Weg: Einzelkurs"
+  },
+  {
+   "id": "zgb017",
+   "name": "heading",
+   "parent": "zgb016",
+   "children": [],
+   "settings": {
+    "text": "Einzelkurs",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2fq1mn"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgb018",
+   "name": "text-basic",
+   "parent": "zgb016",
+   "children": [],
+   "settings": {
+    "text": "Für einen konkreten Lernbedarf: Ein passendes Thema im eCampus auswählen und direkt online buchen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgb019",
+   "name": "text-link",
+   "parent": "zgb016",
+   "children": [],
+   "settings": {
+    "text": "Kurse im eCampus entdecken →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de"
+    },
+    "_cssGlobalClasses": [
+     "2p0hoe"
+    ]
+   },
+   "label": "Link: Kurse im eCampus entdecken →"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "1vcbsh",
+   "name": "office-intro",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_widthMax": "76ch"
+   }
+  },
+  {
+   "id": "7kqp5k",
+   "name": "office-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "4g0qrt",
+   "name": "office-paths",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-xl)",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-m)",
+    "_cssCustom": ".office-paths {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "1rkoii",
+   "name": "office-path",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_alignItems": "flex-start",
+    "_rowGap": "var(--space-xs)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-s)"
+    },
+    "_border": {
+     "width": {
+      "top": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2fq1mn",
+   "name": "office-path__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2p0hoe",
+   "name": "office-path__link",
+   "settings": {
+    "_margin": {
+     "top": "auto"
+    },
+    "_typography": {
+     "font-weight": "700"
+    },
+    "_cssCustom": ".office-path__link {\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}"
+   }
+  },
+  {
+   "id": "aq6l6g",
+   "name": "eyebrow",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "500",
+     "letter-spacing": "0.12em",
+     "color": {
+      "id": "acss_import_primary-dark",
+      "name": "primary-dark",
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  }
+ ]
+}

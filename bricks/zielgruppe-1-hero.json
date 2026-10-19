@@ -1,0 +1,757 @@
+{
+ "content": [
+  {
+   "id": "zgh001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "zgh002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "27leu5"
+    ]
+   },
+   "label": "Hero – Zielgruppen"
+  },
+  {
+   "id": "zgh002",
+   "name": "container",
+   "parent": "zgh001",
+   "children": [
+    "zgh003",
+    "zgh005"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "iaphlu"
+    ]
+   },
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "zgh003",
+   "name": "block",
+   "parent": "zgh002",
+   "children": [
+    "zgh004"
+   ],
+   "settings": {
+    "tag": "nav",
+    "_attributes": [
+     {
+      "id": "zgh003a0",
+      "name": "aria-label",
+      "value": "Brotkrumen"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "2l2a5v"
+    ]
+   },
+   "label": "Brotkrumen"
+  },
+  {
+   "id": "zgh004",
+   "name": "text-basic",
+   "parent": "zgh003",
+   "children": [],
+   "settings": {
+    "text": "<a href=\"/\">Startseite</a><span aria-hidden=\"true\">›</span>Zielgruppen",
+    "tag": "p",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    }
+   },
+   "label": "Pfad"
+  },
+  {
+   "id": "zgh005",
+   "name": "block",
+   "parent": "zgh002",
+   "children": [
+    "zgh006",
+    "zgh012"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "vyxnax"
+    ]
+   },
+   "label": "Raster"
+  },
+  {
+   "id": "zgh006",
+   "name": "block",
+   "parent": "zgh005",
+   "children": [
+    "zgh007",
+    "zgh008",
+    "zgh009",
+    "zgh010"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1me6wd"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "zgh007",
+   "name": "text-basic",
+   "parent": "zgh006",
+   "children": [],
+   "settings": {
+    "text": "E-LEARNING NACH ZIELGRUPPE",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "zgh008",
+   "name": "heading",
+   "parent": "zgh006",
+   "children": [],
+   "settings": {
+    "text": "Passendes Wissen.<br>Für die Menschen<br>in Ihrem Unternehmen.",
+    "tag": "h1",
+    "_cssGlobalClasses": [
+     "1ey20h",
+     "2chdce"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "zgh009",
+   "name": "text-basic",
+   "parent": "zgh006",
+   "children": [],
+   "settings": {
+    "text": "Ob Büro, Werkstatt oder Führungsaufgabe: Unterschiedliche Tätigkeiten brauchen unterschiedliches Wissen. Finden Sie passende Lernthemen für Ihr Team – und den richtigen Weg, Lernen zu organisieren.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7ish7h"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "zgh010",
+   "name": "block",
+   "parent": "zgh006",
+   "children": [
+    "zgh011"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "zr1zb4"
+    ]
+   },
+   "label": "Button-Gruppe"
+  },
+  {
+   "id": "zgh011",
+   "name": "button",
+   "parent": "zgh010",
+   "children": [],
+   "settings": {
+    "text": "Zielgruppe auswählen",
+    "link": {
+     "type": "external",
+     "url": "#mitarbeitende"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary"
+    ]
+   },
+   "label": "Button: Zielgruppe auswählen"
+  },
+  {
+   "id": "zgh012",
+   "name": "block",
+   "parent": "zgh005",
+   "children": [
+    "zgh013",
+    "zgh014",
+    "zgh015"
+   ],
+   "settings": {
+    "tag": "aside",
+    "_attributes": [
+     {
+      "id": "zgh012a0",
+      "name": "aria-label",
+      "value": "Ihr Einstieg"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "mokxd3",
+     "qty5qg"
+    ]
+   },
+   "label": "Einstiegskarte"
+  },
+  {
+   "id": "zgh013",
+   "name": "text-basic",
+   "parent": "zgh012",
+   "children": [],
+   "settings": {
+    "text": "IHR EINSTIEG",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g",
+     "1y3ln0"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "zgh014",
+   "name": "heading",
+   "parent": "zgh012",
+   "children": [],
+   "settings": {
+    "text": "Vom Arbeitsalltag<br>zum passenden Lernen.",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "hfad5o"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "zgh015",
+   "name": "block",
+   "parent": "zgh012",
+   "children": [
+    "zgh016",
+    "zgh021",
+    "zgh026"
+   ],
+   "settings": {
+    "tag": "ol",
+    "_cssGlobalClasses": [
+     "sl3ri0"
+    ]
+   },
+   "label": "Schritte"
+  },
+  {
+   "id": "zgh016",
+   "name": "block",
+   "parent": "zgh015",
+   "children": [
+    "zgh017",
+    "zgh018"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Schritt 01: Zielgruppe wählen"
+  },
+  {
+   "id": "zgh017",
+   "name": "text-basic",
+   "parent": "zgh016",
+   "children": [],
+   "settings": {
+    "text": "01",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "zgh017a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "zgh018",
+   "name": "div",
+   "parent": "zgh016",
+   "children": [
+    "zgh019",
+    "zgh020"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "zgh019",
+   "name": "text-basic",
+   "parent": "zgh018",
+   "children": [],
+   "settings": {
+    "text": "Zielgruppe wählen",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgh020",
+   "name": "text-basic",
+   "parent": "zgh018",
+   "children": [],
+   "settings": {
+    "text": "Für wen möchten Sie Lernen ermöglichen?",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pdd1n"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgh021",
+   "name": "block",
+   "parent": "zgh015",
+   "children": [
+    "zgh022",
+    "zgh023"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Schritt 02: Passende Themen entdecken"
+  },
+  {
+   "id": "zgh022",
+   "name": "text-basic",
+   "parent": "zgh021",
+   "children": [],
+   "settings": {
+    "text": "02",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "zgh022a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "zgh023",
+   "name": "div",
+   "parent": "zgh021",
+   "children": [
+    "zgh024",
+    "zgh025"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "zgh024",
+   "name": "text-basic",
+   "parent": "zgh023",
+   "children": [],
+   "settings": {
+    "text": "Passende Themen entdecken",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgh025",
+   "name": "text-basic",
+   "parent": "zgh023",
+   "children": [],
+   "settings": {
+    "text": "Unterweisung, Sensibilisierung, Weiterbildung.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pdd1n"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgh026",
+   "name": "block",
+   "parent": "zgh015",
+   "children": [
+    "zgh027",
+    "zgh028"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Schritt 03: Lösung finden"
+  },
+  {
+   "id": "zgh027",
+   "name": "text-basic",
+   "parent": "zgh026",
+   "children": [],
+   "settings": {
+    "text": "03",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "zgh027a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "zgh028",
+   "name": "div",
+   "parent": "zgh026",
+   "children": [
+    "zgh029",
+    "zgh030"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "zgh029",
+   "name": "text-basic",
+   "parent": "zgh028",
+   "children": [],
+   "settings": {
+    "text": "Lösung finden",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgh030",
+   "name": "text-basic",
+   "parent": "zgh028",
+   "children": [],
+   "settings": {
+    "text": "Direkt buchen oder persönlich beraten lassen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pdd1n"
+    ]
+   },
+   "label": "Text"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "7ish7h",
+   "name": "office-lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "27leu5",
+   "name": "office-hero",
+   "settings": {
+    "_cssCustom": ".office-hero {\n  background: linear-gradient(115deg, var(--primary-ultra-light), var(--white) 72%);\n}"
+   }
+  },
+  {
+   "id": "vyxnax",
+   "name": "office-hero__grid",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "minmax(0, 1.15fr) minmax(0, 1fr)",
+    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-xxl)",
+    "_rowGap": "var(--space-l)"
+   }
+  },
+  {
+   "id": "1me6wd",
+   "name": "office-hero__content",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-m)"
+   }
+  },
+  {
+   "id": "2chdce",
+   "name": "office-hero__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)",
+     "line-height": "1.1"
+    }
+   }
+  },
+  {
+   "id": "zr1zb4",
+   "name": "office-hero__actions",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_columnGap": "var(--space-xs)",
+    "_rowGap": "var(--space-xs)",
+    "_cssCustom": "/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}"
+   }
+  },
+  {
+   "id": "mokxd3",
+   "name": "office-plan",
+   "settings": {
+    "_padding": {
+     "top": "var(--space-l)",
+     "right": "var(--space-l)",
+     "bottom": "var(--space-l)",
+     "left": "var(--space-l)"
+    },
+    "_padding:mobile_landscape": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius)",
+      "right": "var(--radius)",
+      "bottom": "var(--radius)",
+      "left": "var(--radius)"
+     }
+    },
+    "_cssCustom": "/* Karte leicht gedreht mit grünem Versatz-Schatten (Vorlage) */\n.office-plan {\n  transform: rotate(1deg);\n  box-shadow: 1.6rem 2rem 0 var(--action-trans-20);\n}\n\n@media (max-width: 991px) {\n  .office-plan {\n    transform: none;\n    box-shadow: 0.8rem 1rem 0 var(--action-trans-20);\n  }\n}"
+   }
+  },
+  {
+   "id": "1y3ln0",
+   "name": "office-plan__eyebrow",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--action-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "hfad5o",
+   "name": "office-plan__title",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-xs)",
+     "bottom": "var(--space-s)"
+    },
+    "_typography": {
+     "font-size": "var(--h3)",
+     "line-height": "1.2",
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  },
+  {
+   "id": "sl3ri0",
+   "name": "office-plan__list",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".office-plan__list {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "zwjsxh",
+   "name": "office-plan__item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "nowrap",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-xs)",
+     "bottom": "var(--space-xs)"
+    },
+    "_border": {
+     "width": {
+      "top": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--white-trans-20)"
+     }
+    }
+   }
+  },
+  {
+   "id": "204b0q",
+   "name": "office-plan__number",
+   "settings": {
+    "_flexShrink": "0",
+    "_widthMin": "2ch",
+    "_typography": {
+     "font-size": "var(--h4)",
+     "color": {
+      "raw": "var(--action-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "27hx45",
+   "name": "office-plan__item-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-weight": "700",
+     "line-height": "1.3"
+    }
+   }
+  },
+  {
+   "id": "2pdd1n",
+   "name": "office-plan__item-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--white-trans-80)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2l2a5v",
+   "name": "audience-breadcrumb",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    },
+    "_cssCustom": ".audience-breadcrumb a {\n  color: var(--primary-dark);\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}\n\n.audience-breadcrumb span {\n  margin-inline: 0.5em;\n}"
+   }
+  },
+  {
+   "id": "iaphlu",
+   "name": "audience-hero__inner",
+   "settings": {
+    "_rowGap": "var(--space-m)"
+   }
+  },
+  {
+   "id": "qty5qg",
+   "name": "office-plan--straight",
+   "settings": {
+    "_cssCustom": ".office-plan.office-plan--straight {\n  transform: none;\n}"
+   }
+  }
+ ],
+ "globalElements": []
+}

@@ -1,0 +1,534 @@
+{
+ "title": "Zielgruppe 3 – Verantwortliche",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "zgv001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "zgv002"
+   ],
+   "settings": {
+    "_cssId": "verantwortliche",
+    "_cssGlobalClasses": [
+     "acss_import_bg--primary-ultra-light"
+    ]
+   },
+   "label": "Verantwortliche"
+  },
+  {
+   "id": "zgv002",
+   "name": "container",
+   "parent": "zgv001",
+   "children": [
+    "zgv003",
+    "zgv007",
+    "zgv016"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "zgv003",
+   "name": "block",
+   "parent": "zgv002",
+   "children": [
+    "zgv004",
+    "zgv005",
+    "zgv006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1vcbsh"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "zgv004",
+   "name": "text-basic",
+   "parent": "zgv003",
+   "children": [],
+   "settings": {
+    "text": "FÜR DIE ORGANISATION DAHINTER",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "zgv005",
+   "name": "heading",
+   "parent": "zgv003",
+   "children": [],
+   "settings": {
+    "text": "Sie planen und organisieren Lernen?",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "zgv006",
+   "name": "text-basic",
+   "parent": "zgv003",
+   "children": [],
+   "settings": {
+    "text": "Dann geht es um mehr als einzelne Kurse: um passende Inhalte, eine geeignete Lernumgebung und die Umsetzung im Unternehmen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7ish7h"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "zgv007",
+   "name": "block",
+   "parent": "zgv002",
+   "children": [
+    "zgv008",
+    "zgv012"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1vacl0",
+     "acss_import_grid--2",
+     "acss_import_grid--m-1"
+    ]
+   },
+   "label": "Rollen"
+  },
+  {
+   "id": "zgv008",
+   "name": "block",
+   "parent": "zgv007",
+   "children": [
+    "zgv009",
+    "zgv010",
+    "zgv011"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "16k1km"
+    ]
+   },
+   "label": "Rolle: Personalentwicklung & HR"
+  },
+  {
+   "id": "zgv009",
+   "name": "heading",
+   "parent": "zgv008",
+   "children": [],
+   "settings": {
+    "text": "Personalentwicklung & HR",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "caew9w"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgv010",
+   "name": "text-basic",
+   "parent": "zgv008",
+   "children": [],
+   "settings": {
+    "text": "Sie möchten Weiterbildung koordinieren, Mitarbeitende entwickeln und Lernen im Unternehmen organisieren? Finden Sie den passenden Einstieg in Ihre Lernplattform.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgv011",
+   "name": "text-link",
+   "parent": "zgv008",
+   "children": [],
+   "settings": {
+    "text": "Lernplattform für Ihr Unternehmen entdecken →",
+    "link": {
+     "type": "external",
+     "url": "https://www.weka-elearning.de/lms-fuer-unternehmen/"
+    },
+    "_cssGlobalClasses": [
+     "2p0hoe"
+    ]
+   },
+   "label": "Link: Lernplattform für Ihr Unternehmen entdecken →"
+  },
+  {
+   "id": "zgv012",
+   "name": "block",
+   "parent": "zgv007",
+   "children": [
+    "zgv013",
+    "zgv014",
+    "zgv015"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "16k1km"
+    ]
+   },
+   "label": "Rolle: Fachverantwortliche & Beauftragte"
+  },
+  {
+   "id": "zgv013",
+   "name": "heading",
+   "parent": "zgv012",
+   "children": [],
+   "settings": {
+    "text": "Fachverantwortliche & Beauftragte",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "caew9w"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgv014",
+   "name": "text-basic",
+   "parent": "zgv012",
+   "children": [],
+   "settings": {
+    "text": "Sie betreuen Arbeitsschutz, Datenschutz, Informationssicherheit oder Compliance? Steigen Sie über Ihr Fachthema ein und wählen Sie passende Inhalte für Ihre Mitarbeitenden aus.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgv015",
+   "name": "text-link",
+   "parent": "zgv012",
+   "children": [],
+   "settings": {
+    "text": "Unterweisungen nach Thema ansehen →",
+    "link": {
+     "type": "external",
+     "url": "https://www.weka-elearning.de/betriebliche-unterweisungen/"
+    },
+    "_cssGlobalClasses": [
+     "2p0hoe"
+    ]
+   },
+   "label": "Link: Unterweisungen nach Thema ansehen →"
+  },
+  {
+   "id": "zgv016",
+   "name": "block",
+   "parent": "zgv002",
+   "children": [
+    "zgv017",
+    "zgv020"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "zh5dxu"
+    ]
+   },
+   "label": "Selbst weiterbilden"
+  },
+  {
+   "id": "zgv017",
+   "name": "div",
+   "parent": "zgv016",
+   "children": [
+    "zgv018",
+    "zgv019"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "2hqnr9"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgv018",
+   "name": "heading",
+   "parent": "zgv017",
+   "children": [],
+   "settings": {
+    "text": "Sie möchten sich selbst weiterbilden?",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2g89ld"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgv019",
+   "name": "text-basic",
+   "parent": "zgv017",
+   "children": [],
+   "settings": {
+    "text": "Entdecken Sie im WEKA eCampus Kurse für Ihren eigenen Lernbedarf und buchen Sie direkt online.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgv020",
+   "name": "button",
+   "parent": "zgv016",
+   "children": [],
+   "settings": {
+    "text": "Zum WEKA eCampus",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "acss_import_btn--outline"
+    ]
+   },
+   "label": "Button: Zum WEKA eCampus"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "7ish7h",
+   "name": "office-lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1vcbsh",
+   "name": "office-intro",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_widthMax": "76ch"
+   }
+  },
+  {
+   "id": "7kqp5k",
+   "name": "office-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2p0hoe",
+   "name": "office-path__link",
+   "settings": {
+    "_margin": {
+     "top": "auto"
+    },
+    "_typography": {
+     "font-weight": "700"
+    },
+    "_cssCustom": ".office-path__link {\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}"
+   }
+  },
+  {
+   "id": "1vacl0",
+   "name": "audience-orgs",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-l)",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_alignItems": "stretch",
+    "_columnGap": "var(--space-m)",
+    "_rowGap": "var(--space-m)",
+    "_cssCustom": ".audience-orgs {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "16k1km",
+   "name": "audience-org",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_alignItems": "flex-start",
+    "_rowGap": "var(--space-xs)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-l)",
+     "right": "var(--space-l)",
+     "bottom": "var(--space-l)",
+     "left": "var(--space-l)"
+    },
+    "_padding:mobile_landscape": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "4px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--action)"
+     }
+    }
+   }
+  },
+  {
+   "id": "caew9w",
+   "name": "audience-org__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "zh5dxu",
+   "name": "audience-self",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_justifyContent": "space-between",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-s)",
+    "_direction:mobile_landscape": "column",
+    "_alignItems:mobile_landscape": "flex-start",
+    "_margin": {
+     "top": "var(--space-l)"
+    },
+    "_padding": {
+     "top": "var(--space-m)"
+    },
+    "_border": {
+     "width": {
+      "top": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     }
+    },
+    "_cssCustom": ".audience-self > .brxe-button {\n  flex-shrink: 0;\n}\n\n@media (max-width: 767px) {\n  .audience-self > .brxe-button {\n    width: 100%;\n  }\n}"
+   }
+  },
+  {
+   "id": "2hqnr9",
+   "name": "audience-self__text",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_widthMax": "72ch"
+   }
+  },
+  {
+   "id": "2g89ld",
+   "name": "audience-self__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "aq6l6g",
+   "name": "eyebrow",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "500",
+     "letter-spacing": "0.12em",
+     "color": {
+      "id": "acss_import_primary-dark",
+      "name": "primary-dark",
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  }
+ ]
+}

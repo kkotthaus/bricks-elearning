@@ -48,7 +48,7 @@ Umsetzungsregeln:
 
 ## Seite bauen
 
-1. Neue Seite anlegen, Titel „Büro-Verwaltung“, Titelform (Slug) `buero-verwaltung`, als Entwurf; mit Bricks bearbeiten.
+1. Neue Seite anlegen, Titel „Büro-Verwaltung“, Titelform (Slug) `buero-verwaltung`, als Entwurf; mit Bricks bearbeiten. Übergeordnete Seite ist **Zielgruppe** (Adresse `/zielgruppe/buero-verwaltung/`, entschieden 19.10.2026). Dafür braucht es die Seite „Zielgruppe“ und das Snippet „WEKA Zielgruppe – Unterseiten“, siehe `docs/zielgruppe-auf-live.md`. Gibt es „Zielgruppe“ noch nicht, die Seite zunächst ohne übergeordnete Seite anlegen und später umhängen.
 2. Im Builder oben **Templates** (Ordner-Symbol) › „Meine Vorlagen“ › die acht Vorlagen der Reihe nach einfügen (1 bis 8).
 3. Speichern und die **Vorschau** öffnen (die Auswahlfelder erscheinen nur im Frontend, im Builder sind es Listen).
 4. Prüfen:

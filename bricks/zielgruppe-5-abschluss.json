@@ -1,0 +1,183 @@
+{
+ "content": [
+  {
+   "id": "zga001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "zga002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "3iavpe",
+     "acss_import_bg--primary-dark"
+    ]
+   },
+   "label": "Abschluss"
+  },
+  {
+   "id": "zga002",
+   "name": "container",
+   "parent": "zga001",
+   "children": [
+    "zga003",
+    "zga006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1fp13m"
+    ]
+   },
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "zga003",
+   "name": "block",
+   "parent": "zga002",
+   "children": [
+    "zga004",
+    "zga005"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1ht9q0"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zga004",
+   "name": "heading",
+   "parent": "zga003",
+   "children": [],
+   "settings": {
+    "text": "Ihr Team passt in keine Schublade?",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h",
+     "3jl1j3"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "zga005",
+   "name": "text-basic",
+   "parent": "zga003",
+   "children": [],
+   "settings": {
+    "text": "Wir unterstützen Sie bei einer passenden Themen- und Lösungsauswahl.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "27gxc8"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zga006",
+   "name": "button",
+   "parent": "zga002",
+   "children": [],
+   "settings": {
+    "text": "Bedarf gemeinsam klären",
+    "style": "primary",
+    "link": {
+     "type": "external",
+     "url": "https://www.weka-elearning.de/kontakt/"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action"
+    ]
+   },
+   "label": "Button: Bedarf gemeinsam klären"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "3iavpe",
+   "name": "office-closing",
+   "settings": {
+    "_padding": {
+     "top": "var(--section-space-s)",
+     "bottom": "var(--section-space-s)"
+    }
+   }
+  },
+  {
+   "id": "1fp13m",
+   "name": "office-closing__inner",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_justifyContent": "space-between",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-m)",
+    "_cssCustom": "@media (max-width: 767px) {\n  .office-closing__inner > .brxe-button {\n    width: 100%;\n  }\n}"
+   }
+  },
+  {
+   "id": "3jl1j3",
+   "name": "office-closing__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1ht9q0",
+   "name": "audience-closing__text",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)"
+   }
+  },
+  {
+   "id": "27gxc8",
+   "name": "audience-closing__lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white-trans-80)"
+     }
+    }
+   }
+  }
+ ],
+ "globalElements": []
+}

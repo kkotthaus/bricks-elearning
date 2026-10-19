@@ -1,0 +1,999 @@
+{
+ "content": [
+  {
+   "id": "zgm001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "zgm002"
+   ],
+   "settings": {
+    "_cssId": "mitarbeitende"
+   },
+   "label": "Zielgruppen – Mitarbeitende"
+  },
+  {
+   "id": "zgm002",
+   "name": "container",
+   "parent": "zgm001",
+   "children": [
+    "zgm003",
+    "zgm007"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "zgm003",
+   "name": "block",
+   "parent": "zgm002",
+   "children": [
+    "zgm004",
+    "zgm005",
+    "zgm006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1vcbsh"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "zgm004",
+   "name": "text-basic",
+   "parent": "zgm003",
+   "children": [],
+   "settings": {
+    "text": "FÜR IHRE MITARBEITENDEN",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "zgm005",
+   "name": "heading",
+   "parent": "zgm003",
+   "children": [],
+   "settings": {
+    "text": "Wen möchten Sie schulen?",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "zgm006",
+   "name": "text-basic",
+   "parent": "zgm003",
+   "children": [],
+   "settings": {
+    "text": "Starten Sie bei den Aufgaben Ihrer Mitarbeitenden. So wird aus einem großen Angebot eine Auswahl, die zu ihrem Arbeitsalltag passt.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7ish7h"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "zgm007",
+   "name": "block",
+   "parent": "zgm002",
+   "children": [
+    "zgm008",
+    "zgm021",
+    "zgm034"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "4ako11",
+     "acss_import_grid--3",
+     "acss_import_grid--m-1"
+    ]
+   },
+   "label": "Zielgruppen"
+  },
+  {
+   "id": "zgm008",
+   "name": "block",
+   "parent": "zgm007",
+   "children": [
+    "zgm009",
+    "zgm012"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "16kwkz",
+     "h02bjo"
+    ]
+   },
+   "label": "Zielgruppe 01: Büro & Verwaltung"
+  },
+  {
+   "id": "zgm009",
+   "name": "div",
+   "parent": "zgm008",
+   "children": [
+    "zgm010",
+    "zgm011"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1njidm"
+    ]
+   },
+   "label": "Kopf"
+  },
+  {
+   "id": "zgm010",
+   "name": "svg",
+   "parent": "zgm009",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linejoin=\"round\" stroke-linecap=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"8\" y=\"8\" width=\"48\" height=\"32\" rx=\"3\"/><path d=\"M8 33h48M32 40v12M21 53h22M24 21l5 5 11-12\"/></svg>",
+    "_cssGlobalClasses": [
+     "2nebo1"
+    ]
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "zgm011",
+   "name": "text-basic",
+   "parent": "zgm009",
+   "children": [],
+   "settings": {
+    "text": "01",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "zgm011a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1y2934"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "zgm012",
+   "name": "div",
+   "parent": "zgm008",
+   "children": [
+    "zgm013",
+    "zgm014",
+    "zgm015",
+    "zgm019",
+    "zgm020"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "lyhko7"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "zgm013",
+   "name": "heading",
+   "parent": "zgm012",
+   "children": [],
+   "settings": {
+    "text": "Büro & Verwaltung",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "1vej1i"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgm014",
+   "name": "text-basic",
+   "parent": "zgm012",
+   "children": [],
+   "settings": {
+    "text": "Für Mitarbeitende am Bildschirm, in der Sachbearbeitung, im Kundenkontakt und im mobilen Büro.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "dugl0v"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgm015",
+   "name": "block",
+   "parent": "zgm012",
+   "children": [
+    "zgm016",
+    "zgm017",
+    "zgm018"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1dcdb0",
+     "1k35wv"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "zgm016",
+   "name": "text-basic",
+   "parent": "zgm015",
+   "children": [],
+   "settings": {
+    "text": "Arbeitsschutz & Bildschirmarbeit",
+    "tag": "li"
+   },
+   "label": "Thema: Arbeitsschutz & Bildschirmarbeit"
+  },
+  {
+   "id": "zgm017",
+   "name": "text-basic",
+   "parent": "zgm015",
+   "children": [],
+   "settings": {
+    "text": "Datenschutz & Informationssicherheit",
+    "tag": "li"
+   },
+   "label": "Thema: Datenschutz & Informationssicherheit"
+  },
+  {
+   "id": "zgm018",
+   "name": "text-basic",
+   "parent": "zgm015",
+   "children": [],
+   "settings": {
+    "text": "Compliance & sicherer KI-Einsatz",
+    "tag": "li"
+   },
+   "label": "Thema: Compliance & sicherer KI-Einsatz"
+  },
+  {
+   "id": "zgm019",
+   "name": "button",
+   "parent": "zgm012",
+   "children": [],
+   "settings": {
+    "text": "Themen & Lernpakete entdecken",
+    "link": {
+     "type": "external",
+     "url": "/zielgruppe/buero-verwaltung/"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "13i01u"
+    ]
+   },
+   "label": "Button: Themen & Lernpakete entdecken"
+  },
+  {
+   "id": "zgm020",
+   "name": "text-basic",
+   "parent": "zgm012",
+   "children": [],
+   "settings": {
+    "text": "5, 10 oder 15 Themen als Orientierung für Ihren Lernplan.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "18je7c"
+    ]
+   },
+   "label": "Hinweis"
+  },
+  {
+   "id": "zgm021",
+   "name": "block",
+   "parent": "zgm007",
+   "children": [
+    "zgm022",
+    "zgm025"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "16kwkz"
+    ]
+   },
+   "label": "Zielgruppe 02: Produktion & Werkstatt"
+  },
+  {
+   "id": "zgm022",
+   "name": "div",
+   "parent": "zgm021",
+   "children": [
+    "zgm023",
+    "zgm024"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1njidm"
+    ]
+   },
+   "label": "Kopf"
+  },
+  {
+   "id": "zgm023",
+   "name": "svg",
+   "parent": "zgm022",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linejoin=\"round\" stroke-linecap=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 41v-7a20 20 0 0 1 40 0v7M8 41h48v7H8zM27 11v18M37 11v18M18 49v6h28v-6\"/></svg>",
+    "_cssGlobalClasses": [
+     "2nebo1"
+    ]
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "zgm024",
+   "name": "text-basic",
+   "parent": "zgm022",
+   "children": [],
+   "settings": {
+    "text": "02",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "zgm024a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1y2934"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "zgm025",
+   "name": "div",
+   "parent": "zgm021",
+   "children": [
+    "zgm026",
+    "zgm027",
+    "zgm028",
+    "zgm032",
+    "zgm033"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "lyhko7"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "zgm026",
+   "name": "heading",
+   "parent": "zgm025",
+   "children": [],
+   "settings": {
+    "text": "Produktion & Werkstatt",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "1vej1i"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgm027",
+   "name": "text-basic",
+   "parent": "zgm025",
+   "children": [],
+   "settings": {
+    "text": "Für gewerblich tätige Mitarbeitende, die mit Arbeitsmitteln, Maschinen und betrieblichen Gefährdungen umgehen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "dugl0v"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgm028",
+   "name": "block",
+   "parent": "zgm025",
+   "children": [
+    "zgm029",
+    "zgm030",
+    "zgm031"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1dcdb0",
+     "1k35wv"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "zgm029",
+   "name": "text-basic",
+   "parent": "zgm028",
+   "children": [],
+   "settings": {
+    "text": "Arbeitsschutz & sicheres Verhalten",
+    "tag": "li"
+   },
+   "label": "Thema: Arbeitsschutz & sicheres Verhalten"
+  },
+  {
+   "id": "zgm030",
+   "name": "text-basic",
+   "parent": "zgm028",
+   "children": [],
+   "settings": {
+    "text": "Umgang mit Maschinen & Arbeitsmitteln",
+    "tag": "li"
+   },
+   "label": "Thema: Umgang mit Maschinen & Arbeitsmitteln"
+  },
+  {
+   "id": "zgm031",
+   "name": "text-basic",
+   "parent": "zgm028",
+   "children": [],
+   "settings": {
+    "text": "Risiken erkennen & Unfälle vermeiden",
+    "tag": "li"
+   },
+   "label": "Thema: Risiken erkennen & Unfälle vermeiden"
+  },
+  {
+   "id": "zgm032",
+   "name": "button",
+   "parent": "zgm025",
+   "children": [],
+   "settings": {
+    "text": "Arbeitsschutzkurse ansehen",
+    "link": {
+     "type": "external",
+     "url": "https://www.weka-elearning.de/betriebliche-unterweisungen/arbeitsschutz/"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "acss_import_btn--outline",
+     "13i01u"
+    ]
+   },
+   "label": "Button: Arbeitsschutzkurse ansehen"
+  },
+  {
+   "id": "zgm033",
+   "name": "text-basic",
+   "parent": "zgm025",
+   "children": [],
+   "settings": {
+    "text": "Passende Inhalte aus dem Bereich Arbeitsschutz.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "18je7c"
+    ]
+   },
+   "label": "Hinweis"
+  },
+  {
+   "id": "zgm034",
+   "name": "block",
+   "parent": "zgm007",
+   "children": [
+    "zgm035",
+    "zgm038"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "16kwkz"
+    ]
+   },
+   "label": "Zielgruppe 03: Führungskräfte"
+  },
+  {
+   "id": "zgm035",
+   "name": "div",
+   "parent": "zgm034",
+   "children": [
+    "zgm036",
+    "zgm037"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1njidm"
+    ]
+   },
+   "label": "Kopf"
+  },
+  {
+   "id": "zgm036",
+   "name": "svg",
+   "parent": "zgm035",
+   "children": [],
+   "settings": {
+    "source": "code",
+    "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linejoin=\"round\" stroke-linecap=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"32\" cy=\"15\" r=\"7\"/><path d=\"M20 36v-3a12 12 0 0 1 24 0v3M32 36v8M13 45h38M13 45v7M51 45v7\"/><circle cx=\"13\" cy=\"56\" r=\"4\"/><circle cx=\"51\" cy=\"56\" r=\"4\"/></svg>",
+    "_cssGlobalClasses": [
+     "2nebo1"
+    ]
+   },
+   "label": "Symbol"
+  },
+  {
+   "id": "zgm037",
+   "name": "text-basic",
+   "parent": "zgm035",
+   "children": [],
+   "settings": {
+    "text": "03",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "zgm037a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1y2934"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "zgm038",
+   "name": "div",
+   "parent": "zgm034",
+   "children": [
+    "zgm039",
+    "zgm040",
+    "zgm041",
+    "zgm045",
+    "zgm046"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "lyhko7"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "zgm039",
+   "name": "heading",
+   "parent": "zgm038",
+   "children": [],
+   "settings": {
+    "text": "Führungskräfte",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "1vej1i"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "zgm040",
+   "name": "text-basic",
+   "parent": "zgm038",
+   "children": [],
+   "settings": {
+    "text": "Für Menschen mit Personal- und Führungsverantwortung, die Orientierung geben und Zusammenarbeit gestalten.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "dugl0v"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "zgm041",
+   "name": "block",
+   "parent": "zgm038",
+   "children": [
+    "zgm042",
+    "zgm043",
+    "zgm044"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1dcdb0",
+     "1k35wv"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "zgm042",
+   "name": "text-basic",
+   "parent": "zgm041",
+   "children": [],
+   "settings": {
+    "text": "Führung & Kommunikation",
+    "tag": "li"
+   },
+   "label": "Thema: Führung & Kommunikation"
+  },
+  {
+   "id": "zgm043",
+   "name": "text-basic",
+   "parent": "zgm041",
+   "children": [],
+   "settings": {
+    "text": "Verantwortung & Compliance",
+    "tag": "li"
+   },
+   "label": "Thema: Verantwortung & Compliance"
+  },
+  {
+   "id": "zgm044",
+   "name": "text-basic",
+   "parent": "zgm041",
+   "children": [],
+   "settings": {
+    "text": "Zusammenarbeit & Veränderung",
+    "tag": "li"
+   },
+   "label": "Thema: Zusammenarbeit & Veränderung"
+  },
+  {
+   "id": "zgm045",
+   "name": "button",
+   "parent": "zgm038",
+   "children": [],
+   "settings": {
+    "text": "Passende Weiterbildung anfragen",
+    "link": {
+     "type": "external",
+     "url": "https://www.weka-elearning.de/kontakt/"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "acss_import_btn--outline",
+     "13i01u"
+    ]
+   },
+   "label": "Button: Passende Weiterbildung anfragen"
+  },
+  {
+   "id": "zgm046",
+   "name": "text-basic",
+   "parent": "zgm038",
+   "children": [],
+   "settings": {
+    "text": "Gemeinsam die passenden Lernthemen auswählen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "18je7c"
+    ]
+   },
+   "label": "Hinweis"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "7ish7h",
+   "name": "office-lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1vcbsh",
+   "name": "office-intro",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_widthMax": "76ch"
+   }
+  },
+  {
+   "id": "1dcdb0",
+   "name": "office-ticks",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".office-ticks {\n  list-style: none;\n}\n\n.office-ticks > li {\n  position: relative;\n  padding-left: 1.4em;\n}\n\n/* Häkchen wie Vorlage */\n.office-ticks > li::before {\n  content: \"✓\";\n  position: absolute;\n  left: 0;\n  color: var(--action-dark);\n  font-weight: 700;\n}"
+   }
+  },
+  {
+   "id": "4ako11",
+   "name": "audience-cards",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-l)",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_alignItems": "stretch",
+    "_columnGap": "var(--space-s)",
+    "_rowGap": "var(--space-s)",
+    "_cssCustom": ".audience-cards {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "16kwkz",
+   "name": "audience-card",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_overflow": "hidden",
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "1px",
+      "right": "1px",
+      "bottom": "1px",
+      "left": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    }
+   }
+  },
+  {
+   "id": "h02bjo",
+   "name": "audience-card--featured",
+   "settings": {
+    "_border": {
+     "width": {
+      "top": "2px",
+      "right": "2px",
+      "bottom": "2px",
+      "left": "2px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--primary-dark)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1njidm",
+   "name": "audience-card__top",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_justifyContent": "space-between",
+    "_alignItems": "center",
+    "_padding": {
+     "top": "var(--space-s)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-s)",
+     "left": "var(--space-m)"
+    },
+    "_width": "100%",
+    "_heightMin": "11.2rem",
+    "_heightMin:mobile_landscape": "9rem",
+    "_background": {
+     "color": {
+      "raw": "var(--primary-ultra-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2nebo1",
+   "name": "audience-card__icon",
+   "settings": {
+    "_width": "6rem",
+    "_height": "6rem",
+    "_width:mobile_landscape": "5rem",
+    "_height:mobile_landscape": "5rem",
+    "_typography": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1y2934",
+   "name": "audience-card__number",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h2)",
+     "font-weight": "700",
+     "line-height": "1",
+     "color": {
+      "raw": "var(--primary-trans-30)"
+     }
+    }
+   }
+  },
+  {
+   "id": "lyhko7",
+   "name": "audience-card__body",
+   "settings": {
+    "_width": "100%",
+    "_display": "flex",
+    "_direction": "column",
+    "_flexGrow": "1",
+    "_rowGap": "var(--space-xs)",
+    "_padding": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    }
+   }
+  },
+  {
+   "id": "1vej1i",
+   "name": "audience-card__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "dugl0v",
+   "name": "audience-card__text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1k35wv",
+   "name": "audience-card__list",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-xs)",
+     "right": "0",
+     "bottom": "var(--space-s)",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "13i01u",
+   "name": "audience-card__button",
+   "settings": {
+    "_width": "100%",
+    "_margin": {
+     "top": "auto"
+    }
+   }
+  },
+  {
+   "id": "18je7c",
+   "name": "audience-card__note",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-xs)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  }
+ ],
+ "globalElements": []
+}
