@@ -17,6 +17,7 @@ const ausgabe = join(docs, 'pdf');
 const dokumente = [
   { quelle: 'referenzen-neu-auf-live.md', pdf: 'WEKA-Referenzen-neu-auf-Live.pdf', titel: 'Referenzen-neu auf Live' },
   { quelle: 'live-angebot-pdf.md', pdf: 'WEKA-Angebotskonfigurator-auf-Live.pdf', titel: 'Angebotskonfigurator auf Live' },
+  { quelle: 'buero-verwaltung-auf-live.md', pdf: 'WEKA-Buero-Verwaltung-auf-Live.pdf', titel: 'Büro-Verwaltung auf Live' },
 ];
 
 const h = (text) => String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

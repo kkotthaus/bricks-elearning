@@ -1,0 +1,752 @@
+{
+ "content": [
+  {
+   "id": "bvh001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "bvh002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "27leu5"
+    ]
+   },
+   "label": "Hero – Büro & Verwaltung"
+  },
+  {
+   "id": "bvh002",
+   "name": "container",
+   "parent": "bvh001",
+   "children": [
+    "bvh003",
+    "bvh011"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "vyxnax"
+    ]
+   },
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "bvh003",
+   "name": "block",
+   "parent": "bvh002",
+   "children": [
+    "bvh004",
+    "bvh005",
+    "bvh006",
+    "bvh007",
+    "bvh010"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1me6wd"
+    ]
+   },
+   "label": "Inhalt"
+  },
+  {
+   "id": "bvh004",
+   "name": "text-basic",
+   "parent": "bvh003",
+   "children": [],
+   "settings": {
+    "text": "FÜR MITARBEITENDE IN BÜRO & VERWALTUNG",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvh005",
+   "name": "heading",
+   "parent": "bvh003",
+   "children": [],
+   "settings": {
+    "text": "Sicher arbeiten.<br>Bewusst handeln.<br>Einfach online lernen.",
+    "tag": "h1",
+    "_cssGlobalClasses": [
+     "1ey20h",
+     "2chdce"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bvh006",
+   "name": "text-basic",
+   "parent": "bvh003",
+   "children": [],
+   "settings": {
+    "text": "Unterweisen Sie Ihr Team zu den Themen, die im Büroalltag zählen – von Arbeitsschutz und Datenschutz bis zum sicheren Umgang mit E-Mails und KI.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7ish7h"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvh007",
+   "name": "block",
+   "parent": "bvh003",
+   "children": [
+    "bvh008",
+    "bvh009"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "zr1zb4"
+    ]
+   },
+   "label": "Button-Gruppe"
+  },
+  {
+   "id": "bvh008",
+   "name": "button",
+   "parent": "bvh007",
+   "children": [],
+   "settings": {
+    "text": "Passende Lösung finden",
+    "link": {
+     "type": "external",
+     "url": "#loesung"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary"
+    ]
+   },
+   "label": "Button: Passende Lösung finden"
+  },
+  {
+   "id": "bvh009",
+   "name": "button",
+   "parent": "bvh007",
+   "children": [],
+   "settings": {
+    "text": "Lernpakete entdecken",
+    "link": {
+     "type": "external",
+     "url": "#pakete"
+    },
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "acss_import_btn--outline"
+    ]
+   },
+   "label": "Button: Lernpakete entdecken"
+  },
+  {
+   "id": "bvh010",
+   "name": "text-basic",
+   "parent": "bvh003",
+   "children": [],
+   "settings": {
+    "text": "Für einzelne Mitarbeitende, kleine Teams und ganze Unternehmen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1381hj"
+    ]
+   },
+   "label": "Hinweis"
+  },
+  {
+   "id": "bvh011",
+   "name": "block",
+   "parent": "bvh002",
+   "children": [
+    "bvh012",
+    "bvh013",
+    "bvh014",
+    "bvh030"
+   ],
+   "settings": {
+    "tag": "aside",
+    "_attributes": [
+     {
+      "id": "bvh011a0",
+      "name": "aria-label",
+      "value": "Themenübersicht"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "mokxd3"
+    ]
+   },
+   "label": "Lernplan-Karte"
+  },
+  {
+   "id": "bvh012",
+   "name": "text-basic",
+   "parent": "bvh011",
+   "children": [],
+   "settings": {
+    "text": "IHR LERNPLAN FÜR DEN BÜROALLTAG",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g",
+     "1y3ln0"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvh013",
+   "name": "heading",
+   "parent": "bvh011",
+   "children": [],
+   "settings": {
+    "text": "Gute Arbeit beginnt<br>mit sicherem Wissen.",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "hfad5o"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bvh014",
+   "name": "block",
+   "parent": "bvh011",
+   "children": [
+    "bvh015",
+    "bvh020",
+    "bvh025"
+   ],
+   "settings": {
+    "tag": "ol",
+    "_cssGlobalClasses": [
+     "sl3ri0"
+    ]
+   },
+   "label": "Themenbereiche"
+  },
+  {
+   "id": "bvh015",
+   "name": "block",
+   "parent": "bvh014",
+   "children": [
+    "bvh016",
+    "bvh017"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Bereich 01: Gesund & sicher arbeiten"
+  },
+  {
+   "id": "bvh016",
+   "name": "text-basic",
+   "parent": "bvh015",
+   "children": [],
+   "settings": {
+    "text": "01",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "bvh016a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "bvh017",
+   "name": "div",
+   "parent": "bvh015",
+   "children": [
+    "bvh018",
+    "bvh019"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "bvh018",
+   "name": "text-basic",
+   "parent": "bvh017",
+   "children": [],
+   "settings": {
+    "text": "Gesund & sicher arbeiten",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvh019",
+   "name": "text-basic",
+   "parent": "bvh017",
+   "children": [],
+   "settings": {
+    "text": "Arbeitsplatz · Bildschirm · Mobiles Arbeiten",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pdd1n"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "bvh020",
+   "name": "block",
+   "parent": "bvh014",
+   "children": [
+    "bvh021",
+    "bvh022"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Bereich 02: Daten & Informationen schützen"
+  },
+  {
+   "id": "bvh021",
+   "name": "text-basic",
+   "parent": "bvh020",
+   "children": [],
+   "settings": {
+    "text": "02",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "bvh021a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "bvh022",
+   "name": "div",
+   "parent": "bvh020",
+   "children": [
+    "bvh023",
+    "bvh024"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "bvh023",
+   "name": "text-basic",
+   "parent": "bvh022",
+   "children": [],
+   "settings": {
+    "text": "Daten & Informationen schützen",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvh024",
+   "name": "text-basic",
+   "parent": "bvh022",
+   "children": [],
+   "settings": {
+    "text": "Datenschutz · Informationssicherheit · Phishing",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pdd1n"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "bvh025",
+   "name": "block",
+   "parent": "bvh014",
+   "children": [
+    "bvh026",
+    "bvh027"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Bereich 03: Verantwortungsvoll handeln"
+  },
+  {
+   "id": "bvh026",
+   "name": "text-basic",
+   "parent": "bvh025",
+   "children": [],
+   "settings": {
+    "text": "03",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "bvh026a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "bvh027",
+   "name": "div",
+   "parent": "bvh025",
+   "children": [
+    "bvh028",
+    "bvh029"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "bvh028",
+   "name": "text-basic",
+   "parent": "bvh027",
+   "children": [],
+   "settings": {
+    "text": "Verantwortungsvoll handeln",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvh029",
+   "name": "text-basic",
+   "parent": "bvh027",
+   "children": [],
+   "settings": {
+    "text": "Gleichbehandlung · Compliance · KI",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "2pdd1n"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "bvh030",
+   "name": "text-basic",
+   "parent": "bvh011",
+   "children": [],
+   "settings": {
+    "text": "5, 10 oder 15 Themen – passend zu Ihrem Bedarf.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "21mpi8"
+    ]
+   },
+   "label": "Hinweis"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "7ish7h",
+   "name": "office-lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "27leu5",
+   "name": "office-hero",
+   "settings": {
+    "_cssCustom": ".office-hero {\n  background: linear-gradient(115deg, var(--primary-ultra-light), var(--white) 72%);\n}"
+   }
+  },
+  {
+   "id": "vyxnax",
+   "name": "office-hero__grid",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "minmax(0, 1.15fr) minmax(0, 1fr)",
+    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-xxl)",
+    "_rowGap": "var(--space-l)"
+   }
+  },
+  {
+   "id": "1me6wd",
+   "name": "office-hero__content",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-m)"
+   }
+  },
+  {
+   "id": "2chdce",
+   "name": "office-hero__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)",
+     "line-height": "1.1"
+    }
+   }
+  },
+  {
+   "id": "zr1zb4",
+   "name": "office-hero__actions",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_columnGap": "var(--space-xs)",
+    "_rowGap": "var(--space-xs)",
+    "_cssCustom": "/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}"
+   }
+  },
+  {
+   "id": "1381hj",
+   "name": "office-hero__note",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "mokxd3",
+   "name": "office-plan",
+   "settings": {
+    "_padding": {
+     "top": "var(--space-l)",
+     "right": "var(--space-l)",
+     "bottom": "var(--space-l)",
+     "left": "var(--space-l)"
+    },
+    "_padding:mobile_landscape": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius)",
+      "right": "var(--radius)",
+      "bottom": "var(--radius)",
+      "left": "var(--radius)"
+     }
+    },
+    "_cssCustom": "/* Karte leicht gedreht mit grünem Versatz-Schatten (Vorlage) */\n.office-plan {\n  transform: rotate(1deg);\n  box-shadow: 1.6rem 2rem 0 var(--action-trans-20);\n}\n\n@media (max-width: 991px) {\n  .office-plan {\n    transform: none;\n    box-shadow: 0.8rem 1rem 0 var(--action-trans-20);\n  }\n}"
+   }
+  },
+  {
+   "id": "1y3ln0",
+   "name": "office-plan__eyebrow",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--action-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "hfad5o",
+   "name": "office-plan__title",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-xs)",
+     "bottom": "var(--space-s)"
+    },
+    "_typography": {
+     "font-size": "var(--h3)",
+     "line-height": "1.2",
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  },
+  {
+   "id": "sl3ri0",
+   "name": "office-plan__list",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".office-plan__list {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "zwjsxh",
+   "name": "office-plan__item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "nowrap",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-xs)",
+     "bottom": "var(--space-xs)"
+    },
+    "_border": {
+     "width": {
+      "top": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--white-trans-20)"
+     }
+    }
+   }
+  },
+  {
+   "id": "204b0q",
+   "name": "office-plan__number",
+   "settings": {
+    "_flexShrink": "0",
+    "_widthMin": "2ch",
+    "_typography": {
+     "font-size": "var(--h4)",
+     "color": {
+      "raw": "var(--action-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "27hx45",
+   "name": "office-plan__item-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-weight": "700",
+     "line-height": "1.3"
+    }
+   }
+  },
+  {
+   "id": "2pdd1n",
+   "name": "office-plan__item-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--white-trans-80)"
+     }
+    }
+   }
+  },
+  {
+   "id": "21mpi8",
+   "name": "office-plan__note",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-s)",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--white-trans-80)"
+     }
+    }
+   }
+  }
+ ],
+ "globalElements": []
+}

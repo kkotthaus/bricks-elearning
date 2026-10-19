@@ -1,0 +1,134 @@
+{
+ "title": "Büro-Verwaltung 2 – Vorteilsleiste",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "bvl001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "bvl002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "kfppi3"
+    ]
+   },
+   "label": "Vorteilsleiste"
+  },
+  {
+   "id": "bvl002",
+   "name": "container",
+   "parent": "bvl001",
+   "children": [
+    "bvl003"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "bvl003",
+   "name": "block",
+   "parent": "bvl002",
+   "children": [
+    "bvl004",
+    "bvl005",
+    "bvl006"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1z3a2i"
+    ]
+   },
+   "label": "Vorteile"
+  },
+  {
+   "id": "bvl004",
+   "name": "text-basic",
+   "parent": "bvl003",
+   "children": [],
+   "settings": {
+    "text": "Praxisnahe E-Learnings",
+    "tag": "li"
+   },
+   "label": "Vorteil: Praxisnahe E-Learnings"
+  },
+  {
+   "id": "bvl005",
+   "name": "text-basic",
+   "parent": "bvl003",
+   "children": [],
+   "settings": {
+    "text": "Bedarfsgerechte Themenauswahl",
+    "tag": "li"
+   },
+   "label": "Vorteil: Bedarfsgerechte Themenauswahl"
+  },
+  {
+   "id": "bvl006",
+   "name": "text-basic",
+   "parent": "bvl003",
+   "children": [],
+   "settings": {
+    "text": "Einzelkurse, Flatrate oder Unternehmenslösung",
+    "tag": "li"
+   },
+   "label": "Vorteil: Einzelkurse, Flatrate oder Unternehmenslösung"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "kfppi3",
+   "name": "office-strip",
+   "settings": {
+    "_padding": {
+     "top": "0",
+     "bottom": "0"
+    }
+   }
+  },
+  {
+   "id": "1z3a2i",
+   "name": "office-strip__list",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_justifyContent": "space-between",
+    "_columnGap": "var(--space-m)",
+    "_rowGap": "var(--space-xs)",
+    "_justifyContent:mobile_landscape": "flex-start",
+    "_direction:mobile_landscape": "column",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "var(--space-s)",
+     "right": "0",
+     "bottom": "var(--space-s)",
+     "left": "0"
+    },
+    "_border": {
+     "width": {
+      "bottom": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     }
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "700"
+    },
+    "_cssCustom": ".office-strip__list > li::before {\n  content: \"✓\";\n  margin-right: 0.8em;\n  color: var(--action-dark);\n}"
+   }
+  }
+ ]
+}

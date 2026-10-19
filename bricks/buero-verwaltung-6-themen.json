@@ -1,0 +1,1406 @@
+{
+ "content": [
+  {
+   "id": "bvt001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "bvt002"
+   ],
+   "settings": {
+    "_cssId": "kurse",
+    "_cssGlobalClasses": [
+     "1dma2u",
+     "acss_import_bg--primary-ultra-light"
+    ]
+   },
+   "label": "Themen im Überblick"
+  },
+  {
+   "id": "bvt002",
+   "name": "container",
+   "parent": "bvt001",
+   "children": [
+    "bvt003",
+    "bvt014"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "bvt003",
+   "name": "block",
+   "parent": "bvt002",
+   "children": [
+    "bvt004",
+    "bvt008"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1iuqg1"
+    ]
+   },
+   "label": "Kopf"
+  },
+  {
+   "id": "bvt004",
+   "name": "block",
+   "parent": "bvt003",
+   "children": [
+    "bvt005",
+    "bvt006",
+    "bvt007"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1vcbsh"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvt005",
+   "name": "text-basic",
+   "parent": "bvt004",
+   "children": [],
+   "settings": {
+    "text": "DIE THEMEN IM ÜBERBLICK",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvt006",
+   "name": "heading",
+   "parent": "bvt004",
+   "children": [],
+   "settings": {
+    "text": "15 Themen. Nah am Arbeitsalltag.",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bvt007",
+   "name": "text-basic",
+   "parent": "bvt004",
+   "children": [],
+   "settings": {
+    "text": "Öffnen Sie ein Thema und erfahren Sie, wofür es relevant ist.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvt008",
+   "name": "div",
+   "parent": "bvt003",
+   "children": [
+    "bvt009",
+    "bvt010"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1qacsq"
+    ]
+   },
+   "label": "Filter"
+  },
+  {
+   "id": "bvt009",
+   "name": "text-basic",
+   "parent": "bvt008",
+   "children": [],
+   "settings": {
+    "text": "Auswahl anzeigen",
+    "tag": "custom",
+    "customTag": "label",
+    "_attributes": [
+     {
+      "id": "bvt009a0",
+      "name": "for",
+      "value": "office-filter"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "2a12dz"
+    ]
+   },
+   "label": "Beschriftung: Auswahl anzeigen"
+  },
+  {
+   "id": "bvt010",
+   "name": "block",
+   "parent": "bvt008",
+   "children": [
+    "bvt011",
+    "bvt012",
+    "bvt013"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_attributes": [
+     {
+      "id": "bvt010a0",
+      "name": "data-office-select",
+      "value": "filter"
+     },
+     {
+      "id": "bvt010a1",
+      "name": "data-office-id",
+      "value": "office-filter"
+     },
+     {
+      "id": "bvt010a2",
+      "name": "data-office-label",
+      "value": "Auswahl anzeigen"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "20y5h1"
+    ]
+   },
+   "label": "Auswahlfeld (filter)"
+  },
+  {
+   "id": "bvt011",
+   "name": "text-basic",
+   "parent": "bvt010",
+   "children": [],
+   "settings": {
+    "text": "Alle 15 Themen",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvt011a0",
+      "name": "data-value",
+      "value": "15"
+     }
+    ]
+   },
+   "label": "Option: Alle 15 Themen"
+  },
+  {
+   "id": "bvt012",
+   "name": "text-basic",
+   "parent": "bvt010",
+   "children": [],
+   "settings": {
+    "text": "Basisschutz · 5 Themen",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvt012a0",
+      "name": "data-value",
+      "value": "5"
+     }
+    ]
+   },
+   "label": "Option: Basisschutz · 5 Themen"
+  },
+  {
+   "id": "bvt013",
+   "name": "text-basic",
+   "parent": "bvt010",
+   "children": [],
+   "settings": {
+    "text": "Erweiterter Schutz · 10 Themen",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvt013a0",
+      "name": "data-value",
+      "value": "10"
+     }
+    ]
+   },
+   "label": "Option: Erweiterter Schutz · 10 Themen"
+  },
+  {
+   "id": "bvt014",
+   "name": "block",
+   "parent": "bvt002",
+   "children": [
+    "bvt015",
+    "bvt019",
+    "bvt023",
+    "bvt027",
+    "bvt031",
+    "bvt035",
+    "bvt039",
+    "bvt043",
+    "bvt047",
+    "bvt051",
+    "bvt055",
+    "bvt059",
+    "bvt063",
+    "bvt067",
+    "bvt071"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "15gfs0",
+     "acss_import_grid--2",
+     "acss_import_grid--m-1"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "bvt015",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt016",
+    "bvt017",
+    "bvt018"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt015a0",
+      "name": "data-office-level",
+      "value": "5"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 01: Erstunterweisung"
+  },
+  {
+   "id": "bvt016",
+   "name": "text-basic",
+   "parent": "bvt015",
+   "children": [],
+   "settings": {
+    "text": "<small>01</small>Erstunterweisung",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt017",
+   "name": "text-basic",
+   "parent": "bvt015",
+   "children": [],
+   "settings": {
+    "text": "Sicher in den Arbeitsalltag starten und grundlegende Verhaltensweisen kennenlernen. Betriebliche Abläufe und Ansprechpartner ergänzen die allgemeinen Inhalte.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt018",
+   "name": "text-link",
+   "parent": "bvt015",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt019",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt020",
+    "bvt021",
+    "bvt022"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt019a0",
+      "name": "data-office-level",
+      "value": "5"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 02: Büro- und Bildschirmarbeit"
+  },
+  {
+   "id": "bvt020",
+   "name": "text-basic",
+   "parent": "bvt019",
+   "children": [],
+   "settings": {
+    "text": "<small>02</small>Büro- und Bildschirmarbeit",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt021",
+   "name": "text-basic",
+   "parent": "bvt019",
+   "children": [],
+   "settings": {
+    "text": "Für Beschäftigte am Schreibtisch: den Arbeitsplatz bewusst gestalten und Belastungen im Büroalltag erkennen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt022",
+   "name": "text-link",
+   "parent": "bvt019",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt023",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt024",
+    "bvt025",
+    "bvt026"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt023a0",
+      "name": "data-office-level",
+      "value": "5"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 03: Grundlagen der Informationssicherheit"
+  },
+  {
+   "id": "bvt024",
+   "name": "text-basic",
+   "parent": "bvt023",
+   "children": [],
+   "settings": {
+    "text": "<small>03</small>Grundlagen der Informationssicherheit",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt025",
+   "name": "text-basic",
+   "parent": "bvt023",
+   "children": [],
+   "settings": {
+    "text": "Unternehmensinformationen schützen und typische Sicherheitsrisiken im täglichen Umgang mit digitalen Informationen erkennen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt026",
+   "name": "text-link",
+   "parent": "bvt023",
+   "children": [],
+   "settings": {
+    "text": "Kurs im Shop ansehen →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/e/grundlagen-informationssicherheit-173"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt027",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt028",
+    "bvt029",
+    "bvt030"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt027a0",
+      "name": "data-office-level",
+      "value": "5"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 04: Grundlagen des Datenschutzes – Büro & Verwaltung"
+  },
+  {
+   "id": "bvt028",
+   "name": "text-basic",
+   "parent": "bvt027",
+   "children": [],
+   "settings": {
+    "text": "<small>04</small>Grundlagen des Datenschutzes – Büro & Verwaltung",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt029",
+   "name": "text-basic",
+   "parent": "bvt027",
+   "children": [],
+   "settings": {
+    "text": "Für alle, die personenbezogene Daten verarbeiten: einen bewussten Umgang mit Kunden-, Personal- und Kontaktdaten fördern.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt030",
+   "name": "text-link",
+   "parent": "bvt027",
+   "children": [],
+   "settings": {
+    "text": "Kurs im Shop ansehen →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/e/datenschutz-b%C3%BCro-verwaltung-175"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt031",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt032",
+    "bvt033",
+    "bvt034"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt031a0",
+      "name": "data-office-level",
+      "value": "5"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 05: Allgemeines Gleichbehandlungsgesetz"
+  },
+  {
+   "id": "bvt032",
+   "name": "text-basic",
+   "parent": "bvt031",
+   "children": [],
+   "settings": {
+    "text": "<small>05</small>Allgemeines Gleichbehandlungsgesetz",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt033",
+   "name": "text-basic",
+   "parent": "bvt031",
+   "children": [],
+   "settings": {
+    "text": "Für ein respektvolles Arbeitsumfeld sensibilisieren und Benachteiligung im beruflichen Alltag erkennen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt034",
+   "name": "text-link",
+   "parent": "bvt031",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt035",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt036",
+    "bvt037",
+    "bvt038"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt035a0",
+      "name": "data-office-level",
+      "value": "10"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 06: Phishingattacken abwehren: Sicheres Arbeiten mit E-Mails"
+  },
+  {
+   "id": "bvt036",
+   "name": "text-basic",
+   "parent": "bvt035",
+   "children": [],
+   "settings": {
+    "text": "<small>06</small>Phishingattacken abwehren: Sicheres Arbeiten mit E-Mails",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt037",
+   "name": "text-basic",
+   "parent": "bvt035",
+   "children": [],
+   "settings": {
+    "text": "Verdächtige Nachrichten bewusster prüfen und Risiken durch Links, Anhänge und Täuschungsversuche erkennen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt038",
+   "name": "text-link",
+   "parent": "bvt035",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt039",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt040",
+    "bvt041",
+    "bvt042"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt039a0",
+      "name": "data-office-level",
+      "value": "10"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 07: Mobiles Arbeiten"
+  },
+  {
+   "id": "bvt040",
+   "name": "text-basic",
+   "parent": "bvt039",
+   "children": [],
+   "settings": {
+    "text": "<small>07</small>Mobiles Arbeiten",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt041",
+   "name": "text-basic",
+   "parent": "bvt039",
+   "children": [],
+   "settings": {
+    "text": "Für wechselnde Arbeitsorte sensibilisieren und Sicherheit sowie gesundes Arbeiten auch außerhalb des Büros mitdenken.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt042",
+   "name": "text-link",
+   "parent": "bvt039",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt043",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt044",
+    "bvt045",
+    "bvt046"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt043a0",
+      "name": "data-office-level",
+      "value": "10"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 08: Code of Conduct"
+  },
+  {
+   "id": "bvt044",
+   "name": "text-basic",
+   "parent": "bvt043",
+   "children": [],
+   "settings": {
+    "text": "<small>08</small>Code of Conduct",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt045",
+   "name": "text-basic",
+   "parent": "bvt043",
+   "children": [],
+   "settings": {
+    "text": "Gemeinsame Verhaltensmaßstäbe verstehen und verantwortliches Handeln im Unternehmen stärken.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt046",
+   "name": "text-link",
+   "parent": "bvt043",
+   "children": [],
+   "settings": {
+    "text": "Kurs im Shop ansehen →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/e/code-of-conduct-156"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt047",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt048",
+    "bvt049",
+    "bvt050"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt047a0",
+      "name": "data-office-level",
+      "value": "10"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 09: KI-Anwendungen sicher einsetzen"
+  },
+  {
+   "id": "bvt048",
+   "name": "text-basic",
+   "parent": "bvt047",
+   "children": [],
+   "settings": {
+    "text": "<small>09</small>KI-Anwendungen sicher einsetzen",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt049",
+   "name": "text-basic",
+   "parent": "bvt047",
+   "children": [],
+   "settings": {
+    "text": "Für Mitarbeitende, die KI nutzen: Chancen und Risiken im Arbeitsalltag reflektieren und interne Regeln berücksichtigen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt050",
+   "name": "text-link",
+   "parent": "bvt047",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt051",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt052",
+    "bvt053",
+    "bvt054"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt051a0",
+      "name": "data-office-level",
+      "value": "10"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 10: Whistleblowing und Hinweisgeberschutz"
+  },
+  {
+   "id": "bvt052",
+   "name": "text-basic",
+   "parent": "bvt051",
+   "children": [],
+   "settings": {
+    "text": "<small>10</small>Whistleblowing und Hinweisgeberschutz",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt053",
+   "name": "text-basic",
+   "parent": "bvt051",
+   "children": [],
+   "settings": {
+    "text": "Für den verantwortungsvollen Umgang mit Hinweisen auf Missstände sensibilisieren. Betriebliche Meldewege ergänzen das Wissen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt054",
+   "name": "text-link",
+   "parent": "bvt051",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt055",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt056",
+    "bvt057",
+    "bvt058"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt055a0",
+      "name": "data-office-level",
+      "value": "15"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 11: Energieeffizientes Verhalten in Büro & Verwaltung"
+  },
+  {
+   "id": "bvt056",
+   "name": "text-basic",
+   "parent": "bvt055",
+   "children": [],
+   "settings": {
+    "text": "<small>11</small>Energieeffizientes Verhalten in Büro & Verwaltung",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt057",
+   "name": "text-basic",
+   "parent": "bvt055",
+   "children": [],
+   "settings": {
+    "text": "Möglichkeiten erkennen, im Arbeitsalltag Energie bewusster einzusetzen und Ressourcen zu schonen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt058",
+   "name": "text-link",
+   "parent": "bvt055",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt059",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt060",
+    "bvt061",
+    "bvt062"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt059a0",
+      "name": "data-office-level",
+      "value": "15"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 12: Stolpern, Rutschen, Stürzen"
+  },
+  {
+   "id": "bvt060",
+   "name": "text-basic",
+   "parent": "bvt059",
+   "children": [],
+   "settings": {
+    "text": "<small>12</small>Stolpern, Rutschen, Stürzen",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt061",
+   "name": "text-basic",
+   "parent": "bvt059",
+   "children": [],
+   "settings": {
+    "text": "Unfallrisiken auf Wegen und am Arbeitsplatz wahrnehmen und zu einem sicheren Büroumfeld beitragen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt062",
+   "name": "text-link",
+   "parent": "bvt059",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt063",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt064",
+    "bvt065",
+    "bvt066"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt063a0",
+      "name": "data-office-level",
+      "value": "15"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 13: Desk-Sharing"
+  },
+  {
+   "id": "bvt064",
+   "name": "text-basic",
+   "parent": "bvt063",
+   "children": [],
+   "settings": {
+    "text": "<small>13</small>Desk-Sharing",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt065",
+   "name": "text-basic",
+   "parent": "bvt063",
+   "children": [],
+   "settings": {
+    "text": "Für gemeinsam genutzte Arbeitsplätze: sichere, geordnete und auf den jeweiligen Nutzer abgestimmte Arbeitsbedingungen mitdenken.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt066",
+   "name": "text-link",
+   "parent": "bvt063",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt067",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt068",
+    "bvt069",
+    "bvt070"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt067a0",
+      "name": "data-office-level",
+      "value": "15"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 14: Informationssicherheit beim mobilen Arbeiten"
+  },
+  {
+   "id": "bvt068",
+   "name": "text-basic",
+   "parent": "bvt067",
+   "children": [],
+   "settings": {
+    "text": "<small>14</small>Informationssicherheit beim mobilen Arbeiten",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt069",
+   "name": "text-basic",
+   "parent": "bvt067",
+   "children": [],
+   "settings": {
+    "text": "Sensible Informationen auch unterwegs und an wechselnden Arbeitsorten schützen.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt070",
+   "name": "text-link",
+   "parent": "bvt067",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  },
+  {
+   "id": "bvt071",
+   "name": "block",
+   "parent": "bvt014",
+   "children": [
+    "bvt072",
+    "bvt073",
+    "bvt074"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_attributes": [
+     {
+      "id": "bvt071a0",
+      "name": "data-office-level",
+      "value": "15"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1jxk9u"
+    ]
+   },
+   "label": "Thema 15: Alkohol, Drogen und Medikamente"
+  },
+  {
+   "id": "bvt072",
+   "name": "text-basic",
+   "parent": "bvt071",
+   "children": [],
+   "settings": {
+    "text": "<small>15</small>Alkohol, Drogen und Medikamente",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Titel (aufklappen)"
+  },
+  {
+   "id": "bvt073",
+   "name": "text-basic",
+   "parent": "bvt071",
+   "children": [],
+   "settings": {
+    "text": "Für mögliche Auswirkungen auf Aufmerksamkeit und sicheres Verhalten bei der Arbeit sensibilisieren.",
+    "tag": "p"
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvt074",
+   "name": "text-link",
+   "parent": "bvt071",
+   "children": [],
+   "settings": {
+    "text": "Zur Kursauswahl im Shop →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    }
+   },
+   "label": "Link zum Shop"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "1vcbsh",
+   "name": "office-intro",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_widthMax": "76ch"
+   }
+  },
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "7kqp5k",
+   "name": "office-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2a12dz",
+   "name": "office-label",
+   "settings": {
+    "_display": "block",
+    "_margin": {
+     "top": "0",
+     "bottom": "var(--space-xs)"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "700",
+     "color": {
+      "raw": "var(--text-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "20y5h1",
+   "name": "office-select",
+   "settings": {
+    "_display": "block",
+    "_width": "100%",
+    "_padding": {
+     "top": "0.75em",
+     "right": "1em",
+     "bottom": "0.75em",
+     "left": "1em"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "1px",
+      "right": "1px",
+      "bottom": "1px",
+      "left": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--shade-light)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    },
+    "_typography": {
+     "font-size": "var(--text-m)",
+     "color": {
+      "raw": "var(--text-dark)"
+     }
+    },
+    "_cssCustom": ".office-select {\n  font-family: inherit;\n  list-style: none;\n}\n\n/* Liste ohne Skript (Builder): Einträge untereinander */\n.office-select > li {\n  margin: 0;\n}\n\n.office-select:focus-visible {\n  outline: 2px solid var(--primary);\n  outline-offset: 2px;\n}"
+   }
+  },
+  {
+   "id": "1iuqg1",
+   "name": "office-catalog__head",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_justifyContent": "space-between",
+    "_alignItems": "flex-end",
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-m)"
+   }
+  },
+  {
+   "id": "1qacsq",
+   "name": "office-catalog__filter",
+   "settings": {
+    "_width": "auto",
+    "_widthMin": "24rem",
+    "_width:mobile_landscape": "100%"
+   }
+  },
+  {
+   "id": "15gfs0",
+   "name": "office-catalog__grid",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-m)"
+    },
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "0"
+   }
+  },
+  {
+   "id": "1jxk9u",
+   "name": "office-course",
+   "settings": {
+    "_display": "block",
+    "_padding": {
+     "top": "var(--space-s)",
+     "bottom": "var(--space-s)"
+    },
+    "_border": {
+     "width": {
+      "top": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     }
+    },
+    "_cssCustom": "/* <details>: Bricks-Block wäre flex; Filter blendet per hidden aus */\n.office-course[hidden] {\n  display: none;\n}\n\n.office-course > p {\n  margin: var(--space-xs) 0 var(--space-xs);\n  padding-left: 3.4rem;\n  font-size: var(--text-s);\n  color: var(--text-dark-muted);\n}\n\n.office-course > a {\n  display: inline-block;\n  margin-left: 3.4rem;\n  font-size: var(--text-s);\n  font-weight: 700;\n}"
+   }
+  },
+  {
+   "id": "9al98e",
+   "name": "office-summary",
+   "settings": {
+    "_display": "flex",
+    "_alignItems": "baseline",
+    "_columnGap": "var(--space-xs)",
+    "_typography": {
+     "font-weight": "700"
+    },
+    "_cssCustom": ".office-summary {\n  cursor: pointer;\n  list-style: none;\n}\n\n.office-summary::-webkit-details-marker {\n  display: none;\n}\n\n/* Plus/Minus rechts wie Vorlage */\n.office-summary::after {\n  content: \"+\";\n  margin-left: auto;\n  padding-left: var(--space-xs);\n  font-size: var(--text-xl);\n  line-height: 1;\n  color: var(--primary);\n}\n\ndetails[open] > .office-summary::after {\n  content: \"−\";\n}\n\n.office-summary small {\n  flex-shrink: 0;\n  min-width: 2.4rem;\n  font-size: var(--text-xs);\n  font-weight: 400;\n  color: var(--text-dark-muted);\n}\n\n.office-summary:focus-visible {\n  outline: 2px solid var(--primary);\n  outline-offset: 4px;\n}"
+   }
+  }
+ ],
+ "globalElements": []
+}

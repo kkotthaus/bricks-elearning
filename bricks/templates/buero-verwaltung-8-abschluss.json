@@ -1,0 +1,130 @@
+{
+ "title": "Büro-Verwaltung 8 – Abschluss",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "bva001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "bva002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "3iavpe",
+     "acss_import_bg--primary-dark"
+    ]
+   },
+   "label": "Abschluss"
+  },
+  {
+   "id": "bva002",
+   "name": "container",
+   "parent": "bva001",
+   "children": [
+    "bva003",
+    "bva004"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1fp13m"
+    ]
+   },
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "bva003",
+   "name": "heading",
+   "parent": "bva002",
+   "children": [],
+   "settings": {
+    "text": "Bringen Sie sicheres Wissen<br>in Ihren Büroalltag.",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h",
+     "3jl1j3"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bva004",
+   "name": "button",
+   "parent": "bva002",
+   "children": [],
+   "settings": {
+    "text": "Jetzt passende Lösung finden",
+    "style": "primary",
+    "link": {
+     "type": "external",
+     "url": "#loesung"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action"
+    ]
+   },
+   "label": "Button: Jetzt passende Lösung finden"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "3iavpe",
+   "name": "office-closing",
+   "settings": {
+    "_padding": {
+     "top": "var(--section-space-s)",
+     "bottom": "var(--section-space-s)"
+    }
+   }
+  },
+  {
+   "id": "1fp13m",
+   "name": "office-closing__inner",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_justifyContent": "space-between",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-m)",
+    "_cssCustom": "@media (max-width: 767px) {\n  .office-closing__inner > .brxe-button {\n    width: 100%;\n  }\n}"
+   }
+  },
+  {
+   "id": "3jl1j3",
+   "name": "office-closing__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  }
+ ]
+}

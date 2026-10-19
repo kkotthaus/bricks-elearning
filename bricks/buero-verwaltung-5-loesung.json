@@ -1,0 +1,1133 @@
+{
+ "content": [
+  {
+   "id": "bvf001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "bvf002"
+   ],
+   "settings": {
+    "_cssId": "loesung",
+    "_cssGlobalClasses": [
+     "vr7ocw"
+    ]
+   },
+   "label": "Lösungsfinder"
+  },
+  {
+   "id": "bvf002",
+   "name": "container",
+   "parent": "bvf001",
+   "children": [
+    "bvf003",
+    "bvf034"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "bvf003",
+   "name": "block",
+   "parent": "bvf002",
+   "children": [
+    "bvf004",
+    "bvf009"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "e5kjr0"
+    ]
+   },
+   "label": "Raster"
+  },
+  {
+   "id": "bvf004",
+   "name": "block",
+   "parent": "bvf003",
+   "children": [
+    "bvf005",
+    "bvf006",
+    "bvf007",
+    "bvf008"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1vcbsh"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvf005",
+   "name": "text-basic",
+   "parent": "bvf004",
+   "children": [],
+   "settings": {
+    "text": "IHR WEG ZUR PASSENDEN LÖSUNG",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvf006",
+   "name": "heading",
+   "parent": "bvf004",
+   "children": [],
+   "settings": {
+    "text": "Für Ihr Team.<br>In Ihrer Lernumgebung.",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bvf007",
+   "name": "text-basic",
+   "parent": "bvf004",
+   "children": [],
+   "settings": {
+    "text": "Sie möchten direkt buchen oder die Unterweisung für Ihr Unternehmen organisieren? Finden Sie den passenden nächsten Schritt.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7ish7h"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvf008",
+   "name": "text-basic",
+   "parent": "bvf004",
+   "children": [],
+   "settings": {
+    "text": "Bei mehr als 50 Mitarbeitenden im Unternehmen, einem eigenen LMS oder individuellen Anforderungen unterstützt Sie unser Vertrieb bei der Auswahl.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvf009",
+   "name": "block",
+   "parent": "bvf003",
+   "children": [
+    "bvf010",
+    "bvf011",
+    "bvf014",
+    "bvf015",
+    "bvf020"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "27fk1z"
+    ]
+   },
+   "label": "Auswahl"
+  },
+  {
+   "id": "bvf010",
+   "name": "text-basic",
+   "parent": "bvf009",
+   "children": [],
+   "settings": {
+    "text": "Wie groß ist Ihr Unternehmen?",
+    "tag": "custom",
+    "customTag": "label",
+    "_attributes": [
+     {
+      "id": "bvf010a0",
+      "name": "for",
+      "value": "office-size"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "2a12dz"
+    ]
+   },
+   "label": "Beschriftung: Wie groß ist Ihr Unternehmen?"
+  },
+  {
+   "id": "bvf011",
+   "name": "block",
+   "parent": "bvf009",
+   "children": [
+    "bvf012",
+    "bvf013"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_attributes": [
+     {
+      "id": "bvf011a0",
+      "name": "data-office-select",
+      "value": "size"
+     },
+     {
+      "id": "bvf011a1",
+      "name": "data-office-id",
+      "value": "office-size"
+     },
+     {
+      "id": "bvf011a2",
+      "name": "data-office-label",
+      "value": "Wie groß ist Ihr Unternehmen?"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "20y5h1"
+    ]
+   },
+   "label": "Auswahlfeld (size)"
+  },
+  {
+   "id": "bvf012",
+   "name": "text-basic",
+   "parent": "bvf011",
+   "children": [],
+   "settings": {
+    "text": "Bis zu 50 Mitarbeitende",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvf012a0",
+      "name": "data-value",
+      "value": "small"
+     }
+    ]
+   },
+   "label": "Option: Bis zu 50 Mitarbeitende"
+  },
+  {
+   "id": "bvf013",
+   "name": "text-basic",
+   "parent": "bvf011",
+   "children": [],
+   "settings": {
+    "text": "Mehr als 50 Mitarbeitende",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvf013a0",
+      "name": "data-value",
+      "value": "large"
+     }
+    ]
+   },
+   "label": "Option: Mehr als 50 Mitarbeitende"
+  },
+  {
+   "id": "bvf014",
+   "name": "text-basic",
+   "parent": "bvf009",
+   "children": [],
+   "settings": {
+    "text": "Was benötigen Sie?",
+    "tag": "custom",
+    "customTag": "label",
+    "_attributes": [
+     {
+      "id": "bvf014a0",
+      "name": "for",
+      "value": "office-need"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "2a12dz"
+    ]
+   },
+   "label": "Beschriftung: Was benötigen Sie?"
+  },
+  {
+   "id": "bvf015",
+   "name": "block",
+   "parent": "bvf009",
+   "children": [
+    "bvf016",
+    "bvf017",
+    "bvf018",
+    "bvf019"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_attributes": [
+     {
+      "id": "bvf015a0",
+      "name": "data-office-select",
+      "value": "need"
+     },
+     {
+      "id": "bvf015a1",
+      "name": "data-office-id",
+      "value": "office-need"
+     },
+     {
+      "id": "bvf015a2",
+      "name": "data-office-label",
+      "value": "Was benötigen Sie?"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "20y5h1"
+    ]
+   },
+   "label": "Auswahlfeld (need)"
+  },
+  {
+   "id": "bvf016",
+   "name": "text-basic",
+   "parent": "bvf015",
+   "children": [],
+   "settings": {
+    "text": "Mehrere Themen / ein Lernpaket",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvf016a0",
+      "name": "data-value",
+      "value": "flat"
+     }
+    ]
+   },
+   "label": "Option: Mehrere Themen / ein Lernpaket"
+  },
+  {
+   "id": "bvf017",
+   "name": "text-basic",
+   "parent": "bvf015",
+   "children": [],
+   "settings": {
+    "text": "Einen einzelnen Kurs",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvf017a0",
+      "name": "data-value",
+      "value": "single"
+     }
+    ]
+   },
+   "label": "Option: Einen einzelnen Kurs"
+  },
+  {
+   "id": "bvf018",
+   "name": "text-basic",
+   "parent": "bvf015",
+   "children": [],
+   "settings": {
+    "text": "Inhalte für unser eigenes LMS",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvf018a0",
+      "name": "data-value",
+      "value": "lms"
+     }
+    ]
+   },
+   "label": "Option: Inhalte für unser eigenes LMS"
+  },
+  {
+   "id": "bvf019",
+   "name": "text-basic",
+   "parent": "bvf015",
+   "children": [],
+   "settings": {
+    "text": "Eine individuelle Lösung / Beratung",
+    "tag": "li",
+    "_attributes": [
+     {
+      "id": "bvf019a0",
+      "name": "data-value",
+      "value": "advice"
+     }
+    ]
+   },
+   "label": "Option: Eine individuelle Lösung / Beratung"
+  },
+  {
+   "id": "bvf020",
+   "name": "div",
+   "parent": "bvf009",
+   "children": [
+    "bvf021",
+    "bvf025",
+    "bvf029"
+   ],
+   "settings": {
+    "_attributes": [
+     {
+      "id": "bvf020a0",
+      "name": "aria-live",
+      "value": "polite"
+     }
+    ]
+   },
+   "label": "Empfehlung (Ausgabe)"
+  },
+  {
+   "id": "bvf021",
+   "name": "block",
+   "parent": "bvf020",
+   "children": [
+    "bvf022",
+    "bvf023",
+    "bvf024"
+   ],
+   "settings": {
+    "_attributes": [
+     {
+      "id": "bvf021a0",
+      "name": "data-office-result",
+      "value": "flat"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1d24zo"
+    ]
+   },
+   "label": "Empfehlung: Flatrate"
+  },
+  {
+   "id": "bvf022",
+   "name": "heading",
+   "parent": "bvf021",
+   "children": [],
+   "settings": {
+    "text": "Mehrere Themen? Flatrate prüfen.",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2a25zi"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvf023",
+   "name": "text-basic",
+   "parent": "bvf021",
+   "children": [],
+   "settings": {
+    "text": "Mit der eCampus-Flatrate bündeln Sie den Schulungsbedarf Ihrer Mitarbeitenden. Preise, enthaltene Kurse und Buchung finden Sie direkt im Shop.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "qxa5a1"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvf024",
+   "name": "button",
+   "parent": "bvf021",
+   "children": [],
+   "settings": {
+    "text": "Flatrate ansehen & buchen",
+    "style": "primary",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/e/weka-ecampus-flatrate-unterweisungen-140"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action"
+    ]
+   },
+   "label": "Button: Flatrate ansehen & buchen"
+  },
+  {
+   "id": "bvf025",
+   "name": "block",
+   "parent": "bvf020",
+   "children": [
+    "bvf026",
+    "bvf027",
+    "bvf028"
+   ],
+   "settings": {
+    "_attributes": [
+     {
+      "id": "bvf025a0",
+      "name": "data-office-result",
+      "value": "single"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1d24zo"
+    ]
+   },
+   "label": "Empfehlung: Einzelkurs"
+  },
+  {
+   "id": "bvf026",
+   "name": "heading",
+   "parent": "bvf025",
+   "children": [],
+   "settings": {
+    "text": "Gezielt einen Kurs buchen",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2a25zi"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvf027",
+   "name": "text-basic",
+   "parent": "bvf025",
+   "children": [],
+   "settings": {
+    "text": "Wählen Sie im eCampus das Thema, das Sie jetzt benötigen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "qxa5a1"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvf028",
+   "name": "button",
+   "parent": "bvf025",
+   "children": [],
+   "settings": {
+    "text": "Einzelkurse auswählen",
+    "style": "primary",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action"
+    ]
+   },
+   "label": "Button: Einzelkurse auswählen"
+  },
+  {
+   "id": "bvf029",
+   "name": "block",
+   "parent": "bvf020",
+   "children": [
+    "bvf030",
+    "bvf031",
+    "bvf032",
+    "bvf033"
+   ],
+   "settings": {
+    "_attributes": [
+     {
+      "id": "bvf029a0",
+      "name": "data-office-result",
+      "value": "advice"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "1d24zo"
+    ]
+   },
+   "label": "Empfehlung: Beratung"
+  },
+  {
+   "id": "bvf030",
+   "name": "text-basic",
+   "parent": "bvf029",
+   "children": [],
+   "settings": {
+    "text": "IHRE EMPFEHLUNG",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g",
+     "1y3ln0"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvf031",
+   "name": "heading",
+   "parent": "bvf029",
+   "children": [],
+   "settings": {
+    "text": "Persönlich zur passenden Unternehmenslösung",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2a25zi"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvf032",
+   "name": "text-basic",
+   "parent": "bvf029",
+   "children": [],
+   "settings": {
+    "text": "Stimmen Sie Themen, Einsatz und Lizenzierung mit unserem Vertrieb ab<span data-office-lms hidden> – passend zu Ihrem bestehenden LMS</span>.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "qxa5a1"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvf033",
+   "name": "button",
+   "parent": "bvf029",
+   "children": [],
+   "settings": {
+    "text": "Beratung beim Vertrieb anfragen",
+    "style": "primary",
+    "link": {
+     "type": "external",
+     "url": "https://www.weka-elearning.de/kontakt/"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_cssGlobalClasses": [
+     "acss_import_btn--action"
+    ]
+   },
+   "label": "Button: Beratung beim Vertrieb anfragen"
+  },
+  {
+   "id": "bvf034",
+   "name": "block",
+   "parent": "bvf002",
+   "children": [
+    "bvf035",
+    "bvf039",
+    "bvf043"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "4g0qrt",
+     "acss_import_grid--3",
+     "acss_import_grid--m-1"
+    ]
+   },
+   "label": "Wege"
+  },
+  {
+   "id": "bvf035",
+   "name": "block",
+   "parent": "bvf034",
+   "children": [
+    "bvf036",
+    "bvf037",
+    "bvf038"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1rkoii"
+    ]
+   },
+   "label": "Weg: Unternehmenslösung"
+  },
+  {
+   "id": "bvf036",
+   "name": "heading",
+   "parent": "bvf035",
+   "children": [],
+   "settings": {
+    "text": "Unternehmenslösung",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2fq1mn"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvf037",
+   "name": "text-basic",
+   "parent": "bvf035",
+   "children": [],
+   "settings": {
+    "text": "Für größere Unternehmen, eigene Lernplattformen und individuelle Anforderungen: Besprechen Sie Inhalte und Einsatz mit unserem Vertrieb.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvf038",
+   "name": "text-link",
+   "parent": "bvf035",
+   "children": [],
+   "settings": {
+    "text": "Beratung anfragen →",
+    "link": {
+     "type": "external",
+     "url": "https://www.weka-elearning.de/kontakt/"
+    },
+    "_cssGlobalClasses": [
+     "2p0hoe"
+    ]
+   },
+   "label": "Link: Beratung anfragen →"
+  },
+  {
+   "id": "bvf039",
+   "name": "block",
+   "parent": "bvf034",
+   "children": [
+    "bvf040",
+    "bvf041",
+    "bvf042"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1rkoii"
+    ]
+   },
+   "label": "Weg: Flatrate im eCampus"
+  },
+  {
+   "id": "bvf040",
+   "name": "heading",
+   "parent": "bvf039",
+   "children": [],
+   "settings": {
+    "text": "Flatrate im eCampus",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2fq1mn"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvf041",
+   "name": "text-basic",
+   "parent": "bvf039",
+   "children": [],
+   "settings": {
+    "text": "Für kleine Teams mit mehreren Schulungsthemen: Unterweisungen pro Mitarbeitendem bündeln und online buchen. Aktueller Preis und Konditionen im Shop.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvf042",
+   "name": "text-link",
+   "parent": "bvf039",
+   "children": [],
+   "settings": {
+    "text": "Flatrate ansehen & buchen →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/e/weka-ecampus-flatrate-unterweisungen-140"
+    },
+    "_cssGlobalClasses": [
+     "2p0hoe"
+    ]
+   },
+   "label": "Link: Flatrate ansehen & buchen →"
+  },
+  {
+   "id": "bvf043",
+   "name": "block",
+   "parent": "bvf034",
+   "children": [
+    "bvf044",
+    "bvf045",
+    "bvf046"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "1rkoii"
+    ]
+   },
+   "label": "Weg: Einzelne Kurse"
+  },
+  {
+   "id": "bvf044",
+   "name": "heading",
+   "parent": "bvf043",
+   "children": [],
+   "settings": {
+    "text": "Einzelne Kurse",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "2fq1mn"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvf045",
+   "name": "text-basic",
+   "parent": "bvf043",
+   "children": [],
+   "settings": {
+    "text": "Für einen konkreten Schulungsbedarf: Den passenden Kurs auswählen und im eCampus direkt buchen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvf046",
+   "name": "text-link",
+   "parent": "bvf043",
+   "children": [],
+   "settings": {
+    "text": "Einzelkurse im Shop ansehen →",
+    "link": {
+     "type": "external",
+     "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
+    },
+    "_cssGlobalClasses": [
+     "2p0hoe"
+    ]
+   },
+   "label": "Link: Einzelkurse im Shop ansehen →"
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "http://weka-e.local",
+ "version": "2.4.2",
+ "globalClasses": [
+  {
+   "id": "1vcbsh",
+   "name": "office-intro",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_widthMax": "76ch"
+   }
+  },
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "7ish7h",
+   "name": "office-lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "7kqp5k",
+   "name": "office-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2a12dz",
+   "name": "office-label",
+   "settings": {
+    "_display": "block",
+    "_margin": {
+     "top": "0",
+     "bottom": "var(--space-xs)"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "700",
+     "color": {
+      "raw": "var(--text-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "20y5h1",
+   "name": "office-select",
+   "settings": {
+    "_display": "block",
+    "_width": "100%",
+    "_padding": {
+     "top": "0.75em",
+     "right": "1em",
+     "bottom": "0.75em",
+     "left": "1em"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "1px",
+      "right": "1px",
+      "bottom": "1px",
+      "left": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--shade-light)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    },
+    "_typography": {
+     "font-size": "var(--text-m)",
+     "color": {
+      "raw": "var(--text-dark)"
+     }
+    },
+    "_cssCustom": ".office-select {\n  font-family: inherit;\n  list-style: none;\n}\n\n/* Liste ohne Skript (Builder): Einträge untereinander */\n.office-select > li {\n  margin: 0;\n}\n\n.office-select:focus-visible {\n  outline: 2px solid var(--primary);\n  outline-offset: 2px;\n}"
+   }
+  },
+  {
+   "id": "1y3ln0",
+   "name": "office-plan__eyebrow",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--action-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "e5kjr0",
+   "name": "office-finder__grid",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+    "_gridTemplateColumns:mobile_landscape": "minmax(0, 1fr)",
+    "_alignItems": "start",
+    "_columnGap": "var(--space-xxl)",
+    "_rowGap": "var(--space-l)"
+   }
+  },
+  {
+   "id": "27fk1z",
+   "name": "office-finder__fields",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "0",
+    "_padding": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-ultra-light)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    },
+    "_cssCustom": "/* Abstand zur nächsten Frage (Bricks schreibt die Klasse als .office-select.brxe-block) */\n.office-finder__fields .office-select.brxe-block {\n  margin-bottom: var(--space-s);\n}"
+   }
+  },
+  {
+   "id": "1d24zo",
+   "name": "office-finder__result",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_alignItems": "flex-start",
+    "_rowGap": "var(--space-xs)",
+    "_margin": {
+     "top": "var(--space-xs)",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    },
+    "_cssCustom": "/* Das Snippet blendet nicht passende Empfehlungen aus (hidden schlägt sonst display: flex nicht) */\n.office-finder__result[hidden] {\n  display: none;\n}"
+   }
+  },
+  {
+   "id": "2a25zi",
+   "name": "office-finder__result-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)",
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  },
+  {
+   "id": "qxa5a1",
+   "name": "office-finder__result-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "4g0qrt",
+   "name": "office-paths",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-xl)",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-m)",
+    "_cssCustom": ".office-paths {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "1rkoii",
+   "name": "office-path",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_alignItems": "flex-start",
+    "_rowGap": "var(--space-xs)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-s)"
+    },
+    "_border": {
+     "width": {
+      "top": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2fq1mn",
+   "name": "office-path__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2p0hoe",
+   "name": "office-path__link",
+   "settings": {
+    "_margin": {
+     "top": "auto"
+    },
+    "_typography": {
+     "font-weight": "700"
+    },
+    "_cssCustom": ".office-path__link {\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}"
+   }
+  }
+ ],
+ "globalElements": []
+}

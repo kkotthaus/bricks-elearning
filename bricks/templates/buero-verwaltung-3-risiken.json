@@ -1,0 +1,379 @@
+{
+ "title": "Büro-Verwaltung 3 – Risiken",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "bvr001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "bvr002"
+   ],
+   "settings": {
+    "_cssId": "themen",
+    "_cssGlobalClasses": [
+     "sghr0u"
+    ]
+   },
+   "label": "Risiken im Büro"
+  },
+  {
+   "id": "bvr002",
+   "name": "container",
+   "parent": "bvr001",
+   "children": [
+    "bvr003",
+    "bvr007"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "bvr003",
+   "name": "block",
+   "parent": "bvr002",
+   "children": [
+    "bvr004",
+    "bvr005",
+    "bvr006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1vcbsh"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvr004",
+   "name": "text-basic",
+   "parent": "bvr003",
+   "children": [],
+   "settings": {
+    "text": "WELCHE UNTERWEISUNGEN SPIELEN EINE ROLLE?",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvr005",
+   "name": "heading",
+   "parent": "bvr003",
+   "children": [],
+   "settings": {
+    "text": "Auch im Büro gibt es Risiken.<br>Das passende Wissen hilft.",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bvr006",
+   "name": "text-basic",
+   "parent": "bvr003",
+   "children": [],
+   "settings": {
+    "text": "Ein falsch eingerichteter Arbeitsplatz, eine täuschend echte E-Mail oder sensible Daten im falschen Verteiler: Sicherheit beginnt bei alltäglichen Entscheidungen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7ish7h"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvr007",
+   "name": "block",
+   "parent": "bvr002",
+   "children": [
+    "bvr008",
+    "bvr011",
+    "bvr014"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "cwtu46",
+     "acss_import_grid--3",
+     "acss_import_grid--m-1"
+    ]
+   },
+   "label": "Themenbereiche"
+  },
+  {
+   "id": "bvr008",
+   "name": "block",
+   "parent": "bvr007",
+   "children": [
+    "bvr009",
+    "bvr010"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "w7mulb"
+    ]
+   },
+   "label": "Bereich: Arbeitsschutz & Gesundheit"
+  },
+  {
+   "id": "bvr009",
+   "name": "heading",
+   "parent": "bvr008",
+   "children": [],
+   "settings": {
+    "text": "Arbeitsschutz & Gesundheit",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "19wbnk"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvr010",
+   "name": "text-basic",
+   "parent": "bvr008",
+   "children": [],
+   "settings": {
+    "text": "Erstunterweisung und Büro- und Bildschirmarbeit legen die Grundlage. Je nach Arbeitsumgebung ergänzen Themen wie mobiles Arbeiten, Stolpergefahren oder Desk-Sharing die Auswahl.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvr011",
+   "name": "block",
+   "parent": "bvr007",
+   "children": [
+    "bvr012",
+    "bvr013"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "w7mulb"
+    ]
+   },
+   "label": "Bereich: Datenschutz & IT-Sicherheit"
+  },
+  {
+   "id": "bvr012",
+   "name": "heading",
+   "parent": "bvr011",
+   "children": [],
+   "settings": {
+    "text": "Datenschutz & IT-Sicherheit",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "19wbnk"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvr013",
+   "name": "text-basic",
+   "parent": "bvr011",
+   "children": [],
+   "settings": {
+    "text": "Wer mit Kunden-, Personal- oder Unternehmensdaten arbeitet, braucht Orientierung. Sensibilisieren Sie für den Umgang mit Daten, verdächtige E-Mails und Informationssicherheit unterwegs.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvr014",
+   "name": "block",
+   "parent": "bvr007",
+   "children": [
+    "bvr015",
+    "bvr016"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "w7mulb"
+    ]
+   },
+   "label": "Bereich: Zusammenarbeit & Compliance"
+  },
+  {
+   "id": "bvr015",
+   "name": "heading",
+   "parent": "bvr014",
+   "children": [],
+   "settings": {
+    "text": "Zusammenarbeit & Compliance",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "19wbnk"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvr016",
+   "name": "text-basic",
+   "parent": "bvr014",
+   "children": [],
+   "settings": {
+    "text": "Gleichbehandlung und klare Verhaltensregeln unterstützen ein respektvolles Miteinander. KI-Nutzung und Hinweisgeberschutz ergänzen das Wissen passend zur Tätigkeit.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Text"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "1vcbsh",
+   "name": "office-intro",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_widthMax": "76ch"
+   }
+  },
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "7ish7h",
+   "name": "office-lede",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "7kqp5k",
+   "name": "office-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "cwtu46",
+   "name": "office-risks__grid",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-l)",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_columnGap": "var(--space-l)",
+    "_rowGap": "var(--space-l)",
+    "_cssCustom": ".office-risks__grid {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "w7mulb",
+   "name": "office-risks__item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-s)"
+    },
+    "_border": {
+     "width": {
+      "top": "3px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--action)"
+     }
+    }
+   }
+  },
+  {
+   "id": "19wbnk",
+   "name": "office-risks__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "aq6l6g",
+   "name": "eyebrow",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "500",
+     "letter-spacing": "0.12em",
+     "color": {
+      "id": "acss_import_primary-dark",
+      "name": "primary-dark",
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  }
+ ]
+}

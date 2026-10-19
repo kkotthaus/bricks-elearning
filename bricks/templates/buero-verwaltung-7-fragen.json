@@ -1,0 +1,456 @@
+{
+ "title": "Büro-Verwaltung 7 – Fragen",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "bvq001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "bvq002"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "10opis"
+    ]
+   },
+   "label": "Fragen"
+  },
+  {
+   "id": "bvq002",
+   "name": "container",
+   "parent": "bvq001",
+   "children": [
+    "bvq003",
+    "bvq006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "18ws4p"
+    ]
+   },
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "bvq003",
+   "name": "block",
+   "parent": "bvq002",
+   "children": [
+    "bvq004",
+    "bvq005"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1vcbsh"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvq004",
+   "name": "text-basic",
+   "parent": "bvq003",
+   "children": [],
+   "settings": {
+    "text": "GUT ZU WISSEN",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvq005",
+   "name": "heading",
+   "parent": "bvq003",
+   "children": [],
+   "settings": {
+    "text": "Ihre Fragen zur Unterweisung",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bvq006",
+   "name": "div",
+   "parent": "bvq002",
+   "children": [
+    "bvq007",
+    "bvq010",
+    "bvq013",
+    "bvq016",
+    "bvq019",
+    "bvq022"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1svswz"
+    ]
+   },
+   "label": "Fragen"
+  },
+  {
+   "id": "bvq007",
+   "name": "block",
+   "parent": "bvq006",
+   "children": [
+    "bvq008",
+    "bvq009"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_cssGlobalClasses": [
+     "482idz"
+    ]
+   },
+   "label": "Frage: Sind alle 15 Themen für alle Mitarbeitenden verpflichtend?"
+  },
+  {
+   "id": "bvq008",
+   "name": "text-basic",
+   "parent": "bvq007",
+   "children": [],
+   "settings": {
+    "text": "Sind alle 15 Themen für alle Mitarbeitenden verpflichtend?",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Frage (aufklappen)"
+  },
+  {
+   "id": "bvq009",
+   "name": "text-basic",
+   "parent": "bvq007",
+   "children": [],
+   "settings": {
+    "text": "Nein. Die Pakete helfen bei der Themenplanung. Welche Unterweisungen erforderlich sind, hängt unter anderem von Tätigkeit, Gefährdungsbeurteilung und betrieblichen Vorgaben ab. Ergänzende Themen dienen der Sensibilisierung und Weiterbildung. Die Auswahl ersetzt keine Prüfung Ihres konkreten Unterweisungsbedarfs.",
+    "tag": "p"
+   },
+   "label": "Antwort"
+  },
+  {
+   "id": "bvq010",
+   "name": "block",
+   "parent": "bvq006",
+   "children": [
+    "bvq011",
+    "bvq012"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_cssGlobalClasses": [
+     "482idz"
+    ]
+   },
+   "label": "Frage: Ersetzt ein E-Learning die betriebliche Unterweisung vollständig?"
+  },
+  {
+   "id": "bvq011",
+   "name": "text-basic",
+   "parent": "bvq010",
+   "children": [],
+   "settings": {
+    "text": "Ersetzt ein E-Learning die betriebliche Unterweisung vollständig?",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Frage (aufklappen)"
+  },
+  {
+   "id": "bvq012",
+   "name": "text-basic",
+   "parent": "bvq010",
+   "children": [],
+   "settings": {
+    "text": "Digitale Inhalte können Unterweisungen unterstützen. Arbeitsplatzbezogene Ergänzungen, eine Verständnisprüfung und die Möglichkeit mündlicher Rückfragen müssen berücksichtigt werden. Praktische Einweisungen bleiben dort erforderlich, wo die Tätigkeit sie verlangt. <a href=\"https://dguv.de/fb-org/sachgebiete/themen/elektronische-unterweisung/index.jsp\">Mehr dazu bei der DGUV</a>.",
+    "tag": "p"
+   },
+   "label": "Antwort"
+  },
+  {
+   "id": "bvq013",
+   "name": "block",
+   "parent": "bvq006",
+   "children": [
+    "bvq014",
+    "bvq015"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_cssGlobalClasses": [
+     "482idz"
+    ]
+   },
+   "label": "Frage: Wie unterscheiden sich Lernpaket und Flatrate?"
+  },
+  {
+   "id": "bvq014",
+   "name": "text-basic",
+   "parent": "bvq013",
+   "children": [],
+   "settings": {
+    "text": "Wie unterscheiden sich Lernpaket und Flatrate?",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Frage (aufklappen)"
+  },
+  {
+   "id": "bvq015",
+   "name": "text-basic",
+   "parent": "bvq013",
+   "children": [],
+   "settings": {
+    "text": "Das Lernpaket zeigt eine sinnvolle Zusammenstellung von Themen. Die Flatrate ist eine Buchungsform im eCampus und umfasst einen darüber hinausgehenden Katalog. Maßgeblich für enthaltene Kurse, Laufzeit und Preise ist das aktuelle Shopangebot.",
+    "tag": "p"
+   },
+   "label": "Antwort"
+  },
+  {
+   "id": "bvq016",
+   "name": "block",
+   "parent": "bvq006",
+   "children": [
+    "bvq017",
+    "bvq018"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_cssGlobalClasses": [
+     "482idz"
+    ]
+   },
+   "label": "Frage: Wann ist eine Flatrate sinnvoll?"
+  },
+  {
+   "id": "bvq017",
+   "name": "text-basic",
+   "parent": "bvq016",
+   "children": [],
+   "settings": {
+    "text": "Wann ist eine Flatrate sinnvoll?",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Frage (aufklappen)"
+  },
+  {
+   "id": "bvq018",
+   "name": "text-basic",
+   "parent": "bvq016",
+   "children": [],
+   "settings": {
+    "text": "Wenn Mitarbeitende mehrere Themen bearbeiten sollen oder sich ihr Schulungsbedarf über das Jahr verändert. Vergleichen Sie die aktuellen Einzelkurspreise mit dem Flatrate-Angebot für die gewünschte Anzahl an Personen.",
+    "tag": "p"
+   },
+   "label": "Antwort"
+  },
+  {
+   "id": "bvq019",
+   "name": "block",
+   "parent": "bvq006",
+   "children": [
+    "bvq020",
+    "bvq021"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_cssGlobalClasses": [
+     "482idz"
+    ]
+   },
+   "label": "Frage: Wir haben schon ein LMS. Können wir die Inhalte darin einsetzen?"
+  },
+  {
+   "id": "bvq020",
+   "name": "text-basic",
+   "parent": "bvq019",
+   "children": [],
+   "settings": {
+    "text": "Wir haben schon ein LMS. Können wir die Inhalte darin einsetzen?",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Frage (aufklappen)"
+  },
+  {
+   "id": "bvq021",
+   "name": "text-basic",
+   "parent": "bvq019",
+   "children": [],
+   "settings": {
+    "text": "Wählen Sie im Lösungsfinder „Inhalte für unser eigenes LMS“. Der Vertrieb klärt mit Ihnen die passenden Inhalte, Lizenzierung und technischen Anforderungen Ihrer Lernplattform.",
+    "tag": "p"
+   },
+   "label": "Antwort"
+  },
+  {
+   "id": "bvq022",
+   "name": "block",
+   "parent": "bvq006",
+   "children": [
+    "bvq023",
+    "bvq024"
+   ],
+   "settings": {
+    "tag": "custom",
+    "customTag": "details",
+    "_cssGlobalClasses": [
+     "482idz"
+    ]
+   },
+   "label": "Frage: Wie starten wir mit der Themenauswahl?"
+  },
+  {
+   "id": "bvq023",
+   "name": "text-basic",
+   "parent": "bvq022",
+   "children": [],
+   "settings": {
+    "text": "Wie starten wir mit der Themenauswahl?",
+    "tag": "custom",
+    "customTag": "summary",
+    "_cssGlobalClasses": [
+     "9al98e"
+    ]
+   },
+   "label": "Frage (aufklappen)"
+  },
+  {
+   "id": "bvq024",
+   "name": "text-basic",
+   "parent": "bvq022",
+   "children": [],
+   "settings": {
+    "text": "Beginnen Sie bei Tätigkeiten und Risiken: Welche Aufgaben übernehmen Ihre Mitarbeitenden? Arbeiten sie mobil, verarbeiten sie personenbezogene Daten oder nutzen sie KI? Wählen Sie daraus relevante Themen und ergänzen Sie die betrieblichen Besonderheiten.",
+    "tag": "p"
+   },
+   "label": "Antwort"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "1vcbsh",
+   "name": "office-intro",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_widthMax": "76ch"
+   }
+  },
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "9al98e",
+   "name": "office-summary",
+   "settings": {
+    "_display": "flex",
+    "_alignItems": "baseline",
+    "_columnGap": "var(--space-xs)",
+    "_typography": {
+     "font-weight": "700"
+    },
+    "_cssCustom": ".office-summary {\n  cursor: pointer;\n  list-style: none;\n}\n\n.office-summary::-webkit-details-marker {\n  display: none;\n}\n\n/* Plus/Minus rechts wie Vorlage */\n.office-summary::after {\n  content: \"+\";\n  margin-left: auto;\n  padding-left: var(--space-xs);\n  font-size: var(--text-xl);\n  line-height: 1;\n  color: var(--primary);\n}\n\ndetails[open] > .office-summary::after {\n  content: \"−\";\n}\n\n.office-summary small {\n  flex-shrink: 0;\n  min-width: 2.4rem;\n  font-size: var(--text-xs);\n  font-weight: 400;\n  color: var(--text-dark-muted);\n}\n\n.office-summary:focus-visible {\n  outline: 2px solid var(--primary);\n  outline-offset: 4px;\n}"
+   }
+  },
+  {
+   "id": "18ws4p",
+   "name": "office-faq",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "0",
+    "_cssCustom": ".office-faq > * {\n  width: 100%;\n  max-width: 85ch;\n}"
+   }
+  },
+  {
+   "id": "1svswz",
+   "name": "office-faq__list",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-m)"
+    }
+   }
+  },
+  {
+   "id": "482idz",
+   "name": "office-faq__item",
+   "settings": {
+    "_display": "block",
+    "_padding": {
+     "top": "var(--space-s)",
+     "bottom": "var(--space-s)"
+    },
+    "_border": {
+     "width": {
+      "bottom": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     }
+    },
+    "_cssCustom": ".office-faq__item > p {\n  margin: var(--space-xs) 0 0;\n  color: var(--text-dark-muted);\n}"
+   }
+  },
+  {
+   "id": "aq6l6g",
+   "name": "eyebrow",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "500",
+     "letter-spacing": "0.12em",
+     "color": {
+      "id": "acss_import_primary-dark",
+      "name": "primary-dark",
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  }
+ ]
+}

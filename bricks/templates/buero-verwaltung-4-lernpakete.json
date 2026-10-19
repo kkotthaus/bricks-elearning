@@ -1,0 +1,1013 @@
+{
+ "title": "Büro-Verwaltung 4 – Lernpakete",
+ "templateType": "section",
+ "content": [
+  {
+   "id": "bvp001",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "bvp002"
+   ],
+   "settings": {
+    "_cssId": "pakete",
+    "_cssGlobalClasses": [
+     "18hdqn",
+     "acss_import_bg--primary-ultra-light"
+    ]
+   },
+   "label": "Lernpakete"
+  },
+  {
+   "id": "bvp002",
+   "name": "container",
+   "parent": "bvp001",
+   "children": [
+    "bvp003",
+    "bvp007",
+    "bvp047"
+   ],
+   "settings": {},
+   "label": "Inhaltsbereich"
+  },
+  {
+   "id": "bvp003",
+   "name": "block",
+   "parent": "bvp002",
+   "children": [
+    "bvp004",
+    "bvp005",
+    "bvp006"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1vcbsh"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvp004",
+   "name": "text-basic",
+   "parent": "bvp003",
+   "children": [],
+   "settings": {
+    "text": "DREI AUFEINANDER AUFBAUENDE LERNPAKETE",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvp005",
+   "name": "heading",
+   "parent": "bvp003",
+   "children": [],
+   "settings": {
+    "text": "So viel Basis wie nötig.<br>So viel Vertiefung wie sinnvoll.",
+    "tag": "h2",
+    "_cssGlobalClasses": [
+     "1ey20h"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bvp006",
+   "name": "text-basic",
+   "parent": "bvp003",
+   "children": [],
+   "settings": {
+    "text": "Nutzen Sie die Pakete als Orientierung für Ihren Lernplan. Jedes größere Paket enthält alle Themen der vorherigen Stufe. Welche Inhalte Ihr Team benötigt, richtet sich nach den Aufgaben und Bedingungen im Betrieb.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "7kqp5k"
+    ]
+   },
+   "label": "Einleitung"
+  },
+  {
+   "id": "bvp007",
+   "name": "block",
+   "parent": "bvp002",
+   "children": [
+    "bvp008",
+    "bvp021",
+    "bvp034"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1waid8",
+     "acss_import_grid--3",
+     "acss_import_grid--m-1"
+    ]
+   },
+   "label": "Pakete"
+  },
+  {
+   "id": "bvp008",
+   "name": "block",
+   "parent": "bvp007",
+   "children": [
+    "bvp009",
+    "bvp010",
+    "bvp011",
+    "bvp012",
+    "bvp013",
+    "bvp014",
+    "bvp020"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "7geqdy"
+    ]
+   },
+   "label": "Paket: Basisschutz"
+  },
+  {
+   "id": "bvp009",
+   "name": "text-basic",
+   "parent": "bvp008",
+   "children": [],
+   "settings": {
+    "text": "STUFE 01",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Stufe"
+  },
+  {
+   "id": "bvp010",
+   "name": "text-basic",
+   "parent": "bvp008",
+   "children": [],
+   "settings": {
+    "text": "5 <span>E-Learnings</span>",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "9zb708"
+    ]
+   },
+   "label": "Anzahl"
+  },
+  {
+   "id": "bvp011",
+   "name": "heading",
+   "parent": "bvp008",
+   "children": [],
+   "settings": {
+    "text": "Basisschutz",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "15sqgw"
+    ]
+   },
+   "label": "Name"
+  },
+  {
+   "id": "bvp012",
+   "name": "text-basic",
+   "parent": "bvp008",
+   "children": [],
+   "settings": {
+    "text": "Die Grundlage für den Büroalltag.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1nhupm"
+    ]
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvp013",
+   "name": "text-basic",
+   "parent": "bvp008",
+   "children": [],
+   "settings": {
+    "text": "Diese fünf Themen bilden die Basis:",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1feksd"
+    ]
+   },
+   "label": "Umfang"
+  },
+  {
+   "id": "bvp014",
+   "name": "block",
+   "parent": "bvp008",
+   "children": [
+    "bvp015",
+    "bvp016",
+    "bvp017",
+    "bvp018",
+    "bvp019"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1dcdb0",
+     "2r7txd"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "bvp015",
+   "name": "text-basic",
+   "parent": "bvp014",
+   "children": [],
+   "settings": {
+    "text": "Erstunterweisung",
+    "tag": "li"
+   },
+   "label": "Thema: Erstunterweisung"
+  },
+  {
+   "id": "bvp016",
+   "name": "text-basic",
+   "parent": "bvp014",
+   "children": [],
+   "settings": {
+    "text": "Büro- und Bildschirmarbeit",
+    "tag": "li"
+   },
+   "label": "Thema: Büro- und Bildschirmarbeit"
+  },
+  {
+   "id": "bvp017",
+   "name": "text-basic",
+   "parent": "bvp014",
+   "children": [],
+   "settings": {
+    "text": "Grundlagen der Informationssicherheit",
+    "tag": "li"
+   },
+   "label": "Thema: Grundlagen der Informationssicherheit"
+  },
+  {
+   "id": "bvp018",
+   "name": "text-basic",
+   "parent": "bvp014",
+   "children": [],
+   "settings": {
+    "text": "Grundlagen des Datenschutzes – Büro & Verwaltung",
+    "tag": "li"
+   },
+   "label": "Thema: Grundlagen des Datenschutzes – Büro & Verwaltung"
+  },
+  {
+   "id": "bvp019",
+   "name": "text-basic",
+   "parent": "bvp014",
+   "children": [],
+   "settings": {
+    "text": "Allgemeines Gleichbehandlungsgesetz",
+    "tag": "li"
+   },
+   "label": "Thema: Allgemeines Gleichbehandlungsgesetz"
+  },
+  {
+   "id": "bvp020",
+   "name": "button",
+   "parent": "bvp008",
+   "children": [],
+   "settings": {
+    "text": "Lösung für 5 Themen finden",
+    "link": {
+     "type": "external",
+     "url": "#loesung"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_attributes": [
+     {
+      "id": "bvp020a0",
+      "name": "data-office-need",
+      "value": "flat"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "acss_import_btn--outline",
+     "1ioge8"
+    ]
+   },
+   "label": "Button: Lösung für 5 Themen finden"
+  },
+  {
+   "id": "bvp021",
+   "name": "block",
+   "parent": "bvp007",
+   "children": [
+    "bvp022",
+    "bvp023",
+    "bvp024",
+    "bvp025",
+    "bvp026",
+    "bvp027",
+    "bvp033"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "7geqdy",
+     "n3izi6"
+    ]
+   },
+   "label": "Paket: Erweiterter Schutz"
+  },
+  {
+   "id": "bvp022",
+   "name": "text-basic",
+   "parent": "bvp021",
+   "children": [],
+   "settings": {
+    "text": "STUFE 02",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Stufe"
+  },
+  {
+   "id": "bvp023",
+   "name": "text-basic",
+   "parent": "bvp021",
+   "children": [],
+   "settings": {
+    "text": "10 <span>E-Learnings</span>",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "9zb708"
+    ]
+   },
+   "label": "Anzahl"
+  },
+  {
+   "id": "bvp024",
+   "name": "heading",
+   "parent": "bvp021",
+   "children": [],
+   "settings": {
+    "text": "Erweiterter Schutz",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "15sqgw"
+    ]
+   },
+   "label": "Name"
+  },
+  {
+   "id": "bvp025",
+   "name": "text-basic",
+   "parent": "bvp021",
+   "children": [],
+   "settings": {
+    "text": "Mehr Orientierung für digitale und mobile Arbeit.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1nhupm"
+    ]
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvp026",
+   "name": "text-basic",
+   "parent": "bvp021",
+   "children": [],
+   "settings": {
+    "text": "Alle Themen aus Basisschutz +",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1feksd"
+    ]
+   },
+   "label": "Umfang"
+  },
+  {
+   "id": "bvp027",
+   "name": "block",
+   "parent": "bvp021",
+   "children": [
+    "bvp028",
+    "bvp029",
+    "bvp030",
+    "bvp031",
+    "bvp032"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1dcdb0",
+     "2r7txd"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "bvp028",
+   "name": "text-basic",
+   "parent": "bvp027",
+   "children": [],
+   "settings": {
+    "text": "Phishingattacken abwehren: Sicheres Arbeiten mit E-Mails",
+    "tag": "li"
+   },
+   "label": "Thema: Phishingattacken abwehren: Sicheres Arbeiten mit E-Mails"
+  },
+  {
+   "id": "bvp029",
+   "name": "text-basic",
+   "parent": "bvp027",
+   "children": [],
+   "settings": {
+    "text": "Mobiles Arbeiten",
+    "tag": "li"
+   },
+   "label": "Thema: Mobiles Arbeiten"
+  },
+  {
+   "id": "bvp030",
+   "name": "text-basic",
+   "parent": "bvp027",
+   "children": [],
+   "settings": {
+    "text": "Code of Conduct",
+    "tag": "li"
+   },
+   "label": "Thema: Code of Conduct"
+  },
+  {
+   "id": "bvp031",
+   "name": "text-basic",
+   "parent": "bvp027",
+   "children": [],
+   "settings": {
+    "text": "KI-Anwendungen sicher einsetzen",
+    "tag": "li"
+   },
+   "label": "Thema: KI-Anwendungen sicher einsetzen"
+  },
+  {
+   "id": "bvp032",
+   "name": "text-basic",
+   "parent": "bvp027",
+   "children": [],
+   "settings": {
+    "text": "Whistleblowing und Hinweisgeberschutz",
+    "tag": "li"
+   },
+   "label": "Thema: Whistleblowing und Hinweisgeberschutz"
+  },
+  {
+   "id": "bvp033",
+   "name": "button",
+   "parent": "bvp021",
+   "children": [],
+   "settings": {
+    "text": "Lösung für 10 Themen finden",
+    "link": {
+     "type": "external",
+     "url": "#loesung"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_attributes": [
+     {
+      "id": "bvp033a0",
+      "name": "data-office-need",
+      "value": "flat"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "1ioge8"
+    ]
+   },
+   "label": "Button: Lösung für 10 Themen finden"
+  },
+  {
+   "id": "bvp034",
+   "name": "block",
+   "parent": "bvp007",
+   "children": [
+    "bvp035",
+    "bvp036",
+    "bvp037",
+    "bvp038",
+    "bvp039",
+    "bvp040",
+    "bvp046"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "7geqdy"
+    ]
+   },
+   "label": "Paket: Rundum-Paket"
+  },
+  {
+   "id": "bvp035",
+   "name": "text-basic",
+   "parent": "bvp034",
+   "children": [],
+   "settings": {
+    "text": "STUFE 03",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g"
+    ]
+   },
+   "label": "Stufe"
+  },
+  {
+   "id": "bvp036",
+   "name": "text-basic",
+   "parent": "bvp034",
+   "children": [],
+   "settings": {
+    "text": "15 <span>E-Learnings</span>",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "9zb708"
+    ]
+   },
+   "label": "Anzahl"
+  },
+  {
+   "id": "bvp037",
+   "name": "heading",
+   "parent": "bvp034",
+   "children": [],
+   "settings": {
+    "text": "Rundum-Paket",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "15sqgw"
+    ]
+   },
+   "label": "Name"
+  },
+  {
+   "id": "bvp038",
+   "name": "text-basic",
+   "parent": "bvp034",
+   "children": [],
+   "settings": {
+    "text": "Breiter aufgestellt für vielfältige Arbeitssituationen.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1nhupm"
+    ]
+   },
+   "label": "Beschreibung"
+  },
+  {
+   "id": "bvp039",
+   "name": "text-basic",
+   "parent": "bvp034",
+   "children": [],
+   "settings": {
+    "text": "Alle Themen aus Erweiterter Schutz +",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "1feksd"
+    ]
+   },
+   "label": "Umfang"
+  },
+  {
+   "id": "bvp040",
+   "name": "block",
+   "parent": "bvp034",
+   "children": [
+    "bvp041",
+    "bvp042",
+    "bvp043",
+    "bvp044",
+    "bvp045"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "1dcdb0",
+     "2r7txd"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "bvp041",
+   "name": "text-basic",
+   "parent": "bvp040",
+   "children": [],
+   "settings": {
+    "text": "Energieeffizientes Verhalten in Büro & Verwaltung",
+    "tag": "li"
+   },
+   "label": "Thema: Energieeffizientes Verhalten in Büro & Verwaltung"
+  },
+  {
+   "id": "bvp042",
+   "name": "text-basic",
+   "parent": "bvp040",
+   "children": [],
+   "settings": {
+    "text": "Stolpern, Rutschen, Stürzen",
+    "tag": "li"
+   },
+   "label": "Thema: Stolpern, Rutschen, Stürzen"
+  },
+  {
+   "id": "bvp043",
+   "name": "text-basic",
+   "parent": "bvp040",
+   "children": [],
+   "settings": {
+    "text": "Desk-Sharing",
+    "tag": "li"
+   },
+   "label": "Thema: Desk-Sharing"
+  },
+  {
+   "id": "bvp044",
+   "name": "text-basic",
+   "parent": "bvp040",
+   "children": [],
+   "settings": {
+    "text": "Informationssicherheit beim mobilen Arbeiten",
+    "tag": "li"
+   },
+   "label": "Thema: Informationssicherheit beim mobilen Arbeiten"
+  },
+  {
+   "id": "bvp045",
+   "name": "text-basic",
+   "parent": "bvp040",
+   "children": [],
+   "settings": {
+    "text": "Alkohol, Drogen und Medikamente",
+    "tag": "li"
+   },
+   "label": "Thema: Alkohol, Drogen und Medikamente"
+  },
+  {
+   "id": "bvp046",
+   "name": "button",
+   "parent": "bvp034",
+   "children": [],
+   "settings": {
+    "text": "Lösung für 15 Themen finden",
+    "link": {
+     "type": "external",
+     "url": "#loesung"
+    },
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-arrow-right"
+    },
+    "iconPosition": "right",
+    "_attributes": [
+     {
+      "id": "bvp046a0",
+      "name": "data-office-need",
+      "value": "flat"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "acss_import_btn--primary",
+     "acss_import_btn--outline",
+     "1ioge8"
+    ]
+   },
+   "label": "Button: Lösung für 15 Themen finden"
+  },
+  {
+   "id": "bvp047",
+   "name": "text-basic",
+   "parent": "bvp002",
+   "children": [],
+   "settings": {
+    "text": "Die Lernpakete beschreiben eine Themenauswahl, keinen gesonderten Pauschaltarif. Den passenden Buchungs- oder Lizenzweg wählen Sie im nächsten Schritt. „Rundum“ bedeutet hier 15 ausgewählte Themen, keine vollständige Abdeckung aller betrieblichen Pflichten.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "z19dk2"
+    ]
+   },
+   "label": "Hinweis"
+  }
+ ],
+ "pageSettings": [],
+ "templateSettings": [],
+ "global_classes": [
+  {
+   "id": "1vcbsh",
+   "name": "office-intro",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_widthMax": "76ch"
+   }
+  },
+  {
+   "id": "1ey20h",
+   "name": "office-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "7kqp5k",
+   "name": "office-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1dcdb0",
+   "name": "office-ticks",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".office-ticks {\n  list-style: none;\n}\n\n.office-ticks > li {\n  position: relative;\n  padding-left: 1.4em;\n}\n\n/* Häkchen wie Vorlage */\n.office-ticks > li::before {\n  content: \"✓\";\n  position: absolute;\n  left: 0;\n  color: var(--action-dark);\n  font-weight: 700;\n}"
+   }
+  },
+  {
+   "id": "1waid8",
+   "name": "office-packages__grid",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-l)",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_alignItems": "stretch",
+    "_columnGap": "var(--space-s)",
+    "_rowGap": "var(--space-s)",
+    "_cssCustom": ".office-packages__grid {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "7geqdy",
+   "name": "office-package",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "1px",
+      "right": "1px",
+      "bottom": "1px",
+      "left": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--border-color-dark)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    }
+   }
+  },
+  {
+   "id": "n3izi6",
+   "name": "office-package--featured",
+   "settings": {
+    "_border": {
+     "width": {
+      "top": "2px",
+      "right": "2px",
+      "bottom": "2px",
+      "left": "2px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--primary-dark)"
+     },
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    }
+   }
+  },
+  {
+   "id": "9zb708",
+   "name": "office-package__count",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-s)",
+     "bottom": "var(--space-xs)"
+    },
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.1)",
+     "font-weight": "800",
+     "line-height": "1",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_cssCustom": ".office-package__count span {\n  font-size: var(--text-m);\n  font-weight: 400;\n}"
+   }
+  },
+  {
+   "id": "15sqgw",
+   "name": "office-package__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "1nhupm",
+   "name": "office-package__caption",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "1feksd",
+   "name": "office-package__includes",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-xs)",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "0.7em",
+     "right": "0.8em",
+     "bottom": "0.7em",
+     "left": "0.8em"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-ultra-light)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius-xs)",
+      "right": "var(--radius-xs)",
+      "bottom": "var(--radius-xs)",
+      "left": "var(--radius-xs)"
+     }
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2r7txd",
+   "name": "office-package__list",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-xs)",
+     "right": "0",
+     "bottom": "var(--space-s)",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "1ioge8",
+   "name": "office-package__button",
+   "settings": {
+    "_width": "100%",
+    "_margin": {
+     "top": "auto"
+    }
+   }
+  },
+  {
+   "id": "z19dk2",
+   "name": "office-packages__hint",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-m)",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   }
+  },
+  {
+   "id": "aq6l6g",
+   "name": "eyebrow",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "500",
+     "letter-spacing": "0.12em",
+     "color": {
+      "id": "acss_import_primary-dark",
+      "name": "primary-dark",
+      "raw": "var(--primary-dark)"
+     }
+    }
+   }
+  }
+ ]
+}
