@@ -68,6 +68,10 @@ Umsetzungsregeln:
 
 ## Hinweise
 
-- Die Links führen zu lernen.weka.de (Flatrate, Einzelkurse, drei einzelne Kurse) und zur Kontaktseite von weka-elearning.de – so wie im Entwurf. Vor dem Veröffentlichen prüfen, ob sie stimmen.
+- Ziel-URLs (vom Kunden bestätigt am 19.10.2026):
+  - **Flatrate:** https://lernen.weka.de/de/e/weka-ecampus-flatrate-unterweisungen-140 – Button der Empfehlung „Flatrate“ und Karte „Flatrate im eCampus“
+  - **Einzelkurse:** https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende – Button der Empfehlung „Einzelkurs“, Karte „Einzelne Kurse“ und 12 der 15 Themen
+  - **Vertrieb:** https://www.weka-elearning.de/kontakt/ – Button der Empfehlung „Beratung“ und Karte „Unternehmenslösung“
+- Drei Themen verlinken wie im Entwurf direkt auf ihren Kurs: Grundlagen Informationssicherheit (`…/de/e/grundlagen-informationssicherheit-173`), Datenschutz Büro & Verwaltung (`…/de/e/datenschutz-b%C3%BCro-verwaltung-175`), Code of Conduct (`…/de/e/code-of-conduct-156`).
 - Der Header des Entwurfs (eigenes Menü „Themen / Lernpakete / Alle Kurse“) ist nicht nachgebaut; die Seite nutzt Header und Footer der Website.
 - Alternative ohne Vorlagen: die Clipboard-Dateien `bricks/buero-verwaltung-*.json` öffnen, Inhalt kopieren und im Builder mit Strg+V einfügen.
