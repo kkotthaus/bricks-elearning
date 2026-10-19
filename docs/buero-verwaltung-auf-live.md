@@ -75,3 +75,10 @@ Umsetzungsregeln:
 - Drei Themen verlinken wie im Entwurf direkt auf ihren Kurs: Grundlagen Informationssicherheit (`…/de/e/grundlagen-informationssicherheit-173`), Datenschutz Büro & Verwaltung (`…/de/e/datenschutz-b%C3%BCro-verwaltung-175`), Code of Conduct (`…/de/e/code-of-conduct-156`).
 - Der Header des Entwurfs (eigenes Menü „Themen / Lernpakete / Alle Kurse“) ist nicht nachgebaut; die Seite nutzt Header und Footer der Website.
 - Alternative ohne Vorlagen: die Clipboard-Dateien `bricks/buero-verwaltung-*.json` öffnen, Inhalt kopieren und im Builder mit Strg+V einfügen.
+
+## Offene Fragen an den Kunden
+
+Themenfilter (Section „Die Themen im Überblick“): Umgesetzt wie im Entwurf. Die Vorgaben dazu macht der Kunde (Stand 19.10.2026).
+
+- **Name der Stufe 15:** Im Filter heißt sie „Alle 15 Themen“, bei den Lernpaketen „Rundum-Paket“. Soll im Filter „Rundum-Paket · 15 Themen“ stehen?
+- **Buttons der Lernpakete:** „Lösung für 5/10/15 Themen finden“ springen zum Lösungsfinder und stellen dort „Mehrere Themen / ein Lernpaket“ ein. Den Themenfilter stellen sie nicht ein. Ist das so gewollt?
