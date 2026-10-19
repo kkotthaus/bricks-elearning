@@ -10,6 +10,27 @@ Was in den Vorlagen steckt:
 - **Sprungmarken:** Die Sections haben die IDs `themen`, `pakete`, `loesung` und `kurse`; die Buttons springen dorthin.
 - **Auswahlfelder, Empfehlung und Themenfilter** steuert das Snippet „WEKA Büro & Verwaltung – Lösungsfinder“. Bricks erlaubt keine Auswahlfelder als eigenes Element; im Builder stehen die Auswahlmöglichkeiten deshalb als Liste (Texte dort änderbar), im Frontend macht das Snippet daraus Auswahlfelder. Ohne Snippet stehen alle drei Empfehlungen untereinander und die Listen als Text da.
 
+## Regeln des Lösungsfinders
+
+Section „Ihr Weg zur passenden Lösung“: zwei Fragen, danach genau eine von drei Empfehlungen.
+
+| Was benötigen Sie? | Bis zu 50 Mitarbeitende | Mehr als 50 Mitarbeitende |
+|---|---|---|
+| Mehrere Themen / ein Lernpaket | Flatrate | Beratung |
+| Einen einzelnen Kurs | Einzelkurs | Beratung |
+| Inhalte für unser eigenes LMS | Beratung (mit Zusatz „– passend zu Ihrem bestehenden LMS“) | Beratung (mit Zusatz) |
+| Eine individuelle Lösung / Beratung | Beratung | Beratung |
+
+Umsetzungsregeln:
+
+- Unternehmensgröße = gesamte Belegschaft, nicht Anzahl der zu schulenden Personen. Deshalb heißt die Frage „Wie groß ist Ihr Unternehmen? (gesamte Belegschaft)“.
+- Genau 50 Mitarbeitende gehören zu „Bis zu 50“. Ab 51 Mitarbeitenden erfolgt die Empfehlung zum Vertrieb.
+- Eigenes LMS oder individuelle Beratung führen unabhängig von der Unternehmensgröße zum Vertrieb.
+- Die Empfehlung aktualisiert sich bei jeder Auswahländerung.
+- Keine automatische Weiterleitung: Der Nutzer klickt aktiv auf den angezeigten Button.
+- Beide Auswahlfelder bleiben sichtbar und veränderbar.
+- Vorauswahl entsprechend dem Entwurf: „Bis zu 50 Mitarbeitende“ + „Mehrere Themen / ein Lernpaket“ = Empfehlung Flatrate. Die Vorauswahl ist jeweils die erste Option – die Reihenfolge der Listeneinträge im Builder nicht ändern.
+
 ## Vorher auf Live
 
 - [ ] Sicherung (Duplicator: Backup erstellen)

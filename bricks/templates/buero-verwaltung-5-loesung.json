@@ -140,7 +140,7 @@
    "parent": "bvf009",
    "children": [],
    "settings": {
-    "text": "Wie groß ist Ihr Unternehmen?",
+    "text": "Wie groß ist Ihr Unternehmen? (gesamte Belegschaft)",
     "tag": "custom",
     "customTag": "label",
     "_attributes": [
@@ -154,7 +154,7 @@
      "2a12dz"
     ]
    },
-   "label": "Beschriftung: Wie groß ist Ihr Unternehmen?"
+   "label": "Beschriftung: Wie groß ist Ihr Unternehmen? (gesamte Belegschaft)"
   },
   {
    "id": "bvf011",
@@ -180,7 +180,7 @@
      {
       "id": "bvf011a2",
       "name": "data-office-label",
-      "value": "Wie groß ist Ihr Unternehmen?"
+      "value": "Wie groß ist Ihr Unternehmen? (gesamte Belegschaft)"
      }
     ],
     "_cssGlobalClasses": [

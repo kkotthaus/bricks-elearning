@@ -294,7 +294,7 @@ const PACKAGES = [
   b.add(left, 'text-basic', 'Text', { text: 'Bei mehr als 50 Mitarbeitenden im Unternehmen, einem eigenen LMS oder individuellen Anforderungen unterstützt Sie unser Vertrieb bei der Auswahl.', tag: 'p', ...C('office-text') });
 
   const fields = b.add(grid, 'block', 'Auswahl', C('office-finder__fields'));
-  select(b, fields, { name: 'size', id: 'office-size', label: 'Wie groß ist Ihr Unternehmen?', options: [['small', 'Bis zu 50 Mitarbeitende'], ['large', 'Mehr als 50 Mitarbeitende']] });
+  select(b, fields, { name: 'size', id: 'office-size', label: 'Wie groß ist Ihr Unternehmen? (gesamte Belegschaft)', options: [['small', 'Bis zu 50 Mitarbeitende'], ['large', 'Mehr als 50 Mitarbeitende']] });
   select(b, fields, { name: 'need', id: 'office-need', label: 'Was benötigen Sie?', options: [['flat', 'Mehrere Themen / ein Lernpaket'], ['single', 'Einen einzelnen Kurs'], ['lms', 'Inhalte für unser eigenes LMS'], ['advice', 'Eine individuelle Lösung / Beratung']] });
   const out = b.add(fields, 'div', 'Empfehlung (Ausgabe)', { _attributes: [['aria-live', 'polite']] });
   for (const [key, label, eyebrow, title, text, btn, url] of [

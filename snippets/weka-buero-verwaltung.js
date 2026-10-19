@@ -10,6 +10,15 @@
      - Empfehlungen [data-office-result="flat|single|advice"], es wird genau eine gezeigt.
        advice = mehr als 50 Mitarbeitende, eigenes LMS oder Beratung; single = einzelner Kurs; sonst flat.
      - [data-office-lms] im Beratungstext nur bei „Inhalte für unser eigenes LMS“.
+     Umsetzungsregeln (Vorgabe):
+     - Unternehmensgröße = gesamte Belegschaft, nicht die Zahl der zu schulenden Personen.
+     - Genau 50 Mitarbeitende gehören zu „Bis zu 50“ (small), ab 51 zum Vertrieb (large → advice).
+     - Eigenes LMS oder individuelle Beratung führen unabhängig von der Größe zum Vertrieb.
+     - Die Empfehlung aktualisiert sich bei jeder Auswahländerung.
+     - Keine automatische Weiterleitung: Der Nutzer klickt selbst auf den Button.
+     - Beide Auswahlfelder bleiben sichtbar und veränderbar (das Skript blendet nur Empfehlungen um).
+     - Vorauswahl wie im Entwurf: „Bis zu 50“ + „Mehrere Themen / ein Lernpaket“ = Flatrate
+       (jeweils die erste Option der Liste – Reihenfolge im Builder nicht ändern).
      - Buttons [data-office-need="flat"] in den Lernpaketen stellen „Mehrere Themen“ ein (der Link springt zu #loesung).
    Themenfilter (Section „Die Themen im Überblick“):
      - Themen [data-office-level="5|10|15"]; gezeigt werden alle mit Stufe ≤ Auswahl. */
