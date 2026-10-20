@@ -42,6 +42,22 @@ Was in den Vorlagen steckt:
 7. Seite **Büro-Verwaltung** bearbeiten (WordPress-Editor, Seitenattribute): „Übergeordnete Seite“ = **Zielgruppe**, aktualisieren. Sie liegt dann unter `/zielgruppe/buero-verwaltung/`; die alte Adresse `/buero-verwaltung/` leitet WordPress selbst weiter. Danach Einstellungen › Permalinks einmal speichern.
 8. Prüfen: `/zielgruppe/buero-verwaltung/` zeigt Büro-Verwaltung, `/zielgruppe/mitarbeitende/` zeigt weiter das Kurs-Archiv.
 
+## Navigation: „Zielgruppen“ unter „Infos & Service“
+
+Entschieden am 20.10.2026: Die Seite kommt als Unterpunkt **„Zielgruppen“** in das Menü „Infos & Service“, zwischen „Kursprogramm 2026“ und „Kontakte“. Das Menü ist kein WordPress-Menü, sondern ein Dropdown im Bricks-Header-Template. Lokal ist es so eingetragen (Templates 7656 und 10786).
+
+Erst nach dem Veröffentlichen der Seite (Schritt 6 oben):
+
+1. Bricks › Templates › Header **„MM Pro v1.4.1“** (Bedingung: ganze Website) › mit Bricks bearbeiten.
+2. In der Struktur (links): „Nav items“ › **„Dropdown aktuelles“** (Text „Infos & Service“) › „Inhalt“ aufklappen.
+3. Rechtsklick auf den zweiten Eintrag (in der Struktur heißen alle drei nur **„a“**; der zweite ist „Kursprogramm 2026“) › Duplizieren. Die Kopie steht direkt darunter.
+4. Bei der Kopie:
+   - Text: **Zielgruppen**
+   - Link: Externe URL **`/zielgruppe/`** (ohne Domain; die anderen Punkte haben die volle Adresse, beides funktioniert)
+5. Speichern.
+6. Dasselbe im Header **„LP MM Pro v1.4.1 LMS-neu“**, falls es ihn auf Live gibt (gilt nur für die Seite „LMS Neu“).
+7. Prüfen: Auf einer beliebigen Seite „Infos & Service“ öffnen → Veranstaltungen, Kursprogramm 2026, **Zielgruppen**, Kontakte. Ein Klick auf „Zielgruppen“ öffnet `/zielgruppe/`. Auf dem Handy das Menü öffnen und dort ebenfalls prüfen.
+
 ## Ziel-Links
 
 | Stelle | Ziel |
@@ -65,4 +81,4 @@ Alle Links stammen aus dem Entwurf (Stand 19.10.2026).
 
 ## Offene Fragen an den Kunden
 
-- **Navigation:** Wie „Zielgruppe“ und die Unterseite Büro-Verwaltung in die Navigation der Website kommen, ist noch zu klären (Stand 19.10.2026). Bis dahin sind beide Seiten nur über Links erreichbar.
+- **Navigation Büro-Verwaltung:** „Zielgruppe“ steht unter „Infos & Service“ (siehe oben). Büro-Verwaltung ist über die Karte auf „Zielgruppe“ erreichbar; ob sie einen eigenen Menüpunkt bekommt, ist offen (Stand 20.10.2026).
