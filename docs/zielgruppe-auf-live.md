@@ -64,4 +64,4 @@ Alle Links stammen aus dem Entwurf (Stand 19.10.2026).
 
 ## Offene Fragen an den Kunden
 
-- **Menü:** Soll „Zielgruppe“ ins Hauptmenü der Website?
+- **Navigation:** Wie „Zielgruppe“ und die Unterseite Büro-Verwaltung in die Navigation der Website kommen, ist noch zu klären (Stand 19.10.2026). Bis dahin sind beide Seiten nur über Links erreichbar.
