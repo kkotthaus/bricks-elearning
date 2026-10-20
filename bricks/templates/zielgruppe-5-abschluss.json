@@ -56,6 +56,7 @@
     "text": "Ihr Team passt in keine Schublade?",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h",
      "3jl1j3"
     ]
@@ -71,6 +72,7 @@
     "text": "Wir unterstützen Sie bei einer passenden Themen- und Lösungsauswahl.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "27gxc8"
     ]
    },
@@ -113,6 +115,96 @@
     },
     "_widthMax": "100%",
     "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
+    }
    }
   },
   {
@@ -161,7 +253,9 @@
    "settings": {
     "_display": "flex",
     "_direction": "column",
-    "_rowGap": "var(--space-xs)"
+    "_rowGap": "var(--space-xs)",
+    "_width": "auto",
+    "_flexShrink": "1"
    }
   },
   {

@@ -10,6 +10,7 @@ import { createHash } from 'node:crypto';
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { SCHRIFT, schrift } from './schrift.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'bricks');
@@ -76,13 +77,15 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
 {
   const b = builder('zgh');
   cls('audience-breadcrumb', {
-    _margin: NULL4, _typography: { 'font-size': 'var(--text-s)', ...muted },
+    _margin: NULL4, _typography: muted,
     _cssCustom: '.audience-breadcrumb a {\n  color: var(--primary-dark);\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}\n\n.audience-breadcrumb span {\n  margin-inline: 0.5em;\n}',
   });
   // Einstiegskarte wie die Lernplan-Karte, aber gerade (Vorlage)
   // Brotkrumen dicht über dem Raster (Container-Abstand wäre --container-gap)
   cls('audience-hero__inner', { _rowGap: 'var(--space-m)' });
   cls('office-plan--straight', { _cssCustom: '.office-plan.office-plan--straight {\n  transform: none;\n}' });
+  // Nummern im Einstieg größer als in der Lernplan-Karte (Vorlage: 24px)
+  cls('office-plan__number--large', { _cssCustom: '.office-plan__number.office-plan__number--large {\n  font-size: var(--h3);\n  line-height: 1;\n}' });
 
   const sec = b.add(null, 'section', 'Hero – Zielgruppen', C('office-hero'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', C('audience-hero__inner'));
@@ -106,7 +109,7 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
     ['03', 'Lösung finden', 'Direkt buchen oder persönlich beraten lassen.'],
   ]) {
     const li = b.add(ol, 'block', `Schritt ${nr}: ${title}`, { tag: 'li', ...C('office-plan__item') });
-    b.add(li, 'text-basic', 'Nummer', { text: nr, tag: 'span', _attributes: [['aria-hidden', 'true']], ...C('office-plan__number') });
+    b.add(li, 'text-basic', 'Nummer', { text: nr, tag: 'span', _attributes: [['aria-hidden', 'true']], ...C('office-plan__number', 'office-plan__number--large') });
     const t = b.add(li, 'div', 'Text', {});
     b.add(t, 'text-basic', 'Titel', { text: title, tag: 'p', ...C('office-plan__item-title') });
     b.add(t, 'text-basic', 'Text', { text, tag: 'p', ...C('office-plan__item-text') });
@@ -133,11 +136,11 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
   cls('audience-card__icon', { _width: '6rem', _height: '6rem', '_width:mobile_landscape': '5rem', '_height:mobile_landscape': '5rem', _typography: { color: { raw: 'var(--primary-dark)' } } });
   cls('audience-card__number', { ...m0, _typography: { 'font-size': 'var(--h2)', 'font-weight': '700', 'line-height': '1', color: { raw: 'var(--primary-trans-30)' } } });
   cls('audience-card__body', { _width: '100%', _display: 'flex', _direction: 'column', _flexGrow: '1', _rowGap: 'var(--space-xs)', _padding: P('var(--space-m)') });
-  cls('audience-card__title', { ...m0, _typography: { 'font-size': 'var(--h4)' } });
-  cls('audience-card__text', { ...m0, _typography: { 'font-size': 'var(--text-s)', ...muted } });
-  cls('audience-card__list', { _margin: { top: 'var(--space-xs)', right: '0', bottom: 'var(--space-s)', left: '0' }, _typography: { 'font-size': 'var(--text-s)' } });
+  cls('audience-card__title', { ...m0 });
+  cls('audience-card__text', { ...m0, _typography: muted });
+  cls('audience-card__list', { _margin: { top: 'var(--space-xs)', right: '0', bottom: 'var(--space-s)', left: '0' } });
   cls('audience-card__button', { _width: '100%', _margin: { top: 'auto' } });
-  cls('audience-card__note', { ...m0, _typography: { 'font-size': 'var(--text-xs)', ...muted } });
+  cls('audience-card__note', { ...m0, _typography: muted });
 
   const ICON_ATTR = 'viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true" focusable="false"';
   const svg = (inner) => `<svg xmlns="http://www.w3.org/2000/svg" ${ICON_ATTR}>${inner}</svg>`;
@@ -195,7 +198,7 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
     _background: { color: { raw: 'var(--white)' } },
     _border: { width: { top: '4px' }, style: 'solid', color: { raw: 'var(--action)' } },
   });
-  cls('audience-org__title', { ...m0, _typography: { 'font-size': 'var(--h4)' } });
+  cls('audience-org__title', { ...m0 });
   cls('audience-self', {
     _display: 'flex', _direction: 'row', _justifyContent: 'space-between', _alignItems: 'center', _columnGap: 'var(--space-l)', _rowGap: 'var(--space-s)',
     '_direction:mobile_landscape': 'column', '_alignItems:mobile_landscape': 'flex-start',
@@ -204,7 +207,7 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
     _cssCustom: '.audience-self > .brxe-button {\n  flex-shrink: 0;\n}\n\n@media (max-width: 767px) {\n  .audience-self > .brxe-button {\n    width: 100%;\n  }\n}',
   });
   cls('audience-self__text', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-xs)', _widthMax: '72ch' });
-  cls('audience-self__title', { ...m0, _typography: { 'font-size': 'var(--h4)' } });
+  cls('audience-self__title', { ...m0 });
 
   const sec = b.add(null, 'section', 'Verantwortliche', { _cssId: 'verantwortliche', ...C('acss:bg--primary-ultra-light') });
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});
@@ -250,7 +253,8 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
 // ---------- 5. Abschluss ----------
 {
   const b = builder('zga');
-  cls('audience-closing__text', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-xs)' });
+  // Breite nach Inhalt, damit der Button daneben passt (Bricks-Block hat sonst 100 %)
+  cls('audience-closing__text', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-xs)', _width: 'auto', _flexShrink: '1' });
   cls('audience-closing__lede', { ...m0, _typography: { color: { raw: 'var(--white-trans-80)' } } });
   const sec = b.add(null, 'section', 'Abschluss', C('office-closing', 'acss:bg--primary-dark'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', C('office-closing__inner'));
@@ -261,6 +265,9 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
   files['zielgruppe-5-abschluss'] = b.content;
 }
 
+// ---------- Schriftgrößen (tools/schrift.mjs) ----------
+schrift({ files, classDefs, cid, cls, existing: EXISTING });
+
 // ---------- Schreiben ----------
 const TITEL = {
   'zielgruppe-1-hero': 'Zielgruppe 1 – Hero', 'zielgruppe-2-mitarbeitende': 'Zielgruppe 2 – Mitarbeitende',
@@ -269,7 +276,8 @@ const TITEL = {
 };
 const usedClasses = (content) => {
   const ids = new Set(content.flatMap((e) => e.settings._cssGlobalClasses || []));
-  return [...classDefs].filter(([name]) => ids.has(cid(name))).map(([name, settings]) => ({ id: cid(name), name, settings }));
+  // Schrift-Klassen immer mitgeben, damit alle Größen (auch ungenutzte) angelegt werden
+  return [...classDefs].filter(([name]) => ids.has(cid(name)) || SCHRIFT[name]).map(([name, settings]) => ({ id: cid(name), name, settings }));
 };
 const templateClasses = (content) => {
   const ids = new Set(content.flatMap((e) => e.settings._cssGlobalClasses || []));

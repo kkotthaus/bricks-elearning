@@ -62,6 +62,7 @@
     "text": "Der Buchungsweg folgt Ihrem Bedarf.",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h"
     ]
    },
@@ -76,6 +77,7 @@
     "text": "Die Zielgruppe hilft Ihnen bei der Themenauswahl. Unternehmensgröße, Lernumgebung und Schulungsumfang bestimmen anschließend die passende Lösung.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -126,6 +128,7 @@
     "text": "Unternehmenslösung",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2fq1mn"
     ]
    },
@@ -140,6 +143,7 @@
     "text": "Für mehr als 50 Mitarbeitende im Unternehmen, ein eigenes LMS oder individuelle Anforderungen: Inhalte und Einsatz persönlich abstimmen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -157,6 +161,7 @@
      "url": "https://www.weka-elearning.de/kontakt/"
     },
     "_cssGlobalClasses": [
+     "vf9abx",
      "2p0hoe"
     ]
    },
@@ -188,6 +193,7 @@
     "text": "Flatrate",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2fq1mn"
     ]
    },
@@ -202,6 +208,7 @@
     "text": "Für kleinere Teams mit mehreren Unterweisungsthemen: Prüfen Sie im eCampus den enthaltenen Katalog und die aktuellen Konditionen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -219,6 +226,7 @@
      "url": "https://lernen.weka.de/de/e/weka-ecampus-flatrate-unterweisungen-140"
     },
     "_cssGlobalClasses": [
+     "vf9abx",
      "2p0hoe"
     ]
    },
@@ -250,6 +258,7 @@
     "text": "Einzelkurs",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2fq1mn"
     ]
    },
@@ -264,6 +273,7 @@
     "text": "Für einen konkreten Lernbedarf: Ein passendes Thema im eCampus auswählen und direkt online buchen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -281,6 +291,7 @@
      "url": "https://lernen.weka.de/de"
     },
     "_cssGlobalClasses": [
+     "vf9abx",
      "2p0hoe"
     ]
    },
@@ -301,6 +312,96 @@
     },
     "_widthMax": "100%",
     "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
+    }
    }
   },
   {
@@ -382,9 +483,6 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    },
-    "_typography": {
-     "font-size": "var(--h4)"
     }
    }
   },

@@ -9,6 +9,7 @@ import { createHash } from 'node:crypto';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { SCHRIFT, schrift } from './schrift.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'bricks');
@@ -56,13 +57,13 @@ const up = (s) => s.toLocaleUpperCase('de-DE');
 // ---------- Gemeinsame Klassen ----------
 cls('office-intro', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-s)', _widthMax: '76ch' });
 cls('office-title', { ...m0, _widthMax: '100%', _cssCustom: '.office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}' });
-cls('office-lede', { ...m0, _typography: { 'font-size': 'var(--text-l)', ...muted } });
+cls('office-lede', { ...m0, _typography: muted });
 cls('office-text', { ...m0, _typography: muted });
 cls('office-ticks', {
   _display: 'flex', _direction: 'column', _rowGap: 'var(--space-xs)', _margin: NULL4, _padding: NULL4,
   _cssCustom: '.office-ticks {\n  list-style: none;\n}\n\n.office-ticks > li {\n  position: relative;\n  padding-left: 1.4em;\n}\n\n/* Häkchen wie Vorlage */\n.office-ticks > li::before {\n  content: "✓";\n  position: absolute;\n  left: 0;\n  color: var(--action-dark);\n  font-weight: 700;\n}',
 });
-cls('office-label', { _display: 'block', _margin: { top: '0', bottom: 'var(--space-xs)' }, _typography: { 'font-size': 'var(--text-s)', 'font-weight': '700', color: { raw: 'var(--text-dark)' } } });
+cls('office-label', { _display: 'block', _margin: { top: '0', bottom: 'var(--space-xs)' }, _typography: { 'font-weight': '700', color: { raw: 'var(--text-dark)' } } });
 // Auswahlfeld: im Builder eine Liste, im Frontend macht das Snippet daraus ein <select> mit derselben Klasse
 cls('office-select', {
   _display: 'block', _width: '100%',
@@ -92,9 +93,9 @@ function select(b, parent, { name, id, label, options }) {
   cls('office-hero', { _cssCustom: '.office-hero {\n  background: linear-gradient(115deg, var(--primary-ultra-light), var(--white) 72%);\n}' });
   cls('office-hero__grid', { _display: 'grid', _gridTemplateColumns: 'minmax(0, 1.15fr) minmax(0, 1fr)', '_gridTemplateColumns:tablet_portrait': 'minmax(0, 1fr)', _alignItems: 'center', _columnGap: 'var(--space-xxl)', _rowGap: 'var(--space-l)' });
   cls('office-hero__content', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-m)' });
-  cls('office-hero__title', { ...m0, _typography: { 'font-size': 'calc(var(--h1) * 1.2)', 'line-height': '1.1' } });
+  cls('office-hero__title', { ...m0, _typography: { 'line-height': '1.1' } });
   cls('office-hero__actions', { _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _columnGap: 'var(--space-xs)', _rowGap: 'var(--space-xs)', _cssCustom: '/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}' });
-  cls('office-hero__note', { ...m0, _typography: { 'font-size': 'var(--text-s)', ...muted } });
+  cls('office-hero__note', { ...m0, _typography: muted });
   cls('office-plan', {
     _padding: { top: 'var(--space-l)', right: 'var(--space-l)', bottom: 'var(--space-l)', left: 'var(--space-l)' },
     '_padding:mobile_landscape': { top: 'var(--space-m)', right: 'var(--space-m)', bottom: 'var(--space-m)', left: 'var(--space-m)' },
@@ -103,7 +104,7 @@ function select(b, parent, { name, id, label, options }) {
     _cssCustom: '/* Karte leicht gedreht mit grünem Versatz-Schatten (Vorlage) */\n.office-plan {\n  transform: rotate(1deg);\n  box-shadow: 1.6rem 2rem 0 var(--action-trans-20);\n}\n\n@media (max-width: 991px) {\n  .office-plan {\n    transform: none;\n    box-shadow: 0.8rem 1rem 0 var(--action-trans-20);\n  }\n}',
   });
   cls('office-plan__eyebrow', { _typography: { color: { raw: 'var(--action-light)' } } });
-  cls('office-plan__title', { _margin: { top: 'var(--space-xs)', bottom: 'var(--space-s)' }, _typography: { 'font-size': 'var(--h3)', 'line-height': '1.2', color: { raw: 'var(--white)' } } });
+  cls('office-plan__title', { _margin: { top: 'var(--space-xs)', bottom: 'var(--space-s)' }, _typography: { 'line-height': '1.2', color: { raw: 'var(--white)' } } });
   cls('office-plan__list', { _margin: NULL4, _padding: NULL4, _cssCustom: '.office-plan__list {\n  list-style: none;\n}' });
   cls('office-plan__item', {
     _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'center', _columnGap: 'var(--space-s)', _margin: { top: '0', bottom: '0' },
@@ -112,8 +113,8 @@ function select(b, parent, { name, id, label, options }) {
   });
   cls('office-plan__number', { _flexShrink: '0', _widthMin: '2ch', _typography: { 'font-size': 'var(--h4)', color: { raw: 'var(--action-light)' } } });
   cls('office-plan__item-title', { ...m0, _typography: { 'font-weight': '700', 'line-height': '1.3' } });
-  cls('office-plan__item-text', { ...m0, _typography: { 'font-size': 'var(--text-s)', color: { raw: 'var(--white-trans-80)' } } });
-  cls('office-plan__note', { _margin: { top: 'var(--space-s)', bottom: '0' }, _typography: { 'font-size': 'var(--text-s)', color: { raw: 'var(--white-trans-80)' } } });
+  cls('office-plan__item-text', { ...m0, _typography: { color: { raw: 'var(--white-trans-80)' } } });
+  cls('office-plan__note', { _margin: { top: 'var(--space-s)', bottom: '0' }, _typography: { color: { raw: 'var(--white-trans-80)' } } });
 
   const sec = b.add(null, 'section', 'Hero – Büro & Verwaltung', C('office-hero'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', C('office-hero__grid'));
@@ -154,7 +155,7 @@ function select(b, parent, { name, id, label, options }) {
     '_justifyContent:mobile_landscape': 'flex-start', '_direction:mobile_landscape': 'column',
     _margin: NULL4, _padding: { top: 'var(--space-s)', right: '0', bottom: 'var(--space-s)', left: '0' },
     _border: { width: { bottom: '1px' }, style: 'solid', color: { raw: 'var(--border-color-dark)' } },
-    _typography: { 'font-size': 'var(--text-s)', 'font-weight': '700' },
+    _typography: { 'font-weight': '700' },
     _cssCustom: '.office-strip__list > li::before {\n  content: "✓";\n  margin-right: 0.8em;\n  color: var(--action-dark);\n}',
   });
   const sec = b.add(null, 'section', 'Vorteilsleiste', C('office-strip'));
@@ -171,7 +172,7 @@ function select(b, parent, { name, id, label, options }) {
   const b = builder('bvr');
   cls('office-risks__grid', { _margin: { top: 'var(--space-l)', right: '0', bottom: '0', left: '0' }, _padding: NULL4, _columnGap: 'var(--space-l)', _rowGap: 'var(--space-l)', _cssCustom: '.office-risks__grid {\n  list-style: none;\n}' });
   cls('office-risks__item', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-xs)', _margin: { top: '0', bottom: '0' }, _padding: { top: 'var(--space-s)' }, _border: { width: { top: '3px' }, style: 'solid', color: { raw: 'var(--action)' } } });
-  cls('office-risks__title', { ...m0, _typography: { 'font-size': 'var(--h4)' } });
+  cls('office-risks__title', { ...m0 });
   const sec = b.add(null, 'section', 'Risiken im Büro', { _cssId: 'themen', ...C('office-risks') });
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});
   intro(b, con, { eyebrow: 'Welche Unterweisungen spielen eine Rolle?', title: 'Auch im Büro gibt es Risiken.<br>Das passende Wissen hilft.', lede: 'Ein falsch eingerichteter Arbeitsplatz, eine täuschend echte E-Mail oder sensible Daten im falschen Verteiler: Sicherheit beginnt bei alltäglichen Entscheidungen.' });
@@ -228,16 +229,16 @@ const PACKAGES = [
     _typography: { 'font-size': 'calc(var(--h1) * 1.1)', 'font-weight': '800', 'line-height': '1', color: { raw: 'var(--primary-dark)' } },
     _cssCustom: '.office-package__count span {\n  font-size: var(--text-m);\n  font-weight: 400;\n}',
   });
-  cls('office-package__title', { ...m0, _typography: { 'font-size': 'var(--h4)' } });
-  cls('office-package__caption', { ...m0, _typography: { 'font-size': 'var(--text-s)', ...muted } });
+  cls('office-package__title', { ...m0 });
+  cls('office-package__caption', { ...m0, _typography: muted });
   cls('office-package__includes', {
     _margin: { top: 'var(--space-xs)', bottom: '0' }, _padding: { top: '0.7em', right: '0.8em', bottom: '0.7em', left: '0.8em' },
     _background: { color: { raw: 'var(--primary-ultra-light)' } }, _border: { radius: { top: 'var(--radius-xs)', right: 'var(--radius-xs)', bottom: 'var(--radius-xs)', left: 'var(--radius-xs)' } },
-    _typography: { 'font-size': 'var(--text-s)', color: { raw: 'var(--primary-dark)' } },
+    _typography: { color: { raw: 'var(--primary-dark)' } },
   });
-  cls('office-package__list', { _margin: { top: 'var(--space-xs)', right: '0', bottom: 'var(--space-s)', left: '0' }, _typography: { 'font-size': 'var(--text-s)' } });
+  cls('office-package__list', { _margin: { top: 'var(--space-xs)', right: '0', bottom: 'var(--space-s)', left: '0' } });
   cls('office-package__button', { _width: '100%', _margin: { top: 'auto' } });
-  cls('office-packages__hint', { _margin: { top: 'var(--space-m)', bottom: '0' }, _typography: { 'font-size': 'var(--text-s)', ...muted } });
+  cls('office-packages__hint', { _margin: { top: 'var(--space-m)', bottom: '0' }, _typography: muted });
 
   const sec = b.add(null, 'section', 'Lernpakete', { _cssId: 'pakete', ...C('office-packages', 'acss:bg--primary-ultra-light') });
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});
@@ -280,11 +281,11 @@ const PACKAGES = [
     _border: { radius: { top: 'var(--radius-xs)', right: 'var(--radius-xs)', bottom: 'var(--radius-xs)', left: 'var(--radius-xs)' } },
     _cssCustom: '/* Das Snippet blendet nicht passende Empfehlungen aus (hidden schlägt sonst display: flex nicht) */\n.office-finder__result[hidden] {\n  display: none;\n}',
   });
-  cls('office-finder__result-title', { ...m0, _typography: { 'font-size': 'var(--h4)', color: { raw: 'var(--white)' } } });
-  cls('office-finder__result-text', { ...m0, _typography: { 'font-size': 'var(--text-m)' } });
+  cls('office-finder__result-title', { ...m0, _typography: { color: { raw: 'var(--white)' } } });
+  cls('office-finder__result-text', { ...m0 });
   cls('office-paths', { _margin: { top: 'var(--space-xl)', right: '0', bottom: '0', left: '0' }, _padding: NULL4, _columnGap: 'var(--space-l)', _rowGap: 'var(--space-m)', _cssCustom: '.office-paths {\n  list-style: none;\n}' });
   cls('office-path', { _display: 'flex', _direction: 'column', _alignItems: 'flex-start', _rowGap: 'var(--space-xs)', _margin: { top: '0', bottom: '0' }, _padding: { top: 'var(--space-s)' }, _border: { width: { top: '1px' }, style: 'solid', color: { raw: 'var(--border-color-dark)' } } });
-  cls('office-path__title', { ...m0, _typography: { 'font-size': 'var(--h4)' } });
+  cls('office-path__title', { ...m0 });
   cls('office-path__link', { _margin: { top: 'auto' }, _typography: { 'font-weight': '700' }, _cssCustom: '.office-path__link {\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}' });
 
   const sec = b.add(null, 'section', 'Lösungsfinder', { _cssId: 'loesung', ...C('office-finder') });
@@ -332,7 +333,7 @@ const PACKAGES = [
   cls('office-course', {
     _display: 'block', _padding: { top: 'var(--space-s)', bottom: 'var(--space-s)' },
     _border: { width: { top: '1px' }, style: 'solid', color: { raw: 'var(--border-color-dark)' } },
-    _cssCustom: '/* <details>: Bricks-Block wäre flex; Filter blendet per hidden aus */\n.office-course[hidden] {\n  display: none;\n}\n\n.office-course > p {\n  margin: var(--space-xs) 0 var(--space-xs);\n  padding-left: 3.4rem;\n  font-size: var(--text-s);\n  color: var(--text-dark-muted);\n}\n\n.office-course > a {\n  display: inline-block;\n  margin-left: 3.4rem;\n  font-size: var(--text-s);\n  font-weight: 700;\n}',
+    _cssCustom: '/* <details>: Bricks-Block wäre flex; Filter blendet per hidden aus */\n.office-course[hidden] {\n  display: none;\n}\n\n.office-course > p {\n  margin: var(--space-xs) 0 var(--space-xs);\n  padding-left: 3.4rem;\n  color: var(--text-dark-muted);\n}\n\n.office-course > a {\n  display: inline-block;\n  margin-left: 3.4rem;\n  font-weight: 700;\n}',
   });
   cls('office-summary', {
     _display: 'flex', _alignItems: 'baseline', _columnGap: 'var(--space-xs)', _typography: { 'font-weight': '700' },
@@ -402,6 +403,9 @@ const PACKAGES = [
   files['buero-verwaltung-8-abschluss'] = b.content;
 }
 
+// ---------- Schriftgrößen (tools/schrift.mjs) ----------
+schrift({ files, classDefs, cid, cls, existing: EXISTING });
+
 // ---------- Schreiben ----------
 const TITEL = {
   'buero-verwaltung-1-hero': 'Büro-Verwaltung 1 – Hero', 'buero-verwaltung-2-leiste': 'Büro-Verwaltung 2 – Vorteilsleiste',
@@ -411,7 +415,8 @@ const TITEL = {
 };
 const usedClasses = (content) => {
   const ids = new Set(content.flatMap((e) => e.settings._cssGlobalClasses || []));
-  return [...classDefs].filter(([name]) => ids.has(cid(name))).map(([name, settings]) => ({ id: cid(name), name, settings }));
+  // Schrift-Klassen immer mitgeben, damit alle Größen (auch ungenutzte) angelegt werden
+  return [...classDefs].filter(([name]) => ids.has(cid(name)) || SCHRIFT[name]).map(([name, settings]) => ({ id: cid(name), name, settings }));
 };
 const templateClasses = (content) => {
   const ids = new Set(content.flatMap((e) => e.settings._cssGlobalClasses || []));

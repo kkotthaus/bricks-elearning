@@ -4,7 +4,8 @@ Die Landingpage für Büro & Verwaltung (Vorlage: `docs/vorlagen/buero-verwaltun
 
 Was in den Vorlagen steckt:
 
-- **Klassen:** 57 eigene Klassen (alle beginnen mit `office-`) und die vorhandene Klasse `eyebrow`. Bricks legt fehlende Klassen beim Import an und nimmt vorhandene unverändert. ACSS-Klassen werden nur referenziert.
+- **Klassen:** 57 eigene Klassen (`office-…`), 10 Schrift-Klassen (`audience-h1` … `audience-h6`, `audience-text-l/m/s/xs`, gemeinsam mit „Zielgruppe“) und die vorhandene Klasse `eyebrow`. Bricks legt fehlende Klassen beim Import an und nimmt vorhandene unverändert. ACSS-Klassen werden nur referenziert.
+- **Schriftgrößen:** Jede Überschrift und jeder Text hat als erste Klasse eine Schrift-Klasse (`audience-h1` … `audience-h6`, `audience-text-l`, `-m`, `-s`, `-xs`). Nur diese Klassen setzen die Schriftgröße – ändert man im Builder die Größe einer Schrift-Klasse, ändert sie sich auf „Zielgruppe“ und allen Unterseiten. Die Klasse richtet sich nach der Größe, nicht nach dem Tag (ein `<h3>` in Größe h4 hat `audience-h4`). Eigene Größen behalten Dachzeilen (`eyebrow`, gilt für die ganze Website), Nummern und Paketgrößen, Buttons (ACSS) und das Auswahlfeld des Lösungsfinders.
 - **Keine Bilder, keine Icons mit Code** – es muss nichts signiert und nichts in die Mediathek geladen werden. Häkchen und Plus/Minus kommen aus dem CSS der Klassen.
 - **Aufklappen** von Themen und Fragen: normale HTML-Elemente `details`/`summary`, ohne Skript.
 - **Sprungmarken:** Die Sections haben die IDs `themen`, `pakete`, `loesung` und `kurse`; die Buttons springen dorthin.

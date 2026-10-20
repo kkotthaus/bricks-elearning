@@ -4,8 +4,9 @@ Die Übersichtsseite „E-Learning nach Zielgruppe“ (Vorlage: `docs/vorlagen/z
 
 Was in den Vorlagen steckt:
 
-- **Klassen:** 23 neue Klassen (fast alle beginnen mit `audience-`, dazu `office-plan--straight`), 25 Klassen der Seite „Büro-Verwaltung“ (`office-…`) und die vorhandene Klasse `eyebrow`. Bricks legt fehlende Klassen beim Import an und nimmt vorhandene unverändert. ACSS-Klassen werden nur referenziert. Die Reihenfolge der Importe von Büro-Verwaltung und Zielgruppe ist egal.
+- **Klassen:** 24 neue Klassen (fast alle beginnen mit `audience-`, dazu `office-plan--straight` und `office-plan__number--large`), 25 Klassen der Seite „Büro-Verwaltung“ (`office-…`), die 10 Schrift-Klassen (`audience-h1` … `audience-h6`, `audience-text-l/m/s/xs`, gemeinsam mit Büro-Verwaltung) und die vorhandene Klasse `eyebrow`. Bricks legt fehlende Klassen beim Import an und nimmt vorhandene unverändert. ACSS-Klassen werden nur referenziert. Die Reihenfolge der Importe von Büro-Verwaltung und Zielgruppe ist egal.
 - **Symbole:** Die drei Symbole der Zielgruppen-Karten (Bildschirm, Helm, Führungskraft) sind SVG-Elemente mit Code aus der Vorlage. Sie brauchen eine Bricks-Code-Signatur (siehe „Seite bauen“), sonst steht im Builder „No signature“ und die Symbole fehlen.
+- **Schriftgrößen:** Jede Überschrift und jeder Text hat als erste Klasse eine Schrift-Klasse (`audience-h1` … `audience-h6`, `audience-text-l`, `-m`, `-s`, `-xs`). Nur diese Klassen setzen die Schriftgröße – ändert man im Builder die Größe einer Schrift-Klasse, ändert sie sich auf „Zielgruppe“ und allen Unterseiten. Die Klasse richtet sich nach der Größe, nicht nach dem Tag (ein `<h3>` in Größe h4 hat `audience-h4`). Eigene Größen behalten Dachzeilen (`eyebrow`, gilt für die ganze Website), Nummern und Paketgrößen, Buttons (ACSS) und das Auswahlfeld des Lösungsfinders.
 - **Keine Bilder** – es muss nichts in die Mediathek geladen werden. Häkchen kommen aus dem CSS der Klassen.
 - **Unterseiten:** Büro-Verwaltung ist eine Unterseite von „Zielgruppe“ (`/zielgruppe/buero-verwaltung/`). Die Kurs-Taxonomie „Zielgruppen“ (Meta Box) belegt aber schon die Adressen `/zielgruppe/<begriff>/` (z. B. `/zielgruppe/mitarbeitende/`), sodass WordPress Unterseiten dort nicht findet (Fehler 404). Das Snippet „WEKA Zielgruppe – Unterseiten“ prüft zuerst, ob es eine Unterseite mit diesem Namen gibt, und zeigt sie; sonst bleibt es beim Kurs-Archiv. Eine Unterseite darf deshalb nicht so heißen wie ein Begriff der Taxonomie (auszubildende, dienstwagenfahrer, elektrofachkraefte, eup, fuehrungskraefte, mitarbeitende) – sonst ist das Archiv nicht mehr erreichbar.
 - **Sprungmarken:** Die Sections haben die IDs `mitarbeitende`, `verantwortliche` und `buchungsweg`; der Button im Hero springt zu `mitarbeitende`.
@@ -59,7 +60,7 @@ Alle Links stammen aus dem Entwurf (Stand 19.10.2026).
 ## Hinweise
 
 - Der Header des Entwurfs (eigenes Menü „Für Ihr Team / Für Verantwortliche / Beratung anfragen“) und die Fußzeile sind nicht nachgebaut; die Seite nutzt Header und Footer der Website.
-- Die Einstiegskarte im Hero nutzt die Klassen der Lernplan-Karte von Büro-Verwaltung; der Modifier `office-plan--straight` nimmt die Drehung weg (im Entwurf steht die Karte gerade).
+- Die Einstiegskarte im Hero nutzt die Klassen der Lernplan-Karte von Büro-Verwaltung; der Modifier `office-plan--straight` nimmt die Drehung weg (im Entwurf steht die Karte gerade), `office-plan__number--large` macht die Nummern 01–03 größer.
 - Alternative ohne Vorlagen: die Clipboard-Dateien `bricks/zielgruppe-*.json` öffnen, Inhalt kopieren und im Builder mit Strg+V einfügen. Danach ebenfalls signieren.
 
 ## Offene Fragen an den Kunden

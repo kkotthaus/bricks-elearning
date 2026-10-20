@@ -66,6 +66,7 @@
     "text": "Sie planen und organisieren Lernen?",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h"
     ]
    },
@@ -80,6 +81,7 @@
     "text": "Dann geht es um mehr als einzelne Kurse: um passende Inhalte, eine geeignete Lernumgebung und die Umsetzung im Unternehmen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "1tfved",
      "7ish7h"
     ]
    },
@@ -129,6 +131,7 @@
     "text": "Personalentwicklung & HR",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "1fh0lb",
      "caew9w"
     ]
    },
@@ -143,6 +146,7 @@
     "text": "Sie möchten Weiterbildung koordinieren, Mitarbeitende entwickeln und Lernen im Unternehmen organisieren? Finden Sie den passenden Einstieg in Ihre Lernplattform.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -160,6 +164,7 @@
      "url": "https://www.weka-elearning.de/lms-fuer-unternehmen/"
     },
     "_cssGlobalClasses": [
+     "vf9abx",
      "2p0hoe"
     ]
    },
@@ -191,6 +196,7 @@
     "text": "Fachverantwortliche & Beauftragte",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "1fh0lb",
      "caew9w"
     ]
    },
@@ -205,6 +211,7 @@
     "text": "Sie betreuen Arbeitsschutz, Datenschutz, Informationssicherheit oder Compliance? Steigen Sie über Ihr Fachthema ein und wählen Sie passende Inhalte für Ihre Mitarbeitenden aus.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -222,6 +229,7 @@
      "url": "https://www.weka-elearning.de/betriebliche-unterweisungen/"
     },
     "_cssGlobalClasses": [
+     "vf9abx",
      "2p0hoe"
     ]
    },
@@ -266,6 +274,7 @@
     "text": "Sie möchten sich selbst weiterbilden?",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "1fh0lb",
      "2g89ld"
     ]
    },
@@ -280,6 +289,7 @@
     "text": "Entdecken Sie im WEKA eCampus Kurse für Ihren eigenen Lernbedarf und buchen Sie direkt online.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -334,10 +344,99 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-l)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
+    }
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
     }
    }
   },
@@ -448,9 +547,6 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    },
-    "_typography": {
-     "font-size": "var(--h4)"
     }
    }
   },
@@ -501,9 +597,6 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    },
-    "_typography": {
-     "font-size": "var(--h4)"
     }
    }
   }

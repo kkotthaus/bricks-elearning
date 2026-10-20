@@ -62,6 +62,7 @@
     "text": "Wen möchten Sie schulen?",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h"
     ]
    },
@@ -76,6 +77,7 @@
     "text": "Starten Sie bei den Aufgaben Ihrer Mitarbeitenden. So wird aus einem großen Angebot eine Auswahl, die zu ihrem Arbeitsalltag passt.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "1tfved",
      "7ish7h"
     ]
    },
@@ -194,6 +196,7 @@
     "text": "Büro & Verwaltung",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "1fh0lb",
      "1vej1i"
     ]
    },
@@ -208,6 +211,7 @@
     "text": "Für Mitarbeitende am Bildschirm, in der Sachbearbeitung, im Kundenkontakt und im mobilen Büro.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "dugl0v"
     ]
    },
@@ -238,7 +242,10 @@
    "children": [],
    "settings": {
     "text": "Arbeitsschutz & Bildschirmarbeit",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Arbeitsschutz & Bildschirmarbeit"
   },
@@ -249,7 +256,10 @@
    "children": [],
    "settings": {
     "text": "Datenschutz & Informationssicherheit",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Datenschutz & Informationssicherheit"
   },
@@ -260,7 +270,10 @@
    "children": [],
    "settings": {
     "text": "Compliance & sicherer KI-Einsatz",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Compliance & sicherer KI-Einsatz"
   },
@@ -296,6 +309,7 @@
     "text": "5, 10 oder 15 Themen als Orientierung für Ihren Lernplan.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "3ruidn",
      "18je7c"
     ]
    },
@@ -394,6 +408,7 @@
     "text": "Produktion & Werkstatt",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "1fh0lb",
      "1vej1i"
     ]
    },
@@ -408,6 +423,7 @@
     "text": "Für gewerblich tätige Mitarbeitende, die mit Arbeitsmitteln, Maschinen und betrieblichen Gefährdungen umgehen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "dugl0v"
     ]
    },
@@ -438,7 +454,10 @@
    "children": [],
    "settings": {
     "text": "Arbeitsschutz & sicheres Verhalten",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Arbeitsschutz & sicheres Verhalten"
   },
@@ -449,7 +468,10 @@
    "children": [],
    "settings": {
     "text": "Umgang mit Maschinen & Arbeitsmitteln",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Umgang mit Maschinen & Arbeitsmitteln"
   },
@@ -460,7 +482,10 @@
    "children": [],
    "settings": {
     "text": "Risiken erkennen & Unfälle vermeiden",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Risiken erkennen & Unfälle vermeiden"
   },
@@ -497,6 +522,7 @@
     "text": "Passende Inhalte aus dem Bereich Arbeitsschutz.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "3ruidn",
      "18je7c"
     ]
    },
@@ -595,6 +621,7 @@
     "text": "Führungskräfte",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "1fh0lb",
      "1vej1i"
     ]
    },
@@ -609,6 +636,7 @@
     "text": "Für Menschen mit Personal- und Führungsverantwortung, die Orientierung geben und Zusammenarbeit gestalten.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "dugl0v"
     ]
    },
@@ -639,7 +667,10 @@
    "children": [],
    "settings": {
     "text": "Führung & Kommunikation",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Führung & Kommunikation"
   },
@@ -650,7 +681,10 @@
    "children": [],
    "settings": {
     "text": "Verantwortung & Compliance",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Verantwortung & Compliance"
   },
@@ -661,7 +695,10 @@
    "children": [],
    "settings": {
     "text": "Zusammenarbeit & Veränderung",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Zusammenarbeit & Veränderung"
   },
@@ -698,6 +735,7 @@
     "text": "Gemeinsam die passenden Lernthemen auswählen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "3ruidn",
      "18je7c"
     ]
    },
@@ -729,10 +767,99 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-l)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
+    }
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
     }
    }
   },
@@ -931,9 +1058,6 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    },
-    "_typography": {
-     "font-size": "var(--h4)"
     }
    }
   },
@@ -946,7 +1070,6 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
@@ -962,9 +1085,6 @@
      "right": "0",
      "bottom": "var(--space-s)",
      "left": "0"
-    },
-    "_typography": {
-     "font-size": "var(--text-s)"
     }
    }
   },
@@ -987,7 +1107,6 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-xs)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }

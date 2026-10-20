@@ -64,7 +64,10 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Pfad"
   },
@@ -123,6 +126,7 @@
     "text": "Passendes Wissen.<br>Für die Menschen<br>in Ihrem Unternehmen.",
     "tag": "h1",
     "_cssGlobalClasses": [
+     "2b63w4",
      "1ey20h",
      "2chdce"
     ]
@@ -138,6 +142,7 @@
     "text": "Ob Büro, Werkstatt oder Führungsaufgabe: Unterschiedliche Tätigkeiten brauchen unterschiedliches Wissen. Finden Sie passende Lernthemen für Ihr Team – und den richtigen Weg, Lernen zu organisieren.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "1tfved",
      "7ish7h"
     ]
    },
@@ -228,6 +233,7 @@
     "text": "Vom Arbeitsalltag<br>zum passenden Lernen.",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "1fh0lb",
      "hfad5o"
     ]
    },
@@ -282,7 +288,8 @@
      }
     ],
     "_cssGlobalClasses": [
-     "204b0q"
+     "204b0q",
+     "283ul1"
     ]
    },
    "label": "Nummer"
@@ -307,6 +314,7 @@
     "text": "Zielgruppe wählen",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "27hx45"
     ]
    },
@@ -321,6 +329,7 @@
     "text": "Für wen möchten Sie Lernen ermöglichen?",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "2pdd1n"
     ]
    },
@@ -358,7 +367,8 @@
      }
     ],
     "_cssGlobalClasses": [
-     "204b0q"
+     "204b0q",
+     "283ul1"
     ]
    },
    "label": "Nummer"
@@ -383,6 +393,7 @@
     "text": "Passende Themen entdecken",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "27hx45"
     ]
    },
@@ -397,6 +408,7 @@
     "text": "Unterweisung, Sensibilisierung, Weiterbildung.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "2pdd1n"
     ]
    },
@@ -434,7 +446,8 @@
      }
     ],
     "_cssGlobalClasses": [
-     "204b0q"
+     "204b0q",
+     "283ul1"
     ]
    },
    "label": "Nummer"
@@ -459,6 +472,7 @@
     "text": "Lösung finden",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "27hx45"
     ]
    },
@@ -473,6 +487,7 @@
     "text": "Direkt buchen oder persönlich beraten lassen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "2pdd1n"
     ]
    },
@@ -503,7 +518,6 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-l)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
@@ -547,7 +561,6 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "calc(var(--h1) * 1.2)",
      "line-height": "1.1"
     }
    }
@@ -621,7 +634,6 @@
      "bottom": "var(--space-s)"
     },
     "_typography": {
-     "font-size": "var(--h3)",
      "line-height": "1.2",
      "color": {
       "raw": "var(--white)"
@@ -713,10 +725,99 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "color": {
       "raw": "var(--white-trans-80)"
      }
+    }
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
     }
    }
   },
@@ -731,7 +832,6 @@
      "left": "0"
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
@@ -751,6 +851,13 @@
    "name": "office-plan--straight",
    "settings": {
     "_cssCustom": ".office-plan.office-plan--straight {\n  transform: none;\n}"
+   }
+  },
+  {
+   "id": "283ul1",
+   "name": "office-plan__number--large",
+   "settings": {
+    "_cssCustom": ".office-plan__number.office-plan__number--large {\n  font-size: var(--h3);\n  line-height: 1;\n}"
    }
   },
   {

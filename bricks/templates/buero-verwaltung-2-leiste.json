@@ -50,7 +50,10 @@
    "children": [],
    "settings": {
     "text": "Praxisnahe E-Learnings",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Vorteil: Praxisnahe E-Learnings"
   },
@@ -61,7 +64,10 @@
    "children": [],
    "settings": {
     "text": "Bedarfsgerechte Themenauswahl",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Vorteil: Bedarfsgerechte Themenauswahl"
   },
@@ -72,7 +78,10 @@
    "children": [],
    "settings": {
     "text": "Einzelkurse, Flatrate oder Unternehmenslösung",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Vorteil: Einzelkurse, Flatrate oder Unternehmenslösung"
   }
@@ -124,10 +133,99 @@
      }
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "font-weight": "700"
     },
     "_cssCustom": ".office-strip__list > li::before {\n  content: \"✓\";\n  margin-right: 0.8em;\n  color: var(--action-dark);\n}"
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
+    }
    }
   }
  ]

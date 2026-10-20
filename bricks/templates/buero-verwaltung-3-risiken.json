@@ -67,6 +67,7 @@
     "text": "Auch im Büro gibt es Risiken.<br>Das passende Wissen hilft.",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h"
     ]
    },
@@ -81,6 +82,7 @@
     "text": "Ein falsch eingerichteter Arbeitsplatz, eine täuschend echte E-Mail oder sensible Daten im falschen Verteiler: Sicherheit beginnt bei alltäglichen Entscheidungen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "1tfved",
      "7ish7h"
     ]
    },
@@ -130,6 +132,7 @@
     "text": "Arbeitsschutz & Gesundheit",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "19wbnk"
     ]
    },
@@ -144,6 +147,7 @@
     "text": "Erstunterweisung und Büro- und Bildschirmarbeit legen die Grundlage. Je nach Arbeitsumgebung ergänzen Themen wie mobiles Arbeiten, Stolpergefahren oder Desk-Sharing die Auswahl.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -174,6 +178,7 @@
     "text": "Datenschutz & IT-Sicherheit",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "19wbnk"
     ]
    },
@@ -188,6 +193,7 @@
     "text": "Wer mit Kunden-, Personal- oder Unternehmensdaten arbeitet, braucht Orientierung. Sensibilisieren Sie für den Umgang mit Daten, verdächtige E-Mails und Informationssicherheit unterwegs.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -218,6 +224,7 @@
     "text": "Zusammenarbeit & Compliance",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "19wbnk"
     ]
    },
@@ -232,6 +239,7 @@
     "text": "Gleichbehandlung und klare Verhaltensregeln unterstützen ein respektvolles Miteinander. KI-Nutzung und Hinweisgeberschutz ergänzen das Wissen passend zur Tätigkeit.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -272,7 +280,6 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-l)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
@@ -347,9 +354,96 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    },
+    }
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
     "_typography": {
      "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
     }
    }
   },

@@ -69,6 +69,7 @@
     "text": "Ihre Fragen zur Unterweisung",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h"
     ]
    },
@@ -120,6 +121,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -132,7 +134,10 @@
    "children": [],
    "settings": {
     "text": "Nein. Die Pakete helfen bei der Themenplanung. Welche Unterweisungen erforderlich sind, hängt unter anderem von Tätigkeit, Gefährdungsbeurteilung und betrieblichen Vorgaben ab. Ergänzende Themen dienen der Sensibilisierung und Weiterbildung. Die Auswahl ersetzt keine Prüfung Ihres konkreten Unterweisungsbedarfs.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx"
+    ]
    },
    "label": "Antwort"
   },
@@ -163,6 +168,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -175,7 +181,10 @@
    "children": [],
    "settings": {
     "text": "Digitale Inhalte können Unterweisungen unterstützen. Arbeitsplatzbezogene Ergänzungen, eine Verständnisprüfung und die Möglichkeit mündlicher Rückfragen müssen berücksichtigt werden. Praktische Einweisungen bleiben dort erforderlich, wo die Tätigkeit sie verlangt. <a href=\"https://dguv.de/fb-org/sachgebiete/themen/elektronische-unterweisung/index.jsp\">Mehr dazu bei der DGUV</a>.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx"
+    ]
    },
    "label": "Antwort"
   },
@@ -206,6 +215,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -218,7 +228,10 @@
    "children": [],
    "settings": {
     "text": "Das Lernpaket zeigt eine sinnvolle Zusammenstellung von Themen. Die Flatrate ist eine Buchungsform im eCampus und umfasst einen darüber hinausgehenden Katalog. Maßgeblich für enthaltene Kurse, Laufzeit und Preise ist das aktuelle Shopangebot.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx"
+    ]
    },
    "label": "Antwort"
   },
@@ -249,6 +262,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -261,7 +275,10 @@
    "children": [],
    "settings": {
     "text": "Wenn Mitarbeitende mehrere Themen bearbeiten sollen oder sich ihr Schulungsbedarf über das Jahr verändert. Vergleichen Sie die aktuellen Einzelkurspreise mit dem Flatrate-Angebot für die gewünschte Anzahl an Personen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx"
+    ]
    },
    "label": "Antwort"
   },
@@ -292,6 +309,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -304,7 +322,10 @@
    "children": [],
    "settings": {
     "text": "Wählen Sie im Lösungsfinder „Inhalte für unser eigenes LMS“. Der Vertrieb klärt mit Ihnen die passenden Inhalte, Lizenzierung und technischen Anforderungen Ihrer Lernplattform.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx"
+    ]
    },
    "label": "Antwort"
   },
@@ -335,6 +356,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -347,7 +369,10 @@
    "children": [],
    "settings": {
     "text": "Beginnen Sie bei Tätigkeiten und Risiken: Welche Aufgaben übernehmen Ihre Mitarbeitenden? Arbeiten sie mobil, verarbeiten sie personenbezogene Daten oder nutzen sie KI? Wählen Sie daraus relevante Themen und ergänzen Sie die betrieblichen Besonderheiten.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx"
+    ]
    },
    "label": "Antwort"
   }
@@ -428,6 +453,96 @@
      }
     },
     "_cssCustom": ".office-faq__item > p {\n  margin: var(--space-xs) 0 0;\n  color: var(--text-dark-muted);\n}"
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
+    }
    }
   },
   {

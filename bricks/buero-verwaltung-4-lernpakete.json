@@ -67,6 +67,7 @@
     "text": "So viel Basis wie nötig.<br>So viel Vertiefung wie sinnvoll.",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h"
     ]
    },
@@ -81,6 +82,7 @@
     "text": "Nutzen Sie die Pakete als Orientierung für Ihren Lernplan. Jedes größere Paket enthält alle Themen der vorherigen Stufe. Welche Inhalte Ihr Team benötigt, richtet sich nach den Aufgaben und Bedingungen im Betrieb.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -163,6 +165,7 @@
     "text": "Basisschutz",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "15sqgw"
     ]
    },
@@ -177,6 +180,7 @@
     "text": "Die Grundlage für den Büroalltag.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "1nhupm"
     ]
    },
@@ -191,6 +195,7 @@
     "text": "Diese fünf Themen bilden die Basis:",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "1feksd"
     ]
    },
@@ -223,7 +228,10 @@
    "children": [],
    "settings": {
     "text": "Erstunterweisung",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Erstunterweisung"
   },
@@ -234,7 +242,10 @@
    "children": [],
    "settings": {
     "text": "Büro- und Bildschirmarbeit",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Büro- und Bildschirmarbeit"
   },
@@ -245,7 +256,10 @@
    "children": [],
    "settings": {
     "text": "Grundlagen der Informationssicherheit",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Grundlagen der Informationssicherheit"
   },
@@ -256,7 +270,10 @@
    "children": [],
    "settings": {
     "text": "Grundlagen des Datenschutzes – Büro & Verwaltung",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Grundlagen des Datenschutzes – Büro & Verwaltung"
   },
@@ -267,7 +284,10 @@
    "children": [],
    "settings": {
     "text": "Allgemeines Gleichbehandlungsgesetz",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Allgemeines Gleichbehandlungsgesetz"
   },
@@ -361,6 +381,7 @@
     "text": "Erweiterter Schutz",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "15sqgw"
     ]
    },
@@ -375,6 +396,7 @@
     "text": "Mehr Orientierung für digitale und mobile Arbeit.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "1nhupm"
     ]
    },
@@ -389,6 +411,7 @@
     "text": "Alle Themen aus Basisschutz +",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "1feksd"
     ]
    },
@@ -421,7 +444,10 @@
    "children": [],
    "settings": {
     "text": "Phishingattacken abwehren: Sicheres Arbeiten mit E-Mails",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Phishingattacken abwehren: Sicheres Arbeiten mit E-Mails"
   },
@@ -432,7 +458,10 @@
    "children": [],
    "settings": {
     "text": "Mobiles Arbeiten",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Mobiles Arbeiten"
   },
@@ -443,7 +472,10 @@
    "children": [],
    "settings": {
     "text": "Code of Conduct",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Code of Conduct"
   },
@@ -454,7 +486,10 @@
    "children": [],
    "settings": {
     "text": "KI-Anwendungen sicher einsetzen",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: KI-Anwendungen sicher einsetzen"
   },
@@ -465,7 +500,10 @@
    "children": [],
    "settings": {
     "text": "Whistleblowing und Hinweisgeberschutz",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Whistleblowing und Hinweisgeberschutz"
   },
@@ -557,6 +595,7 @@
     "text": "Rundum-Paket",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "15sqgw"
     ]
    },
@@ -571,6 +610,7 @@
     "text": "Breiter aufgestellt für vielfältige Arbeitssituationen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "1nhupm"
     ]
    },
@@ -585,6 +625,7 @@
     "text": "Alle Themen aus Erweiterter Schutz +",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "1feksd"
     ]
    },
@@ -617,7 +658,10 @@
    "children": [],
    "settings": {
     "text": "Energieeffizientes Verhalten in Büro & Verwaltung",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Energieeffizientes Verhalten in Büro & Verwaltung"
   },
@@ -628,7 +672,10 @@
    "children": [],
    "settings": {
     "text": "Stolpern, Rutschen, Stürzen",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Stolpern, Rutschen, Stürzen"
   },
@@ -639,7 +686,10 @@
    "children": [],
    "settings": {
     "text": "Desk-Sharing",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Desk-Sharing"
   },
@@ -650,7 +700,10 @@
    "children": [],
    "settings": {
     "text": "Informationssicherheit beim mobilen Arbeiten",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Informationssicherheit beim mobilen Arbeiten"
   },
@@ -661,7 +714,10 @@
    "children": [],
    "settings": {
     "text": "Alkohol, Drogen und Medikamente",
-    "tag": "li"
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Thema: Alkohol, Drogen und Medikamente"
   },
@@ -705,6 +761,7 @@
     "text": "Die Lernpakete beschreiben eine Themenauswahl, keinen gesonderten Pauschaltarif. Den passenden Buchungs- oder Lizenzweg wählen Sie im nächsten Schritt. „Rundum“ bedeutet hier 15 ausgewählte Themen, keine vollständige Abdeckung aller betrieblichen Pflichten.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "d0brm0",
      "z19dk2"
     ]
    },
@@ -888,9 +945,6 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    },
-    "_typography": {
-     "font-size": "var(--h4)"
     }
    }
   },
@@ -903,7 +957,6 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
@@ -938,7 +991,6 @@
      }
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "color": {
       "raw": "var(--primary-dark)"
      }
@@ -954,9 +1006,6 @@
      "right": "0",
      "bottom": "var(--space-s)",
      "left": "0"
-    },
-    "_typography": {
-     "font-size": "var(--text-s)"
     }
    }
   },
@@ -979,10 +1028,99 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
+    }
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
     }
    }
   }

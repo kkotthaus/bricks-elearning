@@ -83,6 +83,7 @@
     "text": "15 Themen. Nah am Arbeitsalltag.",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h"
     ]
    },
@@ -97,6 +98,7 @@
     "text": "Öffnen Sie ein Thema und erfahren Sie, wofür es relevant ist.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -134,6 +136,7 @@
      }
     ],
     "_cssGlobalClasses": [
+     "d0brm0",
      "2a12dz"
     ]
    },
@@ -187,6 +190,9 @@
       "name": "data-value",
       "value": "15"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Alle 15 Themen"
@@ -205,6 +211,9 @@
       "name": "data-value",
       "value": "5"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Basisschutz · 5 Themen"
@@ -223,6 +232,9 @@
       "name": "data-value",
       "value": "10"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Erweiterter Schutz · 10 Themen"
@@ -292,6 +304,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -304,7 +317,10 @@
    "children": [],
    "settings": {
     "text": "Sicher in den Arbeitsalltag starten und grundlegende Verhaltensweisen kennenlernen. Betriebliche Abläufe und Ansprechpartner ergänzen die allgemeinen Inhalte.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -318,7 +334,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -357,6 +376,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -369,7 +389,10 @@
    "children": [],
    "settings": {
     "text": "Für Beschäftigte am Schreibtisch: den Arbeitsplatz bewusst gestalten und Belastungen im Büroalltag erkennen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -383,7 +406,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -422,6 +448,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -434,7 +461,10 @@
    "children": [],
    "settings": {
     "text": "Unternehmensinformationen schützen und typische Sicherheitsrisiken im täglichen Umgang mit digitalen Informationen erkennen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -448,7 +478,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/e/grundlagen-informationssicherheit-173"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -487,6 +520,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -499,7 +533,10 @@
    "children": [],
    "settings": {
     "text": "Für alle, die personenbezogene Daten verarbeiten: einen bewussten Umgang mit Kunden-, Personal- und Kontaktdaten fördern.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -513,7 +550,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/e/datenschutz-b%C3%BCro-verwaltung-175"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -552,6 +592,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -564,7 +605,10 @@
    "children": [],
    "settings": {
     "text": "Für ein respektvolles Arbeitsumfeld sensibilisieren und Benachteiligung im beruflichen Alltag erkennen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -578,7 +622,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -617,6 +664,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -629,7 +677,10 @@
    "children": [],
    "settings": {
     "text": "Verdächtige Nachrichten bewusster prüfen und Risiken durch Links, Anhänge und Täuschungsversuche erkennen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -643,7 +694,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -682,6 +736,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -694,7 +749,10 @@
    "children": [],
    "settings": {
     "text": "Für wechselnde Arbeitsorte sensibilisieren und Sicherheit sowie gesundes Arbeiten auch außerhalb des Büros mitdenken.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -708,7 +766,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -747,6 +808,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -759,7 +821,10 @@
    "children": [],
    "settings": {
     "text": "Gemeinsame Verhaltensmaßstäbe verstehen und verantwortliches Handeln im Unternehmen stärken.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -773,7 +838,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/e/code-of-conduct-156"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -812,6 +880,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -824,7 +893,10 @@
    "children": [],
    "settings": {
     "text": "Für Mitarbeitende, die KI nutzen: Chancen und Risiken im Arbeitsalltag reflektieren und interne Regeln berücksichtigen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -838,7 +910,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -877,6 +952,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -889,7 +965,10 @@
    "children": [],
    "settings": {
     "text": "Für den verantwortungsvollen Umgang mit Hinweisen auf Missstände sensibilisieren. Betriebliche Meldewege ergänzen das Wissen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -903,7 +982,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -942,6 +1024,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -954,7 +1037,10 @@
    "children": [],
    "settings": {
     "text": "Möglichkeiten erkennen, im Arbeitsalltag Energie bewusster einzusetzen und Ressourcen zu schonen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -968,7 +1054,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -1007,6 +1096,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -1019,7 +1109,10 @@
    "children": [],
    "settings": {
     "text": "Unfallrisiken auf Wegen und am Arbeitsplatz wahrnehmen und zu einem sicheren Büroumfeld beitragen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -1033,7 +1126,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -1072,6 +1168,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -1084,7 +1181,10 @@
    "children": [],
    "settings": {
     "text": "Für gemeinsam genutzte Arbeitsplätze: sichere, geordnete und auf den jeweiligen Nutzer abgestimmte Arbeitsbedingungen mitdenken.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -1098,7 +1198,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -1137,6 +1240,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -1149,7 +1253,10 @@
    "children": [],
    "settings": {
     "text": "Sensible Informationen auch unterwegs und an wechselnden Arbeitsorten schützen.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -1163,7 +1270,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   },
@@ -1202,6 +1312,7 @@
     "tag": "custom",
     "customTag": "summary",
     "_cssGlobalClasses": [
+     "vf9abx",
      "9al98e"
     ]
    },
@@ -1214,7 +1325,10 @@
    "children": [],
    "settings": {
     "text": "Für mögliche Auswirkungen auf Aufmerksamkeit und sicheres Verhalten bei der Arbeit sensibilisieren.",
-    "tag": "p"
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Beschreibung"
   },
@@ -1228,7 +1342,10 @@
     "link": {
      "type": "external",
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
-    }
+    },
+    "_cssGlobalClasses": [
+     "d0brm0"
+    ]
    },
    "label": "Link zum Shop"
   }
@@ -1283,7 +1400,6 @@
      "bottom": "var(--space-xs)"
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "font-weight": "700",
      "color": {
       "raw": "var(--text-dark)"
@@ -1386,7 +1502,7 @@
       "raw": "var(--border-color-dark)"
      }
     },
-    "_cssCustom": "/* <details>: Bricks-Block wäre flex; Filter blendet per hidden aus */\n.office-course[hidden] {\n  display: none;\n}\n\n.office-course > p {\n  margin: var(--space-xs) 0 var(--space-xs);\n  padding-left: 3.4rem;\n  font-size: var(--text-s);\n  color: var(--text-dark-muted);\n}\n\n.office-course > a {\n  display: inline-block;\n  margin-left: 3.4rem;\n  font-size: var(--text-s);\n  font-weight: 700;\n}"
+    "_cssCustom": "/* <details>: Bricks-Block wäre flex; Filter blendet per hidden aus */\n.office-course[hidden] {\n  display: none;\n}\n\n.office-course > p {\n  margin: var(--space-xs) 0 var(--space-xs);\n  padding-left: 3.4rem;\n  color: var(--text-dark-muted);\n}\n\n.office-course > a {\n  display: inline-block;\n  margin-left: 3.4rem;\n  font-weight: 700;\n}"
    }
   },
   {
@@ -1400,6 +1516,96 @@
      "font-weight": "700"
     },
     "_cssCustom": ".office-summary {\n  cursor: pointer;\n  list-style: none;\n}\n\n.office-summary::-webkit-details-marker {\n  display: none;\n}\n\n/* Plus/Minus rechts wie Vorlage */\n.office-summary::after {\n  content: \"+\";\n  margin-left: auto;\n  padding-left: var(--space-xs);\n  font-size: var(--text-xl);\n  line-height: 1;\n  color: var(--primary);\n}\n\ndetails[open] > .office-summary::after {\n  content: \"−\";\n}\n\n.office-summary small {\n  flex-shrink: 0;\n  min-width: 2.4rem;\n  font-size: var(--text-xs);\n  font-weight: 400;\n  color: var(--text-dark-muted);\n}\n\n.office-summary:focus-visible {\n  outline: 2px solid var(--primary);\n  outline-offset: 4px;\n}"
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
+    }
    }
   },
   {

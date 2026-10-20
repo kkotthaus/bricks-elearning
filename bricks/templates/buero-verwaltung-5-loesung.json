@@ -83,6 +83,7 @@
     "text": "Für Ihr Team.<br>In Ihrer Lernumgebung.",
     "tag": "h2",
     "_cssGlobalClasses": [
+     "25s4zv",
      "1ey20h"
     ]
    },
@@ -97,6 +98,7 @@
     "text": "Sie möchten direkt buchen oder die Unterweisung für Ihr Unternehmen organisieren? Finden Sie den passenden nächsten Schritt.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "1tfved",
      "7ish7h"
     ]
    },
@@ -111,6 +113,7 @@
     "text": "Bei mehr als 50 Mitarbeitenden im Unternehmen, einem eigenen LMS oder individuellen Anforderungen unterstützt Sie unser Vertrieb bei der Auswahl.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -151,6 +154,7 @@
      }
     ],
     "_cssGlobalClasses": [
+     "d0brm0",
      "2a12dz"
     ]
    },
@@ -203,6 +207,9 @@
       "name": "data-value",
       "value": "small"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Bis zu 50 Mitarbeitende"
@@ -221,6 +228,9 @@
       "name": "data-value",
       "value": "large"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Mehr als 50 Mitarbeitende"
@@ -242,6 +252,7 @@
      }
     ],
     "_cssGlobalClasses": [
+     "d0brm0",
      "2a12dz"
     ]
    },
@@ -296,6 +307,9 @@
       "name": "data-value",
       "value": "flat"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Mehrere Themen / ein Lernpaket"
@@ -314,6 +328,9 @@
       "name": "data-value",
       "value": "single"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Einen einzelnen Kurs"
@@ -332,6 +349,9 @@
       "name": "data-value",
       "value": "lms"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Inhalte für unser eigenes LMS"
@@ -350,6 +370,9 @@
       "name": "data-value",
       "value": "advice"
      }
+    ],
+    "_cssGlobalClasses": [
+     "vf9abx"
     ]
    },
    "label": "Option: Eine individuelle Lösung / Beratung"
@@ -406,6 +429,7 @@
     "text": "Mehrere Themen? Flatrate prüfen.",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2a25zi"
     ]
    },
@@ -420,6 +444,7 @@
     "text": "Mit der eCampus-Flatrate bündeln Sie den Schulungsbedarf Ihrer Mitarbeitenden. Preise, enthaltene Kurse und Buchung finden Sie direkt im Shop.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "qxa5a1"
     ]
    },
@@ -480,6 +505,7 @@
     "text": "Gezielt einen Kurs buchen",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2a25zi"
     ]
    },
@@ -494,6 +520,7 @@
     "text": "Wählen Sie im eCampus das Thema, das Sie jetzt benötigen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "qxa5a1"
     ]
    },
@@ -570,6 +597,7 @@
     "text": "Persönlich zur passenden Unternehmenslösung",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2a25zi"
     ]
    },
@@ -584,6 +612,7 @@
     "text": "Stimmen Sie Themen, Einsatz und Lizenzierung mit unserem Vertrieb ab<span data-office-lms hidden> – passend zu Ihrem bestehenden LMS</span>.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "qxa5a1"
     ]
    },
@@ -657,6 +686,7 @@
     "text": "Unternehmenslösung",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2fq1mn"
     ]
    },
@@ -671,6 +701,7 @@
     "text": "Für größere Unternehmen, eigene Lernplattformen und individuelle Anforderungen: Besprechen Sie Inhalte und Einsatz mit unserem Vertrieb.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -688,6 +719,7 @@
      "url": "https://www.weka-elearning.de/kontakt/"
     },
     "_cssGlobalClasses": [
+     "vf9abx",
      "2p0hoe"
     ]
    },
@@ -719,6 +751,7 @@
     "text": "Flatrate im eCampus",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2fq1mn"
     ]
    },
@@ -733,6 +766,7 @@
     "text": "Für kleine Teams mit mehreren Schulungsthemen: Unterweisungen pro Mitarbeitendem bündeln und online buchen. Aktueller Preis und Konditionen im Shop.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -750,6 +784,7 @@
      "url": "https://lernen.weka.de/de/e/weka-ecampus-flatrate-unterweisungen-140"
     },
     "_cssGlobalClasses": [
+     "vf9abx",
      "2p0hoe"
     ]
    },
@@ -781,6 +816,7 @@
     "text": "Einzelne Kurse",
     "tag": "h3",
     "_cssGlobalClasses": [
+     "2bumb9",
      "2fq1mn"
     ]
    },
@@ -795,6 +831,7 @@
     "text": "Für einen konkreten Schulungsbedarf: Den passenden Kurs auswählen und im eCampus direkt buchen.",
     "tag": "p",
     "_cssGlobalClasses": [
+     "vf9abx",
      "7kqp5k"
     ]
    },
@@ -812,6 +849,7 @@
      "url": "https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende"
     },
     "_cssGlobalClasses": [
+     "vf9abx",
      "2p0hoe"
     ]
    },
@@ -852,7 +890,6 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--text-l)",
      "color": {
       "raw": "var(--text-dark-muted)"
      }
@@ -884,7 +921,6 @@
      "bottom": "var(--space-xs)"
     },
     "_typography": {
-     "font-size": "var(--text-s)",
      "font-weight": "700",
      "color": {
       "raw": "var(--text-dark)"
@@ -1036,7 +1072,6 @@
      "bottom": "0"
     },
     "_typography": {
-     "font-size": "var(--h4)",
      "color": {
       "raw": "var(--white)"
      }
@@ -1050,9 +1085,6 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    },
-    "_typography": {
-     "font-size": "var(--text-m)"
     }
    }
   },
@@ -1110,9 +1142,6 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
-    },
-    "_typography": {
-     "font-size": "var(--h4)"
     }
    }
   },
@@ -1127,6 +1156,96 @@
      "font-weight": "700"
     },
     "_cssCustom": ".office-path__link {\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}"
+   }
+  },
+  {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
+    }
    }
   },
   {
