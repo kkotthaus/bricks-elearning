@@ -255,7 +255,7 @@ const PACKAGES = [
     const list = b.add(li, 'block', 'Themen', { tag: 'ul', ...C('office-ticks', 'office-package__list') });
     for (const [t] of COURSES.slice(i * 5, i * 5 + 5)) b.add(list, 'text-basic', `Thema: ${t}`, { text: t, tag: 'li' });
     b.add(li, 'button', `Button: Lösung für ${n} Themen finden`, {
-      text: `Lösung für ${n} Themen finden`, link: link('#loesung'), ...arrow, _attributes: [['data-office-need', 'flat']],
+      text: `Lösung für ${n} Themen finden`, link: link('#loesung'), ...arrow, _attributes: [['data-office-need', 'flat'], ['data-office-filter', String(n)]],
       ...C('acss:btn--primary', ...(i === 1 ? [] : ['acss:btn--outline']), 'office-package__button'),
     });
   });

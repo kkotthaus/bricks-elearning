@@ -21,7 +21,9 @@
        (jeweils die erste Option der Liste – Reihenfolge im Builder nicht ändern).
      - Buttons [data-office-need="flat"] in den Lernpaketen stellen „Mehrere Themen“ ein (der Link springt zu #loesung).
    Themenfilter (Section „Die Themen im Überblick“):
-     - Themen [data-office-level="5|10|15"]; gezeigt werden alle mit Stufe ≤ Auswahl. */
+     - Themen [data-office-level="5|10|15"]; gezeigt werden alle mit Stufe ≤ Auswahl.
+     - Buttons [data-office-filter="5|10|15"] in den Lernpaketen stellen zusätzlich den Filter auf ihre Themenzahl
+       (ohne Sprung – der Link führt weiter zum Lösungsfinder). */
 (function () {
   'use strict';
 
@@ -74,5 +76,11 @@
       c.hidden = Number(c.getAttribute('data-office-level')) > max;
     });
   }
-  if (filter) { filter.addEventListener('change', filterCourses); filterCourses(); }
+  if (filter) {
+    filter.addEventListener('change', filterCourses);
+    document.querySelectorAll('[data-office-filter]').forEach(function (b) {
+      b.addEventListener('click', function () { filter.value = b.getAttribute('data-office-filter'); filterCourses(); });
+    });
+    filterCourses();
+  }
 })();

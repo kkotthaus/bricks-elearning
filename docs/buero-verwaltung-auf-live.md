@@ -55,17 +55,33 @@ Umsetzungsregeln:
 4. Prüfen:
    - „Was benötigen Sie?“ umstellen: Die blaue Empfehlung wechselt (Flatrate / Einzelkurs / Beratung). Bei „Inhalte für unser eigenes LMS“ steht im Beratungstext „– passend zu Ihrem bestehenden LMS“.
    - „Mehr als 50 Mitarbeitende“ zeigt immer die Beratung.
-   - Button „Lösung für 10 Themen finden“ springt zum Lösungsfinder und stellt „Mehrere Themen / ein Lernpaket“ ein.
+   - Button „Lösung für 10 Themen finden“ springt zum Lösungsfinder, stellt „Mehrere Themen / ein Lernpaket“ ein und unter „Die Themen im Überblick“ die Auswahl auf 10 Themen (bei 5 und 15 entsprechend).
    - „Auswahl anzeigen“ zeigt 5, 10 oder alle 15 Themen.
    - Themen und Fragen klappen auf und zu, auch mit der Tastatur (Tab, Enter).
    - In allen Breakpoints ansehen (Desktop, Tablet, Handy).
 5. Veröffentlichen, wenn alles stimmt.
+
+## Update 23.10.2026: Paket-Buttons stellen die Themenzahl ein
+
+Nur nötig, wenn die Seite auf Live schon vor dem 23.10.2026 gebaut wurde. Wer die Seite neu baut, bekommt die Änderung mit den Vorlagen und dem Snippet automatisch.
+
+Neu: Die Buttons „Lösung für 5/10/15 Themen finden“ springen wie bisher zum Lösungsfinder und stellen dort „Mehrere Themen / ein Lernpaket“ ein. Zusätzlich stellen sie unter „Die Themen im Überblick“ die Auswahl auf ihre Themenzahl.
+
+1. Sicherung (Duplicator: Backup erstellen).
+2. WPCodeBox: Snippet „WEKA Büro & Verwaltung – Lösungsfinder“ öffnen, den ganzen Code durch den Inhalt von `snippets/weka-buero-verwaltung.js` ersetzen, speichern. Prüfen, ob das Snippet noch aktiviert ist.
+3. Seite „Büro-Verwaltung“ mit Bricks bearbeiten, Section „Lernpakete“:
+   - Button „Lösung für 5 Themen finden“ auswählen › **Stil › Attribute**. Das vorhandene Attribut `data-office-need` = `flat` bleibt. Neues Attribut: Name `data-office-filter`, Wert `5`.
+   - Button für 10 Themen: dasselbe mit Wert `10`.
+   - Button für 15 Themen: dasselbe mit Wert `15`.
+   - Den Link (`#loesung`) nicht ändern. Speichern.
+4. Prüfen im Frontend: „Lösung für 10 Themen finden“ klicken – die Seite springt zum Lösungsfinder; weiter unten unter „Die Themen im Überblick“ steht „Auswahl anzeigen“ auf 10 Themen, und es sind 10 Themen zu sehen.
 
 ## Inhalte ändern
 
 - Texte, Links und Themen direkt im Builder ändern. Ein Thema gehört über das Attribut `data-office-level` (5, 10 oder 15) zu einer Stufe des Filters.
 - Optionen der Auswahlfelder: Listeneintrag im Builder, Wert im Attribut `data-value`. Die Werte `small`/`large` und `flat`/`single`/`lms`/`advice` wertet das Snippet aus – nicht umbenennen.
 - Die drei Empfehlungen sind Blöcke mit dem Attribut `data-office-result` (`flat`, `single`, `advice`).
+- Die Buttons der Lernpakete springen zum Lösungsfinder (`#loesung`). Attribut `data-office-need` = `flat` stellt dort „Mehrere Themen / ein Lernpaket“ ein, Attribut `data-office-filter` (5, 10 oder 15) stellt den Themenfilter auf diese Zahl (entschieden 23.10.2026).
 
 ## Hinweise
 
@@ -82,4 +98,3 @@ Umsetzungsregeln:
 Themenfilter (Section „Die Themen im Überblick“): Umgesetzt wie im Entwurf. Die Vorgaben dazu macht der Kunde (Stand 19.10.2026).
 
 - **Name der Stufe 15:** Im Filter heißt sie „Alle 15 Themen“, bei den Lernpaketen „Rundum-Paket“. Soll im Filter „Rundum-Paket · 15 Themen“ stehen?
-- **Buttons der Lernpakete:** „Lösung für 5/10/15 Themen finden“ springen zum Lösungsfinder und stellen dort „Mehrere Themen / ein Lernpaket“ ein. Den Themenfilter stellen sie nicht ein. Ist das so gewollt?

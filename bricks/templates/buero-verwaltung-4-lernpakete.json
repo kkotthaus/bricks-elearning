@@ -314,6 +314,11 @@
       "id": "bvp020a0",
       "name": "data-office-need",
       "value": "flat"
+     },
+     {
+      "id": "bvp020a1",
+      "name": "data-office-filter",
+      "value": "5"
      }
     ],
     "_cssGlobalClasses": [
@@ -530,6 +535,11 @@
       "id": "bvp033a0",
       "name": "data-office-need",
       "value": "flat"
+     },
+     {
+      "id": "bvp033a1",
+      "name": "data-office-filter",
+      "value": "10"
      }
     ],
     "_cssGlobalClasses": [
@@ -744,6 +754,11 @@
       "id": "bvp046a0",
       "name": "data-office-need",
       "value": "flat"
+     },
+     {
+      "id": "bvp046a1",
+      "name": "data-office-filter",
+      "value": "15"
      }
     ],
     "_cssGlobalClasses": [
