@@ -9,7 +9,7 @@
    ],
    "settings": {
     "_cssGlobalClasses": [
-     "27leu5"
+     "2hm3t0"
     ]
    },
    "label": "Hero – Büro & Verwaltung"
@@ -24,7 +24,7 @@
    ],
    "settings": {
     "_cssGlobalClasses": [
-     "vyxnax"
+     "24sawg"
     ]
    },
    "label": "Inhaltsbereich"
@@ -42,7 +42,7 @@
    ],
    "settings": {
     "_cssGlobalClasses": [
-     "1me6wd"
+     "tyrdht"
     ]
    },
    "label": "Inhalt"
@@ -56,8 +56,8 @@
     "text": "FÜR MITARBEITENDE IN BÜRO & VERWALTUNG",
     "tag": "p",
     "_cssGlobalClasses": [
-     "aq6l6g",
-     "ewi601"
+     "1gtqdy",
+     "fszm37"
     ]
    },
    "label": "Dachzeile"
@@ -71,9 +71,8 @@
     "text": "Sicher arbeiten.<br>Bewusst handeln.<br>Einfach online lernen.",
     "tag": "h1",
     "_cssGlobalClasses": [
-     "2b63w4",
-     "1ey20h",
-     "2chdce"
+     "22m70h",
+     "2oplhl"
     ]
    },
    "label": "Überschrift"
@@ -87,8 +86,8 @@
     "text": "Unterweisen Sie Ihr Team zu den Themen, die im Büroalltag zählen – von Arbeitsschutz und Datenschutz bis zum sicheren Umgang mit E-Mails und KI.",
     "tag": "p",
     "_cssGlobalClasses": [
-     "1tfved",
-     "7ish7h"
+     "2h0mxk",
+     "1mf89e"
     ]
    },
    "label": "Einleitung"
@@ -103,7 +102,7 @@
    ],
    "settings": {
     "_cssGlobalClasses": [
-     "zr1zb4"
+     "wharm7"
     ]
    },
    "label": "Button-Gruppe"
@@ -125,7 +124,8 @@
     },
     "iconPosition": "right",
     "_cssGlobalClasses": [
-     "acss_import_btn--primary"
+     "acss_import_btn--primary",
+     "1j8sle"
     ]
    },
    "label": "Button: Passende Lösung finden"
@@ -143,7 +143,8 @@
     },
     "_cssGlobalClasses": [
      "acss_import_btn--primary",
-     "acss_import_btn--outline"
+     "acss_import_btn--outline",
+     "1j8sle"
     ]
    },
    "label": "Button: Lernpakete entdecken"
@@ -157,8 +158,8 @@
     "text": "Für einzelne Mitarbeitende, kleine Teams und ganze Unternehmen.",
     "tag": "p",
     "_cssGlobalClasses": [
-     "d0brm0",
-     "1381hj"
+     "2g1tt7",
+     "1hkayj"
     ]
    },
    "label": "Hinweis"
@@ -175,7 +176,7 @@
     "tag": "custom",
     "customTag": "figure",
     "_cssGlobalClasses": [
-     "27uw3f"
+     "2jz1np"
     ]
    },
    "label": "Foto mit Bildunterschrift"
@@ -197,11 +198,11 @@
      {
       "id": "bvh012a0",
       "name": "sizes",
-      "value": "(max-width: 991px) min(100vw, 640px), 560px"
+      "value": "(max-width: 991px) min(100vw, 640px), 700px"
      }
     ],
     "_cssGlobalClasses": [
-     "f2x4yl"
+     "1isu48"
     ]
    },
    "label": "Foto"
@@ -218,7 +219,7 @@
     "tag": "custom",
     "customTag": "figcaption",
     "_cssGlobalClasses": [
-     "cqxanh"
+     "bucjr8"
     ]
    },
    "label": "Bildunterschrift"
@@ -232,8 +233,8 @@
     "text": "Sicheres Wissen für Ihren Büroalltag",
     "tag": "p",
     "_cssGlobalClasses": [
-     "1fh0lb",
-     "6y9gin"
+     "7pqjhp",
+     "2n6l22"
     ]
    },
    "label": "Titel"
@@ -244,11 +245,11 @@
    "parent": "bvh013",
    "children": [],
    "settings": {
-    "text": "Arbeitsschutz&nbsp;· Datenschutz&nbsp;· Compliance",
+    "text": "Arbeitsschutz&nbsp;&nbsp;·&ensp;Datenschutz&nbsp;&nbsp;·&ensp;Compliance",
     "tag": "p",
     "_cssGlobalClasses": [
-     "vf9abx",
-     "t936gg"
+     "or3q40",
+     "1yzfoa"
     ]
    },
    "label": "Themen"
@@ -259,113 +260,155 @@
  "version": "2.4.2",
  "globalClasses": [
   {
-   "id": "1ey20h",
-   "name": "office-title",
+   "id": "2hm3t0",
+   "name": "office-cover",
    "settings": {
-    "_margin": {
-     "top": "0",
-     "bottom": "0"
+    "_padding": {
+     "top": "calc(var(--section-space-xs) * 1.1)",
+     "bottom": "calc(var(--section-space-xs) * 1.2)"
     },
-    "_widthMax": "100%",
-    "_cssCustom": ".office-title {\n  overflow-wrap: break-word;\n  hyphens: manual;\n  letter-spacing: -0.02em;\n}"
+    "_cssCustom": "/* Sehr helles Blau, nach rechts fast weiß (Entwurf) */\n.office-cover {\n  background: linear-gradient(90deg, color-mix(in srgb, var(--primary-ultra-light) 45%, var(--white)), color-mix(in srgb, var(--primary-ultra-light) 15%, var(--white)));\n}"
    }
   },
   {
-   "id": "7ish7h",
-   "name": "office-lede",
+   "id": "24sawg",
+   "name": "office-cover__grid",
    "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "minmax(0, 715.5fr) minmax(0, 694.5fr)",
+    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-m)",
+    "_rowGap": "var(--space-xl)"
+   }
+  },
+  {
+   "id": "tyrdht",
+   "name": "office-cover__content",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_alignItems": "flex-start",
+    "_alignSelf": "start",
+    "_rowGap": "0",
+    "_cssCustom": "/* Bezugsgröße für cqi: die Textspalte */\n.office-cover__content {\n  container-type: inline-size;\n}"
+   }
+  },
+  {
+   "id": "fszm37",
+   "name": "office-cover__eyebrow",
+   "settings": {
+    "_display": "flex",
+    "_alignItems": "flex-start",
     "_margin": {
-     "top": "0",
+     "top": "3.63cqi",
      "bottom": "0"
     },
     "_typography": {
+     "font-weight": "700",
+     "line-height": "1.25",
+     "letter-spacing": "0.02em",
      "color": {
-      "raw": "var(--text-dark-muted)"
+      "raw": "var(--primary-ultra-dark)"
+     }
+    },
+    "_cssCustom": "/* Grüner Balken links (Entwurf: 12 × 36 px) */\n.office-cover__eyebrow::before {\n  content: \"\";\n  flex-shrink: 0;\n  width: 0.42em;\n  height: 1.25em;\n  margin-right: 0.77em;\n  vertical-align: top;\n  transform: translateY(-0.084em);\n  background: var(--action);\n  border-radius: 999px;\n}"
+   }
+  },
+  {
+   "id": "2oplhl",
+   "name": "office-cover__title",
+   "settings": {
+    "_margin": {
+     "top": "5.4cqi",
+     "bottom": "0"
+    },
+    "_widthMax": "100%",
+    "_typography": {
+     "font-weight": "700",
+     "line-height": "1.1",
+     "letter-spacing": "0"
+    },
+    "_cssCustom": "/* Etwas dunkler als die globale Überschriftenfarbe (Entwurf) */\n.office-cover__title {\n  color: color-mix(in srgb, var(--primary-dark) 70%, var(--primary-ultra-dark));\n}"
+   }
+  },
+  {
+   "id": "1mf89e",
+   "name": "office-cover__lede",
+   "settings": {
+    "_margin": {
+     "top": "2.53cqi",
+     "bottom": "0"
+    },
+    "_typography": {
+     "line-height": "1.2",
+     "color": {
+      "raw": "var(--primary-ultra-dark)"
      }
     }
    }
   },
   {
-   "id": "27leu5",
-   "name": "office-hero",
-   "settings": {
-    "_cssCustom": ".office-hero {\n  background: linear-gradient(115deg, var(--primary-ultra-light), var(--white) 72%);\n}"
-   }
-  },
-  {
-   "id": "vyxnax",
-   "name": "office-hero__grid",
-   "settings": {
-    "_display": "grid",
-    "_gridTemplateColumns": "minmax(0, 1.15fr) minmax(0, 1fr)",
-    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
-    "_alignItems": "center",
-    "_columnGap": "var(--space-xxl)",
-    "_rowGap": "var(--space-l)"
-   }
-  },
-  {
-   "id": "1me6wd",
-   "name": "office-hero__content",
-   "settings": {
-    "_display": "flex",
-    "_direction": "column",
-    "_rowGap": "var(--space-m)"
-   }
-  },
-  {
-   "id": "2chdce",
-   "name": "office-hero__title",
-   "settings": {
-    "_margin": {
-     "top": "0",
-     "bottom": "0"
-    },
-    "_typography": {
-     "line-height": "1.1"
-    }
-   }
-  },
-  {
-   "id": "zr1zb4",
-   "name": "office-hero__actions",
+   "id": "wharm7",
+   "name": "office-cover__actions",
    "settings": {
     "_display": "flex",
     "_direction": "row",
     "_flexWrap": "wrap",
-    "_columnGap": "var(--space-xs)",
-    "_rowGap": "var(--space-xs)",
-    "_cssCustom": "/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}"
+    "_columnGap": "2.5cqi",
+    "_rowGap": "2.5cqi",
+    "_margin": {
+     "top": "6.26cqi",
+     "bottom": "0"
+    },
+    "_cssCustom": "/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-cover__actions {\n    width: 100%;\n  }\n\n  .office-cover__actions > .brxe-button {\n    width: 100%;\n  }\n}"
    }
   },
   {
-   "id": "1381hj",
-   "name": "office-hero__note",
+   "id": "1j8sle",
+   "name": "office-cover__button",
    "settings": {
-    "_margin": {
-     "top": "0",
-     "bottom": "0"
+    "_padding": {
+     "top": "0.616em",
+     "right": "0.97em",
+     "bottom": "0.616em",
+     "left": "1.15em"
     },
+    "_columnGap": "0.47em",
     "_typography": {
-     "color": {
-      "raw": "var(--text-dark-muted)"
+     "font-size": "clamp(var(--text-m), 3.58cqi, 2.56rem)",
+     "font-weight": "700",
+     "line-height": "1.2"
+    },
+    "_border": {
+     "radius": {
+      "top": "0.48em",
+      "right": "0.48em",
+      "bottom": "0.48em",
+      "left": "0.48em"
      }
     }
    }
   },
   {
-   "id": "ewi601",
-   "name": "office-hero__eyebrow",
+   "id": "1hkayj",
+   "name": "office-cover__note",
    "settings": {
-    "_typography": {
-     "font-weight": "700"
+    "_margin": {
+     "top": "4.08cqi",
+     "bottom": "0"
     },
-    "_cssCustom": ".office-hero__eyebrow::before {\n  content: \"\";\n  display: inline-block;\n  width: 0.35em;\n  height: 1.3em;\n  margin-right: 0.9em;\n  vertical-align: -0.3em;\n  background: var(--action);\n  border-radius: var(--radius-xs);\n}"
+    "_typography": {
+     "line-height": "1.3",
+     "color": {
+      "raw": "var(--primary-ultra-dark)"
+     }
+    }
    }
   },
   {
-   "id": "27uw3f",
-   "name": "office-hero__media",
+   "id": "2jz1np",
+   "name": "office-cover__media",
    "settings": {
     "_position": "relative",
     "_margin": {
@@ -375,13 +418,14 @@
      "left": "0"
     },
     "_rowGap": "0",
+    "_width": "100%",
     "_widthMax:tablet_portrait": "64rem",
-    "_cssCustom": ".office-hero__media {\n  isolation: isolate;\n}\n\n.office-hero__media::before {\n  content: \"\";\n  position: absolute;\n  inset: -2.4rem -2rem -2.4rem 3rem;\n  z-index: -1;\n  background: var(--action-trans-20);\n  border-radius: var(--radius-l);\n  transform: rotate(2deg);\n}\n\n@media (max-width: 767px) {\n  .office-hero__media::before {\n    inset: -1.2rem -1rem -1.2rem 2rem;\n  }\n}"
+    "_cssCustom": ".office-cover__media {\n  isolation: isolate;\n  container-type: inline-size;\n}\n\n/* Grüne Fläche: rechts 22 px breiter, oben 39 px und unten 49 px höher als das Foto (Entwurf) */\n.office-cover__media::before {\n  content: \"\";\n  position: absolute;\n  inset: -5.72% -2.9% -7.1% 5.3%;\n  z-index: -1;\n  background: var(--action-light);\n  -webkit-mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 738 774' preserveAspectRatio='none'%3E%3Cpath d='M0 76.3 L696.2 4.3 Q738 0 738 42 L738 732.1 Q738 774.1 696.1 771.7 L0 732.2 Z'/%3E%3C/svg%3E\") center / 100% 100% no-repeat;\n  mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 738 774' preserveAspectRatio='none'%3E%3Cpath d='M0 76.3 L696.2 4.3 Q738 0 738 42 L738 732.1 Q738 774.1 696.1 771.7 L0 732.2 Z'/%3E%3C/svg%3E\") center / 100% 100% no-repeat;\n}"
    }
   },
   {
-   "id": "f2x4yl",
-   "name": "office-hero__image",
+   "id": "1isu48",
+   "name": "office-cover__image",
    "settings": {
     "_display": "block",
     "_width": "100%",
@@ -389,23 +433,23 @@
     "_objectFit": "cover",
     "_border": {
      "radius": {
-      "top": "var(--radius)",
-      "right": "var(--radius)",
+      "top": "5.4cqi",
+      "right": "5.4cqi",
       "bottom": "0",
       "left": "0"
      }
     },
-    "_cssCustom": "/* Ausschnitt wie im Entwurf: oben die Köpfe, unten Tasse und Notizbuch */\n.office-hero__image {\n  aspect-ratio: 7 / 5;\n  object-position: center 35%;\n}"
+    "_cssCustom": "/* Ausschnitt wie im Entwurf: volle Breite, oben bündig */\n.office-cover__image {\n  aspect-ratio: 694.5 / 512.6;\n  object-position: center top;\n}"
    }
   },
   {
-   "id": "cqxanh",
-   "name": "office-hero__caption",
+   "id": "bucjr8",
+   "name": "office-cover__caption",
    "settings": {
     "_display": "flex",
     "_direction": "column",
     "_alignItems": "center",
-    "_rowGap": "0.3em",
+    "_rowGap": "0",
     "_margin": {
      "top": "0",
      "right": "0",
@@ -413,22 +457,17 @@
      "left": "0"
     },
     "_padding": {
-     "top": "var(--space-s)",
-     "right": "var(--space-m)",
-     "bottom": "var(--space-s)",
-     "left": "var(--space-m)"
-    },
-    "_background": {
-     "color": {
-      "raw": "var(--primary-dark)"
-     }
+     "top": "3.44cqi",
+     "right": "3cqi",
+     "bottom": "2.98cqi",
+     "left": "3cqi"
     },
     "_border": {
      "radius": {
       "top": "0",
       "right": "0",
-      "bottom": "var(--radius)",
-      "left": "var(--radius)"
+      "bottom": "5.4cqi",
+      "left": "5.4cqi"
      }
     },
     "_typography": {
@@ -436,12 +475,13 @@
      "color": {
       "raw": "var(--white)"
      }
-    }
+    },
+    "_cssCustom": "/* Verlauf von Blau nach Dunkelblau (Entwurf) */\n.office-cover__caption {\n  background: linear-gradient(90deg, color-mix(in srgb, var(--primary) 75%, var(--primary-dark)), var(--primary-dark));\n}"
    }
   },
   {
-   "id": "6y9gin",
-   "name": "office-hero__caption-title",
+   "id": "2n6l22",
+   "name": "office-cover__caption-title",
    "settings": {
     "_margin": {
      "top": "0",
@@ -449,7 +489,7 @@
     },
     "_typography": {
      "font-weight": "700",
-     "line-height": "1.2",
+     "line-height": "1.022",
      "color": {
       "raw": "var(--white)"
      }
@@ -457,16 +497,17 @@
    }
   },
   {
-   "id": "t936gg",
-   "name": "office-hero__caption-text",
+   "id": "1yzfoa",
+   "name": "office-cover__caption-text",
    "settings": {
     "_margin": {
      "top": "0",
      "bottom": "0"
     },
     "_typography": {
+     "line-height": "1.3",
      "color": {
-      "raw": "var(--white-trans-80)"
+      "raw": "var(--white)"
      }
     }
    }
@@ -558,6 +599,69 @@
    "settings": {
     "_typography": {
      "font-size": "var(--text-xs)"
+    }
+   }
+  },
+  {
+   "id": "1gtqdy",
+   "name": "audience-cover-eyebrow",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 4cqi, 2.86rem)"
+    }
+   }
+  },
+  {
+   "id": "22m70h",
+   "name": "audience-cover-title",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(calc(var(--h1) * 1.2), 10.1cqi, 7.23rem)"
+    }
+   }
+  },
+  {
+   "id": "2h0mxk",
+   "name": "audience-cover-lede",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-m), 4.12cqi, 2.95rem)"
+    }
+   }
+  },
+  {
+   "id": "2g1tt7",
+   "name": "audience-cover-note",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 3.42cqi, 2.45rem)"
+    }
+   }
+  },
+  {
+   "id": "7pqjhp",
+   "name": "audience-cover-caption-title",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--h5), 5.41cqi, 3.76rem)"
+    }
+   }
+  },
+  {
+   "id": "or3q40",
+   "name": "audience-cover-caption-text",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 3.84cqi, 2.67rem)"
+    }
+   }
+  },
+  {
+   "id": "wr3ffy",
+   "name": "audience-cover-strip",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-m), 1.74cqi, 2.5rem)"
     }
    }
   }

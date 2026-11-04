@@ -93,71 +93,105 @@ function select(b, parent, { name, id, label, options }) {
 }
 
 // ---------- 1. Hero ----------
+// Nachbau des Entwurfs vom 04.11.2026 (docs/vorlagen/buero-verwaltung/hero-2026-11-04.png, 1672 px = Ansicht 1536 px,
+// Inhalt 1440 px). Eigener Block office-cover, damit der Hero von „Zielgruppe“ (office-hero) unverändert bleibt.
+// Schriften, Abstände und Rundungen wachsen mit der Spaltenbreite (Container-Einheit cqi) – so stimmen die
+// Proportionen des Entwurfs auf jeder Desktop-Breite. Schriftgrößen stehen in tools/schrift.mjs (audience-cover-*).
 {
   const b = builder('bvh');
-  cls('office-hero', { _cssCustom: '.office-hero {\n  background: linear-gradient(115deg, var(--primary-ultra-light), var(--white) 72%);\n}' });
-  cls('office-hero__grid', { _display: 'grid', _gridTemplateColumns: 'minmax(0, 1.15fr) minmax(0, 1fr)', '_gridTemplateColumns:tablet_portrait': 'minmax(0, 1fr)', _alignItems: 'center', _columnGap: 'var(--space-xxl)', _rowGap: 'var(--space-l)' });
-  cls('office-hero__content', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-m)' });
-  cls('office-hero__title', { ...m0, _typography: { 'line-height': '1.1' } });
-  cls('office-hero__actions', { _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _columnGap: 'var(--space-xs)', _rowGap: 'var(--space-xs)', _cssCustom: '/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}' });
-  cls('office-hero__note', { ...m0, _typography: muted });
-  // Dachzeile mit grünem Balken (Entwurf 04.11.2026)
-  cls('office-hero__eyebrow', {
-    _typography: { 'font-weight': '700' },
-    _cssCustom: '.office-hero__eyebrow::before {\n  content: "";\n  display: inline-block;\n  width: 0.35em;\n  height: 1.3em;\n  margin-right: 0.9em;\n  vertical-align: -0.3em;\n  background: var(--action);\n  border-radius: var(--radius-xs);\n}',
+  cls('office-cover', {
+    _padding: { top: 'calc(var(--section-space-xs) * 1.1)', bottom: 'calc(var(--section-space-xs) * 1.2)' },
+    _cssCustom: '/* Sehr helles Blau, nach rechts fast weiß (Entwurf) */\n.office-cover {\n  background: linear-gradient(90deg, color-mix(in srgb, var(--primary-ultra-light) 45%, var(--white)), color-mix(in srgb, var(--primary-ultra-light) 15%, var(--white)));\n}',
   });
-  // Foto mit Bildunterschrift, dahinter eine leicht gedrehte grüne Fläche
-  cls('office-hero__media', {
-    _position: 'relative', _margin: NULL4, _rowGap: '0', '_widthMax:tablet_portrait': '64rem',
-    _cssCustom: '.office-hero__media {\n  isolation: isolate;\n}\n\n.office-hero__media::before {\n  content: "";\n  position: absolute;\n  inset: -2.4rem -2rem -2.4rem 3rem;\n  z-index: -1;\n  background: var(--action-trans-20);\n  border-radius: var(--radius-l);\n  transform: rotate(2deg);\n}\n\n@media (max-width: 767px) {\n  .office-hero__media::before {\n    inset: -1.2rem -1rem -1.2rem 2rem;\n  }\n}',
+  // Spalten wie im Entwurf: Text 715,5 px, Foto 694,5 px, Abstand 30 px (bei 1440 px Inhalt)
+  cls('office-cover__grid', {
+    _display: 'grid', _gridTemplateColumns: 'minmax(0, 715.5fr) minmax(0, 694.5fr)', '_gridTemplateColumns:tablet_portrait': 'minmax(0, 1fr)',
+    _alignItems: 'center', _columnGap: 'var(--space-m)', _rowGap: 'var(--space-xl)',
   });
-  cls('office-hero__image', {
+  cls('office-cover__content', {
+    _display: 'flex', _direction: 'column', _alignItems: 'flex-start', _alignSelf: 'start', _rowGap: '0',
+    _cssCustom: '/* Bezugsgröße für cqi: die Textspalte */\n.office-cover__content {\n  container-type: inline-size;\n}',
+  });
+  cls('office-cover__eyebrow', {
+    // Abstand oben: Text beginnt im Entwurf 22 px unter der Oberkante des Fotos (nicht mittig)
+    // Flex: bricht der Text auf dem Handy um, steht die zweite Zeile eingerückt neben dem Balken
+    _display: 'flex', _alignItems: 'flex-start',
+    _margin: { top: '3.63cqi', bottom: '0' }, _typography: { 'font-weight': '700', 'line-height': '1.25', 'letter-spacing': '0.02em', color: { raw: 'var(--primary-ultra-dark)' } },
+    _cssCustom: '/* Grüner Balken links (Entwurf: 12 × 36 px) */\n.office-cover__eyebrow::before {\n  content: "";\n  flex-shrink: 0;\n  width: 0.42em;\n  height: 1.25em;\n  margin-right: 0.77em;\n  vertical-align: top;\n  transform: translateY(-0.084em);\n  background: var(--action);\n  border-radius: 999px;\n}',
+  });
+  cls('office-cover__title', {
+    _margin: { top: '5.4cqi', bottom: '0' }, _widthMax: '100%',
+    _typography: { 'font-weight': '700', 'line-height': '1.1', 'letter-spacing': '0' },
+    _cssCustom: '/* Etwas dunkler als die globale Überschriftenfarbe (Entwurf) */\n.office-cover__title {\n  color: color-mix(in srgb, var(--primary-dark) 70%, var(--primary-ultra-dark));\n}',
+  });
+  cls('office-cover__lede', { _margin: { top: '2.53cqi', bottom: '0' }, _typography: { 'line-height': '1.2', color: { raw: 'var(--primary-ultra-dark)' } } });
+  cls('office-cover__actions', {
+    _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _columnGap: '2.5cqi', _rowGap: '2.5cqi', _margin: { top: '6.26cqi', bottom: '0' },
+    _cssCustom: '/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-cover__actions {\n    width: 100%;\n  }\n\n  .office-cover__actions > .brxe-button {\n    width: 100%;\n  }\n}',
+  });
+  // Buttons wie im Entwurf: fett, abgerundet, größer als die ACSS-Buttons (Farben bleiben ACSS)
+  cls('office-cover__button', {
+    _padding: { top: '0.616em', right: '0.97em', bottom: '0.616em', left: '1.15em' }, _columnGap: '0.47em',
+    _typography: { 'font-size': 'clamp(var(--text-m), 3.58cqi, 2.56rem)', 'font-weight': '700', 'line-height': '1.2' },
+    _border: { radius: { top: '0.48em', right: '0.48em', bottom: '0.48em', left: '0.48em' } },
+  });
+  cls('office-cover__note', { _margin: { top: '4.08cqi', bottom: '0' }, _typography: { 'line-height': '1.3', color: { raw: 'var(--primary-ultra-dark)' } } });
+
+  // Foto mit Bildunterschrift; dahinter eine hellgrüne Fläche, die nach rechts höher wird (Maske als SVG)
+  const FORM = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 738 774' preserveAspectRatio='none'%3E%3Cpath d='M0 76.3 L696.2 4.3 Q738 0 738 42 L738 732.1 Q738 774.1 696.1 771.7 L0 732.2 Z'/%3E%3C/svg%3E\")";
+  cls('office-cover__media', {
+    _position: 'relative', _margin: NULL4, _rowGap: '0', _width: '100%', '_widthMax:tablet_portrait': '64rem',
+    _cssCustom: `.office-cover__media {\n  isolation: isolate;\n  container-type: inline-size;\n}\n\n/* Grüne Fläche: rechts 22 px breiter, oben 39 px und unten 49 px höher als das Foto (Entwurf) */\n.office-cover__media::before {\n  content: "";\n  position: absolute;\n  inset: -5.72% -2.9% -7.1% 5.3%;\n  z-index: -1;\n  background: var(--action-light);\n  -webkit-mask: ${FORM} center / 100% 100% no-repeat;\n  mask: ${FORM} center / 100% 100% no-repeat;\n}`,
+  });
+  // Rundung 37,6 px bei 694,5 px Breite (Entwurf) – größer als die ACSS-Radien, daher relativ zur Fotobreite
+  cls('office-cover__image', {
     _display: 'block', _width: '100%', _height: 'auto', _objectFit: 'cover',
-    _border: { radius: { top: 'var(--radius)', right: 'var(--radius)', bottom: '0', left: '0' } },
-    _cssCustom: '/* Ausschnitt wie im Entwurf: oben die Köpfe, unten Tasse und Notizbuch */\n.office-hero__image {\n  aspect-ratio: 7 / 5;\n  object-position: center 35%;\n}',
+    _border: { radius: { top: '5.4cqi', right: '5.4cqi', bottom: '0', left: '0' } },
+    _cssCustom: '/* Ausschnitt wie im Entwurf: volle Breite, oben bündig */\n.office-cover__image {\n  aspect-ratio: 694.5 / 512.6;\n  object-position: center top;\n}',
   });
-  cls('office-hero__caption', {
-    _display: 'flex', _direction: 'column', _alignItems: 'center', _rowGap: '0.3em', _margin: NULL4,
-    _padding: { top: 'var(--space-s)', right: 'var(--space-m)', bottom: 'var(--space-s)', left: 'var(--space-m)' },
-    _background: { color: { raw: 'var(--primary-dark)' } },
-    _border: { radius: { top: '0', right: '0', bottom: 'var(--radius)', left: 'var(--radius)' } },
+  cls('office-cover__caption', {
+    _display: 'flex', _direction: 'column', _alignItems: 'center', _rowGap: '0', _margin: NULL4,
+    _padding: { top: '3.44cqi', right: '3cqi', bottom: '2.98cqi', left: '3cqi' },
+    _border: { radius: { top: '0', right: '0', bottom: '5.4cqi', left: '5.4cqi' } },
     _typography: { 'text-align': 'center', color: { raw: 'var(--white)' } },
+    _cssCustom: '/* Verlauf von Blau nach Dunkelblau (Entwurf) */\n.office-cover__caption {\n  background: linear-gradient(90deg, color-mix(in srgb, var(--primary) 75%, var(--primary-dark)), var(--primary-dark));\n}',
   });
-  cls('office-hero__caption-title', { ...m0, _typography: { 'font-weight': '700', 'line-height': '1.2', color: { raw: 'var(--white)' } } });
-  cls('office-hero__caption-text', { ...m0, _typography: { color: { raw: 'var(--white-trans-80)' } } });
+  cls('office-cover__caption-title', { ...m0, _typography: { 'font-weight': '700', 'line-height': '1.022', color: { raw: 'var(--white)' } } });
+  cls('office-cover__caption-text', { ...m0, _typography: { 'line-height': '1.3', color: { raw: 'var(--white)' } } });
 
-  const sec = b.add(null, 'section', 'Hero – Büro & Verwaltung', C('office-hero'));
-  const con = b.add(sec, 'container', 'Inhaltsbereich', C('office-hero__grid'));
-  const content = b.add(con, 'block', 'Inhalt', C('office-hero__content'));
-  b.add(content, 'text-basic', 'Dachzeile', { text: up('Für Mitarbeitende in Büro & Verwaltung'), tag: 'p', ...C('eyebrow', 'office-hero__eyebrow') });
-  b.add(content, 'heading', 'Überschrift', { text: 'Sicher arbeiten.<br>Bewusst handeln.<br>Einfach online lernen.', tag: 'h1', ...C('office-title', 'office-hero__title') });
-  b.add(content, 'text-basic', 'Einleitung', { text: 'Unterweisen Sie Ihr Team zu den Themen, die im Büroalltag zählen – von Arbeitsschutz und Datenschutz bis zum sicheren Umgang mit E-Mails und KI.', tag: 'p', ...C('office-lede') });
-  const act = b.add(content, 'block', 'Button-Gruppe', C('office-hero__actions'));
-  b.add(act, 'button', 'Button: Passende Lösung finden', { text: 'Passende Lösung finden', link: link('#loesung'), ...arrow, ...C('acss:btn--primary') });
-  b.add(act, 'button', 'Button: Lernpakete entdecken', { text: 'Lernpakete entdecken', link: link('#pakete'), ...C('acss:btn--primary', 'acss:btn--outline') });
-  b.add(content, 'text-basic', 'Hinweis', { text: 'Für einzelne Mitarbeitende, kleine Teams und ganze Unternehmen.', tag: 'p', ...C('office-hero__note') });
+  const sec = b.add(null, 'section', 'Hero – Büro & Verwaltung', C('office-cover'));
+  const con = b.add(sec, 'container', 'Inhaltsbereich', C('office-cover__grid'));
+  const content = b.add(con, 'block', 'Inhalt', C('office-cover__content'));
+  b.add(content, 'text-basic', 'Dachzeile', { text: up('Für Mitarbeitende in Büro & Verwaltung'), tag: 'p', ...C('office-cover__eyebrow') });
+  b.add(content, 'heading', 'Überschrift', { text: 'Sicher arbeiten.<br>Bewusst handeln.<br>Einfach online lernen.', tag: 'h1', ...C('office-cover__title') });
+  b.add(content, 'text-basic', 'Einleitung', { text: 'Unterweisen Sie Ihr Team zu den Themen, die im Büroalltag zählen – von Arbeitsschutz und Datenschutz bis zum sicheren Umgang mit E-Mails und KI.', tag: 'p', ...C('office-cover__lede') });
+  const act = b.add(content, 'block', 'Button-Gruppe', C('office-cover__actions'));
+  b.add(act, 'button', 'Button: Passende Lösung finden', { text: 'Passende Lösung finden', link: link('#loesung'), ...arrow, ...C('acss:btn--primary', 'office-cover__button') });
+  b.add(act, 'button', 'Button: Lernpakete entdecken', { text: 'Lernpakete entdecken', link: link('#pakete'), ...C('acss:btn--primary', 'acss:btn--outline', 'office-cover__button') });
+  b.add(content, 'text-basic', 'Hinweis', { text: 'Für einzelne Mitarbeitende, kleine Teams und ganze Unternehmen.', tag: 'p', ...C('office-cover__note') });
 
-  const media = b.add(con, 'block', 'Foto mit Bildunterschrift', { ...custom('figure'), ...C('office-hero__media') });
+  const media = b.add(con, 'block', 'Foto mit Bildunterschrift', { ...custom('figure'), ...C('office-cover__media') });
   b.add(media, 'image', 'Foto', { image: { id: HERO_BILD.id, filename: HERO_BILD.filename, size: 'full', url: HERO_BILD.url }, loading: 'eager',
-    // Anzeigebreite statt 100vw, damit der Browser eine passende Größe lädt (Desktop ca. 520 px, bis 991 px max. 640 px)
-    _attributes: [['sizes', '(max-width: 991px) min(100vw, 640px), 560px']], ...C('office-hero__image') });
-  const cap = b.add(media, 'block', 'Bildunterschrift', { ...custom('figcaption'), ...C('office-hero__caption') });
-  b.add(cap, 'text-basic', 'Titel', { text: 'Sicheres Wissen für Ihren Büroalltag', tag: 'p', ...C('office-hero__caption-title') });
-  b.add(cap, 'text-basic', 'Themen', { text: 'Arbeitsschutz&nbsp;· Datenschutz&nbsp;· Compliance', tag: 'p', ...C('office-hero__caption-text') });
+    // Anzeigebreite statt 100vw, damit der Browser eine passende Größe lädt (Desktop ca. 700 px, bis 991 px max. 640 px)
+    _attributes: [['sizes', '(max-width: 991px) min(100vw, 640px), 700px']], ...C('office-cover__image') });
+  const cap = b.add(media, 'block', 'Bildunterschrift', { ...custom('figcaption'), ...C('office-cover__caption') });
+  b.add(cap, 'text-basic', 'Titel', { text: 'Sicheres Wissen für Ihren Büroalltag', tag: 'p', ...C('office-cover__caption-title') });
+  b.add(cap, 'text-basic', 'Themen', { text: 'Arbeitsschutz&nbsp;&nbsp;·&ensp;Datenschutz&nbsp;&nbsp;·&ensp;Compliance', tag: 'p', ...C('office-cover__caption-text') });
   files['buero-verwaltung-1-hero'] = b.content;
 }
 
 // ---------- 2. Vorteilsleiste ----------
 {
   const b = builder('bvl');
-  // Dunkelblaue Leiste mit grünen Häkchen (Entwurf 04.11.2026)
+  // Dunkelblaue Leiste mit grünen Häkchen (Entwurf 04.11.2026). Häkchen: Font Awesome 6 „check“ als Maske.
+  const HAKEN = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 96 448 320'%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E\")";
   cls('office-strip', { _padding: { top: '0', bottom: '0' }, _background: { color: { raw: 'var(--primary-dark)' } } });
   cls('office-strip__list', {
     _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _justifyContent: 'space-between', _columnGap: 'var(--space-m)', _rowGap: 'var(--space-xs)',
     '_justifyContent:mobile_landscape': 'flex-start', '_direction:mobile_landscape': 'column',
-    _margin: NULL4, _padding: { top: 'var(--space-s)', right: '0', bottom: 'var(--space-s)', left: '0' },
+    _margin: NULL4, _padding: { top: 'var(--space-m)', right: '0', bottom: 'var(--space-l)', left: '0' },
     _typography: { 'font-weight': '700', color: { raw: 'var(--white)' } },
-    _cssCustom: '.office-strip__list {\n  list-style: none;\n}\n\n.office-strip__list > li::before {\n  content: "✓";\n  display: inline-block;\n  margin-right: 0.6em;\n  transform: scale(1.3);\n  color: var(--action);\n}',
+    _cssCustom: `/* Bezugsgröße für cqi der Schrift: die Leiste */\n.office-strip__list {\n  list-style: none;\n  container-type: inline-size;\n}\n\n.office-strip__list > li {\n  display: flex;\n  align-items: center;\n}\n\n/* Grünes Häkchen 33 × 26 px (Entwurf) */\n.office-strip__list > li::before {\n  content: "";\n  flex-shrink: 0;\n  width: 1.32em;\n  height: 1.03em;\n  margin-right: 0.7em;\n  background: var(--action);\n  -webkit-mask: ${HAKEN} center / contain no-repeat;\n  mask: ${HAKEN} center / contain no-repeat;\n}`,
   });
   const sec = b.add(null, 'section', 'Vorteilsleiste', C('office-strip'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});

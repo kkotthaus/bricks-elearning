@@ -1138,6 +1138,69 @@
      "font-size": "var(--text-xs)"
     }
    }
+  },
+  {
+   "id": "1gtqdy",
+   "name": "audience-cover-eyebrow",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 4cqi, 2.86rem)"
+    }
+   }
+  },
+  {
+   "id": "22m70h",
+   "name": "audience-cover-title",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(calc(var(--h1) * 1.2), 10.1cqi, 7.23rem)"
+    }
+   }
+  },
+  {
+   "id": "2h0mxk",
+   "name": "audience-cover-lede",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-m), 4.12cqi, 2.95rem)"
+    }
+   }
+  },
+  {
+   "id": "2g1tt7",
+   "name": "audience-cover-note",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 3.42cqi, 2.45rem)"
+    }
+   }
+  },
+  {
+   "id": "7pqjhp",
+   "name": "audience-cover-caption-title",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--h5), 5.41cqi, 3.76rem)"
+    }
+   }
+  },
+  {
+   "id": "or3q40",
+   "name": "audience-cover-caption-text",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 3.84cqi, 2.67rem)"
+    }
+   }
+  },
+  {
+   "id": "wr3ffy",
+   "name": "audience-cover-strip",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-m), 1.74cqi, 2.5rem)"
+    }
+   }
   }
  ],
  "globalElements": []

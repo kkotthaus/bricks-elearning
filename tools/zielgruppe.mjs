@@ -81,6 +81,13 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
     _margin: NULL4, _typography: muted,
     _cssCustom: '.audience-breadcrumb a {\n  color: var(--primary-dark);\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}\n\n.audience-breadcrumb span {\n  margin-inline: 0.5em;\n}',
   });
+  // Hero-Klassen office-hero* (bis 04.11.2026 auch im Hero von Büro-Verwaltung, jetzt nur noch hier genutzt)
+  cls('office-hero', { _cssCustom: '.office-hero {\n  background: linear-gradient(115deg, var(--primary-ultra-light), var(--white) 72%);\n}' });
+  cls('office-hero__grid', { _display: 'grid', _gridTemplateColumns: 'minmax(0, 1.15fr) minmax(0, 1fr)', '_gridTemplateColumns:tablet_portrait': 'minmax(0, 1fr)', _alignItems: 'center', _columnGap: 'var(--space-xxl)', _rowGap: 'var(--space-l)' });
+  cls('office-hero__content', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-m)' });
+  cls('office-hero__title', { ...m0, _typography: { 'line-height': '1.1' } });
+  cls('office-hero__actions', { _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _columnGap: 'var(--space-xs)', _rowGap: 'var(--space-xs)', _cssCustom: '/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}' });
+  cls('office-hero__note', { ...m0, _typography: muted });
   // Lernplan-Karte (bis 04.11.2026 im Hero von Büro-Verwaltung, jetzt nur noch hier genutzt)
   cls('office-plan', {
     _padding: { top: 'var(--space-l)', right: 'var(--space-l)', bottom: 'var(--space-l)', left: 'var(--space-l)' },

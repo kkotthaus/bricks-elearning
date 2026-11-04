@@ -81,14 +81,16 @@ Neu: Die Buttons „Lösung für 5/10/15 Themen finden“ springen wie bisher zu
 
 Nur nötig, wenn die Seite auf Live schon vor dem 04.11.2026 gebaut wurde.
 
-Neu: Rechts im Hero steht statt der blauen Lernplan-Karte ein Foto mit blauer Bildunterschrift („Sicheres Wissen für Ihren Büroalltag“) vor einer leicht gedrehten grünen Fläche. Die Dachzeile hat links einen grünen Balken. Die Vorteilsleiste darunter ist dunkelblau mit weißer Schrift und grünen Häkchen. Neue Klassen: `office-hero__eyebrow`, `office-hero__media`, `office-hero__image`, `office-hero__caption`, `office-hero__caption-title`, `office-hero__caption-text`; geändert: `office-strip`, `office-strip__list`.
+Neu: Der Hero ist ein Nachbau des Entwurfs `docs/vorlagen/buero-verwaltung/hero-2026-11-04.png`: große Schrift, Dachzeile mit grünem Balken, abgerundete fette Buttons; rechts statt der blauen Lernplan-Karte ein Foto mit blauer Bildunterschrift („Sicheres Wissen für Ihren Büroalltag“) vor einer hellgrünen Fläche. Die Vorteilsleiste darunter ist dunkelblau mit weißer Schrift und grünen Häkchen. Neuer Block `office-cover` (Klassen `office-cover`, `office-cover__grid`, `__content`, `__eyebrow`, `__title`, `__lede`, `__actions`, `__button`, `__note`, `__media`, `__image`, `__caption`, `__caption-title`, `__caption-text`), neue Schrift-Klassen `audience-cover-*`; geändert: `office-strip`, `office-strip__list`. Die Klassen `office-hero*` bleiben unverändert (Hero der Seite „Zielgruppe“).
+
+Schriften, Abstände und Rundungen wachsen mit der Breite der Spalte (CSS-Einheit `cqi`). Das braucht einen aktuellen Browser (seit 2023 in allen gängigen Browsern).
 
 1. Sicherung (Duplicator: Backup erstellen).
 2. Foto `assets/bilder/Gemeinsam-online-lernen-im-modernen-Buero.png` in die Mediathek hochladen (Titel und Alternativtext wie oben unter „Seite bauen“).
 3. Bricks › Templates › **Importieren**: `bricks/templates/buero-verwaltung-1-hero.json` und `-2-leiste.json`. Die vorhandenen Vorlagen gleichen Namens vorher löschen oder die neuen danach umbenennen. Beim Import übernimmt Bricks die neuen Klassen; bei den vorhandenen Klassen `office-strip` und `office-strip__list` die neuen Einstellungen übernehmen, wenn Bricks danach fragt (sonst bleibt die Leiste hell).
 4. Seite „Büro-Verwaltung“ mit Bricks bearbeiten: Sections „Hero – Büro & Verwaltung“ und „Vorteilsleiste“ löschen, an derselben Stelle die neuen Vorlagen „Büro-Verwaltung 1 – Hero“ und „Büro-Verwaltung 2 – Vorteilsleiste“ einfügen.
 5. Im Hero das Element „Foto“ auswählen und unter **Bild** das hochgeladene Foto wählen. Speichern.
-6. Prüfen im Frontend (Desktop, Tablet, Handy): Foto mit blauer Bildunterschrift direkt darunter, grüne Fläche dahinter, kein seitliches Scrollen auf dem Handy; Leiste dunkelblau mit grünen Häkchen.
+6. Prüfen im Frontend (Desktop, Tablet, Handy): Aussehen wie der Entwurf, Foto mit blauer Bildunterschrift direkt darunter, grüne Fläche dahinter, kein seitliches Scrollen auf dem Handy; Leiste dunkelblau mit grünen Häkchen.
 
 Die Lernplan-Karte (Klassen `office-plan*`) wird weiter auf der Seite „Zielgruppe“ genutzt – die Klassen nicht löschen.
 

@@ -50,7 +50,7 @@
     "text": "Praxisnahe E-Learnings",
     "tag": "li",
     "_cssGlobalClasses": [
-     "d0brm0"
+     "wr3ffy"
     ]
    },
    "label": "Vorteil: Praxisnahe E-Learnings"
@@ -64,7 +64,7 @@
     "text": "Bedarfsgerechte Themenauswahl",
     "tag": "li",
     "_cssGlobalClasses": [
-     "d0brm0"
+     "wr3ffy"
     ]
    },
    "label": "Vorteil: Bedarfsgerechte Themenauswahl"
@@ -78,7 +78,7 @@
     "text": "Einzelkurse, Flatrate oder Unternehmenslösung",
     "tag": "li",
     "_cssGlobalClasses": [
-     "d0brm0"
+     "wr3ffy"
     ]
    },
    "label": "Vorteil: Einzelkurse, Flatrate oder Unternehmenslösung"
@@ -122,9 +122,9 @@
      "left": "0"
     },
     "_padding": {
-     "top": "var(--space-s)",
+     "top": "var(--space-m)",
      "right": "0",
-     "bottom": "var(--space-s)",
+     "bottom": "var(--space-l)",
      "left": "0"
     },
     "_typography": {
@@ -133,7 +133,7 @@
       "raw": "var(--white)"
      }
     },
-    "_cssCustom": ".office-strip__list {\n  list-style: none;\n}\n\n.office-strip__list > li::before {\n  content: \"✓\";\n  display: inline-block;\n  margin-right: 0.6em;\n  transform: scale(1.3);\n  color: var(--action);\n}"
+    "_cssCustom": "/* Bezugsgröße für cqi der Schrift: die Leiste */\n.office-strip__list {\n  list-style: none;\n  container-type: inline-size;\n}\n\n.office-strip__list > li {\n  display: flex;\n  align-items: center;\n}\n\n/* Grünes Häkchen 33 × 26 px (Entwurf) */\n.office-strip__list > li::before {\n  content: \"\";\n  flex-shrink: 0;\n  width: 1.32em;\n  height: 1.03em;\n  margin-right: 0.7em;\n  background: var(--action);\n  -webkit-mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 96 448 320'%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E\") center / contain no-repeat;\n  mask: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 96 448 320'%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E\") center / contain no-repeat;\n}"
    }
   },
   {
@@ -223,6 +223,69 @@
    "settings": {
     "_typography": {
      "font-size": "var(--text-xs)"
+    }
+   }
+  },
+  {
+   "id": "1gtqdy",
+   "name": "audience-cover-eyebrow",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 4cqi, 2.86rem)"
+    }
+   }
+  },
+  {
+   "id": "22m70h",
+   "name": "audience-cover-title",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(calc(var(--h1) * 1.2), 10.1cqi, 7.23rem)"
+    }
+   }
+  },
+  {
+   "id": "2h0mxk",
+   "name": "audience-cover-lede",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-m), 4.12cqi, 2.95rem)"
+    }
+   }
+  },
+  {
+   "id": "2g1tt7",
+   "name": "audience-cover-note",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 3.42cqi, 2.45rem)"
+    }
+   }
+  },
+  {
+   "id": "7pqjhp",
+   "name": "audience-cover-caption-title",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--h5), 5.41cqi, 3.76rem)"
+    }
+   }
+  },
+  {
+   "id": "or3q40",
+   "name": "audience-cover-caption-text",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-s), 3.84cqi, 2.67rem)"
+    }
+   }
+  },
+  {
+   "id": "wr3ffy",
+   "name": "audience-cover-strip",
+   "settings": {
+    "_typography": {
+     "font-size": "clamp(var(--text-m), 1.74cqi, 2.5rem)"
     }
    }
   }
