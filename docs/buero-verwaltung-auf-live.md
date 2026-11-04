@@ -94,6 +94,17 @@ Schriften, Abstände und Rundungen wachsen mit der Breite der Spalte (CSS-Einhei
 
 Die Lernplan-Karte (Klassen `office-plan*`) wird weiter auf der Seite „Zielgruppe“ genutzt – die Klassen nicht löschen.
 
+## Update 04.11.2026: Lernplan-Karte im Abschnitt „Risiken“
+
+Nur nötig, wenn die Seite auf Live schon vor dem 04.11.2026 gebaut wurde.
+
+Neu: Im Abschnitt „Welche Unterweisungen spielen eine Rolle?“ steht rechts neben der Einleitung die blaue Lernplan-Karte („Ihr Lernplan für den Büroalltag“, drei Themen, Hinweis „5, 10 oder 15 Themen“), leicht gedreht mit grünem Schatten (Entwurf `docs/vorlagen/buero-verwaltung/lernplan-2026-11-04.png`). Neue Klassen `office-risks__top` und `office-plan__note`; die übrigen Klassen `office-plan*` gibt es schon (Seite „Zielgruppe“) und bleiben unverändert.
+
+1. Sicherung (Duplicator: Backup erstellen).
+2. Bricks › Templates › **Importieren**: `bricks/templates/buero-verwaltung-3-risiken.json` (vorhandene Vorlage gleichen Namens vorher löschen oder die neue danach umbenennen).
+3. Seite „Büro-Verwaltung“ mit Bricks bearbeiten: Section „Risiken im Büro“ löschen, an derselben Stelle die neue Vorlage „Büro-Verwaltung 3 – Risiken“ einfügen. Wurden in der alten Section Texte oder Farben von Hand geändert, diese vorher notieren und danach wieder eintragen. Speichern.
+4. Prüfen im Frontend: Desktop Karte rechts neben der Einleitung, Tablet und Handy Karte unter der Einleitung, gerade, kein seitliches Scrollen.
+
 ## Inhalte ändern
 
 - Texte, Links und Themen direkt im Builder ändern. Ein Thema gehört über das Attribut `data-office-level` (5, 10 oder 15) zu einer Stufe des Filters.

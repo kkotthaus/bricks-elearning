@@ -689,77 +689,6 @@
    }
   },
   {
-   "id": "2l2a5v",
-   "name": "audience-breadcrumb",
-   "settings": {
-    "_margin": {
-     "top": "0",
-     "right": "0",
-     "bottom": "0",
-     "left": "0"
-    },
-    "_typography": {
-     "color": {
-      "raw": "var(--text-dark-muted)"
-     }
-    },
-    "_cssCustom": ".audience-breadcrumb a {\n  color: var(--primary-dark);\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}\n\n.audience-breadcrumb span {\n  margin-inline: 0.5em;\n}"
-   }
-  },
-  {
-   "id": "27leu5",
-   "name": "office-hero",
-   "settings": {
-    "_cssCustom": ".office-hero {\n  background: linear-gradient(115deg, var(--primary-ultra-light), var(--white) 72%);\n}"
-   }
-  },
-  {
-   "id": "vyxnax",
-   "name": "office-hero__grid",
-   "settings": {
-    "_display": "grid",
-    "_gridTemplateColumns": "minmax(0, 1.15fr) minmax(0, 1fr)",
-    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
-    "_alignItems": "center",
-    "_columnGap": "var(--space-xxl)",
-    "_rowGap": "var(--space-l)"
-   }
-  },
-  {
-   "id": "1me6wd",
-   "name": "office-hero__content",
-   "settings": {
-    "_display": "flex",
-    "_direction": "column",
-    "_rowGap": "var(--space-m)"
-   }
-  },
-  {
-   "id": "2chdce",
-   "name": "office-hero__title",
-   "settings": {
-    "_margin": {
-     "top": "0",
-     "bottom": "0"
-    },
-    "_typography": {
-     "line-height": "1.1"
-    }
-   }
-  },
-  {
-   "id": "zr1zb4",
-   "name": "office-hero__actions",
-   "settings": {
-    "_display": "flex",
-    "_direction": "row",
-    "_flexWrap": "wrap",
-    "_columnGap": "var(--space-xs)",
-    "_rowGap": "var(--space-xs)",
-    "_cssCustom": "/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}"
-   }
-  },
-  {
    "id": "mokxd3",
    "name": "office-plan",
    "settings": {
@@ -900,6 +829,77 @@
       "raw": "var(--white-trans-80)"
      }
     }
+   }
+  },
+  {
+   "id": "2l2a5v",
+   "name": "audience-breadcrumb",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    },
+    "_cssCustom": ".audience-breadcrumb a {\n  color: var(--primary-dark);\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}\n\n.audience-breadcrumb span {\n  margin-inline: 0.5em;\n}"
+   }
+  },
+  {
+   "id": "27leu5",
+   "name": "office-hero",
+   "settings": {
+    "_cssCustom": ".office-hero {\n  background: linear-gradient(115deg, var(--primary-ultra-light), var(--white) 72%);\n}"
+   }
+  },
+  {
+   "id": "vyxnax",
+   "name": "office-hero__grid",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "minmax(0, 1.15fr) minmax(0, 1fr)",
+    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-xxl)",
+    "_rowGap": "var(--space-l)"
+   }
+  },
+  {
+   "id": "1me6wd",
+   "name": "office-hero__content",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-m)"
+   }
+  },
+  {
+   "id": "2chdce",
+   "name": "office-hero__title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "line-height": "1.1"
+    }
+   }
+  },
+  {
+   "id": "zr1zb4",
+   "name": "office-hero__actions",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "wrap",
+    "_columnGap": "var(--space-xs)",
+    "_rowGap": "var(--space-xs)",
+    "_cssCustom": "/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}"
    }
   },
   {

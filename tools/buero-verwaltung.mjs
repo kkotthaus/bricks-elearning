@@ -76,8 +76,26 @@ cls('office-select', {
   _cssCustom: '.office-select {\n  font-family: inherit;\n  list-style: none;\n}\n\n/* Liste ohne Skript (Builder): Einträge untereinander */\n.office-select > li {\n  margin: 0;\n}\n\n.office-select:focus-visible {\n  outline: 2px solid var(--primary);\n  outline-offset: 2px;\n}',
 });
 
-// Grüne Dachzeile auf dunklem Grund (Lösungsfinder, Lernplan-Karte auf „Zielgruppe“)
-  cls('office-plan__eyebrow', { _typography: { color: { raw: 'var(--action-light)' } } });
+// Grüne Dachzeile auf dunklem Grund (Lösungsfinder, Lernplan-Karte)
+cls('office-plan__eyebrow', { _typography: { color: { raw: 'var(--action-light)' } } });
+// Lernplan-Karte (Abschnitt „Risiken“, auch auf „Zielgruppe“)
+cls('office-plan', {
+  _padding: { top: 'var(--space-l)', right: 'var(--space-l)', bottom: 'var(--space-l)', left: 'var(--space-l)' },
+  '_padding:mobile_landscape': { top: 'var(--space-m)', right: 'var(--space-m)', bottom: 'var(--space-m)', left: 'var(--space-m)' },
+  _background: { color: { raw: 'var(--primary-dark)' } }, _typography: { color: { raw: 'var(--white)' } },
+  _border: { radius: { top: 'var(--radius)', right: 'var(--radius)', bottom: 'var(--radius)', left: 'var(--radius)' } },
+  _cssCustom: '/* Karte leicht gedreht mit grünem Versatz-Schatten (Vorlage) */\n.office-plan {\n  transform: rotate(1deg);\n  box-shadow: 1.6rem 2rem 0 var(--action-trans-20);\n}\n\n@media (max-width: 991px) {\n  .office-plan {\n    transform: none;\n    box-shadow: 0.8rem 1rem 0 var(--action-trans-20);\n  }\n}',
+});
+cls('office-plan__title', { _margin: { top: 'var(--space-xs)', bottom: 'var(--space-s)' }, _typography: { 'line-height': '1.2', color: { raw: 'var(--white)' } } });
+cls('office-plan__list', { _margin: NULL4, _padding: NULL4, _cssCustom: '.office-plan__list {\n  list-style: none;\n}' });
+cls('office-plan__item', {
+  _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'center', _columnGap: 'var(--space-s)', _margin: { top: '0', bottom: '0' },
+  _padding: { top: 'var(--space-xs)', bottom: 'var(--space-xs)' },
+  _border: { width: { top: '1px' }, style: 'solid', color: { raw: 'var(--white-trans-20)' } },
+});
+cls('office-plan__number', { _flexShrink: '0', _widthMin: '2ch', _typography: { 'font-size': 'var(--h4)', color: { raw: 'var(--action-light)' } } });
+cls('office-plan__item-title', { ...m0, _typography: { 'font-weight': '700', 'line-height': '1.3' } });
+cls('office-plan__item-text', { ...m0, _typography: { color: { raw: 'var(--white-trans-80)' } } });
 
 function intro(b, parent, { eyebrow, title, tag = 'h2', lede, ledeClass = 'office-lede' }) {
   const box = b.add(parent, 'block', 'Einleitung', C('office-intro'));
@@ -209,8 +227,28 @@ function select(b, parent, { name, id, label, options }) {
   cls('office-risks__item', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-xs)', _margin: { top: '0', bottom: '0' }, _padding: { top: 'var(--space-s)' }, _border: { width: { top: '3px' }, style: 'solid', color: { raw: 'var(--action)' } } });
   cls('office-risks__title', { ...m0 });
   const sec = b.add(null, 'section', 'Risiken im Büro', { _cssId: 'themen', ...C('office-risks') });
+  // Einleitung links, Lernplan-Karte rechts (Vorlage 04.11.2026)
+  cls('office-risks__top', { _display: 'grid', _gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.15fr)', '_gridTemplateColumns:tablet_portrait': 'minmax(0, 1fr)', _alignItems: 'center', _columnGap: 'var(--space-xl)', _rowGap: 'var(--space-l)' });
+  cls('office-plan__note', { _margin: { top: 'var(--space-s)', bottom: '0' }, _typography: { color: { raw: 'var(--white-trans-80)' } } });
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});
-  intro(b, con, { eyebrow: 'Welche Unterweisungen spielen eine Rolle?', title: 'Auch im Büro gibt es Risiken.<br>Das passende Wissen hilft.', lede: 'Ein falsch eingerichteter Arbeitsplatz, eine täuschend echte E-Mail oder sensible Daten im falschen Verteiler: Sicherheit beginnt bei alltäglichen Entscheidungen.' });
+  const top = b.add(con, 'block', 'Einleitung und Lernplan', C('office-risks__top'));
+  intro(b, top, { eyebrow: 'Welche Unterweisungen spielen eine Rolle?', title: 'Auch im Büro gibt es Risiken.<br>Das passende Wissen hilft.', lede: 'Ein falsch eingerichteter Arbeitsplatz, eine täuschend echte E-Mail oder sensible Daten im falschen Verteiler: Sicherheit beginnt bei alltäglichen Entscheidungen.' });
+  const plan = b.add(top, 'block', 'Lernplan-Karte', { tag: 'aside', _attributes: [['aria-label', 'Ihr Lernplan']], ...C('office-plan') });
+  b.add(plan, 'text-basic', 'Dachzeile', { text: up('Ihr Lernplan für den Büroalltag'), tag: 'p', ...C('eyebrow', 'office-plan__eyebrow') });
+  b.add(plan, 'heading', 'Überschrift', { text: 'Gute Arbeit beginnt<br>mit sicherem Wissen.', tag: 'h3', ...C('office-plan__title') });
+  const ol = b.add(plan, 'block', 'Themen', { tag: 'ol', ...C('office-plan__list') });
+  for (const [nr, title, text] of [
+    ['01', 'Gesund & sicher arbeiten', 'Bildschirmarbeitsplatz · Sicheres Arbeitsumfeld · Mobiles Arbeiten'],
+    ['02', 'Daten & Informationen schützen', 'Datenschutz · Informationssicherheit · KI anwenden'],
+    ['03', 'Verantwortungsvoll handeln', 'Gleichbehandlung · Compliance-Grundlagen · Energieeffizienz'],
+  ]) {
+    const li = b.add(ol, 'block', `Thema ${nr}: ${title}`, { tag: 'li', ...C('office-plan__item') });
+    b.add(li, 'text-basic', 'Nummer', { text: nr, tag: 'span', _attributes: [['aria-hidden', 'true']], ...C('office-plan__number') });
+    const t = b.add(li, 'div', 'Text', {});
+    b.add(t, 'text-basic', 'Titel', { text: title, tag: 'p', ...C('office-plan__item-title') });
+    b.add(t, 'text-basic', 'Text', { text, tag: 'p', ...C('office-plan__item-text') });
+  }
+  b.add(plan, 'text-basic', 'Hinweis', { text: '5, 10 oder 15 Themen – passend zu Ihrem Bedarf.', tag: 'p', ...C('office-plan__note') });
   const ul = b.add(con, 'block', 'Themenbereiche', { tag: 'ul', ...C('office-risks__grid', 'acss:grid--3', 'acss:grid--m-1') });
   for (const [title, text] of [
     ['Arbeitsschutz & Gesundheit', 'Erstunterweisung und Büro- und Bildschirmarbeit legen die Grundlage. Je nach Arbeitsumgebung ergänzen Themen wie mobiles Arbeiten, Stolpergefahren oder Desk-Sharing die Auswahl.'],

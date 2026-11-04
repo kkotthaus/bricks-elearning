@@ -23,7 +23,7 @@
    "parent": "bvr001",
    "children": [
     "bvr003",
-    "bvr007"
+    "bvr028"
    ],
    "settings": {},
    "label": "Inhaltsbereich"
@@ -34,8 +34,23 @@
    "parent": "bvr002",
    "children": [
     "bvr004",
+    "bvr008"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "1jxb07"
+    ]
+   },
+   "label": "Einleitung und Lernplan"
+  },
+  {
+   "id": "bvr004",
+   "name": "block",
+   "parent": "bvr003",
+   "children": [
     "bvr005",
-    "bvr006"
+    "bvr006",
+    "bvr007"
    ],
    "settings": {
     "_cssGlobalClasses": [
@@ -45,9 +60,9 @@
    "label": "Einleitung"
   },
   {
-   "id": "bvr004",
+   "id": "bvr005",
    "name": "text-basic",
-   "parent": "bvr003",
+   "parent": "bvr004",
    "children": [],
    "settings": {
     "text": "WELCHE UNTERWEISUNGEN SPIELEN EINE ROLLE?",
@@ -59,9 +74,9 @@
    "label": "Dachzeile"
   },
   {
-   "id": "bvr005",
+   "id": "bvr006",
    "name": "heading",
-   "parent": "bvr003",
+   "parent": "bvr004",
    "children": [],
    "settings": {
     "text": "Auch im Büro gibt es Risiken.<br>Das passende Wissen hilft.",
@@ -74,9 +89,9 @@
    "label": "Überschrift"
   },
   {
-   "id": "bvr006",
+   "id": "bvr007",
    "name": "text-basic",
-   "parent": "bvr003",
+   "parent": "bvr004",
    "children": [],
    "settings": {
     "text": "Ein falsch eingerichteter Arbeitsplatz, eine täuschend echte E-Mail oder sensible Daten im falschen Verteiler: Sicherheit beginnt bei alltäglichen Entscheidungen.",
@@ -89,13 +104,334 @@
    "label": "Einleitung"
   },
   {
-   "id": "bvr007",
+   "id": "bvr008",
+   "name": "block",
+   "parent": "bvr003",
+   "children": [
+    "bvr009",
+    "bvr010",
+    "bvr011",
+    "bvr027"
+   ],
+   "settings": {
+    "tag": "aside",
+    "_attributes": [
+     {
+      "id": "bvr008a0",
+      "name": "aria-label",
+      "value": "Ihr Lernplan"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "mokxd3"
+    ]
+   },
+   "label": "Lernplan-Karte"
+  },
+  {
+   "id": "bvr009",
+   "name": "text-basic",
+   "parent": "bvr008",
+   "children": [],
+   "settings": {
+    "text": "IHR LERNPLAN FÜR DEN BÜROALLTAG",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "aq6l6g",
+     "1y3ln0"
+    ]
+   },
+   "label": "Dachzeile"
+  },
+  {
+   "id": "bvr010",
+   "name": "heading",
+   "parent": "bvr008",
+   "children": [],
+   "settings": {
+    "text": "Gute Arbeit beginnt<br>mit sicherem Wissen.",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "1fh0lb",
+     "hfad5o"
+    ]
+   },
+   "label": "Überschrift"
+  },
+  {
+   "id": "bvr011",
+   "name": "block",
+   "parent": "bvr008",
+   "children": [
+    "bvr012",
+    "bvr017",
+    "bvr022"
+   ],
+   "settings": {
+    "tag": "ol",
+    "_cssGlobalClasses": [
+     "sl3ri0"
+    ]
+   },
+   "label": "Themen"
+  },
+  {
+   "id": "bvr012",
+   "name": "block",
+   "parent": "bvr011",
+   "children": [
+    "bvr013",
+    "bvr014"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Thema 01: Gesund & sicher arbeiten"
+  },
+  {
+   "id": "bvr013",
+   "name": "text-basic",
+   "parent": "bvr012",
+   "children": [],
+   "settings": {
+    "text": "01",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "bvr013a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "bvr014",
+   "name": "div",
+   "parent": "bvr012",
+   "children": [
+    "bvr015",
+    "bvr016"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "bvr015",
+   "name": "text-basic",
+   "parent": "bvr014",
+   "children": [],
+   "settings": {
+    "text": "Gesund & sicher arbeiten",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx",
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvr016",
+   "name": "text-basic",
+   "parent": "bvr014",
+   "children": [],
+   "settings": {
+    "text": "Bildschirmarbeitsplatz · Sicheres Arbeitsumfeld · Mobiles Arbeiten",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0",
+     "2pdd1n"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvr017",
+   "name": "block",
+   "parent": "bvr011",
+   "children": [
+    "bvr018",
+    "bvr019"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Thema 02: Daten & Informationen schützen"
+  },
+  {
+   "id": "bvr018",
+   "name": "text-basic",
+   "parent": "bvr017",
+   "children": [],
+   "settings": {
+    "text": "02",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "bvr018a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "bvr019",
+   "name": "div",
+   "parent": "bvr017",
+   "children": [
+    "bvr020",
+    "bvr021"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "bvr020",
+   "name": "text-basic",
+   "parent": "bvr019",
+   "children": [],
+   "settings": {
+    "text": "Daten & Informationen schützen",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx",
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvr021",
+   "name": "text-basic",
+   "parent": "bvr019",
+   "children": [],
+   "settings": {
+    "text": "Datenschutz · Informationssicherheit · KI anwenden",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0",
+     "2pdd1n"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvr022",
+   "name": "block",
+   "parent": "bvr011",
+   "children": [
+    "bvr023",
+    "bvr024"
+   ],
+   "settings": {
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "zwjsxh"
+    ]
+   },
+   "label": "Thema 03: Verantwortungsvoll handeln"
+  },
+  {
+   "id": "bvr023",
+   "name": "text-basic",
+   "parent": "bvr022",
+   "children": [],
+   "settings": {
+    "text": "03",
+    "tag": "span",
+    "_attributes": [
+     {
+      "id": "bvr023a0",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ],
+    "_cssGlobalClasses": [
+     "204b0q"
+    ]
+   },
+   "label": "Nummer"
+  },
+  {
+   "id": "bvr024",
+   "name": "div",
+   "parent": "bvr022",
+   "children": [
+    "bvr025",
+    "bvr026"
+   ],
+   "settings": {},
+   "label": "Text"
+  },
+  {
+   "id": "bvr025",
+   "name": "text-basic",
+   "parent": "bvr024",
+   "children": [],
+   "settings": {
+    "text": "Verantwortungsvoll handeln",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "vf9abx",
+     "27hx45"
+    ]
+   },
+   "label": "Titel"
+  },
+  {
+   "id": "bvr026",
+   "name": "text-basic",
+   "parent": "bvr024",
+   "children": [],
+   "settings": {
+    "text": "Gleichbehandlung · Compliance-Grundlagen · Energieeffizienz",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0",
+     "2pdd1n"
+    ]
+   },
+   "label": "Text"
+  },
+  {
+   "id": "bvr027",
+   "name": "text-basic",
+   "parent": "bvr008",
+   "children": [],
+   "settings": {
+    "text": "5, 10 oder 15 Themen – passend zu Ihrem Bedarf.",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "d0brm0",
+     "21mpi8"
+    ]
+   },
+   "label": "Hinweis"
+  },
+  {
+   "id": "bvr028",
    "name": "block",
    "parent": "bvr002",
    "children": [
-    "bvr008",
-    "bvr011",
-    "bvr014"
+    "bvr029",
+    "bvr032",
+    "bvr035"
    ],
    "settings": {
     "tag": "ul",
@@ -108,12 +444,12 @@
    "label": "Themenbereiche"
   },
   {
-   "id": "bvr008",
+   "id": "bvr029",
    "name": "block",
-   "parent": "bvr007",
+   "parent": "bvr028",
    "children": [
-    "bvr009",
-    "bvr010"
+    "bvr030",
+    "bvr031"
    ],
    "settings": {
     "tag": "li",
@@ -124,9 +460,9 @@
    "label": "Bereich: Arbeitsschutz & Gesundheit"
   },
   {
-   "id": "bvr009",
+   "id": "bvr030",
    "name": "heading",
-   "parent": "bvr008",
+   "parent": "bvr029",
    "children": [],
    "settings": {
     "text": "Arbeitsschutz & Gesundheit",
@@ -139,9 +475,9 @@
    "label": "Titel"
   },
   {
-   "id": "bvr010",
+   "id": "bvr031",
    "name": "text-basic",
-   "parent": "bvr008",
+   "parent": "bvr029",
    "children": [],
    "settings": {
     "text": "Erstunterweisung und Büro- und Bildschirmarbeit legen die Grundlage. Je nach Arbeitsumgebung ergänzen Themen wie mobiles Arbeiten, Stolpergefahren oder Desk-Sharing die Auswahl.",
@@ -154,12 +490,12 @@
    "label": "Text"
   },
   {
-   "id": "bvr011",
+   "id": "bvr032",
    "name": "block",
-   "parent": "bvr007",
+   "parent": "bvr028",
    "children": [
-    "bvr012",
-    "bvr013"
+    "bvr033",
+    "bvr034"
    ],
    "settings": {
     "tag": "li",
@@ -170,9 +506,9 @@
    "label": "Bereich: Datenschutz & IT-Sicherheit"
   },
   {
-   "id": "bvr012",
+   "id": "bvr033",
    "name": "heading",
-   "parent": "bvr011",
+   "parent": "bvr032",
    "children": [],
    "settings": {
     "text": "Datenschutz & IT-Sicherheit",
@@ -185,9 +521,9 @@
    "label": "Titel"
   },
   {
-   "id": "bvr013",
+   "id": "bvr034",
    "name": "text-basic",
-   "parent": "bvr011",
+   "parent": "bvr032",
    "children": [],
    "settings": {
     "text": "Wer mit Kunden-, Personal- oder Unternehmensdaten arbeitet, braucht Orientierung. Sensibilisieren Sie für den Umgang mit Daten, verdächtige E-Mails und Informationssicherheit unterwegs.",
@@ -200,12 +536,12 @@
    "label": "Text"
   },
   {
-   "id": "bvr014",
+   "id": "bvr035",
    "name": "block",
-   "parent": "bvr007",
+   "parent": "bvr028",
    "children": [
-    "bvr015",
-    "bvr016"
+    "bvr036",
+    "bvr037"
    ],
    "settings": {
     "tag": "li",
@@ -216,9 +552,9 @@
    "label": "Bereich: Zusammenarbeit & Compliance"
   },
   {
-   "id": "bvr015",
+   "id": "bvr036",
    "name": "heading",
-   "parent": "bvr014",
+   "parent": "bvr035",
    "children": [],
    "settings": {
     "text": "Zusammenarbeit & Compliance",
@@ -231,9 +567,9 @@
    "label": "Titel"
   },
   {
-   "id": "bvr016",
+   "id": "bvr037",
    "name": "text-basic",
-   "parent": "bvr014",
+   "parent": "bvr035",
    "children": [],
    "settings": {
     "text": "Gleichbehandlung und klare Verhaltensregeln unterstützen ein respektvolles Miteinander. KI-Nutzung und Hinweisgeberschutz ergänzen das Wissen passend zur Tätigkeit.",
@@ -302,6 +638,160 @@
    }
   },
   {
+   "id": "1y3ln0",
+   "name": "office-plan__eyebrow",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--action-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "mokxd3",
+   "name": "office-plan",
+   "settings": {
+    "_padding": {
+     "top": "var(--space-l)",
+     "right": "var(--space-l)",
+     "bottom": "var(--space-l)",
+     "left": "var(--space-l)"
+    },
+    "_padding:mobile_landscape": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--primary-dark)"
+     }
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius)",
+      "right": "var(--radius)",
+      "bottom": "var(--radius)",
+      "left": "var(--radius)"
+     }
+    },
+    "_cssCustom": "/* Karte leicht gedreht mit grünem Versatz-Schatten (Vorlage) */\n.office-plan {\n  transform: rotate(1deg);\n  box-shadow: 1.6rem 2rem 0 var(--action-trans-20);\n}\n\n@media (max-width: 991px) {\n  .office-plan {\n    transform: none;\n    box-shadow: 0.8rem 1rem 0 var(--action-trans-20);\n  }\n}"
+   }
+  },
+  {
+   "id": "hfad5o",
+   "name": "office-plan__title",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-xs)",
+     "bottom": "var(--space-s)"
+    },
+    "_typography": {
+     "line-height": "1.2",
+     "color": {
+      "raw": "var(--white)"
+     }
+    }
+   }
+  },
+  {
+   "id": "sl3ri0",
+   "name": "office-plan__list",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_cssCustom": ".office-plan__list {\n  list-style: none;\n}"
+   }
+  },
+  {
+   "id": "zwjsxh",
+   "name": "office-plan__item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "row",
+    "_flexWrap": "nowrap",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-s)",
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_padding": {
+     "top": "var(--space-xs)",
+     "bottom": "var(--space-xs)"
+    },
+    "_border": {
+     "width": {
+      "top": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--white-trans-20)"
+     }
+    }
+   }
+  },
+  {
+   "id": "204b0q",
+   "name": "office-plan__number",
+   "settings": {
+    "_flexShrink": "0",
+    "_widthMin": "2ch",
+    "_typography": {
+     "font-size": "var(--h4)",
+     "color": {
+      "raw": "var(--action-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "27hx45",
+   "name": "office-plan__item-title",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "font-weight": "700",
+     "line-height": "1.3"
+    }
+   }
+  },
+  {
+   "id": "2pdd1n",
+   "name": "office-plan__item-text",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white-trans-80)"
+     }
+    }
+   }
+  },
+  {
    "id": "cwtu46",
    "name": "office-risks__grid",
    "settings": {
@@ -354,6 +844,33 @@
     "_margin": {
      "top": "0",
      "bottom": "0"
+    }
+   }
+  },
+  {
+   "id": "1jxb07",
+   "name": "office-risks__top",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "minmax(0, 1fr) minmax(0, 1.15fr)",
+    "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
+    "_alignItems": "center",
+    "_columnGap": "var(--space-xl)",
+    "_rowGap": "var(--space-l)"
+   }
+  },
+  {
+   "id": "21mpi8",
+   "name": "office-plan__note",
+   "settings": {
+    "_margin": {
+     "top": "var(--space-s)",
+     "bottom": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--white-trans-80)"
+     }
     }
    }
   },
