@@ -28,6 +28,7 @@ export const SCHRIFT = {
 export const GROESSE = {
   'office-hero__title': 'audience-h1',
   'office-plan__title': 'audience-h3',
+  'office-hero__caption-title': 'audience-h3',
   'office-risks__title': 'audience-h4',
   'office-package__title': 'audience-h4',
   'office-finder__result-title': 'audience-h4',
@@ -39,6 +40,7 @@ export const GROESSE = {
   'office-finder__result-text': 'audience-text-m',
   'office-label': 'audience-text-s',
   'office-hero__note': 'audience-text-s',
+  'office-hero__caption-text': 'audience-text-m',
   'office-plan__item-text': 'audience-text-s',
   'office-plan__note': 'audience-text-s',
   'office-strip__list': 'audience-text-s',

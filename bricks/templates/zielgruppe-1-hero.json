@@ -578,6 +578,125 @@
    }
   },
   {
+   "id": "2b63w4",
+   "name": "audience-h1",
+   "settings": {
+    "_typography": {
+     "font-size": "calc(var(--h1) * 1.2)"
+    }
+   }
+  },
+  {
+   "id": "25s4zv",
+   "name": "audience-h2",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)"
+    }
+   }
+  },
+  {
+   "id": "1fh0lb",
+   "name": "audience-h3",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h3)"
+    }
+   }
+  },
+  {
+   "id": "2bumb9",
+   "name": "audience-h4",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)"
+    }
+   }
+  },
+  {
+   "id": "2mtx3e",
+   "name": "audience-h5",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)"
+    }
+   }
+  },
+  {
+   "id": "hc1otc",
+   "name": "audience-h6",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h6)"
+    }
+   }
+  },
+  {
+   "id": "1tfved",
+   "name": "audience-text-l",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)"
+    }
+   }
+  },
+  {
+   "id": "vf9abx",
+   "name": "audience-text-m",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-m)"
+    }
+   }
+  },
+  {
+   "id": "d0brm0",
+   "name": "audience-text-s",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    }
+   }
+  },
+  {
+   "id": "3ruidn",
+   "name": "audience-text-xs",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)"
+    }
+   }
+  },
+  {
+   "id": "1y3ln0",
+   "name": "office-plan__eyebrow",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--action-light)"
+     }
+    }
+   }
+  },
+  {
+   "id": "2l2a5v",
+   "name": "audience-breadcrumb",
+   "settings": {
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    },
+    "_cssCustom": ".audience-breadcrumb a {\n  color: var(--primary-dark);\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}\n\n.audience-breadcrumb span {\n  margin-inline: 0.5em;\n}"
+   }
+  },
+  {
    "id": "mokxd3",
    "name": "office-plan",
    "settings": {
@@ -612,17 +731,6 @@
      }
     },
     "_cssCustom": "/* Karte leicht gedreht mit grünem Versatz-Schatten (Vorlage) */\n.office-plan {\n  transform: rotate(1deg);\n  box-shadow: 1.6rem 2rem 0 var(--action-trans-20);\n}\n\n@media (max-width: 991px) {\n  .office-plan {\n    transform: none;\n    box-shadow: 0.8rem 1rem 0 var(--action-trans-20);\n  }\n}"
-   }
-  },
-  {
-   "id": "1y3ln0",
-   "name": "office-plan__eyebrow",
-   "settings": {
-    "_typography": {
-     "color": {
-      "raw": "var(--action-light)"
-     }
-    }
    }
   },
   {
@@ -729,114 +837,6 @@
       "raw": "var(--white-trans-80)"
      }
     }
-   }
-  },
-  {
-   "id": "2b63w4",
-   "name": "audience-h1",
-   "settings": {
-    "_typography": {
-     "font-size": "calc(var(--h1) * 1.2)"
-    }
-   }
-  },
-  {
-   "id": "25s4zv",
-   "name": "audience-h2",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--h2)"
-    }
-   }
-  },
-  {
-   "id": "1fh0lb",
-   "name": "audience-h3",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--h3)"
-    }
-   }
-  },
-  {
-   "id": "2bumb9",
-   "name": "audience-h4",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--h4)"
-    }
-   }
-  },
-  {
-   "id": "2mtx3e",
-   "name": "audience-h5",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--h5)"
-    }
-   }
-  },
-  {
-   "id": "hc1otc",
-   "name": "audience-h6",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--h6)"
-    }
-   }
-  },
-  {
-   "id": "1tfved",
-   "name": "audience-text-l",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--text-l)"
-    }
-   }
-  },
-  {
-   "id": "vf9abx",
-   "name": "audience-text-m",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--text-m)"
-    }
-   }
-  },
-  {
-   "id": "d0brm0",
-   "name": "audience-text-s",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--text-s)"
-    }
-   }
-  },
-  {
-   "id": "3ruidn",
-   "name": "audience-text-xs",
-   "settings": {
-    "_typography": {
-     "font-size": "var(--text-xs)"
-    }
-   }
-  },
-  {
-   "id": "2l2a5v",
-   "name": "audience-breadcrumb",
-   "settings": {
-    "_margin": {
-     "top": "0",
-     "right": "0",
-     "bottom": "0",
-     "left": "0"
-    },
-    "_typography": {
-     "color": {
-      "raw": "var(--text-dark-muted)"
-     }
-    },
-    "_cssCustom": ".audience-breadcrumb a {\n  color: var(--primary-dark);\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}\n\n.audience-breadcrumb span {\n  margin-inline: 0.5em;\n}"
    }
   },
   {

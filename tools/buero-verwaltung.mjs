@@ -21,6 +21,8 @@ const SITE = 'http://weka-e.local';
 const SHOP = 'https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende';
 const FLAT = 'https://lernen.weka.de/de/e/weka-ecampus-flatrate-unterweisungen-140';
 const KONTAKT = 'https://www.weka-elearning.de/kontakt/';
+// Hero-Foto (assets/bilder/buero-verwaltung-hero.jpg, Platzhalter aus dem Entwurf) – lokale Anhang-ID; auf Live nach dem Hochladen im Builder neu wählen
+const HERO_BILD = { id: 10868, url: SITE + '/wp-content/uploads/2026/11/buero-verwaltung-hero.jpg' };
 
 // Klassen-ID aus dem Namen ableiten (gleicher Name = gleiche ID)
 const cid = (name) => BigInt('0x' + createHash('sha1').update(name).digest('hex').slice(0, 12)).toString(36).slice(0, 6).padStart(6, 'k');
@@ -74,6 +76,9 @@ cls('office-select', {
   _cssCustom: '.office-select {\n  font-family: inherit;\n  list-style: none;\n}\n\n/* Liste ohne Skript (Builder): Einträge untereinander */\n.office-select > li {\n  margin: 0;\n}\n\n.office-select:focus-visible {\n  outline: 2px solid var(--primary);\n  outline-offset: 2px;\n}',
 });
 
+// Grüne Dachzeile auf dunklem Grund (Lösungsfinder, Lernplan-Karte auf „Zielgruppe“)
+  cls('office-plan__eyebrow', { _typography: { color: { raw: 'var(--action-light)' } } });
+
 function intro(b, parent, { eyebrow, title, tag = 'h2', lede, ledeClass = 'office-lede' }) {
   const box = b.add(parent, 'block', 'Einleitung', C('office-intro'));
   b.add(box, 'text-basic', 'Dachzeile', { text: up(eyebrow), tag: 'p', ...C('eyebrow') });
@@ -96,30 +101,35 @@ function select(b, parent, { name, id, label, options }) {
   cls('office-hero__title', { ...m0, _typography: { 'line-height': '1.1' } });
   cls('office-hero__actions', { _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _columnGap: 'var(--space-xs)', _rowGap: 'var(--space-xs)', _cssCustom: '/* Mobil: Buttons volle Breite */\n@media (max-width: 767px) {\n  .office-hero__actions > .brxe-button {\n    width: 100%;\n  }\n}' });
   cls('office-hero__note', { ...m0, _typography: muted });
-  cls('office-plan', {
-    _padding: { top: 'var(--space-l)', right: 'var(--space-l)', bottom: 'var(--space-l)', left: 'var(--space-l)' },
-    '_padding:mobile_landscape': { top: 'var(--space-m)', right: 'var(--space-m)', bottom: 'var(--space-m)', left: 'var(--space-m)' },
-    _background: { color: { raw: 'var(--primary-dark)' } }, _typography: { color: { raw: 'var(--white)' } },
-    _border: { radius: { top: 'var(--radius)', right: 'var(--radius)', bottom: 'var(--radius)', left: 'var(--radius)' } },
-    _cssCustom: '/* Karte leicht gedreht mit grünem Versatz-Schatten (Vorlage) */\n.office-plan {\n  transform: rotate(1deg);\n  box-shadow: 1.6rem 2rem 0 var(--action-trans-20);\n}\n\n@media (max-width: 991px) {\n  .office-plan {\n    transform: none;\n    box-shadow: 0.8rem 1rem 0 var(--action-trans-20);\n  }\n}',
+  // Dachzeile mit grünem Balken (Entwurf 04.11.2026)
+  cls('office-hero__eyebrow', {
+    _typography: { 'font-weight': '700' },
+    _cssCustom: '.office-hero__eyebrow::before {\n  content: "";\n  display: inline-block;\n  width: 0.35em;\n  height: 1.3em;\n  margin-right: 0.9em;\n  vertical-align: -0.3em;\n  background: var(--action);\n  border-radius: var(--radius-xs);\n}',
   });
-  cls('office-plan__eyebrow', { _typography: { color: { raw: 'var(--action-light)' } } });
-  cls('office-plan__title', { _margin: { top: 'var(--space-xs)', bottom: 'var(--space-s)' }, _typography: { 'line-height': '1.2', color: { raw: 'var(--white)' } } });
-  cls('office-plan__list', { _margin: NULL4, _padding: NULL4, _cssCustom: '.office-plan__list {\n  list-style: none;\n}' });
-  cls('office-plan__item', {
-    _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'center', _columnGap: 'var(--space-s)', _margin: { top: '0', bottom: '0' },
-    _padding: { top: 'var(--space-xs)', bottom: 'var(--space-xs)' },
-    _border: { width: { top: '1px' }, style: 'solid', color: { raw: 'var(--white-trans-20)' } },
+  // Foto mit Bildunterschrift, dahinter eine leicht gedrehte grüne Fläche
+  cls('office-hero__media', {
+    _position: 'relative', _margin: NULL4, _rowGap: '0', '_widthMax:tablet_portrait': '64rem',
+    _cssCustom: '.office-hero__media {\n  isolation: isolate;\n}\n\n.office-hero__media::before {\n  content: "";\n  position: absolute;\n  inset: -2.4rem -2rem -2.4rem 3rem;\n  z-index: -1;\n  background: var(--action-trans-20);\n  border-radius: var(--radius-l);\n  transform: rotate(2deg);\n}\n\n@media (max-width: 767px) {\n  .office-hero__media::before {\n    inset: -1.2rem -1rem -1.2rem 2rem;\n  }\n}',
   });
-  cls('office-plan__number', { _flexShrink: '0', _widthMin: '2ch', _typography: { 'font-size': 'var(--h4)', color: { raw: 'var(--action-light)' } } });
-  cls('office-plan__item-title', { ...m0, _typography: { 'font-weight': '700', 'line-height': '1.3' } });
-  cls('office-plan__item-text', { ...m0, _typography: { color: { raw: 'var(--white-trans-80)' } } });
-  cls('office-plan__note', { _margin: { top: 'var(--space-s)', bottom: '0' }, _typography: { color: { raw: 'var(--white-trans-80)' } } });
+  cls('office-hero__image', {
+    _display: 'block', _width: '100%', _height: 'auto', _objectFit: 'cover',
+    _border: { radius: { top: 'var(--radius)', right: 'var(--radius)', bottom: '0', left: '0' } },
+    _cssCustom: '.office-hero__image {\n  aspect-ratio: 7 / 5;\n}',
+  });
+  cls('office-hero__caption', {
+    _display: 'flex', _direction: 'column', _alignItems: 'center', _rowGap: '0.3em', _margin: NULL4,
+    _padding: { top: 'var(--space-s)', right: 'var(--space-m)', bottom: 'var(--space-s)', left: 'var(--space-m)' },
+    _background: { color: { raw: 'var(--primary-dark)' } },
+    _border: { radius: { top: '0', right: '0', bottom: 'var(--radius)', left: 'var(--radius)' } },
+    _typography: { 'text-align': 'center', color: { raw: 'var(--white)' } },
+  });
+  cls('office-hero__caption-title', { ...m0, _typography: { 'font-weight': '700', 'line-height': '1.2', color: { raw: 'var(--white)' } } });
+  cls('office-hero__caption-text', { ...m0, _typography: { color: { raw: 'var(--white-trans-80)' } } });
 
   const sec = b.add(null, 'section', 'Hero – Büro & Verwaltung', C('office-hero'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', C('office-hero__grid'));
   const content = b.add(con, 'block', 'Inhalt', C('office-hero__content'));
-  b.add(content, 'text-basic', 'Dachzeile', { text: up('Für Mitarbeitende in Büro & Verwaltung'), tag: 'p', ...C('eyebrow') });
+  b.add(content, 'text-basic', 'Dachzeile', { text: up('Für Mitarbeitende in Büro & Verwaltung'), tag: 'p', ...C('eyebrow', 'office-hero__eyebrow') });
   b.add(content, 'heading', 'Überschrift', { text: 'Sicher arbeiten.<br>Bewusst handeln.<br>Einfach online lernen.', tag: 'h1', ...C('office-title', 'office-hero__title') });
   b.add(content, 'text-basic', 'Einleitung', { text: 'Unterweisen Sie Ihr Team zu den Themen, die im Büroalltag zählen – von Arbeitsschutz und Datenschutz bis zum sicheren Umgang mit E-Mails und KI.', tag: 'p', ...C('office-lede') });
   const act = b.add(content, 'block', 'Button-Gruppe', C('office-hero__actions'));
@@ -127,36 +137,25 @@ function select(b, parent, { name, id, label, options }) {
   b.add(act, 'button', 'Button: Lernpakete entdecken', { text: 'Lernpakete entdecken', link: link('#pakete'), ...C('acss:btn--primary', 'acss:btn--outline') });
   b.add(content, 'text-basic', 'Hinweis', { text: 'Für einzelne Mitarbeitende, kleine Teams und ganze Unternehmen.', tag: 'p', ...C('office-hero__note') });
 
-  const plan = b.add(con, 'block', 'Lernplan-Karte', { tag: 'aside', _attributes: [['aria-label', 'Themenübersicht']], ...C('office-plan') });
-  b.add(plan, 'text-basic', 'Dachzeile', { text: up('Ihr Lernplan für den Büroalltag'), tag: 'p', ...C('eyebrow', 'office-plan__eyebrow') });
-  b.add(plan, 'heading', 'Überschrift', { text: 'Gute Arbeit beginnt<br>mit sicherem Wissen.', tag: 'h2', ...C('office-plan__title') });
-  const ol = b.add(plan, 'block', 'Themenbereiche', { tag: 'ol', ...C('office-plan__list') });
-  for (const [nr, title, text] of [
-    ['01', 'Gesund & sicher arbeiten', 'Arbeitsplatz · Bildschirm · Mobiles Arbeiten'],
-    ['02', 'Daten & Informationen schützen', 'Datenschutz · Informationssicherheit · Phishing'],
-    ['03', 'Verantwortungsvoll handeln', 'Gleichbehandlung · Compliance · KI'],
-  ]) {
-    const li = b.add(ol, 'block', `Bereich ${nr}: ${title}`, { tag: 'li', ...C('office-plan__item') });
-    b.add(li, 'text-basic', 'Nummer', { text: nr, tag: 'span', _attributes: [['aria-hidden', 'true']], ...C('office-plan__number') });
-    const t = b.add(li, 'div', 'Text', {});
-    b.add(t, 'text-basic', 'Titel', { text: title, tag: 'p', ...C('office-plan__item-title') });
-    b.add(t, 'text-basic', 'Themen', { text, tag: 'p', ...C('office-plan__item-text') });
-  }
-  b.add(plan, 'text-basic', 'Hinweis', { text: '5, 10 oder 15 Themen – passend zu Ihrem Bedarf.', tag: 'p', ...C('office-plan__note') });
+  const media = b.add(con, 'block', 'Foto mit Bildunterschrift', { ...custom('figure'), ...C('office-hero__media') });
+  b.add(media, 'image', 'Foto', { image: { id: HERO_BILD.id, filename: 'buero-verwaltung-hero.jpg', size: 'full', url: HERO_BILD.url }, loading: 'eager', ...C('office-hero__image') });
+  const cap = b.add(media, 'block', 'Bildunterschrift', { ...custom('figcaption'), ...C('office-hero__caption') });
+  b.add(cap, 'text-basic', 'Titel', { text: 'Sicheres Wissen für Ihren Büroalltag', tag: 'p', ...C('office-hero__caption-title') });
+  b.add(cap, 'text-basic', 'Themen', { text: 'Arbeitsschutz&nbsp;· Datenschutz&nbsp;· Compliance', tag: 'p', ...C('office-hero__caption-text') });
   files['buero-verwaltung-1-hero'] = b.content;
 }
 
 // ---------- 2. Vorteilsleiste ----------
 {
   const b = builder('bvl');
-  cls('office-strip', { _padding: { top: '0', bottom: '0' } });
+  // Dunkelblaue Leiste mit grünen Häkchen (Entwurf 04.11.2026)
+  cls('office-strip', { _padding: { top: '0', bottom: '0' }, _background: { color: { raw: 'var(--primary-dark)' } } });
   cls('office-strip__list', {
     _display: 'flex', _direction: 'row', _flexWrap: 'wrap', _justifyContent: 'space-between', _columnGap: 'var(--space-m)', _rowGap: 'var(--space-xs)',
     '_justifyContent:mobile_landscape': 'flex-start', '_direction:mobile_landscape': 'column',
     _margin: NULL4, _padding: { top: 'var(--space-s)', right: '0', bottom: 'var(--space-s)', left: '0' },
-    _border: { width: { bottom: '1px' }, style: 'solid', color: { raw: 'var(--border-color-dark)' } },
-    _typography: { 'font-weight': '700' },
-    _cssCustom: '.office-strip__list > li::before {\n  content: "✓";\n  margin-right: 0.8em;\n  color: var(--action-dark);\n}',
+    _typography: { 'font-weight': '700', color: { raw: 'var(--white)' } },
+    _cssCustom: '.office-strip__list {\n  list-style: none;\n}\n\n.office-strip__list > li::before {\n  content: "✓";\n  display: inline-block;\n  margin-right: 0.6em;\n  transform: scale(1.3);\n  color: var(--action);\n}',
   });
   const sec = b.add(null, 'section', 'Vorteilsleiste', C('office-strip'));
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});

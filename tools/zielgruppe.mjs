@@ -4,7 +4,8 @@
 // Aufruf: node tools/zielgruppe.mjs [ausgabeordner-für-gesamtdatei]
 //
 // Nutzt die Klassen office-* der Seite „Büro-Verwaltung“ mit (Definition aus bricks/buero-verwaltung-*.json,
-// vorher node tools/buero-verwaltung.mjs). Neue Klassen beginnen mit audience-.
+// vorher node tools/buero-verwaltung.mjs). Neue Klassen beginnen mit audience-; die Lernplan-Karte
+// (office-plan*) wird hier definiert.
 // Die Symbole der Zielgruppen-Karten sind SVG-Elemente mit Code – sie brauchen eine Bricks-Code-Signatur.
 import { createHash } from 'node:crypto';
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -80,6 +81,24 @@ function intro(b, parent, { eyebrow, title, lede, ledeClass = 'office-lede' }) {
     _margin: NULL4, _typography: muted,
     _cssCustom: '.audience-breadcrumb a {\n  color: var(--primary-dark);\n  text-decoration: underline;\n  text-underline-offset: 0.3em;\n}\n\n.audience-breadcrumb span {\n  margin-inline: 0.5em;\n}',
   });
+  // Lernplan-Karte (bis 04.11.2026 im Hero von Büro-Verwaltung, jetzt nur noch hier genutzt)
+  cls('office-plan', {
+    _padding: { top: 'var(--space-l)', right: 'var(--space-l)', bottom: 'var(--space-l)', left: 'var(--space-l)' },
+    '_padding:mobile_landscape': { top: 'var(--space-m)', right: 'var(--space-m)', bottom: 'var(--space-m)', left: 'var(--space-m)' },
+    _background: { color: { raw: 'var(--primary-dark)' } }, _typography: { color: { raw: 'var(--white)' } },
+    _border: { radius: { top: 'var(--radius)', right: 'var(--radius)', bottom: 'var(--radius)', left: 'var(--radius)' } },
+    _cssCustom: '/* Karte leicht gedreht mit grünem Versatz-Schatten (Vorlage) */\n.office-plan {\n  transform: rotate(1deg);\n  box-shadow: 1.6rem 2rem 0 var(--action-trans-20);\n}\n\n@media (max-width: 991px) {\n  .office-plan {\n    transform: none;\n    box-shadow: 0.8rem 1rem 0 var(--action-trans-20);\n  }\n}',
+  });
+  cls('office-plan__title', { _margin: { top: 'var(--space-xs)', bottom: 'var(--space-s)' }, _typography: { 'line-height': '1.2', color: { raw: 'var(--white)' } } });
+  cls('office-plan__list', { _margin: NULL4, _padding: NULL4, _cssCustom: '.office-plan__list {\n  list-style: none;\n}' });
+  cls('office-plan__item', {
+    _display: 'flex', _direction: 'row', _flexWrap: 'nowrap', _alignItems: 'center', _columnGap: 'var(--space-s)', _margin: { top: '0', bottom: '0' },
+    _padding: { top: 'var(--space-xs)', bottom: 'var(--space-xs)' },
+    _border: { width: { top: '1px' }, style: 'solid', color: { raw: 'var(--white-trans-20)' } },
+  });
+  cls('office-plan__number', { _flexShrink: '0', _widthMin: '2ch', _typography: { 'font-size': 'var(--h4)', color: { raw: 'var(--action-light)' } } });
+  cls('office-plan__item-title', { ...m0, _typography: { 'font-weight': '700', 'line-height': '1.3' } });
+  cls('office-plan__item-text', { ...m0, _typography: { color: { raw: 'var(--white-trans-80)' } } });
   // Einstiegskarte wie die Lernplan-Karte, aber gerade (Vorlage)
   // Brotkrumen dicht über dem Raster (Container-Abstand wäre --container-gap)
   cls('audience-hero__inner', { _rowGap: 'var(--space-m)' });
