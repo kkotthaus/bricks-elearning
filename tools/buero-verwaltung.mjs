@@ -227,8 +227,8 @@ function select(b, parent, { name, id, label, options }) {
   cls('office-risks__item', { _display: 'flex', _direction: 'column', _rowGap: 'var(--space-xs)', _margin: { top: '0', bottom: '0' }, _padding: { top: 'var(--space-s)' }, _border: { width: { top: '3px' }, style: 'solid', color: { raw: 'var(--action)' } } });
   cls('office-risks__title', { ...m0 });
   const sec = b.add(null, 'section', 'Risiken im Büro', { _cssId: 'themen', ...C('office-risks') });
-  // Einleitung links, Lernplan-Karte rechts (Vorlage 04.11.2026)
-  cls('office-risks__top', { _display: 'grid', _gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.15fr)', '_gridTemplateColumns:tablet_portrait': 'minmax(0, 1fr)', _alignItems: 'center', _columnGap: 'var(--space-xl)', _rowGap: 'var(--space-l)' });
+  // Einleitung links, Lernplan-Karte rechts (Vorlage 04.11.2026); die Karte nur so breit wie ihre längste Zeile
+  cls('office-risks__top', { _display: 'grid', _gridTemplateColumns: 'minmax(0, 1fr) minmax(0, max-content)', '_gridTemplateColumns:tablet_portrait': 'minmax(0, 1fr)', _alignItems: 'center', _columnGap: 'var(--space-xl)', _rowGap: 'var(--space-l)' });
   cls('office-plan__note', { _margin: { top: 'var(--space-s)', bottom: '0' }, _typography: { color: { raw: 'var(--white-trans-80)' } } });
   const con = b.add(sec, 'container', 'Inhaltsbereich', {});
   const top = b.add(con, 'block', 'Einleitung und Lernplan', C('office-risks__top'));

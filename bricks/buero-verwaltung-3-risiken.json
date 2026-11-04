@@ -851,7 +851,7 @@
    "name": "office-risks__top",
    "settings": {
     "_display": "grid",
-    "_gridTemplateColumns": "minmax(0, 1fr) minmax(0, 1.15fr)",
+    "_gridTemplateColumns": "minmax(0, 1fr) minmax(0, max-content)",
     "_gridTemplateColumns:tablet_portrait": "minmax(0, 1fr)",
     "_alignItems": "center",
     "_columnGap": "var(--space-xl)",
