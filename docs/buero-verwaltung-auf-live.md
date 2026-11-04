@@ -51,7 +51,7 @@ Umsetzungsregeln:
 
 1. Neue Seite anlegen, Titel „Büro-Verwaltung“, Titelform (Slug) `buero-verwaltung`, als Entwurf; mit Bricks bearbeiten. Übergeordnete Seite ist **Zielgruppe** (Adresse `/zielgruppe/buero-verwaltung/`, entschieden 19.10.2026). Dafür braucht es die Seite „Zielgruppe“ und das Snippet „WEKA Zielgruppe – Unterseiten“, siehe `docs/zielgruppe-auf-live.md`. Gibt es „Zielgruppe“ noch nicht, die Seite zunächst ohne übergeordnete Seite anlegen und später umhängen.
 2. Im Builder oben **Templates** (Ordner-Symbol) › „Meine Vorlagen“ › die acht Vorlagen der Reihe nach einfügen (1 bis 8).
-   - **Foto im Hero:** Vorher `assets/bilder/buero-verwaltung-hero.jpg` in die Mediathek hochladen (Titel „Büro & Verwaltung Hero (Platzhalter)“, Alternativtext „Zwei Mitarbeitende im Büro schauen gemeinsam auf ein E-Learning am Laptop“). Im Hero das Element „Foto“ auswählen und unter **Bild** dieses Foto aus der Mediathek wählen (die Vorlage zeigt auf die lokale Kopie).
+   - **Foto im Hero:** Vorher `assets/bilder/Gemeinsam-online-lernen-im-modernen-Buero.png` in die Mediathek hochladen (Titel „Gemeinsam online lernen im modernen Büro“, Alternativtext „Zwei Mitarbeitende im Büro schauen gemeinsam auf ein E-Learning am Laptop“). Im Hero das Element „Foto“ auswählen und unter **Bild** dieses Foto aus der Mediathek wählen (die Vorlage zeigt auf die lokale Kopie).
 3. Speichern und die **Vorschau** öffnen (die Auswahlfelder erscheinen nur im Frontend, im Builder sind es Listen).
 4. Prüfen:
    - „Was benötigen Sie?“ umstellen: Die blaue Empfehlung wechselt (Flatrate / Einzelkurs / Beratung). Bei „Inhalte für unser eigenes LMS“ steht im Beratungstext „– passend zu Ihrem bestehenden LMS“.
@@ -84,7 +84,7 @@ Nur nötig, wenn die Seite auf Live schon vor dem 04.11.2026 gebaut wurde.
 Neu: Rechts im Hero steht statt der blauen Lernplan-Karte ein Foto mit blauer Bildunterschrift („Sicheres Wissen für Ihren Büroalltag“) vor einer leicht gedrehten grünen Fläche. Die Dachzeile hat links einen grünen Balken. Die Vorteilsleiste darunter ist dunkelblau mit weißer Schrift und grünen Häkchen. Neue Klassen: `office-hero__eyebrow`, `office-hero__media`, `office-hero__image`, `office-hero__caption`, `office-hero__caption-title`, `office-hero__caption-text`; geändert: `office-strip`, `office-strip__list`.
 
 1. Sicherung (Duplicator: Backup erstellen).
-2. Foto `assets/bilder/buero-verwaltung-hero.jpg` in die Mediathek hochladen (Titel und Alternativtext wie oben unter „Seite bauen“).
+2. Foto `assets/bilder/Gemeinsam-online-lernen-im-modernen-Buero.png` in die Mediathek hochladen (Titel und Alternativtext wie oben unter „Seite bauen“).
 3. Bricks › Templates › **Importieren**: `bricks/templates/buero-verwaltung-1-hero.json` und `-2-leiste.json`. Die vorhandenen Vorlagen gleichen Namens vorher löschen oder die neuen danach umbenennen. Beim Import übernimmt Bricks die neuen Klassen; bei den vorhandenen Klassen `office-strip` und `office-strip__list` die neuen Einstellungen übernehmen, wenn Bricks danach fragt (sonst bleibt die Leiste hell).
 4. Seite „Büro-Verwaltung“ mit Bricks bearbeiten: Sections „Hero – Büro & Verwaltung“ und „Vorteilsleiste“ löschen, an derselben Stelle die neuen Vorlagen „Büro-Verwaltung 1 – Hero“ und „Büro-Verwaltung 2 – Vorteilsleiste“ einfügen.
 5. Im Hero das Element „Foto“ auswählen und unter **Bild** das hochgeladene Foto wählen. Speichern.
@@ -114,3 +114,7 @@ Die Lernplan-Karte (Klassen `office-plan*`) wird weiter auf der Seite „Zielgru
 Themenfilter (Section „Die Themen im Überblick“): Umgesetzt wie im Entwurf. Die Vorgaben dazu macht der Kunde (Stand 19.10.2026).
 
 - **Name der Stufe 15:** Im Filter heißt sie „Alle 15 Themen“, bei den Lernpaketen „Rundum-Paket“. Soll im Filter „Rundum-Paket · 15 Themen“ stehen?
+
+Hero (Stand 04.11.2026):
+
+- **KI-Kennzeichnung des Hero-Fotos:** Das Foto „Gemeinsam online lernen im modernen Büro“ ist vermutlich KI-erzeugt. Soll es gekennzeichnet werden (Plakette und Hinweis im Alternativtext), oder bleibt es wie die Fotos auf „Referenzen-neu“ ohne Kennzeichnung? Entscheidet der Kunde.

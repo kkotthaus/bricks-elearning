@@ -187,12 +187,19 @@
    "children": [],
    "settings": {
     "image": {
-     "id": 10868,
-     "filename": "buero-verwaltung-hero.jpg",
+     "id": 10867,
+     "filename": "Gemeinsam-online-lernen-im-modernen-Buero.png",
      "size": "full",
-     "url": "http://weka-e.local/wp-content/uploads/2026/11/buero-verwaltung-hero.jpg"
+     "url": "http://weka-e.local/wp-content/uploads/2026/11/Gemeinsam-online-lernen-im-modernen-Buero.png"
     },
     "loading": "eager",
+    "_attributes": [
+     {
+      "id": "bvh012a0",
+      "name": "sizes",
+      "value": "(max-width: 991px) min(100vw, 640px), 560px"
+     }
+    ],
     "_cssGlobalClasses": [
      "f2x4yl"
     ]
@@ -388,7 +395,7 @@
       "left": "0"
      }
     },
-    "_cssCustom": ".office-hero__image {\n  aspect-ratio: 7 / 5;\n}"
+    "_cssCustom": "/* Ausschnitt wie im Entwurf: oben die Köpfe, unten Tasse und Notizbuch */\n.office-hero__image {\n  aspect-ratio: 7 / 5;\n  object-position: center 35%;\n}"
    }
   },
   {

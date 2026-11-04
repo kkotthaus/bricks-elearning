@@ -21,8 +21,8 @@ const SITE = 'http://weka-e.local';
 const SHOP = 'https://lernen.weka.de/de/t/schulungen-f%C3%BCr-b%C3%BCromitarbeitende';
 const FLAT = 'https://lernen.weka.de/de/e/weka-ecampus-flatrate-unterweisungen-140';
 const KONTAKT = 'https://www.weka-elearning.de/kontakt/';
-// Hero-Foto (assets/bilder/buero-verwaltung-hero.jpg, Platzhalter aus dem Entwurf) – lokale Anhang-ID; auf Live nach dem Hochladen im Builder neu wählen
-const HERO_BILD = { id: 10868, url: SITE + '/wp-content/uploads/2026/11/buero-verwaltung-hero.jpg' };
+// Hero-Foto (assets/bilder/Gemeinsam-online-lernen-im-modernen-Buero.png) – lokale Anhang-ID; auf Live nach dem Hochladen im Builder neu wählen
+const HERO_BILD = { id: 10867, filename: 'Gemeinsam-online-lernen-im-modernen-Buero.png', url: SITE + '/wp-content/uploads/2026/11/Gemeinsam-online-lernen-im-modernen-Buero.png' };
 
 // Klassen-ID aus dem Namen ableiten (gleicher Name = gleiche ID)
 const cid = (name) => BigInt('0x' + createHash('sha1').update(name).digest('hex').slice(0, 12)).toString(36).slice(0, 6).padStart(6, 'k');
@@ -114,7 +114,7 @@ function select(b, parent, { name, id, label, options }) {
   cls('office-hero__image', {
     _display: 'block', _width: '100%', _height: 'auto', _objectFit: 'cover',
     _border: { radius: { top: 'var(--radius)', right: 'var(--radius)', bottom: '0', left: '0' } },
-    _cssCustom: '.office-hero__image {\n  aspect-ratio: 7 / 5;\n}',
+    _cssCustom: '/* Ausschnitt wie im Entwurf: oben die Köpfe, unten Tasse und Notizbuch */\n.office-hero__image {\n  aspect-ratio: 7 / 5;\n  object-position: center 35%;\n}',
   });
   cls('office-hero__caption', {
     _display: 'flex', _direction: 'column', _alignItems: 'center', _rowGap: '0.3em', _margin: NULL4,
@@ -138,7 +138,9 @@ function select(b, parent, { name, id, label, options }) {
   b.add(content, 'text-basic', 'Hinweis', { text: 'Für einzelne Mitarbeitende, kleine Teams und ganze Unternehmen.', tag: 'p', ...C('office-hero__note') });
 
   const media = b.add(con, 'block', 'Foto mit Bildunterschrift', { ...custom('figure'), ...C('office-hero__media') });
-  b.add(media, 'image', 'Foto', { image: { id: HERO_BILD.id, filename: 'buero-verwaltung-hero.jpg', size: 'full', url: HERO_BILD.url }, loading: 'eager', ...C('office-hero__image') });
+  b.add(media, 'image', 'Foto', { image: { id: HERO_BILD.id, filename: HERO_BILD.filename, size: 'full', url: HERO_BILD.url }, loading: 'eager',
+    // Anzeigebreite statt 100vw, damit der Browser eine passende Größe lädt (Desktop ca. 520 px, bis 991 px max. 640 px)
+    _attributes: [['sizes', '(max-width: 991px) min(100vw, 640px), 560px']], ...C('office-hero__image') });
   const cap = b.add(media, 'block', 'Bildunterschrift', { ...custom('figcaption'), ...C('office-hero__caption') });
   b.add(cap, 'text-basic', 'Titel', { text: 'Sicheres Wissen für Ihren Büroalltag', tag: 'p', ...C('office-hero__caption-title') });
   b.add(cap, 'text-basic', 'Themen', { text: 'Arbeitsschutz&nbsp;· Datenschutz&nbsp;· Compliance', tag: 'p', ...C('office-hero__caption-text') });
