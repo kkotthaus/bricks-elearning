@@ -42,21 +42,25 @@ Was in den Vorlagen steckt:
 7. Seite **Büro-Verwaltung** bearbeiten (WordPress-Editor, Seitenattribute): „Übergeordnete Seite“ = **Zielgruppe**, aktualisieren. Sie liegt dann unter `/zielgruppe/buero-verwaltung/`; die alte Adresse `/buero-verwaltung/` leitet WordPress selbst weiter. Danach Einstellungen › Permalinks einmal speichern.
 8. Prüfen: `/zielgruppe/buero-verwaltung/` zeigt Büro-Verwaltung, `/zielgruppe/mitarbeitende/` zeigt weiter das Kurs-Archiv.
 
-## Navigation: „Zielgruppen“ unter „Infos & Service“
+## Navigation: eigener Menüpunkt „Zielgruppen“
 
-Entschieden am 20.10.2026: Die Seite kommt als Unterpunkt **„Zielgruppen“** in das Menü „Infos & Service“, zwischen „Kursprogramm 2026“ und „Kontakte“. Das Menü ist kein WordPress-Menü, sondern ein Dropdown im Bricks-Header-Template. Lokal ist es so eingetragen (Templates 7656 und 10786).
+Entschieden am 05.11.2026 (vorher, ab 20.10.2026, Unterpunkt im Dropdown „Infos & Service“): „Zielgruppen“ ist ein **eigener Hauptmenüpunkt rechts neben „Lernlösungen“**. Das Menü ist kein WordPress-Menü, sondern steht im Bricks-Header-Template. **Live eingetragen am 05.11.2026** (Header „MM Pro v1.4.1“ und „MM Pro v1.4.1 LMS NEU“), lokal ebenso.
 
-Erst nach dem Veröffentlichen der Seite (Schritt 6 oben):
+Für eine weitere Installation (z. B. Staging), erst nach dem Veröffentlichen der Seite (Schritt 6 oben):
 
 1. Bricks › Templates › Header **„MM Pro v1.4.1“** (Bedingung: ganze Website) › mit Bricks bearbeiten.
-2. In der Struktur (links): „Nav items“ › **„Dropdown aktuelles“** (Text „Infos & Service“) › „Inhalt“ aufklappen.
-3. Rechtsklick auf den zweiten Eintrag (in der Struktur heißen alle drei nur **„a“**; der zweite ist „Kursprogramm 2026“) › Duplizieren. Die Kopie steht direkt darunter.
+2. In der Struktur (links): „Nav items“ aufklappen. Dort stehen „Dropdown Lernthemen“, „Dropdown Lernlösungen“, „Dropdown aktuelles“, „Nur Moblie“ und zwei „Link Item“ (Angebot einholen, Inhalte testen).
+3. Rechtsklick auf das erste **„Link Item“** (Angebot einholen) › Duplizieren. Die Kopie mit der Maus direkt unter **„Dropdown Lernlösungen“** ziehen.
 4. Bei der Kopie:
    - Text: **Zielgruppen**
-   - Link: Externe URL **`/zielgruppe/`** (ohne Domain; die anderen Punkte haben die volle Adresse, beides funktioniert)
+   - Link: Externe URL **`/zielgruppe/`**
+   - Label (optional): „Link Zielgruppen“
 5. Speichern.
-6. Dasselbe im Header **„LP MM Pro v1.4.1 LMS-neu“**, falls es ihn auf Live gibt (gilt nur für die Seite „LMS Neu“).
-7. Prüfen: Auf einer beliebigen Seite „Infos & Service“ öffnen → Veranstaltungen, Kursprogramm 2026, **Zielgruppen**, Kontakte. Ein Klick auf „Zielgruppen“ öffnet `/zielgruppe/`. Auf dem Handy das Menü öffnen und dort ebenfalls prüfen.
+6. Falls noch vorhanden: den alten Unterpunkt „Zielgruppen“ in „Dropdown aktuelles“ › „Inhalt“ löschen.
+7. Dasselbe im Header **„MM Pro v1.4.1 LMS NEU“** (gilt nur für die Seite „LMS Neu“).
+8. Prüfen: Auf einer beliebigen Seite steht oben Lernthemen, Lernlösungen, **Zielgruppen**, Infos & Service, dann die beiden Buttons. „Zielgruppen“ sieht aus wie die anderen Punkte (ohne Pfeil) und öffnet `/zielgruppe/`. Auf dem Handy das Menü öffnen und dort ebenfalls prüfen.
+
+**Wichtig:** Das Menü stellt die **letzten beiden** Punkte der Liste als Buttons dar (grün und blau). „Zielgruppen“ deshalb nie ans Ende setzen, sonst wird es zum Button und „Angebot einholen“ zum normalen Punkt.
 
 ## Ziel-Links
 
@@ -81,4 +85,4 @@ Alle Links stammen aus dem Entwurf (Stand 19.10.2026).
 
 ## Offene Fragen an den Kunden
 
-- **Navigation Büro-Verwaltung:** „Zielgruppe“ steht unter „Infos & Service“ (siehe oben). Büro-Verwaltung ist über die Karte auf „Zielgruppe“ erreichbar; ob sie einen eigenen Menüpunkt bekommt, ist offen (Stand 20.10.2026).
+- **Navigation Büro-Verwaltung:** „Zielgruppen“ ist ein eigener Hauptmenüpunkt (siehe oben). Büro-Verwaltung ist über die Karte auf „Zielgruppe“ erreichbar; ob sie einen eigenen Menüpunkt bekommt, ist offen (Stand 20.10.2026).
