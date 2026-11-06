@@ -88,11 +88,18 @@ Tipp: In der Trigger-Liste zeigt die Spalte „Tags“ (bzw. die Anzeige im Trig
 
 Geht etwas schief: Links **Versionen** › vorige Version › „Als Live-Version veröffentlichen“.
 
-## 7. Danach in Google Ads
+## 7. weka-e.local in Google Ads
 
-- Meldungen der Testkopie, die schon in Google Ads angekommen sind, bleiben dort und lassen sich nicht löschen. Seit dem 06.11.2026 kommen keine neuen dazu.
-- In den nächsten Tagen unter **Ziele › Conversions › Zusammenfassung** nachsehen, ob die Conversions der Live-Seite weiter normal gezählt werden.
-- Wurden Conversions aus der Testkopie gezählt und stören sie die Auswertung, lassen sie sich über den Zeitraum der Tests eingrenzen; bei Fragen dazu hilft der Google-Ads-Support.
+Meldungen der Testkopie, die schon in Google Ads angekommen sind, lassen sich nicht löschen. Seit dem 06.11.2026 kommen keine neuen dazu. Je nachdem, wo die Adresse auftaucht:
+
+| Wo in Google Ads | Was tun |
+| --- | --- |
+| Google-Tag › **Tag-Abdeckung** bzw. Diagnose | Der Eintrag verschwindet nach einigen Wochen ohne neue Aufrufe von selbst. Gibt es beim Eintrag „Ignorieren“ oder „Ausschließen“, lässt er sich damit sofort ausblenden. |
+| Google-Tag › Verwaltung › **Domains konfigurieren** | Steht `weka-e.local` (oder `weka-e.kotthaus-bs.de`) in der Liste, dort entfernen und speichern. |
+| **Conversions** | Sollten nicht betroffen sein: Google Ads zählt eine Conversion nur nach einem Klick auf eine Anzeige, und den gab es auf der Testkopie nicht. Zur Sicherheit in den nächsten Tagen unter **Ziele › Conversions › Zusammenfassung** prüfen, ob die Live-Seite normal gezählt wird. |
+| **Remarketing-Listen** (Zielgruppen) | Der Browser des Entwicklers kann dort als Besucher stehen. Das läuft mit der Mitgliedsdauer der Liste von selbst aus und stört die Kampagnen praktisch nicht. |
+
+Die Bezeichnungen der Menüs können je nach Ansicht von Google Ads leicht abweichen. Steht die Adresse an einer anderen Stelle, bitte einen Screenshot an Kotthaus Business Service schicken.
 
 ## Kurz zum Abhaken
 
@@ -102,4 +109,4 @@ Geht etwas schief: Links **Versionen** › vorige Version › „Als Live-Versio
 - [ ] Eigene Trigger (Klicks, Formulare, Ereignisse) um die Bedingung ergänzt
 - [ ] In der Vorschau auf weka-elearning.de geprüft
 - [ ] Version veröffentlicht
-- [ ] Conversions in Google Ads nach einigen Tagen kontrolliert
+- [ ] In Google Ads: weka-e.local aus „Domains konfigurieren“ entfernt (falls dort), Conversions nach einigen Tagen kontrolliert
